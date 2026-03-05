@@ -40,6 +40,7 @@ No external QM rules are added; all effects emerge from the same wave + distorti
 ### Four Core Tests
 
 <img width="599" height="194" alt="image" src="https://github.com/user-attachments/assets/ffc25b42-81e8-4216-9a8b-2287898df2dc" />
+<img width="369" height="109" alt="image" src="https://github.com/user-attachments/assets/2dfc67cb-97c8-4d48-a160-d1487026e8d7" />
 
 
 
