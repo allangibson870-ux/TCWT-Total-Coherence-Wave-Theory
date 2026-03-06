@@ -57,6 +57,10 @@ Path-dependent proper time in curved spacetime → phase divergence → high loc
 
 All four match real quantum behaviour using only the eternal Hum + Ω distortion.
 
+** EXPERIMENTAL FALSIFICATION TARGET
+<img width="700" height="400" alt="tcwt_blind_prediction" src="https://github.com/user-attachments/assets/1c1cff4b-dc1b-4f6d-905c-9be984f7b7b3" />
+
+
 ## Status & Next
 - Evolving rapidly via simulation stress-testing.
 - Seeking observational anchors beyond DESI (CMB non-Gaussianities? precursor wobbles?).
