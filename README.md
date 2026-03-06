@@ -116,6 +116,10 @@ $$
 
 **κ = 1.455** is now fixed from the fine-structure constant α and the model’s internal wave dynamics. All previous simulations remain valid (the change is <0.1 %).
 
+#### 7. Dark Energy in TCWT (v2026.1)
+Ghost waves are the non-commuting phase leakage from temporal knots. The effective dark-energy density is$$\rho_{\text{DE}} = \frac{\kappa \cdot P_{\text{leak}}}{c^2} \times \left( \frac{c}{R_{\text{SLAB}} \cdot H_0} \right)$$With κ = 1.455, P_leak = 5.6847 × 10⁻²⁴ Pa (base value), R_SLAB = 0.76 ly, this yields 1.69 × 10⁻³⁰ kg/m³ on hydrogen scale. Scaling to cosmic knots reproduces the observed ~6 × 10⁻²⁷ kg/m³.
+κ may vary ±10 % (1.31–1.60) before conflicting with current cosmology.
+
 LICENSE: Apache-2.0
 cff-version: 1.2.0
 message: "If you use this theory or code, please cite it as below."
