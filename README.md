@@ -124,6 +124,8 @@ With κ = 1.455, P_leak = 5.6847 × 10⁻²⁴ Pa (base value), R_SLAB = 0.76 ly
 κ may vary ±10 % (1.31–1.60) before conflicting with current cosmology.
 
 κ = 1.455 is now fixed from the fine-structure constant α and the model’s internal wave dynamics. All previous simulations remain valid (the change is <0.1 %).
+
+
 LICENSE: Apache-2.0
 cff-version: 1.2.0
 message: "If you use this theory or code, please cite it as below."
