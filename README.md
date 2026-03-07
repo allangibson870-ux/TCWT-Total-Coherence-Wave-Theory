@@ -66,33 +66,33 @@ All four match real quantum behaviour using only the eternal Hum + Ω distortion
 - Seeking observational anchors beyond DESI (CMB non-Gaussianities? precursor wobbles?).
 - Open to collaboration / critique — theory survives aggressive challenges so far.
 
-  ### Core Equations of Total Coherence Wave Theory (TCWT) (v2026.1)
+## Core Equations of Total Coherence Wave Theory (TCWT) (v2026.1)
 
 The universe is a single eternal temporal wave. All phenomena emerge from its two modes and one distortion parameter.
 
-#### 1. The Eternal Background Hum
+### 1. The Eternal Background Hum
 $$
 \phi_{\text{Hum}}(t) = A_{\text{Hum}} \sin(2\pi f_{\text{Hum}} t + \psi)
 $$
 
-#### 2. The Knot / Snag Mode (Mass & Black Holes)
+### 2. The Knot / Snag Mode (Mass & Black Holes)
 $$
 \phi_{\text{Knot}}(r,t) = A_{\text{Knot}} \sin(2\pi f_{\text{Knot}} t + \psi_{\text{Knot}})
 $$
 
-#### 3. The Unified Distortion Law (Ω) – Relativistic Form
+### 3. The Unified Distortion Law (Ω) – Relativistic Form
 $$
 \Omega = \frac{M + K_{\text{tc}} \cdot v}{\sqrt{1 - (v^2/c^2)}}
 $$
 where \( K_{\text{tc}} = 1.455 \) (fixed from α and hydrogen binding energy).  
-At everyday speeds (v ≪ c) this reduces exactly to the original non-relativistic form used in all previous simulations.
+At everyday speeds (\(v \ll c\)) this reduces exactly to the original non-relativistic form used in all previous simulations.
 
-#### 4. Gravitational Leakage from Knot Squeeze
+### 4. Gravitational Leakage from Knot Squeeze
 Binding squeeze pressure (first-principles from fine-structure constant α):
 $$
 P_{\text{bind}} = \frac{\frac{1}{2} m_e c^2 \alpha^2}{V_{\text{snag}}}
 $$
-Gravitational leakage (from your hydrogen scripts):
+Gravitational leakage (from hydrogen scripts):
 $$
 P_{\text{leak}} = \frac{G m_H^2}{R_H}
 $$
@@ -105,22 +105,25 @@ $$
 $$
 (The divisor 24.6 is the natural Ω transition scale of the temporal manifold.)
 
-#### 5. Non-Commuting Phase (Quantum Non-Classicality)
+### 5. Non-Commuting Phase (Quantum Non-Classicality)
 $$
 [\phi(t_1), \phi(t_2)] = i \cdot \kappa \cdot \Omega \cdot (t_2 - t_1)
 $$
 
-#### 6. Hum Suppression Near Black Holes
+### 6. Hum Suppression Near Black Holes
 $$
 A_{\text{Hum}}(r) = \exp\left(-c \cdot \frac{1}{r/R_s - 1}\right)
 $$
 
-**κ = 1.455** is now fixed from the fine-structure constant α and the model’s internal wave dynamics. All previous simulations remain valid (the change is <0.1 %).
-
-#### 7. Dark Energy in TCWT (v2026.1)
-Ghost waves are the non-commuting phase leakage from temporal knots. The effective dark-energy density is$$\rho_{\text{DE}} = \frac{\kappa \cdot P_{\text{leak}}}{c^2} \times \left( \frac{c}{R_{\text{SLAB}} \cdot H_0} \right)$$With κ = 1.455, P_leak = 5.6847 × 10⁻²⁴ Pa (base value), R_SLAB = 0.76 ly, this yields 1.69 × 10⁻³⁰ kg/m³ on hydrogen scale. Scaling to cosmic knots reproduces the observed ~6 × 10⁻²⁷ kg/m³.
+### 7. Dark Energy in TCWT (v2026.1)
+Ghost waves are the non-commuting phase leakage from temporal knots. The effective dark-energy density is
+$$
+\rho_{\text{DE}} = \frac{\kappa \cdot P_{\text{leak}}}{c^2} \times \left( \frac{c}{R_{\text{SLAB}} \cdot H_0} \right)
+$$
+With κ = 1.455, P_leak = 5.6847 × 10⁻²⁴ Pa (base value), R_SLAB = 0.76 ly, this yields 1.69 × 10⁻³⁰ kg/m³ on hydrogen scale. Scaling to cosmic knots reproduces the observed ~6 × 10⁻²⁷ kg/m³.  
 κ may vary ±10 % (1.31–1.60) before conflicting with current cosmology.
 
+κ = 1.455 is now fixed from the fine-structure constant α and the model’s internal wave dynamics. All previous simulations remain valid (the change is <0.1 %).
 LICENSE: Apache-2.0
 cff-version: 1.2.0
 message: "If you use this theory or code, please cite it as below."
