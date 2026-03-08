@@ -53,8 +53,10 @@ This structure is fully orthodox: two interacting scalar fields with a non‑can
 TCWT’s coherence and decoherence behaviour is encoded in the kinetic prefactor:
 
 \[
-Z_\theta(\Omega) = 1 + \beta \left(\frac{\Omega}{\Omega_{\max}}\right)^2
+$\mathcal{L} = C_0 (\partial_t \theta - \Omega)^2 + \kappa |\nabla \theta|^2 + \alpha (\partial_t G - \nabla^2 \theta)^2 + \frac{1}{2} (\partial_\mu \Omega)^2 - \frac{\mu}{2} \left( \Omega - \frac{M + K_{\text{tc}} v}{\sqrt{1 - v^2/c^2}} \right)^2 - \frac{\lambda}{4} (\max(\Omega, \Omega_{\max})^2 - \Omega_{\max}^2)^2$
 \]
+
+Ω is a dynamical auxiliary field whose value is enforced variationally by the constraint term in the action, reproducing the relativistic drag law and natural upper bound Ω_max ≈ 16.91.
 
 This captures:
 
