@@ -1,3 +1,4 @@
+
 TCWT — Total Coherence Wave Theory (v2026.2)
 A coherence‑based scalar framework where time is a physical wave, knots are stable solitons, and gravity emerges from phase‑bleed.
 1. Overview
@@ -102,6 +103,24 @@ S = 2√2 C(v)
 | **GRACE‑FO Gravity Mapping** | Gravity anomalies track mass redistribution (ice, mantle flow). | λ‑field anomalies from Omega and G, not mass alone; possible phase‑lags between mass change and gravity signal. | Perfect mass–gravity correlation after improved Earth models. |
 | **NASA AWE (Mesospheric Waves)** | Waves fully explained by fluid dynamics and buoyancy. | Coherence patterns tied to θ oscillation; preferred frequencies; λ‑dependent anisotropies in propagation. | All wave statistics match atmospheric models with no residual coherence structure. |
 
+### TCWT Orbital Equation
+
+TCWT models gravitational acceleration as a leakage gradient of the temporal phase field:
+
+\[
+\mathbf{a}(r) = -K\,\nabla\theta(r)
+\]
+
+For circular orbits this becomes:
+
+\[
+\boxed{
+\frac{d\theta}{dr} = \frac{v^2}{K r}
+}
+\]
+
+This single equation is the basis for reconstructing the Earth‑knot phase field from orbital data.  
+Full derivation in `docs/tcwt_orbital_mechanics_v1.md`.
 
 LICENSE: Apache-2.0
 cff-version: 1.2.0
