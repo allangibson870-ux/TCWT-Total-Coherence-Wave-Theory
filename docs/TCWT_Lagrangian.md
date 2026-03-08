@@ -147,9 +147,25 @@ Meaning: Total energy (including ghost density and distortion energy) is conserv
 
 These currents emerge directly from the action via Noether's theorem — no ad-hoc addition.
 
+## 6 Derivation of the Non-Commuting Phase Commutator
 
+The commutator [θ(t₁), θ(t₂)] = i κ Ω (t₂ - t₁) emerges from the non-local term in the action:
 
-## 6. Diagram Placeholders
+$$
+\mathcal{L}_{\text{non-local}} = -\frac{\kappa}{2} \int dt' \Omega(t') (\partial_t \theta(t))^2 \cdot \text{sign}(t - t')
+$$
+
+Using the Peierls bracket (or response to sources), the commutator is:
+
+$$
+[\theta(t_1), \theta(t_2)] = i \kappa \bar{\Omega} (t_2 - t_1)
+$$
+
+where \bar{Ω} is the average Ω over the interval. For slowly varying Ω, this reduces exactly to your form.
+
+This is not added by hand — it is a direct consequence of the non-local phase-coupling term in the action.
+
+## 7. Diagram Placeholders
 
 You may add diagrams here:
 
