@@ -82,20 +82,15 @@ V(r) = exp(-σ |λ(r)|)
 V = exp(-σ λ)
 S = 2√2 C(v)
 
-### Internal Upper Bound on Ω (Ω_cap)
 
-Derived purely from TCWT transition scale and phase strength:
 
-$$
-\Omega_{\max} = \frac{\Omega_{\text{transition}}}{\kappa} \approx \frac{24.6}{1.455} \approx 16.91
-$$
+### Built-in Safeguards (prevent unphysical extremes)
 
-Implementation:
-- Ω → min(Ω, 16.91)  
-- Visibility = exp(−β · min(Ω, 16.91))  
-- Commutator capped at i κ · 16.91 · Δt
+- Energy positivity: Replace M with |M| in Ω (no negative mass/energy)  
+- Ω cap: Ω → min(Ω, Ω_max) where Ω_max = Ω_transition / κ ≈ 16.91  
+  (derived from transition scale and phase strength)
 
-This bounds distortion at extreme regimes without external constants — prevents unphysical runaway while preserving all previous predictions.
+These bounds are purely internal to TCWT and eliminate runaway absurdities (e.g. infinite shredding, negative temperature, stable "ice Sun" configurations) while preserving all previous predictions.
 
 12. Status & Roadmap
 - Coherence action defined
