@@ -107,7 +107,7 @@ This bounds distortion at extreme regimes without external constants — prevent
 - Bell‑test prediction curve defined
 - CMB anisotropy mechanism established
 
-TCWT vs GR — 2026 Scientific Tests
+###TCWT vs GR — 2026 Scientific Tests
 
 Test Area                  | GR Expectation                                                                 | TCWT Expectation (updated)                                                                                          | What Would Falsify TCWT
 ---------------------------|--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|-------------------------
