@@ -121,23 +121,33 @@ The background potential \( U(\Omega) \) enforces the brittle limit and coherenc
 | Dark energy | Vacuum energy of G |
 | Visibility \( V = e^{-\sigma|\lambda|} \) | Observable modulation from λ‑field gradients |
 
----
 
-## 5. Euler–Lagrange Equations (Optional Derivation)
 
-The equations of motion follow from:
+### Conserved Quantities (Noether Currents)
 
-\[
-\frac{\partial \mathcal{L}}{\partial \phi}
-- \partial_\mu \left( \frac{\partial \mathcal{L}}{\partial(\partial_\mu \phi)} \right)
-= 0
-\]
+1. **Phase current** (from global θ shift symmetry)
 
-for \( \phi \in \{\theta, G\} \).
+$$
+J^\mu = 2 C_0 (\partial_t \theta - \Omega) \delta^\mu_0 + 2 \kappa \partial^\mu \theta
+$$
 
-These can be expanded in a future version of this document.
+Conservation: ∂_μ J^μ = 0  
+Meaning: Total temporal phase is conserved globally.
 
----
+2. **Energy-momentum** (from time translation)
+
+Energy density:
+
+$$
+\rho = C_0 (\partial_t \theta - \Omega)^2 + \kappa |\nabla \theta|^2 + \alpha (\partial_t G - \nabla^2 \theta)^2 + \frac{1}{2} (\partial_t \Omega)^2 + V(\Omega)
+$$
+
+Conservation: ∂_t ρ + ∇ · j = 0  
+Meaning: Total energy (including ghost density and distortion energy) is conserved.
+
+These currents emerge directly from the action via Noether's theorem — no ad-hoc addition.
+
+
 
 ## 6. Diagram Placeholders
 
