@@ -83,22 +83,20 @@ This reproduces TCWT relations such as:
 
 ---
 
-### 3.3 Ghost Density and Dark Energy
 
-## Visibility Suppression (fully internal derivation)
+### 3.3 Dark Energy as Reionization-Locked Inductive Scaling
 
-$$
-V(r) = \exp(-\sigma |\lambda(r)|)
-$$
+Dark energy in TCWT is the residual collective inductance of the knot hierarchy, locked at the reionization transition.
 
-σ is derived from the requirement that visibility drops to 1/e exactly when the phase gradient reaches the transition value:
+The inductive scaling exponent α(z) transitions from 0.5 (pre-reionization, local knot-dominated pumping) to 0.4 (post-reionization, global fractal-foam filtering):
 
-$$
-\sigma = \frac{1}{|\lambda|_{\text{transition}}} = \frac{1}{g} = \frac{1}{\kappa \times 2\pi f_{\text{Hum}} / c} \approx 6.58 \times 10^{-36} \, \text{m/rad}
-$$
+- α(z) ≈ 0.5 for z > 6.1  
+- α(z) ≈ 0.4 for z < 6.1 (Reionization Lock at z ≈ 6.1)
 
-This ties visibility loss directly to the same transition scale that defines quantum-to-classical behaviour.
+This lock fixes the effective coupling after the universe becomes transparent, explaining why dark energy dominates late.  
+The transition is driven by the shift from stochastic resonance (√N_knot) to volume + fractal suppression (N_knot^{1/3} × foam factor).
 
+This is a fully internal mechanism tying dark energy to the observed reionization epoch.
 ---
 
 ### 3.4 Knot Stability Energy E(R) — Derivation from Effective Potential
