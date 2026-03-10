@@ -51,7 +51,9 @@ For the full orthodox field-theory formulation (Lagrangian, Noether currents, co
 
 ## Scientific Test Roadmap (2026)
 
-See the detailed comparison table in the Lagrangian document.
+https://github.com/allangibson870-ux/TCWT-Total-Coherence-Wave-Theory/blob/main/docs/Observational%20Tests.md
+
+<img width="577" height="239" alt="image" src="https://github.com/user-attachments/assets/71ed2333-a727-4825-95a1-c2c24df6f851" />
 
 
 
