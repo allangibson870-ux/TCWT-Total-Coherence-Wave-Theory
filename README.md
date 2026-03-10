@@ -47,7 +47,7 @@ These prevent unphysical runaway while preserving all predictions.
 
 For the full orthodox field-theory formulation (Lagrangian, Noether currents, commutator derivation, visibility, knot stability, phase-opaque dark matter, reionization-locked dark energy, etc.) see:
 
-→ [TCWT Lagrangian https://github.com/allangibson870-ux/TCWT-Total-Coherence-Wave-Theory/blob/main/docs/TCWT_Lagrangian.md
+TCWT Lagrangian https://github.com/allangibson870-ux/TCWT-Total-Coherence-Wave-Theory/blob/main/docs/TCWT_Lagrangian.md
 
 ## Scientific Test Roadmap (2026)
 
