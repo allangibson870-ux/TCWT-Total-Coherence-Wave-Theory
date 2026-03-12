@@ -188,5 +188,10 @@ Spacetime, Lorentz invariance, and Einstein gravity all emerge at low energy / l
 - Diffeomorphism invariance is built-in; full quantisation (path-integral) is sketched but not yet executed  
 - Curved spacetime emergence is shown via mass-energy curving the intrinsic ds²; further work needed on exact solutions
 
+- Relation to the orthodox formulation
+The metric-dependent version presented in the “Orthodox Field-Theory Form” document is an effective low-energy approximation on top of a fixed background spacetime.
+This pregeometric sketch is the more fundamental description in which no such background exists; the metric and Lorentzian structure emerge intrinsically from θ gradients and the fractal knot network.
+
 This sketch provides a consistent pregeometric foundation for TCWT.  
 The metric-dependent “orthodox” formulation should be regarded as an effective low-energy approximation on top of this underlying structure.
+
