@@ -99,6 +99,28 @@ Effect occurs pre-stellar, from hierarchical pump.
 ~84 % mass discrepancy = phase-opaque knots (|∇θ| ≥ λ_crit → Ω ≥ Ω_max, V ≤ 0.368).  
 Trapped in fractal foam (d ≈ 1.585), they form gravitational scaffolding without light emission.
 
+### Scale-Dependent Gravity in TCWT vs Standard Gravity
+
+In standard gravity, acceleration falls as 1/r².  
+In TCWT, phase-bleed accumulation is **logarithmic** (θ(r) ∝ ln(r)) and filtered by fractal foam (d ≈ 1.585), producing **slower fall-off** at large scales — mimicking dark-matter-like effects without extra mass.
+
+**Illustrative comparison** (normalised at 1 unit distance):
+
+| Distance | Standard Gravity (1/r²) | Fractal TCWT (effective) | Ratio (TCWT / Standard) |
+|----------|--------------------------|---------------------------|--------------------------|
+| 1 unit   | 1.0                      | 1.0                       | 1×                       |
+| 10 units | 0.01                     | ~0.26                     | ~26× stronger            |
+| 100 units| 0.0001                   | ~0.067–0.14               | ~670–1400× stronger      |
+
+**Interpretation**  
+- At small scales (near knots): TCWT matches Newtonian gravity (phase-bleed ≈ 1/r²)  
+- At large scales (galactic/cluster/cosmic): logarithmic accumulation + fractal filtering strengthens effective gravity → explains rotation curves, cluster dynamics, and cosmic acceleration without dark matter or modified G  
+
+The exact ratio depends on the hierarchical resonance exponent α ≈ 0.4–0.5 and fractal foam dimension d ≈ 1.585.  
+This is a direct consequence of the phase-bleed field λ = ∇θ and the decoherence shadow.
+
+See the pregeometric Lagrangian for the derivation of the logarithmic θ(r) and emergent metric.
+
 ## 4. Relation to Original TCWT Constructs
 
 | TCWT Concept                | Orthodox Interpretation                                      |
