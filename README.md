@@ -54,6 +54,10 @@ In TCWT, phase-bleed accumulation is logarithmic and filtered by the fractal foa
 
 At small radii TCWT ≈ Newtonian; at galactic scales the pull is much stronger → flat rotation curves without exotic particles.
 
+<img width="390" height="210" alt="tcwt_log" src="https://github.com/user-attachments/assets/798ee528-af1c-4dcd-8015-0c1c0901af70" /><img width="390" height="210" alt="tcwt_linear" src="https://github.com/user-attachments/assets/c1e98799-8b7d-4a72-81b4-429363d9a149" />
+
+
+
 See [Lagrangian-Pregeometric.md](docs/TCWT-Lagrangian-Pregeometric.md) for how this emerges from the phase-bleed field and fractal foam.
 
 ## Current Status & Roadmap
