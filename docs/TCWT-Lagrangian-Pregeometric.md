@@ -177,6 +177,7 @@ This shows that general relativity emerges as the effective low-energy theory of
 This pregeometric version eliminates any background metric or coordinates.  
 The action is written in terms of intrinsic derivatives along the Hum flow and knot filaments.  
 Spacetime, Lorentz invariance, and Einstein gravity all emerge at low energy / low gradient.
+dt — intrinsic Hum-flow parameter (no coordinate time t is assumed)
 
 **Limitations & next steps**  
 - The measure \(\mathcal{D}_{\text{foam}}\) needs a more precise definition (e.g. explicit branching rules)  
@@ -185,3 +186,4 @@ Spacetime, Lorentz invariance, and Einstein gravity all emerge at low energy / l
 
 This sketch provides a consistent pregeometric foundation for TCWT.  
 The metric-dependent “orthodox” formulation should be regarded as an effective low-energy approximation on top of this underlying structure.
+
