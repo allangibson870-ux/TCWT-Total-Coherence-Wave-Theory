@@ -198,13 +198,8 @@ This table shows how space-filling emerges (approximate values for a 3-branching
 
 This branching process is what allows spacetime to **emerge** from the pregeometric knot network without assuming a background manifold.
 
-## 6. Summary & Current Status
 
-This pregeometric version eliminates any background metric or coordinates.  
-The action is written in terms of intrinsic derivatives along the Hum flow and knot filaments.  
-Spacetime, Lorentz invariance, and Einstein gravity all emerge at low energy / low gradient.
-
-## 7. TCWT Interpretation of Mercury as a Stripped Inner Gas-Rich Proto-Planet
+## 6. TCWT Interpretation of Mercury as a Stripped Inner Gas-Rich Proto-Planet
 
 Within the pregeometric TCWT framework, the early Solar System contains a narrow
 inner region (r ≲ 0.15 AU) where the Hum-flow coherence is maximal, the spatial
@@ -247,6 +242,12 @@ This pregeometric sketch is the more fundamental description in which no such ba
 
 This sketch provides a consistent pregeometric foundation for TCWT.  
 The metric-dependent “orthodox” formulation should be regarded as an effective low-energy approximation on top of this underlying structure.
+
+## 7. Summary & Current Status
+
+This pregeometric version eliminates any background metric or coordinates.  
+The action is written in terms of intrinsic derivatives along the Hum flow and knot filaments.  
+Spacetime, Lorentz invariance, and Einstein gravity all emerge at low energy / low gradient.
 
 
 
