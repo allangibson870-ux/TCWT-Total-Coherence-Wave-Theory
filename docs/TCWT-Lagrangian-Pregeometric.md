@@ -204,6 +204,38 @@ This pregeometric version eliminates any background metric or coordinates.
 The action is written in terms of intrinsic derivatives along the Hum flow and knot filaments.  
 Spacetime, Lorentz invariance, and Einstein gravity all emerge at low energy / low gradient.
 
+## 7. TCWT Interpretation of Mercury as a Stripped Inner Gas-Rich Proto-Planet
+
+Within the pregeometric TCWT framework, the early Solar System contains a narrow
+inner region (r ≲ 0.15 AU) where the Hum-flow coherence is maximal, the spatial
+phase gradient λ is smooth, and the Ω-cap is inactive. This produces a
+high-Σ(r) gas-coherence pocket in which gas-rich bodies can form even closer to
+the star than rocky planets. Solids are unstable in this region, but gas
+accumulates efficiently.
+
+As the system evolves, the λ-gradient steepens and Ω approaches its cap value
+(Ω → Ω_max) in the radial interval 0.15–0.30 AU. This creates a
+phase-gradient barrier: a dynamically repulsive region in the emergent metric
+where Σ(r) collapses and gas cannot remain bound. A gas-rich proto-planet
+drifting outward from the inner coherence pocket is stripped of its envelope,
+then of its volatile inventory, and finally of most of its silicate mantle.
+
+The exposed metallic core experiences asymmetric repulsion from the Ω-cap
+trench and is displaced outward until it reaches the first stable coherence
+minimum in the rocky zone. This radius corresponds to the present orbit of
+Mercury (≈0.39 AU). The resulting remnant is expected to be:
+
+- highly metal-rich (dominant core fraction),
+- volatile-poor,
+- dynamically disturbed (high eccentricity),
+- weakly magnetised with an offset dipole,
+- and lacking a substantial mantle.
+
+These properties match Mercury’s observed characteristics. In this view,
+Mercury is the surviving core of an early gas-rich inner planet whose stripped
+material contributed to the enrichment of the inner protoplanetary disk during
+the epoch when Earth and Venus were assembling.
+
 **Limitations & next steps**  
 - The measure \(\mathcal{D}_{\text{foam}}\) is now explicitly defined via weighted branching sum over fractal topologies  
 - Diffeomorphism invariance is built-in; full quantisation (path-integral) is sketched but not yet executed  
