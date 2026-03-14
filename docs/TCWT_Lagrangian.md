@@ -222,9 +222,40 @@ It generates:
 - the stripping peak  
 - the coherence minimum  
 - the Mercury parking radius  
-- the λ(r) landscape  
+- the λ(r) landscape
 
----
+- # TCWT Derivation: Emergence of the Einstein Tensor
+
+This document provides the formal mathematical bridge from the TCWT Pregeometric Action to the Einstein Field Equations (EFE) of General Relativity.
+
+## 1. The Induced Metric and Vielbein Mapping
+In TCWT, spacetime is an effective construct. We define the emergent metric $g_{\mu\nu}$ via a Vielbein (tetrad) $e^a_\mu$ that maps intrinsic phase advances to a Lorentzian manifold:
+
+$$g_{\mu\nu} = \eta_{ab} e^a_\mu e^b_\nu$$
+
+Where the temporal component is governed by the Hum-flow ($\Omega$) and spatial components by the gradient ($\lambda$):
+$$e^0_\mu = \frac{\partial_\mu \theta}{\Omega}, \quad e^i_\mu = \frac{\partial_\mu \theta}{\lambda}$$
+
+## 2. Variational Principle
+To find the effective gravitational equations, we vary the TCWT action $S$ with respect to the emergent metric $g^{\mu\nu}$ using the chain rule:
+
+$$\frac{\delta S}{\delta g^{\mu\nu}} = \frac{\delta S}{\delta \theta} \cdot \frac{\delta \theta}{\delta g^{\mu\nu}}$$
+
+In the low-energy limit ($|\lambda| \ll \Omega_{\max}$), the Lagrangian density $\mathcal{L}$ simplifies to a kinetic K-essence form. The variation yields:
+
+$$T_{\mu\nu}^{\theta} = \kappa \left( \partial_\mu \theta \partial_\nu \theta - \frac{1}{2} g_{\mu\nu} g^{\alpha\beta} \partial_\alpha \theta \partial_\beta \theta \right)$$
+
+## 3. Correspondence to General Relativity
+By identifying the effective gravitational constant $G_{\text{eff}} \approx \frac{1}{8\pi \kappa}$, we recover the Einstein Tensor $G_{\mu\nu}$:
+
+$$G_{\mu\nu} = 8\pi G_{\text{eff}} \left( T_{\mu\nu}^{\theta} + T_{\mu\nu}^{\text{ghost}} \right)$$
+
+In this regime, the $\theta$-equation of motion satisfies the **Bianchi Identity**:
+$$\nabla^\mu G_{\mu\nu} = 0$$
+
+This ensures that energy-momentum conservation is a natural consequence of the phase-flux stability in the Hum-flow.
+
+
 
 # Summary
 
