@@ -147,15 +147,6 @@ This ensures that the "tangles" in the knot network cannot become infinitely com
 ## 3. Resolution of Singularities
 In TCWT, a "Black Hole" is not a point of infinite density. It is a **Finite Fractal Soliton** where the internal phase has reached the $\Omega_{\max}$ saturation point, resulting in a stable, phase-opaque core with radius $R \geq R_{\text{crit}}$.
 
-## 4. Resolution of the Vacuum Catastrophe
-The TCWT Pregeometric Lagrangian avoids the "Vacuum Catastrophe" by replacing the infinite Planck-cutoff with a finite **Ghost Mass ($m_G \approx 1.2 \times 10^{-33}$ eV)**.
-
-### The Leakage Regulator:
-In standard QFT, vacuum energy density ($\rho_{vac}$) diverges. In TCWT, $\rho_{vac}$ is the **Ghost Leakage Residue**:
-$$\rho_{vac} = \frac{1}{2} m_G^2 G^2 \approx \rho_{\text{observed}}$$
-
-Because $m_G$ is inversely proportional to the temporal coherence $\sqrt{C_0}$, the "fluidity" of the Hum-flow ($C_0 \approx 0.059$) ensures that the vacuum pressure remains small and stable. This provides a shared genesis for **Dark Matter** (Phase-Opaque Knots) and **Dark Energy** (Ghost Leakage), cancelling the 120-order-of-magnitude discrepancy found in traditional models.
-
 
 
 ## 5. Solar Flare Precursor
@@ -290,6 +281,15 @@ In this regime, the $\theta$-equation of motion satisfies the **Bianchi Identity
 $$\nabla^\mu G_{\mu\nu} = 0$$
 
 This ensures that energy-momentum conservation is a natural consequence of the phase-flux stability in the Hum-flow.
+
+## 4. Resolution of the Vacuum Catastrophe
+The TCWT Pregeometric Lagrangian avoids the "Vacuum Catastrophe" by replacing the infinite Planck-cutoff with a finite **Ghost Mass ($m_G \approx 1.2 \times 10^{-33}$ eV)**.
+
+### The Leakage Regulator:
+In standard QFT, vacuum energy density ($\rho_{vac}$) diverges. In TCWT, $\rho_{vac}$ is the **Ghost Leakage Residue**:
+$$\rho_{vac} = \frac{1}{2} m_G^2 G^2 \approx \rho_{\text{observed}}$$
+
+Because $m_G$ is inversely proportional to the temporal coherence $\sqrt{C_0}$, the "fluidity" of the Hum-flow ($C_0 \approx 0.059$) ensures that the vacuum pressure remains small and stable. This provides a shared genesis for **Dark Matter** (Phase-Opaque Knots) and **Dark Energy** (Ghost Leakage), cancelling the 120-order-of-magnitude discrepancy found in traditional models.
 
 
 
