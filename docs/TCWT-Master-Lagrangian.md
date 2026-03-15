@@ -1,331 +1,173 @@
 # TCWT Master Lagrangian
-## Unified Field Equation of the Hum Coherence Field
+## Pregeometric Hum Field Formulation
 
-Version: 2026.8  
-Status: consolidated formulation
-
----
-
-# 1. Overview
-
-Total Coherence Wave Theory (TCWT) describes the universe as a nonlinear coherence field whose ground state is the **Hum**.
-
-All physical phenomena arise from distortions of this phase field.
-
-| Phenomenon | TCWT interpretation |
-|------------|--------------------|
-| matter | phase knots |
-| gravity | phase gradients |
-| dark matter | opaque phase knots |
-| dark energy | ghost leakage |
-| gravitational waves | Hum phase disturbances |
+Version: 2026.9  
+Status: Core theoretical framework
 
 ---
 
-# 2. Fundamental Fields
+# 1. Fields
 
-TCWT contains three scalar fields.
+Total Coherence Wave Theory describes spacetime and matter as excitations of a coherent phase field called the **Hum**.
 
-| Field | Meaning |
-|------|------|
-| θ(x,t) | coherence phase field |
-| Ω(x,t) | informational drag density |
+The fundamental degrees of freedom are:
+
+| Field | Description |
+|------|-------------|
+| θ(x,t) | Hum phase field |
+| Ω(x,t) | local oscillation frequency |
 | G(x,t) | ghost leakage field |
 
-Derived quantity:
-
-λ = ∇θ
-
-This phase gradient produces gravitational acceleration.
-
 ---
 
-# 3. Hum Vacuum
+# 2. Hum Vacuum
 
-The vacuum state is a coherent oscillation
+The coherent vacuum state is defined by
 
 θ₀(t) = Ω_hum t
 
-Perturbations produce physical structures
+where Ω_hum is the fundamental Hum frequency.
 
-θ(x,t) = θ₀(t) + δθ(x,t)
-
----
-
-# 4. Unified TCWT Lagrangian
-
-The complete TCWT Lagrangian density is
-
-L =  
-C₀ (∂ₜθ − Ω)²  
-+ κ a₀² F(|∇θ|² / a₀²)  
-+ α (∂ₜG − ∇²θ)²  
-− VΩ(Ω)
-
-Each term describes a fundamental physical process.
+Small deviations from this state produce physical phenomena.
 
 ---
 
-# 5. Phase Gradient Function
+# 3. Master Lagrangian
 
-The nonlinear gradient term is
+The TCWT dynamics are defined by the Lagrangian density
 
-F(x) = x + (2/3)x^(3/2)
-
-Thus
-
-L_grad =
-κ (∇θ)²
-+
-(2κ/3a₀)|∇θ|³
-
-This produces two regimes:
-
-| Regime | Behavior |
-|------|------|
-| |∇θ| ≫ a₀ | Newtonian gravity |
-| |∇θ| ≪ a₀ | MOND-like dynamics |
-
----
-
-# 6. Ω-Cap Potential
-
-The informational drag field is bounded by
-
-VΩ(Ω) = (λΩ/4)(Ω² − Ω_max²)²
-
-This prevents runaway gradients and removes singularities.
-
----
-
-# 7. Action
-
-The action is
-
-S = ∫ L d³x dt
-
-Field equations follow from
-
-δS = 0
-
----
-
-# 8. Phase Field Equation
-
-Varying the action with respect to θ gives
-
-2C₀ ∂ₜ(∂ₜθ − Ω)
-− ∇·[ κ μ(|∇θ|/a₀) ∇θ ]
-+ 2α ∇²(∂ₜG − ∇²θ)
-= 0
+L = C₀ (∂ₜθ − Ω)²
+  − κ a₀² F(|∇θ|² / a₀²)
+  − α (∂ₜG − ∇²θ)²
+  − V_Ω(Ω)
 
 where
 
-μ(x) = 1 + x
-
-is the MOND interpolation function.
-
----
-
-# 9. Informational Drag Equation
-
-Variation with respect to Ω gives
-
-−2C₀(∂ₜθ − Ω) − dVΩ/dΩ = 0
-
-Low-energy regime
-
-Ω ≈ ∂ₜθ
-
-At the cap
-
-Ω → Ω_max
+C₀ = temporal coherence constant  
+κ = spatial phase stiffness  
+a₀ = MOND acceleration scale
 
 ---
 
-# 10. Ghost Field Equation
+# 4. Gradient Function
 
-Variation with respect to G gives
+The nonlinear gradient function is chosen as
 
-∂ₜ[2α(∂ₜG − ∇²θ)] = 0
+F(x) = x + (2/3)x^(3/2)
 
-Low-energy approximation
-
-∂ₜG ≈ ∇²θ
-
-This produces slow curvature leakage associated with dark energy.
+This form produces MOND-like behaviour in the weak-field limit.
 
 ---
 
-# 11. Emergent Gravity
+# 5. Field Equations
 
-Define gravitational acceleration
+Applying the Euler–Lagrange equation
 
-a = −χ ∇θ
+∂L/∂θ − ∂μ(∂L/∂(∂μθ)) = 0
+
+yields the Hum phase equation
+
+2C₀ ∂ₜ(∂ₜθ − Ω)
+− ∇·[κ μ(|∇θ|/a₀) ∇θ]
++ 2α ∇²(∂ₜG − ∇²θ)
+= 0
 
 with
 
-χ = c² κ / (C₀ Ω_max)
-
-This connects phase gradients to observable gravity.
+μ(x) = 1 + x
 
 ---
 
-# 12. Newtonian Limit
+# 6. Newtonian Limit
 
-In strong-field regions
+For strong fields
 
 |∇θ| ≫ a₀
 
-the gradient function reduces to
+the interpolation function approaches
 
-F(x) ≈ x
+μ → 1
 
-giving
+The field equation reduces to
 
-κ ∇²θ = ρ
+∇²θ = ρ / κ
 
-Define gravitational potential
+which produces the standard Newtonian acceleration
 
-Φ = χ θ
-
-Then
-
-∇²Φ = 4π G ρ
-
-which reproduces Newtonian gravity.
+a = −χ ∇θ
 
 ---
 
-# 13. MOND Galactic Limit
+# 7. MOND Regime
 
-In weak fields
+For weak fields
 
 |∇θ| ≪ a₀
 
-the cubic term dominates
+the equation becomes
 
-giving
+∇·[(|∇θ|/a₀) ∇θ] = ρ
 
-∇ · ( |∇θ| ∇θ ) ∝ ρ
-
-For spherical symmetry
-
-∇θ ∝ 1/r
-
-which produces
-
-a ∝ 1/r
-
-and therefore
-
-v ≈ constant
-
-This explains flat galaxy rotation curves.
+which produces flat galactic rotation curves.
 
 ---
 
-# 14. Gravitational Waves (Hum Waves)
+# 8. Matter Knots
 
-Small perturbations
-
-δθ
-
-satisfy
-
-∂ₜ² δθ − c² ∇² δθ = 0
-
-These waves propagate at the speed of light.
-
-They correspond to **coherent disturbances of the Hum field**.
-
-Observers detect them as spacetime strain.
-
----
-
-# 15. Knot Matter
-
-Matter corresponds to localized phase structures
+Localized matter corresponds to stable phase solitons
 
 θ_knot(r) = Θ₀ exp(−r² / 2R²)
 
-These structures carry energy
-
-E = ∫ κ (∇θ)² d³x
-
-and behave as particle-like solitons.
+These structures represent particles and astrophysical objects.
 
 ---
 
-# 16. Dark Matter
+# 9. Gravitational Waves
 
-Regions where
+Linear perturbations of the phase field
 
-|∇θ| ≳ Ω_max / κ
+θ = θ₀ + δθ
 
-become phase opaque.
+produce wave solutions
 
-These structures interact gravitationally but weakly with radiation.
+□ δθ = 0
 
-They behave observationally like dark matter halos.
-
----
-
-# 17. Dark Energy
-
-Ghost leakage produces a small residual vacuum pressure.
-
-Energy density
-
-ρ_DE ≈ (1/2) m_G² G²
-
-This drives slow cosmic expansion.
+which propagate at the Hum propagation speed c.
 
 ---
 
-# 18. Singularities Avoided
+# 10. Ghost Leakage
 
-The Ω-cap enforces
+The ghost field obeys
 
-|∇θ| ≤ Ω_max / κ
+∂ₜ[2α(∂ₜG − ∇²θ)] = 0
 
-Therefore gravitational collapse cannot produce infinite density.
+which implies
 
-Black holes correspond to saturated phase knots.
+∂ₜG ≈ ∇²θ
 
----
+in the low-energy regime.
 
-# 19. Cosmological Evolution
-
-The universe evolves through phases of Hum distortion.
-
-Hum vacuum  
-→ phase instability  
-→ knot formation  
-→ energy release (Big Bang)  
-→ matter dominated epoch  
-→ knot relaxation
-
-Entropy corresponds to the gradual **unwinding of phase knots**.
+This mechanism allows slow leakage of curvature energy and is associated with dark energy.
 
 ---
 
-# 20. Master Equation
+# 11. Interpretation
 
-The full dynamics of the universe in TCWT are governed by the Lagrangian
+TCWT interprets physical phenomena as distortions of the Hum phase field:
 
-L =  
-C₀ (∂ₜθ − Ω)²  
-+ κ a₀² F(|∇θ|² / a₀²)  
-+ α (∂ₜG − ∇²θ)²  
-− VΩ(Ω)
+| Phenomenon | Interpretation |
+|------------|---------------|
+| Matter | stable phase knots |
+| Gravity | phase-gradient acceleration |
+| Dark Matter | opaque phase distortions |
+| Dark Energy | ghost leakage |
+| Gravitational Waves | Hum phase oscillations |
 
-from which emerge:
+---
 
-- matter
-- gravity
-- dark matter
-- dark energy
-- gravitational waves
+# 12. Cosmological Picture
 
-as collective behaviors of the underlying **Hum coherence field**.
+The universe emerges from large-scale phase instabilities in the Hum field.
+
+Over cosmological time the phase structure relaxes, gradually returning the universe to a coherent Hum vacuum.
