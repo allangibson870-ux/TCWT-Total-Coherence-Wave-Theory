@@ -1,377 +1,367 @@
-# TCWT Lagrangian Formulation
-### Corrected Field Theory Formulation
+# TCWT Field Theory
+## Pregeometric Lagrangian, Hum Vacuum, and Knot Matter
 
-Version: 2026.5  
-Author: A. Gibson  
-Revision: mathematical consistency update
+Version: 2026.6  
+Status: consolidated and mathematically corrected formulation
 
 ---
 
-# 1. Core Fields
+# 1. Overview
 
-TCWT is formulated in terms of three scalar fields defined on an emergent spacetime manifold in the low-energy limit.
+**Total Coherence Wave Theory (TCWT)** describes the universe as a nonlinear coherence field whose ground state is an eternal oscillation known as the **Hum**.
+
+In this framework:
+
+| Concept | Interpretation |
+|------|------|
+| Hum | coherent phase vacuum |
+| knots | localized phase structures (matter) |
+| phase gradients | gravity |
+| ghost leakage | dark energy |
+| opaque knots | dark matter |
+
+Spacetime and gravity emerge from the dynamics of a fundamental phase field.
+
+---
+
+# 2. Fundamental Fields
+
+TCWT uses three scalar fields:
 
 | Field | Meaning |
-|------|--------|
-| $\theta(x,t)$ | temporal phase field |
-| $G(x,t)$ | ghost / leakage field |
-| $\Omega(x,t)$ | informational drag density |
+|------|------|
+| θ(x,t) | coherence phase field |
+| Ω(x,t) | informational drag density |
+| G(x,t) | ghost / leakage regulator |
 
 Derived quantity:
 
-$$
-\lambda = \nabla \theta
-$$
+λ = ∇θ
 
 which represents the **phase gradient responsible for gravitational acceleration**.
 
 ---
 
-# 2. Lagrangian Density
+# 3. The Hum Vacuum
 
-The TCWT Lagrangian density is
+The vacuum state of the theory is not a zero field.
 
-$$
-\mathcal{L}
-=
-C_0(\dot{\theta}-\Omega)^2
-+
-\kappa (\nabla\theta)^2
-+
-\alpha (\dot G - \nabla^2 \theta)^2
--
-V_{\Omega}(\Omega)
-$$
+Instead the universe exists in a coherent oscillatory ground state:
 
-where
+θ₀(t) = Ω_hum t
 
-| Parameter | Meaning |
-|----------|--------|
-| $C_0$ | temporal coherence coefficient |
-| $\kappa$ | spatial phase stiffness |
-| $\alpha$ | ghost-coupling strength |
+where:
 
-The Ω-cap potential limits informational drag:
+| Symbol | Meaning |
+|------|------|
+| Ω_hum | intrinsic hum frequency |
 
-$$
-V_{\Omega}(\Omega)
-=
-\frac{\lambda_\Omega}{4}
-(\Omega^2-\Omega_{max}^2)^2
-$$
+Physical phenomena arise from perturbations:
 
-This prevents runaway gradients.
+θ(x,t) = θ₀(t) + δθ(x,t)
 
 ---
 
-# 3. Action
+# 4. TCWT Lagrangian Density
+
+The pregeometric Lagrangian density is
+
+L =
+C₀(θ̇ − Ω)²  
++ κ(∇θ)²  
++ α(Ġ − ∇²θ)²  
+− VΩ(Ω)
+
+Parameters:
+
+| Constant | Meaning |
+|------|------|
+| C₀ | temporal coherence |
+| κ | spatial phase stiffness |
+| α | ghost-coupling strength |
+
+---
+
+# 5. Ω-Cap Potential
+
+The informational drag field is limited by a cap potential:
+
+VΩ(Ω) = (λΩ / 4)(Ω² − Ω_max²)²
+
+This term prevents runaway gradients and removes singularities.
+
+---
+
+# 6. Action
 
 The action is
 
-$$
-S =
-\int \mathcal{L}\, d^3x\, dt
-$$
+S = ∫ L d³x dt
 
-Stationary action condition:
+Field equations follow from
 
-$$
-\delta S = 0
-$$
-
-which yields the field equations.
+δS = 0
 
 ---
 
-# 4. Euler–Lagrange Equations
+# 7. Euler–Lagrange Equations
 
-For a field $\phi$:
+For a field φ:
 
-$$
-\frac{\partial \mathcal L}{\partial \phi}
--
-\partial_\mu
-\left(
-\frac{\partial \mathcal L}{\partial(\partial_\mu \phi)}
-\right)
-+
-\partial_\mu\partial_\nu
-\left(
-\frac{\partial \mathcal L}{\partial(\partial_\mu\partial_\nu \phi)}
-\right)
-=0
-$$
+∂L/∂φ − ∂μ(∂L/∂(∂μφ)) + ∂μ∂ν(∂L/∂(∂μ∂νφ)) = 0
+
+Second derivatives appear due to the ∇²θ term.
 
 ---
 
-# 5. Phase Field Equation
+# 8. Phase Field Equation
 
-Applying the Euler–Lagrange equation to $\theta$ gives
+Variation with respect to θ gives
 
-$$
-\partial_t
-\big[2C_0(\dot\theta-\Omega)\big]
--
-\nabla\!\cdot
-\big[2\kappa\nabla\theta\big]
-+
-\nabla^2
-\big[2\alpha(\dot G-\nabla^2\theta)\big]
-=
-0
-$$
+∂t[2C₀(θ̇ − Ω)]  
+− ∇·[2κ∇θ]  
++ ∇²[2α(Ġ − ∇²θ)] = 0
 
 This governs propagation of the **Hum phase field**.
 
 ---
 
-# 6. Ω Evolution Equation
+# 9. Informational Drag Equation
 
-Variation with respect to $\Omega$ yields
+Variation with respect to Ω gives
 
-$$
--2C_0(\dot\theta-\Omega)
--
-\frac{dV_\Omega}{d\Omega}
-=
-0
-$$
+−2C₀(θ̇ − Ω) − dVΩ/dΩ = 0
 
-Low-energy regime (cap inactive):
+Low-energy regime:
 
-$$
-\Omega \approx \dot{\theta}
-$$
+Ω ≈ θ̇
 
-Thus the auxiliary field tracks the temporal phase rate.
+When the cap is reached:
+
+Ω → Ω_max
 
 ---
 
-# 7. Ghost Field Equation
+# 10. Ghost Field Equation
 
-Variation with respect to $G$ produces
+Variation with respect to G:
 
-$$
-\partial_t
-\big[2\alpha(\dot G - \nabla^2 \theta)\big]
-=
-0
-$$
+∂t[2α(Ġ − ∇²θ)] = 0
 
-Low-energy limit:
+Low-energy approximation:
 
-$$
-\dot G \approx \nabla^2 \theta
-$$
+Ġ ≈ ∇²θ
 
-The ghost field therefore acts as a **leakage regulator for phase curvature**.
+This field regulates curvature leakage.
 
 ---
 
-# 8. Effective Gravitational Acceleration
+# 11. Conserved Phase Flux
 
-The phase gradient generates acceleration:
+The Lagrangian is invariant under a global phase shift
 
-$$
-a = -\chi \nabla \theta
-$$
-
-with coupling constant
-
-$$
-\chi =
-\frac{c^2 \kappa}{C_0 \Omega_{max}}
-$$
-
-This connects the **field theory to orbital dynamics**.
-
----
-
-# 9. Noether Current
-
-The Lagrangian is invariant under the global phase shift
-
-$$
-\theta \rightarrow \theta + \epsilon
-$$
+θ → θ + ε
 
 The Noether current is
 
-$$
-J^\mu
-=
-\frac{\partial \mathcal L}{\partial(\partial_\mu \theta)}
-$$
+J^μ = ∂L / ∂(∂_μ θ)
 
-Temporal component:
+Components:
 
-$$
-J^0 = 2C_0(\dot\theta-\Omega)
-$$
+J⁰ = 2C₀(θ̇ − Ω)
 
-Spatial component:
-
-$$
-\vec J = 2\kappa \nabla \theta
-$$
+J⃗ = 2κ∇θ
 
 Conservation law:
 
-$$
-\partial_\mu J^\mu = 0
-$$
+∂_μ J^μ = 0
 
-This expresses **conservation of global phase flux**.
+This represents conservation of **global phase flux**.
 
 ---
 
-# 10. Hamiltonian Density
+# 12. Hamiltonian Density
 
 Canonical momenta:
 
-$$
-\pi_\theta = 2C_0(\dot\theta-\Omega)
-$$
+π_θ = 2C₀(θ̇ − Ω)
 
-$$
-\pi_G = 2\alpha(\dot G-\nabla^2\theta)
-$$
+π_G = 2α(Ġ − ∇²θ)
 
 Hamiltonian density:
 
-$$
-\mathcal H
-=
-\pi_\theta \dot\theta
-+
-\pi_G \dot G
--
-\mathcal L
-$$
-
-which simplifies to
-
-$$
-\mathcal H =
-C_0(\dot\theta-\Omega)^2
-+
-\kappa (\nabla\theta)^2
-+
-\alpha(\dot G-\nabla^2\theta)^2
-+
-V_\Omega(\Omega)
-$$
+H =
+C₀(θ̇ − Ω)²  
++ κ(∇θ)²  
++ α(Ġ − ∇²θ)²  
++ VΩ(Ω)
 
 All terms are non-negative:
 
-$$
-\mathcal H \ge 0
-$$
+H ≥ 0
 
-ensuring **vacuum stability**.
+ensuring vacuum stability.
 
 ---
 
-# 11. Low-Energy Limit
+# 13. Knot Solutions (Matter)
 
-In vacuum:
+Matter corresponds to **localized phase structures** in the coherence field.
 
-$$
-\Omega \rightarrow 0
-$$
+Example radial ansatz:
 
-$$
-G \rightarrow 0
-$$
+θ_knot(r) = Θ₀ exp(−r² / 2R²)
 
-The phase equation reduces to
+Energy arises from gradient energy:
 
-$$
-C_0 \ddot\theta
--
-\kappa \nabla^2 \theta
-=
-0
-$$
+E = ∫ κ(∇θ)² d³x
 
-This is a wave equation:
-
-$$
-\ddot\theta - c_{eff}^2 \nabla^2\theta = 0
-$$
-
-with effective speed
-
-$$
-c_{eff} = \sqrt{\kappa/C_0}
-$$
-
-Identifying
-
-$$
-c_{eff} = c
-$$
-
-yields the emergent Lorentz-invariant limit.
+These structures behave as **particle-like solitons**.
 
 ---
 
-# 12. Physical Interpretation
+# 14. Knot Stability
 
-| Field | Interpretation |
-|------|---------------|
-| $\theta$ | background Hum phase |
-| $\Omega$ | informational drag |
-| $G$ | ghost leakage / vacuum relaxation |
+A stable knot occurs when
 
-Gravity emerges because **phase gradients accelerate knots embedded in the field**.
+dE/dR = 0
 
----
+The Ω-cap imposes a minimum size:
 
-# 13. Connection to Orbital Dynamics
+R_crit ~ κ / Ω_max
 
-The orbital mechanics document derives
-
-$$
-\lambda = \frac{v^2}{\chi r}
-$$
-
-which determines the phase field around astrophysical objects.
-
-This connects the **microscopic Lagrangian** to **macroscopic gravitational motion**.
+Knots smaller than this radius cannot exist.
 
 ---
 
-# 14. Summary
+# 15. Gravity as Phase Gradient
 
-The TCWT field theory consists of
+Define
 
-- phase field $\theta$
-- auxiliary drag field $\Omega$
-- ghost leakage field $G$
+λ = ∇θ
 
-governed by the Lagrangian
+Acceleration of matter:
 
-$$
-\mathcal L =
-C_0(\dot{\theta}-\Omega)^2
-+
-\kappa (\nabla\theta)^2
-+
-\alpha (\dot G - \nabla^2\theta)^2
--
-V_\Omega(\Omega)
-$$
+a = −χ∇θ
 
-Key consequences:
+The coupling constant
 
-- wave-like propagation of the phase field  
-- conserved phase current  
-- bounded energy density  
-- emergent gravitational acceleration  
+χ = (c² κ) / (C₀ Ω_max)
 
-$$
-a = -\chi \nabla\theta
-$$
+connects the field theory to gravitational dynamics.
 
-which reproduces Newtonian gravity in the appropriate limit.
+---
+
+# 16. Black Holes Without Singularities
+
+In TCWT singularities cannot form.
+
+Instead a black hole corresponds to a saturated knot where
+
+|∇θ| → Ω_max / κ
+
+The Ω-cap prevents further growth.
+
+This produces a **phase-opaque region** rather than infinite density.
+
+---
+
+# 17. Dark Matter
+
+Dark matter corresponds to **phase-opaque knots** where
+
+|∇θ| ≳ Ω_max / κ
+
+These structures:
+
+- produce gravitational fields
+- interact weakly with radiation
+- remain stable over cosmological times.
+
+---
+
+# 18. Dark Energy
+
+Slow relaxation of phase curvature through the ghost field produces vacuum pressure.
+
+Low-energy relation:
+
+Ġ ≈ ∇²θ
+
+This leakage acts as a small background expansion force.
+
+---
+
+# 19. Cosmological Interpretation
+
+The universe evolves through phases of knot formation and decay.
+
+Hum (coherent vacuum)  
+↓  
+Phase instability  
+↓  
+Rapid knot formation  
+↓  
+Energy release (Big Bang)  
+↓  
+Matter-dominated universe  
+↓  
+Gradual knot unwinding  
+↓  
+Return toward Hum coherence
+
+The Big Bang therefore represents a **large-scale phase instability**, not a singular origin.
+
+---
+
+# 20. Entropy in TCWT
+
+The Hum is the most ordered state of the system.
+
+Knots store distortion energy in the phase field.
+
+Entropy corresponds to **knot relaxation**:
+
+E_knot → 0
+
+The long-term evolution of the universe tends toward the coherent background state.
+
+---
+
+# 21. Covariant Formulation (Recommended)
+
+For relativistic symmetry the Lagrangian can be written as
+
+C(∂_μθ − U_μ)²
+
+where
+
+U_μ = (Ω_hum, 0, 0, 0)
+
+represents the background Hum flow.
+
+This preserves Lorentz symmetry in the low-energy limit.
+
+---
+
+# 22. Summary
+
+TCWT describes reality as a **coherence field** with an oscillatory vacuum.
+
+From this structure emerge:
+
+- matter as phase knots
+- gravity from phase gradients
+- dark matter from opaque knots
+- dark energy from ghost leakage
+- a cosmology driven by knot formation and decay
+
+The governing Lagrangian remains
+
+L =
+C₀(θ̇ − Ω)²  
++ κ(∇θ)²  
++ α(Ġ − ∇²θ)²  
+− VΩ(Ω)
+
+from which the observable universe emerges as a dynamic structure within the background **Hum**.
