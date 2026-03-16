@@ -4,20 +4,20 @@ These are the main testable predictions and anomalies TCWT currently explains or
 
 ### 1. Near-term / Existing Instruments (2025–2027)
 
-**Solar Superflare “Ping” Test (Solar Cycle 25 peak, 2026–2027)**  
-- **Prediction**: 5–10 s pre-light phase-warning jitter (δf/f ≈ 10⁻¹⁸ – 10⁻¹⁷) in high-precision atomic clocks (NIST/FOCS or GPS network) before X-ray peak of X1+ flares.  
-- **Signature**: Clock jitter arrives before GOES X-ray detection (8.3 min light delay).  
-- **Falsification**: No detectable jitter during multiple strong flares → constrains non-local phase propagation.  
-- **Status**: Strongest near-term smoking-gun candidate.
 
-**Auroral Pre-light Jitter**  
-- **Prediction**: Tiny magnetometer or clock jitter 3–15 s before visible auroral onset during strong geomagnetic storms.  
-- **Signature**: Phase-viscosity ripple from solar knot unwinding.  
-- **Falsification**: No pre-onset signal in polar station data (SuperDARN, INTERMAGNET).  
+The TCWT Master Lagrangian predicts that major solar eruptions are preceded by a local collapse of the coherence field ($\Psi$) before the electromagnetic stress-energy tensor ($T_{\mu\nu}$) manifests. This is not "faster-than-light" signaling, but a **pre-metric phase transition** in the vacuum.
 
-**Ice Slipperiness Transition**  
-- **Prediction**: Sharp friction coefficient drop between –12 °C and –8 °C in vacuum tribology experiments (phase-opaque micro-knot layer activates).  
-- **Falsification**: No sharp transition; friction remains high or changes smoothly.
+#### The "March 2026" Calibration Event
+Recent observations of the **M1.2 flare (March 15, 2026)** and the **X8.3 flare (Feb 1, 2026)** suggest a non-linear relationship between flare magnitude and phase jitter:
+
+1.  **Phase-Warning Jitter ($\delta f/f$):** High-precision atomic clocks (e.g., Sr-lattice or Thorium-229) should exhibit a transient frequency "flicker" ($\approx 10^{-18} – 10^{-17}$) roughly **5–10 seconds** before the GOES X-ray onset.
+2.  **Coherence vs. Entropy:** Unlike previous "Superflare Ping" models, the updated TCWT math suggests that **compact, high-coherence flares** (M-class) may produce a clearer signature than **turbulent, high-entropy flares** (X-class), due to the damping of the $\Psi$ field in chaotic magnetic topologies.
+3.  **Gravitational Coupling:** The jitter is theorized to be the high-frequency longitudinal component of the emergent metric, detectable as a **synchronous frequency shift** across the global GNSS and optical clock network, independent of the signal's line-of-sight propagation.
+
+#### Falsification Criteria
+The theory is falsified if high-rate (20Hz+) clock comparison data during a compact M5+ flare shows a noise floor stability of $<10^{-19}$ without any detectable sub-second transients in the 10-second pre-light window.
+
+
 
 ### 2. Mid-term / Upcoming Missions & Arrays (2026–2030)
 
