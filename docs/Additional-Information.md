@@ -401,3 +401,38 @@ without invoking dark matter particles.
 These effects arise from nonlinear coherence behavior of the Hum phase field.
 
 General Relativity therefore appears as an effective macroscopic description of the underlying Hum coherence field.
+
+# TCWT Parameter to Observable Mapping
+
+This table relates the fundamental constants of the TCWT Lagrangian to measurable physical quantities.
+
+---
+
+| TCWT Parameter | Physical Meaning | Derived Observable | Approximate Value |
+|----------------|------------------|-------------------|------------------|
+| κ / C₀ | phase stiffness ratio | speed of light | c² = κ / C₀ |
+| χ | phase-gradient coupling | gravitational strength | GM scale |
+| a₀ | nonlinear gradient scale | MOND acceleration | 1.2×10⁻¹⁰ m/s² |
+| Ω_hum | Hum oscillation frequency | cosmic expansion scale | ~10⁻¹⁸ s⁻¹ |
+| α | ghost leakage coupling | dark energy evolution | cosmological timescale |
+| Ω_max | coherence saturation | black-hole / knot limit | theory dependent |
+
+---
+
+## Derived Relations
+
+Speed of light
+
+c² = κ / C₀
+
+MOND scale
+
+a₀ ≈ c Ω_hum
+
+Cosmic expansion rate
+
+H₀ ≈ Ω_hum
+
+Dark energy density
+
+ρ_DE ~ ½ m_G² G²
