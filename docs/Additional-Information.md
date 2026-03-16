@@ -436,3 +436,19 @@ H₀ ≈ Ω_hum
 Dark energy density
 
 ρ_DE ~ ½ m_G² G²
+
+## Emergent Metric in TCWT
+
+The spacetime metric arises from gradients of the Hum phase field.
+
+g_{μν} = η_{μν} + β ∂_μθ ∂_νθ
+
+where
+
+η_{μν} is the Minkowski background metric and β is a coupling constant.
+
+In the weak-field limit this produces the effective gravitational potential
+
+Φ = χ θ
+
+which reproduces Newtonian gravity and gravitational lensing.
