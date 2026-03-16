@@ -1,145 +1,184 @@
 # TCWT Gravitational Waves
-## Hum Perturbations and Phase Wave Propagation
+### Hum Perturbations and Phase Wave Propagation
 
-Version: 2026.7  
+Version: 2026.8  
 Status: Weak-field wave derivation
 
 ---
 
 # 1. Conceptual Picture
 
-In Total Coherence Wave Theory the universe exists within a coherent oscillatory background called the **Hum**.
+In **Total Coherence Wave Theory (TCWT)** the universe exists within a coherent oscillatory background known as the **Hum**.
 
-The vacuum state is
+The vacuum phase state is
 
 θ₀(t) = Ω_hum t
 
-Localized phase structures ("knots") distort this background field.
+where Ω_hum is the background coherence frequency.
 
-When knots accelerate or interact, they produce **propagating disturbances in the Hum phase field**.
+Localized phase structures ("knots") distort this background field.  
+When knots accelerate or interact, they generate propagating disturbances in the Hum phase field.
 
-These disturbances correspond to **gravitational waves**.
+These propagating disturbances correspond to **gravitational waves**.
 
 ---
 
 # 2. Perturbation Expansion
 
-Write the phase field as
+Write the phase field as a background plus perturbation
 
 θ(x,t) = θ₀(t) + δθ(x,t)
 
 where
 
-θ₀ = background Hum oscillation  
-δθ = small phase disturbance
+θ₀(t) = background Hum oscillation  
+δθ(x,t) = small phase perturbation
 
-Assume
+Assume the perturbation is small
 
-|δθ| ≪ θ₀
+|δθ| ≪ |θ₀|
 
 so linear perturbation theory applies.
 
 ---
 
-# 3. Linearized TCWT Lagrangian
+# 3. TCWT Lagrangian
 
-Starting from the TCWT Lagrangian
+The relevant TCWT Lagrangian is
 
-L =
-C₀(∂ₜθ − Ω)²
-+ κ(∇θ)²
-+ α(∂ₜG − ∇²θ)²
-− VΩ(Ω)
+L = C₀ (∂ₜθ − Ω)² − κ (∇θ)² + α (∂ₜG − ∇²θ)² − V_Ω(Ω)
 
-expand around the vacuum solution.
+where
 
-In the low-energy regime
+C₀ = temporal coherence stiffness  
+κ = spatial phase stiffness  
+α = ghost-field coupling  
+Ω = local coherence frequency  
+G = ghost leakage field
 
-Ω ≈ ∂ₜθ
+---
 
-and
+# 4. Background Solution
+
+The vacuum Hum solution satisfies
+
+Ω ≈ ∂ₜθ₀
+
+and in equilibrium
 
 ∂ₜG ≈ ∇²θ
 
-The dominant terms reduce to
+Substituting
 
-L ≈ C₀(∂ₜδθ)² − κ(∇δθ)²
+θ = θ₀ + δθ
+
+and keeping only first-order terms gives the linearized Lagrangian
+
+L ≈ C₀ (∂ₜδθ)² − κ (∇δθ)²
+
+Higher-order nonlinear terms are negligible in the weak-field regime.
 
 ---
 
-# 4. Wave Equation
+# 5. Wave Equation
 
-Applying the Euler–Lagrange equation gives
+Applying the Euler–Lagrange equation
+
+∂ₜ(∂L/∂(∂ₜδθ)) + ∇·(∂L/∂(∇δθ)) = 0
+
+gives
 
 C₀ ∂ₜ² δθ − κ ∇² δθ = 0
 
-This is a standard wave equation
+This is the standard scalar wave equation.
+
+---
+
+# 6. Propagation Speed
+
+The equation can be written
 
 ∂ₜ² δθ − v² ∇² δθ = 0
 
-with wave speed
+with propagation speed
 
 v = √(κ / C₀)
 
----
-
-# 5. Identification with Light Speed
-
-To match observations we require
+Observations require gravitational waves to travel at the speed of light, therefore
 
 v = c
 
-Therefore
+which implies the parameter relation
 
 κ / C₀ = c²
 
-This fixes the relation between the temporal and spatial coherence constants.
+This constraint links the spatial and temporal coherence constants of the Hum field.
 
 ---
 
-# 6. Interpretation
+# 7. Wave Solutions
 
-Solutions of the wave equation take the form
+Plane-wave solutions take the form
 
 δθ = A exp[i(k·x − ωt)]
 
-These represent **propagating phase ripples in the Hum field**.
+with dispersion relation
 
-The waves carry energy
+ω = c |k|
 
-E ∝ (∂ₜδθ)² + (∇δθ)²
-
-and transport phase curvature across spacetime.
+These represent propagating phase disturbances of the Hum background.
 
 ---
 
-# 7. Source of Waves
+# 8. Energy Density
 
-Accelerating knots generate time-dependent phase gradients.
+The energy density carried by Hum waves is
 
-The effective source term can be written
+ρ_wave = C₀ (∂ₜδθ)² + κ (∇δθ)²
+
+This describes the local coherence energy stored in the phase disturbance.
+
+---
+
+# 9. Energy Flux
+
+The energy flux vector is
+
+S = −κ (∂ₜδθ) ∇δθ
+
+This plays a role analogous to the Poynting vector in electromagnetism and describes the transport of coherence energy through space.
+
+---
+
+# 10. Wave Sources
+
+Accelerating phase knots generate time-dependent phase gradients.
+
+The wave equation with a source becomes
 
 ∇²δθ − (1/c²) ∂ₜ²δθ = S(x,t)
 
 where
 
-S(x,t) represents time-varying knot density.
+S(x,t)
+
+represents the time-varying density of phase knots.
 
 Binary systems therefore generate coherent Hum disturbances.
 
 ---
 
-# 8. Relation to Observed Gravitational Waves
+# 11. Relation to Observed Gravitational Waves
 
-In General Relativity gravitational waves are metric perturbations
+In General Relativity gravitational waves correspond to metric perturbations
 
 g_μν = η_μν + h_μν
 
-In TCWT the perturbation arises instead from the phase field
+In TCWT the fundamental disturbance is instead the phase perturbation
 
 δθ
 
-Metric perturbations emerge indirectly through the induced metric relation
+The effective spacetime metric emerges from the phase gradients
 
 g_μν ∝ ∂_μθ ∂_νθ
 
@@ -147,49 +186,30 @@ Thus phase waves appear as spacetime distortions to macroscopic observers.
 
 ---
 
-# 9. Energy Flux
-
-The energy density carried by Hum waves is
-
-ρ_wave =
-C₀ (∂ₜδθ)²
-+
-κ (∇δθ)²
-
-The Poynting-like flux vector is
-
-S = −κ (∂ₜδθ) ∇δθ
-
-This describes the transport of coherence energy through spacetime.
-
----
-
-# 10. Detection
+# 12. Detection
 
 Large astrophysical events such as binary mergers create strong disturbances in the phase field.
 
-These disturbances propagate across the Hum vacuum and can be detected as spacetime strain.
+These disturbances propagate through the Hum vacuum and produce measurable spacetime strain.
 
-Experiments that observe such waves include
+Experiments detecting such waves include
 
 - LIGO
 - Virgo
 - KAGRA
 
-In TCWT these detections correspond to measuring **phase disturbances of the Hum background**.
+In TCWT these instruments measure passing **Hum phase perturbations**.
 
 ---
 
-# 11. Summary
+# 13. Summary
 
-Gravitational waves in TCWT are
+Gravitational waves in TCWT are coherent phase disturbances of the Hum field.
 
-coherent phase disturbances of the Hum field.
-
-They arise from the linearized phase equation
+They obey the wave equation
 
 ∂ₜ² δθ − c² ∇² δθ = 0
 
 and propagate at the speed of light.
 
-Macroscopic observers interpret these waves as metric distortions, but their fundamental origin lies in the dynamics of the coherence phase field.
+Macroscopic observers interpret these waves as metric distortions, but their fundamental origin lies in the dynamics of the underlying coherence phase field.
