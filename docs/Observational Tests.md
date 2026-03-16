@@ -55,6 +55,32 @@ The theory is falsified if high-rate (20Hz+) clock comparison data during a comp
 - **Prediction**: Configuration- and path-dependent residuals from Ω-drag and logarithmic θ(r) accumulation.  
 - **Falsification**: No residuals beyond GR at 10⁻¹⁹ stability across all paths and frequencies.
 
+- ## Testable Predictions of TCWT
+
+TCWT predicts several observable deviations from standard cosmology.
+
+### 1. Outer Galaxy Rotation Curves
+
+Phase-viscosity of the Hum field causes rotation curves to decline slightly beyond the MOND regime.
+
+v(r) ≈ (GM a₀)^(1/4) (1 − r/R_c)
+
+### 2. Gravitational Wave Dispersion
+
+Hum coherence corrections modify the wave equation
+
+∂ₜ²δθ − c²∇²δθ + (1/Ω_hum²)∇⁴δθ = 0
+
+leading to dispersion
+
+ω² = c²k² (1 + k²/k_c²)
+
+### 3. Cosmic Hum Coherence Signal
+
+Large-scale Hum oscillations produce a coherence modulation in early-universe 21-cm radiation
+
+δT₂₁ ∝ cos(k_hum · x)
+
 ### Summary Status
 
 - **Strongest near-term test**: Solar superflare clock jitter (2026–2027)  
