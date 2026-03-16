@@ -132,15 +132,235 @@ These represent propagating phase disturbances of the Hum background.
 
 # 8. Energy Density
 
-The energy density carried by Hum waves is
+# Total Coherence Wave Theory (TCWT)
+## A Pregeometric Phase-Field Model of Gravity, Matter, and Cosmology
 
-ρ_wave = C₀ (∂ₜδθ)² + κ (∇δθ)²
-
-This describes the local coherence energy stored in the phase disturbance.
+Author: Allan Gibson  
+Version: 2026.8 (Core Summary)
 
 ---
 
-# 9. Energy Flux
+# Abstract
+
+Total Coherence Wave Theory (TCWT) proposes that the universe emerges from a
+coherent oscillatory background field known as the **Hum**. The fundamental
+variable is a phase field θ(x,t) describing local coherence of this background.
+
+Localized topological structures ("knots") in the phase field correspond to
+matter, while gradients of the phase produce gravitational acceleration.
+Perturbations of the field propagate as waves identified with gravitational
+radiation.
+
+A nonlinear phase-stiffness term naturally produces MOND-like galaxy rotation
+curves while recovering Newtonian gravity in the strong-field limit.
+Coherence saturation prevents curvature singularities and replaces them with
+finite-density phase knots.
+
+The theory provides a unified description of matter, gravity, gravitational
+waves, and cosmological evolution within a single phase-field framework.
+
+---
+
+# 1. Fundamental Principle
+
+The universe exists within an eternal coherent oscillatory background
+called the **Hum**.
+
+The vacuum phase state is
+
+θ₀(t) = Ω_hum t
+
+where
+
+Ω_hum is the global coherence frequency.
+
+All physical phenomena arise from distortions of this phase field.
+
+---
+
+# 2. Phase Field
+
+The fundamental dynamical variable is the coherence phase
+
+θ(x,t)
+
+which describes the local state of the Hum field.
+
+The phase field admits localized stable structures that correspond
+to physical matter.
+
+---
+
+# 3. Master Lagrangian
+
+The dynamics of the phase field are governed by the TCWT master Lagrangian
+
+L =
+C₀ (∂ₜθ − Ω)²
+− κ F(|∇θ|² / a₀²)
++ α (∂ₜG − ∇²θ)²
+− V_Ω(Ω)
+
+where
+
+C₀ = temporal coherence stiffness  
+κ = spatial phase stiffness  
+a₀ = nonlinear phase scale  
+G = ghost leakage field  
+Ω = local coherence frequency  
+
+The function F(x) controls nonlinear phase response.
+
+---
+
+# 4. Field Equation
+
+Variation of the Lagrangian yields the phase field equation
+
+∇ · [ κ μ(|∇θ| / a₀) ∇θ ] = ρ
+
+where
+
+μ(x) = dF/dx
+
+represents the nonlinear response of the Hum field.
+
+---
+
+# 5. Emergence of Gravity
+
+Test particles respond to phase gradients according to
+
+a = −χ ∇θ
+
+where χ is a coupling constant relating phase gradients to
+physical acceleration.
+
+In the strong-gradient regime
+
+μ → 1
+
+and the field equation reduces to
+
+∇²Φ = 4πGρ
+
+with
+
+Φ = χθ
+
+recovering Newtonian gravity.
+
+---
+
+# 6. Galaxy Rotation Curves
+
+For small gradients
+
+|∇θ| ≪ a₀
+
+the nonlinear term produces a modified acceleration law
+
+a² = GM a₀ / r²
+
+leading to the baryonic Tully–Fisher relation
+
+v⁴ = GM a₀
+
+which produces flat galaxy rotation curves without dark matter.
+
+---
+
+# 7. Matter as Phase Knots
+
+Localized stable solutions of the phase field correspond to
+coherence knots.
+
+These structures store energy in the phase gradient
+
+ρ_knot ∝ (∇θ)²
+
+and behave as particles or compact astrophysical objects.
+
+Black holes correspond to saturated phase knots where
+
+Ω → Ω_max.
+
+---
+
+# 8. Gravitational Waves
+
+Perturbing the phase field
+
+θ = θ₀ + δθ
+
+and linearizing the Lagrangian yields the wave equation
+
+∂ₜ² δθ − c² ∇² δθ = 0
+
+with wave speed
+
+c² = κ / C₀.
+
+These phase disturbances correspond to gravitational waves.
+
+---
+
+# 9. Cosmological Evolution
+
+Large-scale evolution corresponds to global changes in
+Hum coherence.
+
+Cosmic expansion reflects the gradual decoherence of phase knots
+as the universe relaxes toward the background Hum state.
+
+Entropy corresponds to the unwinding of localized coherence
+structures.
+
+---
+
+# 10. Absence of Singularities
+
+TCWT includes a coherence saturation potential
+
+V_Ω(Ω)
+
+which diverges as
+
+Ω → Ω_max.
+
+This prevents the phase field from reaching infinite density.
+
+Gravitational collapse therefore produces finite saturated knots
+rather than curvature singularities.
+
+---
+
+# 11. Testable Predictions
+
+TCWT predicts several observable deviations from standard models:
+
+1. Slight decline of galaxy rotation curves beyond the MOND regime.
+2. Possible high-frequency dispersion of gravitational waves.
+3. Large-scale coherence signals in early-universe 21 cm radiation.
+
+---
+
+# 12. Summary
+
+Total Coherence Wave Theory describes the universe as an emergent
+structure of a coherent phase field.
+
+Matter corresponds to localized phase knots, gravity arises from
+phase gradients, and gravitational waves correspond to propagating
+phase disturbances.
+
+The framework naturally reproduces Newtonian gravity, galaxy
+rotation curves, and gravitational radiation while avoiding
+singularities through coherence saturation.
+
+---
+
+# 13. Energy Flux
 
 The energy flux vector is
 
@@ -150,7 +370,7 @@ This plays a role analogous to the Poynting vector in electromagnetism and descr
 
 ---
 
-# 10. Wave Sources
+# 14. Wave Sources
 
 Accelerating phase knots generate time-dependent phase gradients.
 
@@ -168,7 +388,7 @@ Binary systems therefore generate coherent Hum disturbances.
 
 ---
 
-# 11. Relation to Observed Gravitational Waves
+# 15. Relation to Observed Gravitational Waves
 
 In General Relativity gravitational waves correspond to metric perturbations
 
@@ -186,7 +406,7 @@ Thus phase waves appear as spacetime distortions to macroscopic observers.
 
 ---
 
-# 12. Detection
+# 16. Detection
 
 Large astrophysical events such as binary mergers create strong disturbances in the phase field.
 
@@ -202,7 +422,7 @@ In TCWT these instruments measure passing **Hum phase perturbations**.
 
 ---
 
-# 13. Summary
+# 17. Summary
 
 Gravitational waves in TCWT are coherent phase disturbances of the Hum field.
 
