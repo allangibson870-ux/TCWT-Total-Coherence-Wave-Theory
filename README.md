@@ -7,6 +7,8 @@ A coherence-based scalar framework where time is a physical wave, knots are stab
 Time is an eternal oscillating background wave (the TimeWave).  
 All matter, gravity, quantum behaviour, dark matter, and dark energy emerge from distortions (knots) and their phase leakage into this wave.
 
+
+
 ## Four Primitives
 
 - **θ** — unwinding temporal phase  
