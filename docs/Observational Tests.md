@@ -57,29 +57,94 @@ The theory is falsified if high-rate (20Hz+) clock comparison data during a comp
 
 - ## Testable Predictions of TCWT
 
-TCWT predicts several observable deviations from standard cosmology.
+## Constraints on Hum-Induced Gravitational Wave Dispersion
 
-### 1. Outer Galaxy Rotation Curves
+In TCWT the linearized phase perturbation equation receives a higher-order
+coherence correction
 
-Phase-viscosity of the Hum field causes rotation curves to decline slightly beyond the MOND regime.
+∂ₜ² δθ − c² ∇² δθ + (1 / Ω_hum²) ∇⁴ δθ = 0
 
-v(r) ≈ (GM a₀)^(1/4) (1 − r/R_c)
+This modifies the dispersion relation of gravitational waves to
 
-### 2. Gravitational Wave Dispersion
+ω² = c² k² (1 + k² / k_c²)
 
-Hum coherence corrections modify the wave equation
+where the cutoff scale is
 
-∂ₜ²δθ − c²∇²δθ + (1/Ω_hum²)∇⁴δθ = 0
+k_c = Ω_hum / c
 
-leading to dispersion
+and the corresponding coherence length is
 
-ω² = c²k² (1 + k²/k_c²)
+L_c = 1 / k_c = c / Ω_hum.
 
-### 3. Cosmic Hum Coherence Signal
+---
 
-Large-scale Hum oscillations produce a coherence modulation in early-universe 21-cm radiation
+### Observational Constraints
 
-δT₂₁ ∝ cos(k_hum · x)
+Current observations from gravitational-wave detectors show **no measurable
+dispersion** in the propagation of gravitational waves across cosmological
+distances.
+
+Measurements from detectors such as
+
+- :contentReference[oaicite:0]{index=0}  
+- :contentReference[oaicite:1]{index=1}  
+
+place strong bounds on deviations from the standard dispersion relation
+ω = ck.
+
+These constraints require
+
+k_c ≳ 10¹² m⁻¹
+
+which corresponds to a coherence length
+
+L_c ≲ 10⁻¹² m.
+
+This implies that the Hum coherence scale must lie **far above the frequency
+band currently accessible to gravitational-wave detectors**.
+
+---
+
+### Implications
+
+Because the correction term scales as
+
+(k / k_c)²
+
+the dispersion effect becomes significant only for **very large wavenumbers
+(high frequencies)**.
+
+Consequently:
+
+| Detector | Sensitivity to TCWT dispersion |
+|--------|--------------------------------|
+Ground-based detectors (10–1000 Hz) | negligible effect |
+Space detectors (mHz band) | even smaller effect |
+High-frequency GW detectors | possible detection |
+
+The TCWT dispersion effect would therefore be most visible in:
+
+- the **ringdown phase of intermediate-mass black hole mergers**
+- **future high-frequency gravitational-wave detectors**
+- next-generation observatories such as  
+  :contentReference[oaicite:2]{index=2}.
+
+---
+
+### Physical Interpretation
+
+In TCWT the dispersion arises from the **finite coherence scale of the Hum
+phase field**.
+
+At wavelengths much larger than this scale
+
+λ ≫ L_c
+
+the phase field behaves as a perfectly coherent medium and gravitational waves
+propagate at exactly the speed of light.
+
+Only when wavelengths approach the coherence scale does the underlying
+phase structure of the Hum begin to affect wave propagation.
 
 ### Summary Status
 
