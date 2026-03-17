@@ -1,5 +1,7 @@
 # TCWT — Total Coherence Wave Theory (v2026.3)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19075415.svg)](https://doi.org/10.5281/zenodo.19075415)
+
 A coherence-based scalar framework where time is a physical wave, knots are stable solitons, and gravity emerges from phase-bleed.
 
 ## Core Idea in One Sentence
