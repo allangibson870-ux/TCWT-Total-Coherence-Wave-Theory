@@ -2,7 +2,21 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19075415.svg)](https://doi.org/10.5281/zenodo.19075415)
 
-A coherence-based scalar framework where time is a physical wave, knots are stable solitons, and gravity emerges from phase-bleed.
+
+
+**Summary**  
+Total Coherence Wave Theory (TCWT) proposes that spacetime, matter, and the dark sector emerge from distortions in a global coherent oscillatory background — the Hum. Version 1.1.0 introduces the **Saturated Field Equation**, which mathematically resolves gravitational singularities by imposing a physical upper bound on phase-gradient stiffness via the Ω-Cap potential.
+
+**Key Advancements**  
+- The **Saturated Field Equation** expresses emergent spacetime curvature (R_μν) as the energy-momentum response of the phase field θ(x,t), regulated by the Ω-Cap to prevent infinite densities. This yields finite Gaussian Phase-Knots as the fundamental structure of matter.  
+- **Non-Singular Gravity**: At the knot core (r < R_crit), the phase gradient |∇θ| saturates and drops effectively to zero, eliminating infinite gravitational pull. The classical "event horizon" is replaced by a physical **Saturation Boundary** (r_sat), a finite-gradient surface.  
+- **Observed Phenomena**:  
+  - **Planetary / strong-field scale**: Recovers the Einstein / Newtonian limit for high-acceleration systems (e.g., L 98-59 d).  
+  - **Galactic scale**: Produces MOND-like flat rotation curves through nonlinear gradient amplification — no dark matter particles required.  
+  - **Extreme near-horizon scale**: Predicts **~15% excess periastron precession** for S-stars orbiting Sgr A* due to "Hum-Drag" against the saturated vacuum (consistent with observed deviations from pure GR).  
+- **Cosmological fate**: Expansion is reinterpreted as **Ghost-Leakage Relaxation** (∂ₜG ≈ ∇²θ), driving the universe toward eventual return to a state of Total Coherence — the Great Hum.
+
+TCWT offers a unified scalar-field alternative to General Relativity + dark matter/energy, with testable signatures across scales and no requirement for additional particles or higher-curvature terms.
 
 ## Core Idea in One Sentence
 
