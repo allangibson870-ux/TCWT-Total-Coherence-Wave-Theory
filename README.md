@@ -87,6 +87,9 @@ https://github.com/allangibson870-ux/TCWT-Total-Coherence-Wave-Theory/blob/main/
 
 <img width="577" height="239" alt="image" src="https://github.com/user-attachments/assets/71ed2333-a727-4825-95a1-c2c24df6f851" />
 
+<img width="1000" height="500" alt="entanglement_plot" src="https://github.com/user-attachments/assets/3311bbfe-9529-417c-baa7-7cbdb0e29d32" />
+
+
 
 
 ## LICENSE: Apache-2.0
