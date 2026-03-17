@@ -107,3 +107,19 @@ url: "https://github.com"
 license: "Apache-2.0"
 abstract: "A framework for interpreting quantum decoherence as a function of informational density (Omega) and temporal curvature."
 
+## Citation
+
+If you use TCWT in your research, please cite:
+
+```bibtex
+@software{gibson_tcwt_2026,
+  author       = {Gibson, Allan},
+  title        = {TCWT: Total Coherence Wave Theory},
+  version      = {v1.0.1},
+  year         = {2026},
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.19075415},
+  url          = {https://doi.org/10.5281/zenodo.19075415}
+}
+
+
