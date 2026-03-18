@@ -14,7 +14,7 @@ Total Coherence Wave Theory (TCWT) proposes that spacetime, matter, and the dark
   - **Planetary / strong-field scale**: Recovers the Einstein / Newtonian limit for high-acceleration systems (e.g., L 98-59 d).  
   - **Galactic scale**: Produces MOND-like flat rotation curves through nonlinear gradient amplification — no dark matter particles required.  
   - **Extreme near-horizon scale**: Predicts **~15% excess periastron precession** for S-stars orbiting Sgr A* due to "Hum-Drag" against the saturated vacuum (consistent with observed deviations from pure GR).  
-- **Cosmological fate**: Expansion is reinterpreted as **Ghost-Leakage Relaxation** (∂ₜG ≈ ∇²θ), driving the universe toward eventual return to a state of Total Coherence — the Great Hum.
+- **Cosmological fate**: Expansion is reinterpreted as **Ghost-Leakage Relaxation** (∂ₜG ≈ ∇²θ), driving the universe toward eventual return to a state of Total Coherence — 
 
 TCWT offers a unified scalar-field alternative to General Relativity + dark matter/energy, with testable signatures across scales and no requirement for additional particles or higher-curvature terms.
 
