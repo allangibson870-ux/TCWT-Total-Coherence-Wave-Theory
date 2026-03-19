@@ -346,4 +346,34 @@ Gravity arises from phase gradients.
 Dark matter is not a substance but a distortion.  
 Dark energy is not a constant but a relaxation channel.
 
+# 16. Emergent Gravitational Lensing
+
+In TCWT, light does not follow a "curved spacetime" geodesic. Instead, it follows **Fermat’s Principle** in a phase field with a variable **Effective Refractive Index ($n$)**.
+
+### 16.1 The Hum Refractive Index
+The local propagation speed $v$ of an electromagnetic wave is determined by the magnitude of the Hum phase field $\theta$:
+
+$$n(\mathbf{x}) = \frac{c}{v(\mathbf{x})} = 1 + \frac{2\chi}{c^2} \theta(\mathbf{x})$$
+
+Where:
+*   $\chi$: Gravitational coupling constant.
+*   $\theta(\mathbf{x})$: The local Hum phase potential.
+
+### 16.2 Bending Equation
+The deflection angle $\alpha$ for a photon passing a matter knot (soliton) at an impact parameter $b$ is calculated via the optical gradient:
+
+$$\alpha = -\int_{-\infty}^{\infty} \frac{1}{n} \nabla_\perp n \, ds$$
+
+### 16.3 Newtonian vs. MOND Lensing
+Because the Hum phase gradient $\nabla\theta$ follows the nonlinear interpolation function $\mu(x)$, TCWT predicts two distinct lensing regimes:
+
+1.  **Strong Field (Deep Newtonian):** For $|\nabla\theta| \gg a_0$, TCWT recovers the Einsteinian deflection:
+    $$\alpha \approx \frac{4GM}{bc^2}$$
+2.  **Weak Field (MOND/Galactic):** For $|\nabla\theta| \ll a_0$, the "stiffness" of the Hum field creates an additional refractive term:
+    $$\alpha \approx \frac{4GM}{bc^2} + \frac{2\pi \sqrt{GMa_0}}{c^2}$$
+
+### 16.4 Elimination of Dark Matter
+The constant term $\frac{2\pi \sqrt{GMa_0}}{c^2}$ provides the "extra" lensing observed in galaxies. In TCWT, this is not caused by invisible mass (Dark Matter), but by the **refractive power of the nonlinear Hum gradient** at galactic scales.
+
+
 TCWT is a **fully pregeometric, metric‑free theory** in which all geometry and dynamics emerge from the Hum field.
