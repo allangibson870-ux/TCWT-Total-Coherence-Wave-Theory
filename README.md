@@ -1,6 +1,6 @@
 # TCWT — Total Coherence Wave Theory (v2026.3)
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19075415.svg)](https://doi.org/10.5281/zenodo.19075415)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19075414.svg)](https://doi.org/10.5281/zenodo.19075414)
 
 
 
