@@ -1,173 +1,349 @@
-# TCWT Master Lagrangian
-## Pregeometric Hum Field Formulation
-
-Version: 2026.9  
-Status: Core theoretical framework
+# TCWT Master Lagrangian  
+**Pregeometric Hum Field Formulation**  
+**Version: 2026.9**  
+**Status: Core Theoretical Framework**
 
 ---
 
-# 1. Fields
+# 1. Fundamental Fields
 
-Total Coherence Wave Theory describes spacetime and matter as excitations of a coherent phase field called the **Hum**.
+Total Coherence Wave Theory (TCWT) describes all physical phenomena as excitations of a coherent phase field called the **Hum**.  
+There is **no metric** and **no curvature tensor** at the fundamental level.  
+Geometry, gravity, and cosmic expansion emerge from the dynamics of the Hum field.
 
 The fundamental degrees of freedom are:
 
 | Field | Description |
-|------|-------------|
-| θ(x,t) | Hum phase field |
-| Ω(x,t) | local oscillation frequency |
-| G(x,t) | ghost leakage field |
+|-------|-------------|
+| \( \theta(x,t) \) | Hum phase field |
+| \( \Omega(x,t) \) | Local oscillation frequency |
+| \( G(x,t) \) | Ghost‑leakage field |
+
+All observable physics arises from interactions among these fields.
 
 ---
 
-# 2. Hum Vacuum
+# 2. Coherent Hum Vacuum
 
 The coherent vacuum state is defined by
 
-θ₀(t) = Ω_hum t
+\[
+\theta_0(t) = \Omega_{\rm hum}\, t,
+\]
 
-where Ω_hum is the fundamental Hum frequency.
+where \( \Omega_{\rm hum} \) is the fundamental Hum frequency.
 
-Small deviations from this state produce physical phenomena.
+Small deviations from this state generate:
+
+- matter  
+- gravity  
+- waves  
+- dark‑matter‑like distortions  
+- dark‑energy‑like relaxation  
 
 ---
 
 # 3. Master Lagrangian
 
-The TCWT dynamics are defined by the Lagrangian density
+The TCWT dynamics follow from the Lagrangian density
 
-L = C₀ (∂ₜθ − Ω)²
-  − κ a₀² F(|∇θ|² / a₀²)
-  − α (∂ₜG − ∇²θ)²
-  − V_Ω(Ω)
+\[
+\mathcal{L}
+= C_0(\partial_t\theta - \Omega)^2
+- \kappa a_0^2 F\!\left(\frac{|\nabla\theta|^2}{a_0^2}\right)
+- \alpha(\partial_t G - \nabla^2\theta)^2
+- V_\Omega(\Omega),
+\]
 
-where
+with constants:
 
-C₀ = temporal coherence constant  
-κ = spatial phase stiffness  
-a₀ = MOND acceleration scale
+- \( C_0 \): temporal coherence constant  
+- \( \kappa \): spatial phase stiffness  
+- \( a_0 \): MOND acceleration scale  
+- \( \alpha \): ghost‑leakage coupling  
 
----
+This is a **nonlinear scalar‑field theory** with:
 
-# 4. Gradient Function
-
-The nonlinear gradient function is chosen as
-
-F(x) = x + (2/3)x^(3/2)
-
-This form produces MOND-like behaviour in the weak-field limit.
-
----
-
-# 5. Field Equations
-
-Applying the Euler–Lagrange equation
-
-∂L/∂θ − ∂μ(∂L/∂(∂μθ)) = 0
-
-yields the Hum phase equation
-
-2C₀ ∂ₜ(∂ₜθ − Ω)
-− ∇·[κ μ(|∇θ|/a₀) ∇θ]
-+ 2α ∇²(∂ₜG − ∇²θ)
-= 0
-
-with
-
-μ(x) = 1 + x
+- a MOND‑like gradient sector  
+- a curvature‑leakage relaxation channel  
+- no metric  
+- no Einstein–Hilbert term  
 
 ---
 
-# 6. Newtonian Limit
+# 4. Nonlinear Gradient Function
 
-For strong fields
+The spatial term uses the MOND‑motivated function
 
-|∇θ| ≫ a₀
+\[
+F(x) = x + \frac{2}{3}x^{3/2}.
+\]
 
-the interpolation function approaches
+Its derivative defines the interpolation function
 
-μ → 1
+\[
+\mu(x) = \frac{dF}{dx} = 1 + x^{1/2}.
+\]
 
-The field equation reduces to
+This produces:
 
-∇²θ = ρ / κ
-
-which produces the standard Newtonian acceleration
-
-a = −χ ∇θ
-
----
-
-# 7. MOND Regime
-
-For weak fields
-
-|∇θ| ≪ a₀
-
-the equation becomes
-
-∇·[(|∇θ|/a₀) ∇θ] = ρ
-
-which produces flat galactic rotation curves.
+- Newtonian behaviour at high accelerations  
+- MOND‑like behaviour at low accelerations  
 
 ---
 
-# 8. Matter Knots
+# 5. Euler–Lagrange Field Equations
 
-Localized matter corresponds to stable phase solitons
+## 5.1 Hum Phase Equation
 
-θ_knot(r) = Θ₀ exp(−r² / 2R²)
+Applying
 
-These structures represent particles and astrophysical objects.
+\[
+\frac{\partial\mathcal{L}}{\partial\theta}
+- \partial_\mu\left(\frac{\partial\mathcal{L}}{\partial(\partial_\mu\theta)}\right) = 0,
+\]
 
----
+gives
 
-# 9. Gravitational Waves
+\[
+2C_0\,\partial_t(\partial_t\theta - \Omega)
+- \nabla\cdot\!\left[\kappa\,\mu\!\left(\frac{|\nabla\theta|}{a_0}\right)\nabla\theta\right]
++ 2\alpha\,\nabla^2(\partial_t G - \nabla^2\theta)
+= 0.
+\]
 
-Linear perturbations of the phase field
-
-θ = θ₀ + δθ
-
-produce wave solutions
-
-□ δθ = 0
-
-which propagate at the Hum propagation speed c.
-
----
-
-# 10. Ghost Leakage
-
-The ghost field obeys
-
-∂ₜ[2α(∂ₜG − ∇²θ)] = 0
-
-which implies
-
-∂ₜG ≈ ∇²θ
-
-in the low-energy regime.
-
-This mechanism allows slow leakage of curvature energy and is associated with dark energy.
+This is the **master Hum field equation**.
 
 ---
 
-# 11. Interpretation
+## 5.2 Ghost‑Leakage Equation
 
-TCWT interprets physical phenomena as distortions of the Hum phase field:
+Variation with respect to \( G \) yields
 
-| Phenomenon | Interpretation |
-|------------|---------------|
-| Matter | stable phase knots |
-| Gravity | phase-gradient acceleration |
-| Dark Matter | opaque phase distortions |
-| Dark Energy | ghost leakage |
+\[
+\partial_t\left[2\alpha(\partial_t G - \nabla^2\theta)\right] = 0.
+\]
+
+In the low‑energy regime:
+
+\[
+\partial_t G \approx \nabla^2\theta.
+\]
+
+This represents **slow leakage of curvature energy**, the TCWT analogue of dark energy.
+
+---
+
+# 6. Effective Acceleration Law
+
+In TCWT, gravity is not curvature of spacetime but **acceleration induced by phase gradients**:
+
+\[
+\mathbf{a} = -\chi\,\nabla\theta.
+\]
+
+This is the fundamental gravitational law of the theory.
+
+---
+
+# 7. Newtonian Limit
+
+For strong fields \( |\nabla\theta| \gg a_0 \):
+
+\[
+\mu \to 1,
+\]
+
+and the spatial equation reduces to
+
+\[
+\nabla^2\theta = \frac{\rho}{\kappa}.
+\]
+
+The acceleration becomes
+
+\[
+\mathbf{a} = -\chi\,\nabla\theta,
+\]
+
+recovering Newtonian gravity.
+
+---
+
+# 8. MOND Regime
+
+For weak fields \( |\nabla\theta| \ll a_0 \):
+
+\[
+\mu(x) \approx x^{1/2},
+\]
+
+and the field equation becomes
+
+\[
+\nabla\cdot\left[\left(\frac{|\nabla\theta|}{a_0}\right)\nabla\theta\right] = \rho.
+\]
+
+This produces flat galactic rotation curves without dark matter.
+
+---
+
+# 9. Matter Knots (Phase Solitons)
+
+Localized matter corresponds to stable soliton solutions:
+
+\[
+\theta_{\rm knot}(r)
+= \Theta_0\,\exp\!\left(-\frac{r^2}{2R^2}\right).
+\]
+
+These represent:
+
+- particles  
+- stars  
+- compact objects  
+
+Matter is **not added** to the theory — it is a **phase configuration**.
+
+---
+
+# 10. Gravitational Waves
+
+Linear perturbations
+
+\[
+\theta = \theta_0 + \delta\theta
+\]
+
+yield the wave equation
+
+\[
+\square\,\delta\theta = 0,
+\]
+
+with propagation speed \( c \).
+
+These are **Hum‑phase gravitational waves**.
+
+---
+
+# 11. Ghost Leakage and Dark Energy
+
+The ghost equation
+
+\[
+\partial_t G \approx \nabla^2\theta
+\]
+
+acts as a slow relaxation channel for curvature energy.
+
+Define the **ghost‑leakage energy density**:
+
+\[
+\rho_G = \alpha(\partial_t G - \nabla^2\theta)^2.
+\]
+
+This behaves as a **time‑varying dark‑energy‑like component**.
+
+---
+
+# 12. Cosmological Background (Metric‑Free)
+
+TCWT does **not** assume a metric or Einstein equations.
+
+Cosmic expansion is defined by the **ghost‑leakage energy density**:
+
+\[
+H^2(t) = \frac{\rho_G(t)}{3M_{\rm eff}^2}.
+\]
+
+Here \( M_{\rm eff} \) is an emergent scale determined by the Hum field.
+
+Since
+
+\[
+\partial_t G \approx \nabla^2\theta,
+\]
+
+we obtain
+
+\[
+\rho_G(t) = \alpha\left(\nabla^2\theta\right)^2.
+\]
+
+Thus:
+
+\[
+H(t) \propto |\nabla^2\theta|.
+\]
+
+Cosmic acceleration is therefore a **direct consequence of curvature leakage**.
+
+---
+
+# 13. Linear Perturbations (Metric‑Free)
+
+Let
+
+\[
+\theta = \bar{\theta}(t) + \delta\theta(x,t).
+\]
+
+Linearizing the master equation gives
+
+\[
+\ddot{\delta\theta}
++ \Gamma(t)\dot{\delta\theta}
+- c_s^2(t)\nabla^2\delta\theta
++ m_{\rm eff}^2(t)\delta\theta
+= 0,
+\]
+
+where:
+
+- \( \Gamma(t) \): damping from background relaxation  
+- \( c_s^2(t) \): effective sound speed from gradient sector  
+- \( m_{\rm eff}^2(t) \): curvature of the potential  
+
+Density contrast is defined by
+
+\[
+\delta\rho \propto \nabla^2\delta\theta.
+\]
+
+This yields the **TCWT growth equation**:
+
+\[
+\ddot{\delta}
++ 2H\dot{\delta}
+- 4\pi G_{\rm eff}(t)\rho\,\delta
++ \mathcal{F}_{\rm leak}(t)\delta
+= 0.
+\]
+
+---
+
+# 14. Interpretation
+
+| Phenomenon | TCWT Interpretation |
+|------------|---------------------|
+| Matter | Phase solitons |
+| Gravity | Phase‑gradient acceleration |
+| Dark Matter | Opaque phase distortions |
+| Dark Energy | Ghost‑leakage relaxation |
 | Gravitational Waves | Hum phase oscillations |
+| Cosmic Expansion | Ghost‑leakage energy |
 
 ---
 
-# 12. Cosmological Picture
+# 15. Cosmological Picture
 
-The universe emerges from large-scale phase instabilities in the Hum field.
+The universe emerges from large‑scale instabilities in the Hum field.  
+Over cosmic time, the phase structure relaxes toward the coherent Hum vacuum.  
+Ghost‑leakage energy drives cosmic acceleration.  
+Matter forms as stable phase knots.  
+Gravity arises from phase gradients.  
+Dark matter is not a substance but a distortion.  
+Dark energy is not a constant but a relaxation channel.
 
-Over cosmological time the phase structure relaxes, gradually returning the universe to a coherent Hum vacuum.
+TCWT is a **fully pregeometric, metric‑free theory** in which all geometry and dynamics emerge from the Hum field.
