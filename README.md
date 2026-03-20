@@ -129,15 +129,17 @@ abstract: "A framework for interpreting quantum decoherence as a function of inf
 
 If you use TCWT in your research, please cite:
 
-```bibtex
-@software{gibson_tcwt_2026,
+@article{gibson_tcwt_preprint_2026,
   author       = {Gibson, Allan},
-  title        = {TCWT: Total Coherence Wave Theory},
-  version      = {v1.0.1},
+  title        = {Total Coherence Wave Theory: A Unified Phase-Field Framework for Matter, Gravity, and Cosmic Structure},
   year         = {2026},
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.19075415},
-  url          = {https://doi.org/10.5281/zenodo.19075415}
+  doi          = {10.5281/zenodo.19134583},
+  url          = {https://doi.org/10.5281/zenodo.19134583}
 }
+
+
+
+
 
 
