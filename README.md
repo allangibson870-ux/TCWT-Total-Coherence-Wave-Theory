@@ -5,7 +5,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19134583.svg)](https://doi.org/10.5281/zenodo.19134583)
 
 **TCWT Software Release (GitHub-linked)**  
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19114078.svg)](https://doi.org/10.5281/zenodo.19114078)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19075414.svg)](https://doi.org/10.5281/zenodo.19075414)
 
 
 **Summary**  
