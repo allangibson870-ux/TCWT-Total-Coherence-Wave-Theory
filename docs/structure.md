@@ -170,6 +170,65 @@ A unique TCWT signature, absent in ΛCDM.
 
 ---
 
+## 8 Interference and Knot Formation in TCWT
+
+In TCWT, wave–particle duality is replaced by a single, unified mechanism:  
+the nonlinear dynamics of the Hum phase field \( \theta(x,t) \).  
+What appears as “wave behaviour” is the spatial structure of the phase, and what appears as “particle detection” is the nucleation of stable soliton knots.
+
+### 1. Phase-Tension Interference Landscape
+
+When two coherent Hum sources overlap, the phase field forms an interference pattern described by the phase difference
+\[
+\Delta\theta(x,y) = \theta_1(x,y) - \theta_2(x,y).
+\]
+
+This produces alternating bands of constructive and destructive phase tension.  
+These bands are not probability amplitudes; they are **regions of varying curvature stress** in the Hum field.  
+The nonlinear gradient sector of the Lagrangian,
+\[
+\kappa a_0^2 F\!\left(\frac{|\nabla\theta|^2}{a_0^2}\right),
+\]
+determines how strongly these regions resist or amplify local distortions.
+
+### 2. Knot Formation as Detection Events
+
+A “particle hit” in TCWT corresponds to the formation of a stable soliton knot.  
+The probability of knot nucleation at a point is controlled by the local curvature and tension of the Hum field:
+\[
+P_{\rm knot}(x,y) \propto 
+f\!\left(|\nabla\theta|,\ \nabla^2\theta,\ 
+\mu\!\left(\frac{|\nabla\theta|}{a_0}\right)\right).
+\]
+
+Regions of high constructive phase tension (large curvature) are more likely to collapse into knots.  
+Regions of destructive interference suppress knot formation.
+
+This produces a detection pattern that mirrors the underlying phase-tension landscape.
+
+### 3. No Wave–Particle Duality
+
+In TCWT:
+- There is no separate “wave” and “particle” description.  
+- There is only the Hum field and its nonlinear dynamics.  
+- Interference arises from the structure of \( \theta \).  
+- Detection arises from soliton nucleation in regions where curvature exceeds a threshold.
+
+Thus, the familiar interference pattern emerges naturally from the deterministic evolution of the Hum field.
+
+### 4. Physical Interpretation
+
+This framework provides a unified explanation for:
+- interference fringes,
+- detection statistics,
+- apparent wave–particle duality,
+- and the stability of matter knots.
+
+The Hum field determines where knots *can* form;  
+the nonlinear dynamics determine where they *do* form.
+
+The result is a clean, classical-looking mechanism that reproduces quantum-like detection patterns without invoking collapse or probabilistic wavefunctions.
+
 ## 8. Summary
 
 This document provides the structure‑formation layer of TCWT:
