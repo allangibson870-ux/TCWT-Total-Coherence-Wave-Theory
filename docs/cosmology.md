@@ -151,7 +151,83 @@ This is directly comparable to ΛCDM predictions for:
 
 ---
 
-## 5. Summary
+## 5 Hum Condensation and the Origin of Matter and Dark Energy
+
+The early Universe in TCWT is governed by the dynamics of the three-field Hum system:
+- the phase field \( \theta \),
+- the local oscillation frequency \( \Omega \),
+- and the ghost‑leakage field \( G \).
+
+At high “Hum temperature” (large desynchronisation), the system sits far from its ground state:
+\[
+\partial_t\theta \neq \Omega, \qquad \Omega \neq \Omega_{\rm hum}.
+\]
+Both the temporal coherence term
+\[
+C_0(\partial_t\theta - \Omega)^2
+\]
+and the frequency potential
+\[
+V_\Omega(\Omega)
+\]
+are large, storing significant energy in the early Hum.
+
+### 1. The Condensation Point \(T_C\)
+
+As the Universe expands and the Hum cools, the system approaches a critical point \(T_C\) where the phase field becomes sufficiently coherent for stable solitonic structures (matter knots) to form. Above \(T_C\), no long-lived knots exist; below \(T_C\), they nucleate rapidly.
+
+This transition is analogous to a phase condensation:
+- the Hum field becomes more ordered,
+- gradients sharpen,
+- and the nonlinear sector \(F(|\nabla\theta|^2/a_0^2)\) begins to dominate locally.
+
+### 2. Latent Heat and the Ghost Surge
+
+During condensation, the mismatch
+\[
+(\partial_t G - \nabla^2\theta)
+\]
+becomes large as curvature is created faster than the ghost field can relax it. The ghost term in the Lagrangian,
+\[
+\alpha(\partial_t G - \nabla^2\theta)^2,
+\]
+therefore spikes. This produces a transient “latent heat” release into the ghost sector.
+
+This ghost surge:
+- is largest at the moment solitons form,
+- decays as the Hum approaches synchrony,
+- and provides a natural analogue of dark-energy-like behaviour during and after condensation.
+
+### 3. Post-Condensation Evolution
+
+After the condensation epoch:
+- the Hum field becomes increasingly synchronized,
+- the frequency field relaxes toward its preferred value,
+  \[
+  \Omega \to \Omega_{\rm hum},
+  \]
+- matter knots stabilize,
+- and ghost leakage becomes slow and diffuse.
+
+The late-time behaviour is governed by the approximate relation
+\[
+\partial_t G \approx \nabla^2\theta,
+\]
+which smooths curvature over cosmological timescales and contributes to the observed accelerated expansion.
+
+### 4. Physical Interpretation
+
+In TCWT, the emergence of matter and dark energy is unified:
+- **Matter** arises from the condensation of the Hum phase into stable solitons.
+- **Dark energy** arises from the relaxation of curvature into the ghost sector, especially during and after condensation.
+- **Inflation-like behaviour** corresponds to the early, highly desynchronized Hum relaxing toward its synchronized ground state.
+
+This provides a single, coherent mechanism for:
+- the origin of structure,
+- the latent-energy surge at condensation,
+- and the long-term acceleration of the Universe.
+
+## 6. Summary
 
 This document provides the cosmological layer of TCWT:
 
