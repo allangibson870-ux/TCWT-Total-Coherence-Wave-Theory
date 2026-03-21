@@ -1007,7 +1007,7 @@ This provides a TCWT‑consistent, physically grounded explanation for why
 self‑maintaining structures — and eventually life — emerge in warm biological
 environments.
 
-## 6. Summary
+## 7. Summary
 
 This document provides the cosmological layer of TCWT:
 
