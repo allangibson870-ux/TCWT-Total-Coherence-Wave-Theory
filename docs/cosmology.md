@@ -367,6 +367,155 @@ With the perturbation equations defined, the next tasks are:
 
 This completes Step 3 of the TCWT cosmological framework.
 
+---
+# Numerical Implementation of TCWT (Boltzmann‑Style Framework)
+
+With the background and linear perturbation equations defined, the next step is to implement TCWT in a numerical framework. This allows us to compute the expansion history, matter power spectrum, growth rate, and lensing observables. The structure mirrors standard Boltzmann codes (CLASS, CAMB) but is tailored to the three‑field TCWT system.
+
+## 1. Overview of the Numerical Pipeline
+
+A minimal TCWT cosmology code requires three modules:
+
+1. **Background Module**  
+   Evolves \( a(t) \), \( H(t) \), and the homogeneous fields  
+   \( \{\bar\theta(t), \bar\Omega(t), \bar G(t)\} \).
+
+2. **Perturbation Module**  
+   Evolves the Fourier‑space perturbations  
+   \( \{\delta\theta, \delta\Omega, \delta G, \Phi, \Psi, \delta_{\rm m}\} \)  
+   for each wavenumber \( k \).
+
+3. **Observable Module**  
+   Computes:
+   - matter power spectrum \( P(k,z) \),
+   - growth rate \( f\sigma_8(z) \),
+   - lensing potential \( \Phi + \Psi \),
+   - ISW contribution,
+   - BAO scale evolution.
+
+This structure is sufficient to compare TCWT to ΛCDM and observational datasets.
+
+---
+
+## 2. Background Evolution Module
+
+The background module integrates the coupled system:
+\[
+\{\dot a, \dot{\bar\theta}, \dot{\bar\Omega}, \dot{\bar G}\}
+\]
+using the modified Friedmann equations and the TCWT field equations.
+
+### Required outputs:
+- \( H(z) \)
+- \( \rho_{\rm DE}(z) \)
+- \( \rho_{\rm m}(z) \)
+- effective equation of state \( w(z) \)
+
+These feed directly into the perturbation module.
+
+---
+
+## 3. Perturbation Evolution Module
+
+For each wavenumber \( k \), we evolve the linear system:
+\[
+\{\delta\theta_k, \delta\Omega_k, \delta G_k, \Phi_k, \Psi_k, \delta_{{\rm m},k}\}.
+\]
+
+### Key features:
+- TCWT introduces **three new dynamical degrees of freedom**.
+- The ghost field produces **scale‑dependent smoothing**.
+- The nonlinear gradient sector generates **gravitational slip** (\(\Phi \neq \Psi\)).
+- The modified Poisson equation alters structure growth.
+
+### Required outputs:
+- transfer functions \( T_i(k,z) \)
+- growth factor \( D(z) \)
+- gravitational slip parameter \( \eta(k,z) = \Phi/\Psi \)
+
+These are used to compute the matter power spectrum and lensing observables.
+
+---
+
+## 4. Observable Module
+
+Using the transfer functions and background evolution, we compute:
+
+### (a) Matter Power Spectrum
+\[
+P(k,z) = P_{\rm prim}(k)\,|T_{\rm m}(k,z)|^2.
+\]
+
+### (b) Growth Rate
+\[
+f\sigma_8(z) = \frac{d\ln D}{d\ln a}\,\sigma_8(z).
+\]
+
+### (c) Lensing Potential
+\[
+\Phi + \Psi,
+\]
+which is sensitive to TCWT’s gravitational slip.
+
+### (d) ISW Effect  
+Computed from the time derivative of \(\Phi + \Psi\).
+
+### (e) BAO Scale  
+Extracted from the matter transfer function.
+
+These quantities can be compared directly to DESI, Planck, Euclid, and LSST.
+
+---
+
+## 5. Minimal Parameter Set
+
+A practical implementation requires specifying:
+
+- \( a_0 \) — MOND/gradient scale  
+- \( \kappa \) — gradient‑sector coupling  
+- \( C_0 \) — temporal coherence strength  
+- \( \alpha \) — ghost‑leakage coupling  
+- parameters of \( V_\Omega(\Omega) \)  
+- initial conditions for \( \theta, \Omega, G \)
+
+This is a small, manageable parameter space.
+
+---
+
+## 6. Implementation Strategy
+
+A minimal TCWT Boltzmann code can be built in stages:
+
+1. **Implement background evolution**  
+   Validate against your analytic expansion‑history plots.
+
+2. **Implement perturbations for a single \( k \)**  
+   Check stability and behaviour in limiting regimes.
+
+3. **Add full \( k \)-grid evolution**  
+   Produce transfer functions.
+
+4. **Compute observables**  
+   Compare to ΛCDM and data.
+
+5. **Add MCMC wrapper**  
+   Fit parameters to Planck + DESI + lensing.
+
+This staged approach mirrors the development of early CLASS/CAMB versions.
+
+---
+
+## 7. Next Steps
+
+With the numerical framework outlined, the next tasks are:
+
+1. Choose explicit forms for \( V_\Omega(\Omega) \) and initial conditions.  
+2. Implement the background module.  
+3. Implement the perturbation module.  
+4. Generate the first TCWT predictions for \( H(z) \), \( P(k) \), and \( f\sigma_8(z) \).
+
+This completes Step 4 of the TCWT cosmological framework.
+
 ## 1. Background Dynamics
 
 TCWT begins with the phase‑field Lagrangian:
