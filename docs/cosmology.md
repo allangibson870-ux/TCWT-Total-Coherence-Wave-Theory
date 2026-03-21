@@ -516,6 +516,153 @@ With the numerical framework outlined, the next tasks are:
 
 This completes Step 4 of the TCWT cosmological framework.
 
+---
+# Parameter Fitting and Observational Confrontation
+
+With the numerical framework defined, the next step is to confront TCWT with observational data. This requires identifying the free parameters of the theory, choosing appropriate datasets, and performing statistical inference to determine whether TCWT provides a better fit to cosmological observations than ΛCDM.
+
+## 1. TCWT Parameter Set
+
+The minimal parameter set required for cosmological predictions is:
+
+### Core TCWT Parameters
+- \( a_0 \): MOND/gradient scale  
+- \( \kappa \): nonlinear gradient coupling  
+- \( C_0 \): temporal coherence strength  
+- \( \alpha \): ghost‑leakage coupling  
+- \( V_\Omega(\Omega) \): frequency potential (typically 1–3 parameters)
+
+### Standard Cosmological Parameters
+- \( H_0 \): present‑day Hubble rate  
+- \( \Omega_{\rm b} \): baryon density  
+- \( \Omega_{\rm m} \): matter density  
+- \( A_s, n_s \): primordial spectrum amplitude and tilt  
+- \( \tau \): optical depth (CMB only)
+
+This is a compact parameter space compared to many modified‑gravity models.
+
+---
+
+## 2. Observational Datasets
+
+To test TCWT, we compare its predictions to the following datasets:
+
+### Background Expansion
+- Type Ia supernovae (SNe Ia)
+- Baryon Acoustic Oscillations (BAO)
+- Cosmic chronometers
+- CMB distance priors
+
+### Structure Growth
+- Redshift‑space distortions (RSD)
+- Weak lensing (KiDS, DES, HSC)
+- Cluster abundance
+
+### CMB Anisotropies
+- Planck temperature and polarization spectra
+- ISW cross‑correlations
+
+### Lensing and Gravitational Slip
+- CMB lensing
+- Galaxy–galaxy lensing
+- Cross‑correlation of \(\Phi + \Psi\)
+
+These datasets probe different combinations of the TCWT fields and their couplings.
+
+---
+
+## 3. Statistical Inference Framework
+
+Parameter estimation proceeds via Bayesian inference:
+
+\[
+\mathcal{P}(\theta_{\rm TCWT} | \text{data}) \propto
+\mathcal{L}(\text{data} | \theta_{\rm TCWT}) \, \pi(\theta_{\rm TCWT}),
+\]
+
+where:
+- \( \theta_{\rm TCWT} \) is the full parameter vector,
+- \( \mathcal{L} \) is the likelihood from the datasets,
+- \( \pi \) is the prior.
+
+### Recommended tools:
+- MCMC (e.g., emcee, Cobaya)
+- Nested sampling (e.g., MultiNest, PolyChord)
+
+The numerical TCWT code provides:
+- \( H(z) \)
+- \( P(k,z) \)
+- \( f\sigma_8(z) \)
+- lensing spectra
+- CMB source terms
+
+These are fed into the likelihood pipeline.
+
+---
+
+## 4. Key Observational Signatures of TCWT
+
+TCWT makes several distinctive predictions:
+
+### 1. Time‑varying effective dark energy  
+\[
+w_{\rm eff}(z) \neq -1,
+\]
+with a mid‑era acceleration bump from structural exhaust.
+
+### 2. Suppressed structure growth  
+\[
+f\sigma_8(z) < \Lambda\text{CDM},
+\]
+consistent with weak‑lensing tensions.
+
+### 3. Scale‑dependent gravitational slip  
+\[
+\eta(k,z) = \frac{\Phi}{\Psi} \neq 1,
+\]
+arising from the nonlinear gradient sector.
+
+### 4. Modified lensing potential  
+\[
+\Phi + \Psi
+\]
+is altered by ghost‑field smoothing.
+
+### 5. No primordial tensor modes  
+TCWT predicts a suppressed tensor‑to‑scalar ratio.
+
+These signatures allow TCWT to be distinguished from ΛCDM and other modified‑gravity models.
+
+---
+
+## 5. Model Comparison
+
+To assess whether TCWT is preferred over ΛCDM, we compute:
+
+- Bayesian evidence \( Z \)
+- Information criteria (AIC, BIC)
+- Posterior predictive distributions
+
+A model is favoured if it provides:
+- a better fit to data,
+- with fewer or comparable parameters,
+- and without fine‑tuning.
+
+TCWT’s ability to address the Hubble tension, growth suppression, and lensing anomalies makes it a strong candidate for outperforming ΛCDM.
+
+---
+
+## 6. Next Steps
+
+With the parameter‑fitting framework defined, the next tasks are:
+
+1. Implement likelihood interfaces for SNe, BAO, RSD, lensing, and CMB.  
+2. Run MCMC chains to constrain the TCWT parameter set.  
+3. Compare TCWT to ΛCDM using Bayesian evidence.  
+4. Publish the results as the first observational test of the TCWT framework.
+
+This completes Step 5 of the TCWT cosmological framework.
+
 ## 1. Background Dynamics
 
 TCWT begins with the phase‑field Lagrangian:
