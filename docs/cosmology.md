@@ -3,6 +3,98 @@
 This document introduces the cosmological perturbation framework for the Total Coherence Wave Theory (TCWT). It extends the TCWT Lagrangian into the cosmological regime, deriving the background expansion, linear perturbations, and the structure‑growth equation that replaces the ΛCDM growth model.
 
 ---
+# Relativistic TCWT Action
+
+TCWT is built on three interacting fields:
+- the Hum phase field \( \theta \),
+- the local oscillation frequency \( \Omega \),
+- and the ghost‑relaxation field \( G \).
+
+To connect the theory to cosmology, structure formation, and gravitational observables, we require a fully covariant action defined on a spacetime metric \( g_{\mu\nu} \). The relativistic action must reduce to the Master Lagrangian in the weak‑field, quasistatic limit.
+
+## 1. Covariant Structure
+
+We introduce:
+- a unit timelike 4‑velocity \( u^\mu \) representing the cosmological rest frame,
+- a spatial projector \( h^{\mu\nu} = g^{\mu\nu} + u^\mu u^\nu \).
+
+These allow us to define:
+- temporal derivatives: \( u^\mu \nabla_\mu \),
+- spatial gradients: \( h^{\mu\nu}\nabla_\nu \),
+- spatial Laplacian: \( h^{\mu\nu}\nabla_\mu\nabla_\nu \).
+
+In an FLRW background, these reduce to:
+\[
+u^\mu \nabla_\mu \to \partial_t, \qquad
+h^{\mu\nu}\nabla_\mu \to \nabla, \qquad
+h^{\mu\nu}\nabla_\mu\nabla_\nu \to \nabla^2.
+\]
+
+## 2. The Relativistic TCWT Lagrangian
+
+A covariant generalisation of the Master Lagrangian is:
+
+\[
+\mathcal{L}_{\rm TCWT}
+=
+-\frac{1}{2}C_0\big(u^\mu\nabla_\mu\theta - \Omega\big)^2
+-\kappa a_0^2\,F\!\left(\frac{h^{\mu\nu}\nabla_\mu\theta\nabla_\nu\theta}{a_0^2}\right)
+- V_\Omega(\Omega)
+- \alpha\Big(u^\mu\nabla_\mu G - h^{\mu\nu}\nabla_\mu\nabla_\nu\theta\Big)^2
++ \mathcal{L}_{\rm soliton}.
+\]
+
+Each term corresponds directly to a component of the non‑relativistic theory:
+
+- **Temporal coherence:**  
+  \[
+  -\frac{1}{2}C_0(u^\mu\nabla_\mu\theta - \Omega)^2
+  \]
+  → becomes \( C_0(\partial_t\theta - \Omega)^2 \).
+
+- **Nonlinear gradient sector:**  
+  \[
+  -\kappa a_0^2 F\!\left(\frac{h^{\mu\nu}\nabla_\mu\theta\nabla_\nu\theta}{a_0^2}\right)
+  \]
+  → becomes \( \kappa a_0^2 F(|\nabla\theta|^2/a_0^2) \).
+
+- **Frequency potential:**  
+  \[
+  -V_\Omega(\Omega)
+  \]
+  → unchanged.
+
+- **Ghost‑leakage channel:**  
+  \[
+  -\alpha\big(u^\mu\nabla_\mu G - h^{\mu\nu}\nabla_\mu\nabla_\nu\theta\big)^2
+  \]
+  → becomes \( \alpha(\partial_t G - \nabla^2\theta)^2 \).
+
+- **Matter sector:**  
+  \(\mathcal{L}_{\rm soliton}\) encodes the effective behaviour of soliton matter.
+
+## 3. Full Relativistic Action
+
+\[
+S = \int d^4x\,\sqrt{-g}\,\Bigg[
+\frac{1}{16\pi G}R
++\mathcal{L}_{\rm TCWT}
+\Bigg].
+\]
+
+This action:
+- is fully covariant,
+- reduces to the Master Lagrangian in the weak‑field limit,
+- provides the foundation for cosmology, perturbations, and structure formation.
+
+## 4. Next Steps
+
+With the relativistic action defined, the next tasks are:
+1. Derive the background (FLRW) equations.  
+2. Derive linear perturbations.  
+3. Implement numerical evolution for comparison with observations.
+
+This completes Step 1 of the TCWT cosmological framework.
 
 ## 1. Background Dynamics
 
