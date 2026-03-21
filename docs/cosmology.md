@@ -234,6 +234,139 @@ With the background equations defined, the next steps are:
 
 This completes Step 2 of the TCWT cosmological framework.
 
+---
+# Linear Perturbations in TCWT
+
+With the background FLRW equations established, the next step is to derive the linear perturbation equations. These describe how small fluctuations in the metric, matter density, and TCWT fields evolve over time. Linear perturbations are essential for predicting the CMB anisotropies, matter power spectrum, weak lensing, and structure growth.
+
+## 1. Perturbation Setup
+
+We work in Newtonian gauge, where the perturbed metric is
+\[
+ds^2 = -(1+2\Phi)\,dt^2 + a(t)^2(1-2\Psi)\,\delta_{ij}\,dx^i dx^j.
+\]
+
+We perturb the TCWT fields as:
+\[
+\theta = \bar\theta(t) + \delta\theta(\vec{x},t),
+\]
+\[
+\Omega = \bar\Omega(t) + \delta\Omega(\vec{x},t),
+\]
+\[
+G = \bar G(t) + \delta G(\vec{x},t).
+\]
+
+Matter density and velocity perturbations follow the standard definitions:
+\[
+\rho_{\rm m} = \bar\rho_{\rm m}(t)\big(1 + \delta_{\rm m}(\vec{x},t)\big),
+\]
+\[
+v_i = \partial_i v.
+\]
+
+## 2. Linearised TCWT Field Equations
+
+Varying the relativistic TCWT action to first order yields three coupled perturbation equations:
+
+### (a) Hum phase perturbation
+\[
+\delta\ddot\theta + 3H\delta\dot\theta + \frac{k^2}{a^2}\,\mu_\theta\,\delta\theta
++ C_0(\delta\dot\theta - \delta\Omega)
+= S_\theta(\Phi,\Psi),
+\]
+where \( \mu_\theta \) is an effective stiffness parameter and \( S_\theta \) contains metric‑source terms.
+
+### (b) Frequency perturbation
+\[
+C_0(\delta\dot\theta - \delta\Omega)
++ V''_\Omega(\bar\Omega)\,\delta\Omega
+= S_\Omega(\Phi,\Psi).
+\]
+
+### (c) Ghost‑field perturbation
+\[
+\delta\ddot G + 3H\delta\dot G + \alpha\,\frac{k^2}{a^2}\,\delta G
+= \alpha\,\frac{k^2}{a^2}\,\delta\theta + S_G(\Phi,\Psi).
+\]
+
+These equations encode:
+- the coupling between phase, frequency, and ghost sectors,
+- the relaxation of \(\Omega\),
+- the curvature‑smoothing behaviour of the ghost field,
+- and the effective MOND‑like response in the gradient sector.
+
+## 3. Modified Einstein Equations
+
+The perturbed Einstein equations relate the metric potentials \(\Phi\) and \(\Psi\) to the total perturbed energy–momentum tensor.
+
+### Poisson‑like equation
+\[
+\frac{k^2}{a^2}\Psi = 4\pi G\left(
+\bar\rho_{\rm m}\delta_{\rm m}
++ \delta\rho_{\rm hum}
++ \delta\rho_G
+\right).
+\]
+
+### Anisotropic stress
+TCWT generically produces a nonzero \(\Phi - \Psi\):
+\[
+\Phi - \Psi = \Pi_{\rm TCWT},
+\]
+where \(\Pi_{\rm TCWT}\) arises from the nonlinear gradient sector and ghost‑field dynamics.
+
+This is a key observational signature:  
+TCWT predicts **scale‑dependent gravitational slip**.
+
+## 4. Matter Perturbations
+
+Matter follows the standard continuity and Euler equations:
+\[
+\dot\delta_{\rm m} = -\frac{k^2}{a^2}v + 3\dot\Psi,
+\]
+\[
+\dot v = -\Phi.
+\]
+
+The growth of structure is modified through:
+- the altered Poisson equation,
+- the gravitational slip \(\Phi - \Psi\),
+- and the coupling to TCWT fields.
+
+This leads to a modified growth rate:
+\[
+f(a) = \frac{d\ln D}{d\ln a},
+\]
+where \(D(a)\) is the linear growth factor.
+
+## 5. Observational Outputs
+
+Solving the coupled system
+\[
+\{\delta\theta, \delta\Omega, \delta G, \Phi, \Psi, \delta_{\rm m}\}
+\]
+for each wavenumber \(k\) yields:
+
+- the matter power spectrum \(P(k,z)\),
+- the lensing potential \(\Phi+\Psi\),
+- the growth rate \(f\sigma_8(z)\),
+- the ISW contribution to the CMB,
+- the BAO scale evolution,
+- and the gravitational slip parameter \(\eta = \Phi/\Psi\).
+
+These are the quantities directly compared to DESI, Planck, Euclid, and LSST.
+
+## 6. Next Steps
+
+With the perturbation equations defined, the next tasks are:
+
+1. Implement the background and perturbation evolution in a numerical code.  
+2. Compute \(H(z)\), \(P(k)\), \(f\sigma_8(z)\), and lensing spectra.  
+3. Compare TCWT predictions to ΛCDM and observational datasets.
+
+This completes Step 3 of the TCWT cosmological framework.
+
 ## 1. Background Dynamics
 
 TCWT begins with the phase‑field Lagrangian:
