@@ -259,7 +259,58 @@ The quasistatic field equation becomes
 With \(\mathbf{a} = -\chi\,\nabla\theta\), this yields a MOND-like acceleration law that produces flat galactic rotation curves without invoking dark matter. The transition between the Newtonian and MOND regimes is controlled by the nonlinear function \(\mu(x)\) inherited from the TCWT Lagrangian.
 ---
 
-# 9. Matter Knots (Phase Solitons)
+## 9. Energy Density of the Hum–Ghost System
+
+Although TCWT is pregeometric and does not assume a spacetime metric, the Lagrangian density still defines a natural energy density and energy flux for the Hum and ghost fields.
+
+In the nonrelativistic regime, we define the effective energy density as
+
+\[
+\mathcal{E} =
+C_0(\partial_t\theta - \Omega)^2
++ \kappa a_0^2 F\!\left(\frac{|\nabla\theta|^2}{a_0^2}\right)
++ \alpha(\partial_t G - \nabla^2\theta)^2
++ V_\Omega(\Omega).
+\]
+
+The four contributions are:
+
+- Hum temporal coherence energy:
+  \[
+  \mathcal{E}_{\rm hum,time}
+  = C_0(\partial_t\theta - \Omega)^2,
+  \]
+- Hum gradient (gravitational/MOND) energy:
+  \[
+  \mathcal{E}_{\rm hum,grad}
+  = \kappa a_0^2 F\!\left(\frac{|\nabla\theta|^2}{a_0^2}\right),
+  \]
+- ghost‑leakage (curvature‑relaxation) energy:
+  \[
+  \mathcal{E}_{\rm ghost}
+  = \alpha(\partial_t G - \nabla^2\theta)^2,
+  \]
+- frequency potential energy:
+  \[
+  \mathcal{E}_{\Omega}
+  = V_\Omega(\Omega).
+  \]
+
+The total Hum–ghost energy density is
+
+\[
+\mathcal{E}_{\rm total}
+= \mathcal{E}_{\rm hum,time}
++ \mathcal{E}_{\rm hum,grad}
++ \mathcal{E}_{\rm ghost}
++ \mathcal{E}_{\Omega}.
+\]
+
+In regions where the ghost‑leakage channel is active
+\((\partial_t G - \nabla^2\theta \neq 0)\),
+energy is slowly transferred from the Hum gradient sector into the ghost sector. This provides a natural interpretation of dark‑energy‑like behaviour as long‑timescale relaxation of stored Hum curvature energy.
+
+# 10. Matter Knots (Phase Solitons)
 
 Localized matter corresponds to stable soliton solutions:
 
@@ -278,7 +329,7 @@ Matter is **not added** to the theory — it is a **phase configuration**.
 
 ---
 
-# 10. Gravitational Waves
+# 11. Gravitational Waves
 
 Linear perturbations
 
@@ -298,7 +349,7 @@ These are **Hum‑phase gravitational waves**.
 
 ---
 
-# 11. Ghost Leakage and Dark Energy
+# 12. Ghost Leakage and Dark Energy
 
 The ghost equation
 
@@ -318,7 +369,7 @@ This behaves as a **time‑varying dark‑energy‑like component**.
 
 ---
 
-# 12. Cosmological Background (Metric‑Free)
+# 13. Cosmological Background (Metric‑Free)
 
 TCWT does **not** assume a metric or Einstein equations.
 
@@ -352,7 +403,7 @@ Cosmic acceleration is therefore a **direct consequence of curvature leakage**.
 
 ---
 
-# 13. Linear Perturbations (Metric‑Free)
+# 14. Linear Perturbations (Metric‑Free)
 
 Let
 
@@ -394,7 +445,7 @@ This yields the **TCWT growth equation**:
 
 ---
 
-# 14. Interpretation
+# 15. Interpretation
 
 | Phenomenon | TCWT Interpretation |
 |------------|---------------------|
@@ -407,7 +458,7 @@ This yields the **TCWT growth equation**:
 
 ---
 
-# 15. Cosmological Picture
+# 16. Cosmological Picture
 
 The universe emerges from large‑scale instabilities in the Hum field.  
 Over cosmic time, the phase structure relaxes toward the coherent Hum vacuum.  
@@ -417,11 +468,11 @@ Gravity arises from phase gradients.
 Dark matter is not a substance but a distortion.  
 Dark energy is not a constant but a relaxation channel.
 
-# 16. Emergent Gravitational Lensing
+# 17. Emergent Gravitational Lensing
 
 In TCWT, light does not follow a "curved spacetime" geodesic. Instead, it follows **Fermat’s Principle** in a phase field with a variable **Effective Refractive Index ($n$)**.
 
-### 16.1 The Hum Refractive Index
+### 17.1 The Hum Refractive Index
 The local propagation speed $v$ of an electromagnetic wave is determined by the magnitude of the Hum phase field $\theta$:
 
 $$n(\mathbf{x}) = \frac{c}{v(\mathbf{x})} = 1 + \frac{2\chi}{c^2} \theta(\mathbf{x})$$
@@ -430,12 +481,12 @@ Where:
 *   $\chi$: Gravitational coupling constant.
 *   $\theta(\mathbf{x})$: The local Hum phase potential.
 
-### 16.2 Bending Equation
+### 17.2 Bending Equation
 The deflection angle $\alpha$ for a photon passing a matter knot (soliton) at an impact parameter $b$ is calculated via the optical gradient:
 
 $$\alpha = -\int_{-\infty}^{\infty} \frac{1}{n} \nabla_\perp n \, ds$$
 
-### 16.3 Newtonian vs. MOND Lensing
+### 17.3 Newtonian vs. MOND Lensing
 Because the Hum phase gradient $\nabla\theta$ follows the nonlinear interpolation function $\mu(x)$, TCWT predicts two distinct lensing regimes:
 
 1.  **Strong Field (Deep Newtonian):** For $|\nabla\theta| \gg a_0$, TCWT recovers the Einsteinian deflection:
@@ -443,7 +494,7 @@ Because the Hum phase gradient $\nabla\theta$ follows the nonlinear interpolatio
 2.  **Weak Field (MOND/Galactic):** For $|\nabla\theta| \ll a_0$, the "stiffness" of the Hum field creates an additional refractive term:
     $$\alpha \approx \frac{4GM}{bc^2} + \frac{2\pi \sqrt{GMa_0}}{c^2}$$
 
-### 16.4 Elimination of Dark Matter
+### 17.4 Elimination of Dark Matter
 The constant term $\frac{2\pi \sqrt{GMa_0}}{c^2}$ provides the "extra" lensing observed in galaxies. In TCWT, this is not caused by invisible mass (Dark Matter), but by the **refractive power of the nonlinear Hum gradient** at galactic scales.
 
 
