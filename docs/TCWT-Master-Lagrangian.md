@@ -176,58 +176,87 @@ This term governs curvature‑leakage and the emergent dark‑energy‑like beha
 
 ---
 
-# 6. Effective Acceleration Law
+## 6. Weak-Field and Quasistatic Limit
 
-In TCWT, gravity is not curvature of spacetime but **acceleration induced by phase gradients**:
+In the nonrelativistic, quasistatic regime relevant for galaxies and bound systems, we assume:
+
+- time derivatives are small compared to spatial variations:
+  \[
+  \partial_t^2\theta \approx 0, \qquad \partial_t G \approx 0,
+  \]
+- the ghost-leakage channel is slow:
+  \[
+  \partial_t G - \nabla^2\theta \approx 0.
+  \]
+
+Under these assumptions, the Hum phase equation reduces to
+
+\[
+\nabla\cdot\!\left[
+\kappa\,\mu\!\left(\frac{|\nabla\theta|}{a_0}\right)\nabla\theta
+\right]
+= \rho_{\rm eff},
+\]
+
+where \(\rho_{\rm eff}\) is an effective source term encoding matter knots and phase distortions. This is the fundamental quasistatic field equation of TCWT.
+
+The gravitational acceleration is defined by
 
 \[
 \mathbf{a} = -\chi\,\nabla\theta.
 \]
 
-This is the fundamental gravitational law of the theory.
-
 ---
 
-# 7. Newtonian Limit
+## 7. Newtonian Limit
 
-For strong fields \( |\nabla\theta| \gg a_0 \):
+In the strong-field regime \(|\nabla\theta| \gg a_0\), the interpolation function tends to
 
 \[
-\mu \to 1,
+\mu(x) \to 1,
 \]
 
-and the spatial equation reduces to
+and the field equation becomes approximately linear:
+
+\[
+\kappa\,\nabla^2\theta \approx \rho_{\rm eff}.
+\]
+
+Identifying \(\rho_{\rm eff}\) with the mass density \(\rho\) up to a constant factor, we obtain a Poisson-like equation
 
 \[
 \nabla^2\theta = \frac{\rho}{\kappa}.
 \]
 
-The acceleration becomes
+The acceleration
 
 \[
-\mathbf{a} = -\chi\,\nabla\theta,
+\mathbf{a} = -\chi\,\nabla\theta
 \]
 
-recovering Newtonian gravity.
+then reproduces Newtonian gravity with an effective gravitational constant set by \(\chi\) and \(\kappa\).
 
 ---
 
-# 8. MOND Regime
+## 8. MOND Regime
 
-For weak fields \( |\nabla\theta| \ll a_0 \):
-
-\[
-\mu(x) \approx x^{1/2},
-\]
-
-and the field equation becomes
+In the weak-field regime \(|\nabla\theta| \ll a_0\), the interpolation function behaves as
 
 \[
-\nabla\cdot\left[\left(\frac{|\nabla\theta|}{a_0}\right)\nabla\theta\right] = \rho.
+\mu(x) \approx x^{1/2}
+= \left(\frac{|\nabla\theta|}{a_0}\right).
 \]
 
-This produces flat galactic rotation curves without dark matter.
+The quasistatic field equation becomes
 
+\[
+\nabla\cdot\left[
+\left(\frac{|\nabla\theta|}{a_0}\right)\nabla\theta
+\right]
+= \rho_{\rm eff}.
+\]
+
+With \(\mathbf{a} = -\chi\,\nabla\theta\), this yields a MOND-like acceleration law that produces flat galactic rotation curves without invoking dark matter. The transition between the Newtonian and MOND regimes is controlled by the nonlinear function \(\mu(x)\) inherited from the TCWT Lagrangian.
 ---
 
 # 9. Matter Knots (Phase Solitons)
