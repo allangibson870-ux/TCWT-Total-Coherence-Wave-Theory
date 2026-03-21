@@ -96,29 +96,71 @@ This produces:
 
 ## 5.1 Hum Phase Equation
 
-Applying
+# TCWT Master Lagrangian — Three-Field Dynamical System
+
+## Lagrangian Density
 
 \[
-\frac{\partial\mathcal{L}}{\partial\theta}
-- \partial_\mu\left(\frac{\partial\mathcal{L}}{\partial(\partial_\mu\theta)}\right) = 0,
+\mathcal{L} =
+C_0(\partial_t\theta - \Omega)^2
+- \kappa a_0^2 F\!\left(\frac{|\nabla\theta|^2}{a_0^2}\right)
++ \alpha(\partial_t G - \nabla^2\theta)^2
+- V_\Omega(\Omega)
 \]
 
-gives
+with
 
 \[
-2C_0\,\partial_t(\partial_t\theta - \Omega)
-- \nabla\cdot\!\left[\kappa\,\mu\!\left(\frac{|\nabla\theta|}{a_0}\right)\nabla\theta\right]
-+ 2\alpha\,\nabla^2(\partial_t G - \nabla^2\theta)
-= 0.
+F(x) = x + \frac{2}{3}x^{3/2}, \qquad
+\mu(x) = \frac{dF}{dx} = 1 + x^{1/2}.
 \]
 
-This is the **master Hum field equation**.
+A simple choice for the Ω‑potential is
+
+\[
+V_\Omega(\Omega) = \frac{1}{2}m_\Omega^2(\Omega - \Omega_{\rm hum})^2.
+\]
 
 ---
 
-## 5.2 Ghost‑Leakage Equation
+# Field Equations
 
-Variation with respect to \( G \) yields
+## 1. Hum Phase Field Equation (θ)
+
+\[
+2C_0\,\partial_t(\partial_t\theta - \Omega)
+- \nabla\cdot\!\left[
+\kappa\,\mu\!\left(\frac{|\nabla\theta|}{a_0}\right)\nabla\theta
+\right]
+- 2\alpha\,\nabla^2(\partial_t G - \nabla^2\theta)
+= 0.
+\]
+
+This is the primary dynamical equation of the Hum field.
+
+---
+
+## 2. Frequency Field Equation (Ω)
+
+Variation with respect to Ω gives
+
+\[
+-2C_0(\partial_t\theta - \Omega)
+- \frac{dV_\Omega}{d\Omega} = 0.
+\]
+
+For the quadratic potential above:
+
+\[
+2C_0(\Omega - \partial_t\theta)
++ m_\Omega^2(\Omega - \Omega_{\rm hum}) = 0.
+\]
+
+This relates the local oscillation frequency to the time‑derivative of the Hum phase.
+
+---
+
+## 3. Ghost‑Leakage Field Equation (G)
 
 \[
 \partial_t\left[2\alpha(\partial_t G - \nabla^2\theta)\right] = 0.
@@ -130,7 +172,7 @@ In the low‑energy regime:
 \partial_t G \approx \nabla^2\theta.
 \]
 
-This represents **slow leakage of curvature energy**, the TCWT analogue of dark energy.
+This term governs curvature‑leakage and the emergent dark‑energy‑like behaviour.
 
 ---
 
