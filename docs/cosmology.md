@@ -1,197 +1,212 @@
-\documentclass{article}
-\usepackage{amsmath,amssymb}
-\usepackage{geometry}
-\geometry{margin=1in}
+# TCWT Cosmological Perturbations
 
-\title{TCWT Cosmological Perturbations}
-\author{}
-\date{}
+This document introduces the cosmological perturbation framework for the **Total Coherence Wave Theory (TCWT)**. It extends the TCWT Lagrangian into the cosmological regime, deriving the background expansion, linear perturbations, and the structure-growth equation that replaces the ΛCDM growth model.
 
-\begin{document}
+## 1. Relativistic TCWT Action
 
-\maketitle
+TCWT is built on three interacting fields:
 
-\section{Relativistic TCWT Action}
-
-TCWT is built on three interacting fields: the Hum phase field $\theta$, the local oscillation frequency $\Omega$, and the ghost-relaxation field $G$.
+- the Hum phase field $\theta$,
+- the local oscillation frequency $\Omega$,
+- and the ghost-relaxation field $G$.
 
 To connect the theory to cosmology, structure formation, and gravitational observables, we require a fully covariant action defined on a spacetime metric $g_{\mu\nu}$. The relativistic action must reduce to the Master Lagrangian in the weak-field, quasistatic limit.
 
-\subsection{Covariant Structure}
+### 1.1 Covariant Structure
 
 We introduce:
-\begin{itemize}
-    \item a unit timelike 4-velocity $u^\mu$ representing the cosmological rest frame,
-    \item a spatial projector $h^{\mu\nu} = g^{\mu\nu} + u^\mu u^\nu$.
-\end{itemize}
+
+- a unit timelike 4-velocity $u^\mu$ representing the cosmological rest frame,
+- a spatial projector $h^{\mu\nu} = g^{\mu\nu} + u^\mu u^\nu$.
 
 These allow us to define:
-\begin{itemize}
-    \item temporal derivatives: $u^\mu \nabla_\mu$,
-    \item spatial gradients: $h^{\mu\nu} \nabla_\nu$,
-    \item spatial Laplacian: $h^{\mu\nu} \nabla_\mu \nabla_\nu$.
-\end{itemize}
 
-In an FLRW background, these reduce to
-\begin{equation*}
-    u^\mu \nabla_\mu \to \partial_t, \qquad
-    h^{\mu\nu} \nabla_\mu \to \nabla, \qquad
-    h^{\mu\nu} \nabla_\mu \nabla_\nu \to \nabla^2.
-\end{equation*}
+- temporal derivatives: $u^\mu \nabla_\mu$,
+- spatial gradients: $h^{\mu\nu} \nabla_\nu$,
+- spatial Laplacian: $h^{\mu\nu} \nabla_\mu \nabla_\nu$.
 
-\subsection{The Relativistic TCWT Lagrangian}
+In an FLRW background, these reduce to:
 
-A covariant generalisation of the Master Lagrangian is
-\begin{align*}
+$$
+u^\mu \nabla_\mu \to \partial_t, \qquad
+h^{\mu\nu} \nabla_\mu \to \nabla, \qquad
+h^{\mu\nu} \nabla_\mu \nabla_\nu \to \nabla^2.
+$$
+
+### 1.2 The Relativistic TCWT Lagrangian
+
+A covariant generalisation of the Master Lagrangian is:
+
+$$
+\begin{aligned}
 \mathcal{L}_{\rm TCWT}
-={}& -\frac{1}{2} C_0 \bigl( u^\mu \nabla_\mu \theta - \Omega \bigr)^2
-    - \kappa a_0^2 \, F\!\left( \frac{h^{\mu\nu} \nabla_\mu \theta \nabla_\nu \theta}{a_0^2} \right) \\
+={}& -\frac{1}{2} C_0 \bigl( u^\mu \nabla_\mu \theta - \Omega \bigr)^2 \\
+& - \kappa a_0^2 \, F\!\left( \frac{h^{\mu\nu} \nabla_\mu \theta \nabla_\nu \theta}{a_0^2} \right) \\
 & - V_\Omega(\Omega) \\
 & - \alpha \bigl( u^\mu \nabla_\mu G - h^{\mu\nu} \nabla_\mu \nabla_\nu \theta \bigr)^2 \\
 & - \mathcal{L}_{\rm soliton}.
-\end{align*}
+\end{aligned}
+$$
 
 Each term corresponds directly to a component of the non-relativistic theory:
-\begin{itemize}
-    \item Temporal coherence: $-\frac{1}{2} C_0 (u^\mu \nabla_\mu \theta - \Omega)^2 \to C_0 (\partial_t \theta - \Omega)^2$
-    \item Nonlinear gradient sector: $-\kappa a_0^2 F\!\left( \frac{h^{\mu\nu} \nabla_\mu \theta \nabla_\nu \theta}{a_0^2} \right) \to \kappa a_0^2 F(|\nabla \theta|^2 / a_0^2)$
-    \item Frequency potential: $-V_\Omega(\Omega) \to$ unchanged
-    \item Ghost-leakage channel: $-\alpha (u^\mu \nabla_\mu G - h^{\mu\nu} \nabla_\mu \nabla_\nu \theta)^2 \to \alpha (\partial_t G - \nabla^2 \theta)^2$
-    \item Matter sector: $\mathcal{L}_{\rm soliton}$ encodes the effective behaviour of soliton matter
-\end{itemize}
 
-\subsection{Full Relativistic Action}
+- Temporal coherence:  
+  $-\frac{1}{2} C_0 (u^\mu \nabla_\mu \theta - \Omega)^2 \quad \to \quad C_0 (\partial_t \theta - \Omega)^2$
 
-\begin{equation*}
-S = \int d^4 x \, \sqrt{-g} \Biggl[ \frac{1}{16\pi G} R + \mathcal{L}_{\rm TCWT} \Biggr].
-\end{equation*}
+- Nonlinear gradient sector:  
+  $-\kappa a_0^2 F\!\left( \frac{h^{\mu\nu} \nabla_\mu \theta \nabla_\nu \theta}{a_0^2} \right) \quad \to \quad \kappa a_0^2 F(|\nabla \theta|^2 / a_0^2)$
+
+- Frequency potential: $-V_\Omega(\Omega)$ → unchanged
+
+- Ghost-leakage channel:  
+  $-\alpha (u^\mu \nabla_\mu G - h^{\mu\nu} \nabla_\mu \nabla_\nu \theta)^2 \quad \to \quad \alpha (\partial_t G - \nabla^2 \theta)^2$
+
+- Matter sector: $\mathcal{L}_{\rm soliton}$ encodes the effective behaviour of soliton matter
+
+### 1.3 Full Relativistic Action
+
+$$
+S = \int d^4 x \, \sqrt{-g} \left[ \frac{1}{16\pi G} R + \mathcal{L}_{\rm TCWT} \right].
+$$
 
 This action is fully covariant, reduces to the Master Lagrangian in the weak-field limit, and provides the foundation for cosmology, perturbations, and structure formation.
 
-\section{Background Cosmology in TCWT}
+## 2. Background Cosmology in TCWT
 
-\subsection{FLRW Metric and Homogeneous Fields}
+### 2.1 FLRW Metric and Homogeneous Fields
 
-We assume a spatially flat FLRW metric
-\begin{equation*}
+Spatially flat FLRW metric:
+
+$$
 ds^2 = -dt^2 + a(t)^2 \delta_{ij} \, dx^i dx^j,
-\end{equation*}
-with Hubble rate $H(t) = \dot{a}/a$.
+$$
 
-In the cosmological rest frame: $u^\mu = (1,0,0,0)$, $h^{\mu\nu} = g^{\mu\nu} + u^\mu u^\nu$.
+Hubble rate $H(t) = \dot{a}/a$.
 
-Homogeneous fields: $\theta = \bar{\theta}(t)$, $\Omega = \bar{\Omega}(t)$, $G = \bar{G}(t)$. Spatial gradients vanish at background level.
+Homogeneous fields: $\theta = \bar{\theta}(t)$, $\Omega = \bar{\Omega}(t)$, $G = \bar{G}(t)$.  
+Spatial gradients vanish at background level.
 
-\subsection{Background TCWT Lagrangian Density}
+### 2.2 Background TCWT Lagrangian Density
 
-\begin{align*}
+$$
+\begin{aligned}
 \mathcal{L}_{\rm TCWT}^{(\rm bg)}
 ={}& -\frac{1}{2} C_0 \bigl( \dot{\bar{\theta}} - \bar{\Omega} \bigr)^2
     - V_\Omega(\bar{\Omega}) \\
 & - \alpha \, \dot{\bar{G}}^2
     - \mathcal{L}_{\rm soliton}^{(\rm bg)}.
-\end{align*}
-
-The nonlinear gradient term drops out at the homogeneous level.
+\end{aligned}
+$$
 
 Effective background energy densities and pressures (schematic):
-\begin{align*}
+
+$$
+\begin{aligned}
 \rho_{\rm hum} &\sim \frac{1}{2} C_0 (\dot{\bar{\theta}} - \bar{\Omega})^2 + V_\Omega(\bar{\Omega}), &
 p_{\rm hum} &\sim \frac{1}{2} C_0 (\dot{\bar{\theta}} - \bar{\Omega})^2 - V_\Omega(\bar{\Omega}), \\
 \rho_G &\sim \alpha \, \dot{\bar{G}}^2, &
 p_G &\sim \alpha \, \dot{\bar{G}}^2, \\
 \rho_{\rm m} &= \rho_{\rm soliton}^{(\rm bg)}, & p_{\rm m} &\approx 0 \quad \text{(dust-like)}.
-\end{align*}
+\end{aligned}
+$$
 
-\subsection{Modified Friedmann Equations}
+### 2.3 Modified Friedmann Equations
 
-\begin{align}
+$$
+\begin{aligned}
 H^2 &= \frac{8\pi G}{3} \bigl( \rho_{\rm hum} + \rho_G + \rho_{\rm m} + \rho_{\rm rad} + \dots \bigr), \\
 \dot{H} &= -4\pi G \bigl( \rho_{\rm tot} + p_{\rm tot} \bigr).
-\end{align}
+\end{aligned}
+$$
 
 Background field equations:
-\begin{align}
+
+$$
+\begin{aligned}
 \ddot{\bar{\theta}} + 3H \dot{\bar{\theta}} + \dots &= 0, \\
 \frac{\partial V_\Omega}{\partial \bar{\Omega}} + C_0 (\dot{\bar{\theta}} - \bar{\Omega}) + \dots &= 0, \\
 \ddot{\bar{G}} + 3H \dot{\bar{G}} + \dots &= 0.
-\end{align}
+\end{aligned}
+$$
 
-\section{Linear Perturbations in TCWT}
+## 3. Linear Perturbations in TCWT
 
-\subsection{Perturbation Setup}
+### 3.1 Perturbation Setup
 
-Newtonian gauge:
-\begin{equation*}
+Newtonian gauge metric:
+
+$$
 ds^2 = -(1 + 2\Phi) \, dt^2 + a(t)^2 (1 - 2\Psi) \delta_{ij} \, dx^i dx^j.
-\end{equation*}
+$$
 
 Perturbed fields:
-\begin{align*}
-\theta &= \bar{\theta}(t) + \delta\theta(\vec{x},t), \\
-\Omega &= \bar{\Omega}(t) + \delta\Omega(\vec{x},t), \\
-G    &= \bar{G}(t)    + \delta G(\vec{x},t).
-\end{align*}
+
+$$
+\theta = \bar{\theta}(t) + \delta\theta(\vec{x},t), \quad
+\Omega = \bar{\Omega}(t) + \delta\Omega(\vec{x},t), \quad
+G    = \bar{G}(t)    + \delta G(\vec{x},t).
+$$
 
 Matter: $\rho_{\rm m} = \bar{\rho}_{\rm m}(t) (1 + \delta_{\rm m})$, $v_i = \partial_i v$.
 
-\subsection{Linearised TCWT Field Equations}
+### 3.2 Linearised TCWT Field Equations
 
-\begin{subequations}
-\begin{align}
-\delta\ddot{\theta} + 3H \delta\dot{\theta} + \frac{k^2}{a^2} \mu_\theta \, \delta\theta
-    + C_0 (\delta\dot{\theta} - \delta\Omega) &= S_\theta(\Phi,\Psi), \tag{a} \\
-C_0 (\delta\dot{\theta} - \delta\Omega)
-    + V''_\Omega(\bar{\Omega}) \, \delta\Omega &= S_\Omega(\Phi,\Psi), \tag{b} \\
-\delta\ddot{G} + 3H \delta\dot{G} + \alpha \frac{k^2}{a^2} \delta G
-    &= \alpha \frac{k^2}{a^2} \delta\theta + S_G(\Phi,\Psi). \tag{c}
-\end{align}
-\end{subequations}
+$$
+\begin{aligned}
+&\delta\ddot{\theta} + 3H \delta\dot{\theta} + \frac{k^2}{a^2} \mu_\theta \, \delta\theta
+    + C_0 (\delta\dot{\theta} - \delta\Omega) = S_\theta(\Phi,\Psi), \\
+&C_0 (\delta\dot{\theta} - \delta\Omega)
+    + V''_\Omega(\bar{\Omega}) \, \delta\Omega = S_\Omega(\Phi,\Psi), \\
+&\delta\ddot{G} + 3H \delta\dot{G} + \alpha \frac{k^2}{a^2} \delta G
+    = \alpha \frac{k^2}{a^2} \delta\theta + S_G(\Phi,\Psi).
+\end{aligned}
+$$
 
-\subsection{Modified Einstein Equations}
+### 3.3 Modified Einstein Equations
 
 Poisson-like equation:
-\begin{equation*}
+
+$$
 \frac{k^2}{a^2} \Psi = 4\pi G \bigl( \bar{\rho}_{\rm m} \delta_{\rm m} + \delta\rho_{\rm hum} + \delta\rho_G \bigr).
-\end{equation*}
+$$
 
 Gravitational slip:
-\begin{equation*}
+
+$$
 \Phi - \Psi = \Pi_{\rm TCWT}.
-\end{equation*}
+$$
 
-\subsection{Matter Perturbations}
+### 3.4 Matter Perturbations
 
-\begin{align}
+$$
+\begin{aligned}
 \dot{\delta}_{\rm m} &= -\frac{k^2}{a^2} v + 3 \dot{\Psi}, \\
 \dot{v} &= -\Phi.
-\end{align}
+\end{aligned}
+$$
 
-Modified growth rate: $f(a) = \frac{d \ln D}{d \ln a}$.
+Modified growth rate: $f(a) = \dfrac{d \ln D}{d \ln a}$.
 
-\section{Numerical Implementation of TCWT (Boltzmann-Style Framework)}
+## 4. Numerical Implementation of TCWT (Boltzmann-Style Framework)
 
-[Outline of background module, perturbation module, observable module, minimal parameter set, and staged implementation strategy — text unchanged, equations already cleaned above.]
+[Outline of background module, perturbation module, observable module, minimal parameter set, and staged implementation strategy — content as in original document.]
 
-\section{Parameter Fitting and Observational Confrontation}
+## 5. Parameter Fitting and Observational Confrontation
 
-[Text unchanged — parameter lists and datasets already presented clearly.]
+[Parameter lists, datasets, statistical inference framework, key signatures, model comparison — content as in original document.]
 
-\section{Hum Condensation and the Origin of Matter and Dark Energy}
+## 6. Hum Condensation and the Origin of Matter and Dark Energy
 
-[Text mostly narrative; key equations already cleaned in earlier sections.]
+[Condensation point, latent heat and ghost surge, post-condensation evolution, physical interpretation — content as in original document.]
 
-\section{Summary}
+## Summary
 
 This document provides the cosmological layer of TCWT:
-\begin{itemize}
-    \item background expansion
-    \item linear perturbation theory
-    \item mapping phase fluctuations to density contrast
-    \item the TCWT growth equation
-    \item the route to the matter power spectrum
-\end{itemize}
+
+- background expansion
+- linear perturbation theory
+- mapping phase fluctuations to density contrast
+- the TCWT growth equation
+- the route to the matter power spectrum
 
 This completes the theoretical machinery needed to compare TCWT with $\Lambda$CDM across cosmological scales.
-
-\end{document}
