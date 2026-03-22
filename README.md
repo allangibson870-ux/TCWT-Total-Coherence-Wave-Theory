@@ -27,8 +27,6 @@ TCWT offers a unified scalar-field alternative to General Relativity + dark matt
 Time is an eternal oscillating background wave (the TimeWave).  
 All matter, gravity, quantum behaviour, dark matter, and dark energy emerge from distortions (knots) and their phase leakage into this wave.
 
-<img width="1024" height="1536" alt="tcwt-visual" src="https://github.com/user-attachments/assets/caaffce8-b447-4825-88bb-a3b0a55d98a2" />
-
 
 ## Four Primitives
 
@@ -78,6 +76,8 @@ In TCWT, phase-bleed accumulation is logarithmic and filtered by the fractal foa
 At small radii TCWT ≈ Newtonian; at galactic scales the pull is much stronger → flat rotation curves without exotic particles.
 
 <img width="390" height="210" alt="tcwt_log" src="https://github.com/user-attachments/assets/798ee528-af1c-4dcd-8015-0c1c0901af70" /><img width="390" height="210" alt="tcwt_linear" src="https://github.com/user-attachments/assets/c1e98799-8b7d-4a72-81b4-429363d9a149" />
+<img width="1500" height="1200" alt="image" src="https://github.com/user-attachments/assets/1cc479a5-97a2-4f27-921c-ee65084f19e2" />
+
 
 
 
