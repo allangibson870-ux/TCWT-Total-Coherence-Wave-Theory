@@ -146,6 +146,70 @@ propagate at exactly the speed of light.
 Only when wavelengths approach the coherence scale does the underlying
 phase structure of the Hum begin to affect wave propagation.
 
+---
+## TCWT Black-Hole and Growth-Sector Supplementary Notes
+
+This section contains optional, non-core interpretations and prediction tables related to TCWT strong-gravity behaviour, spin–chirality effects, and potential links to large-scale structure growth. These items are not part of the main cosmological derivation but may guide future observational comparisons.
+
+### 1. Spin–Chirality Effects on the Phase Wall
+
+TCWT predicts that the radius and sharpness of the black-hole phase wall depend on the relative orientation between the black-hole spin and the surrounding flow.
+
+| Spin Type           | Phase-Wall Position  | Step Height        | Expected Visual Signature              |
+|---------------------|----------------------|--------------------|----------------------------------------|
+| Static (non-rotating) | Baseline radius    | Baseline value     | Standard TCWT sharp-edge shadow        |
+| Co-rotating         | Slight inward shift  | Reduced step height | Broader, dimmer annulus ("fat ring")  |
+| Counter-rotating    | Outward shift        | Increased step height | Thin, high-contrast "razor ring"    |
+
+These effects arise from the interaction between frame-dragging and the phase-stiffness of the Hum field.
+
+### 2. TCWT vs Kerr: Shadow-Edge and Diameter Predictions
+
+The table below summarises how TCWT predictions differ from standard Kerr expectations. These are theoretical predictions intended for comparison with future high-frequency VLBI observations.
+
+| Parameter     | GR (Kerr) Expectation        | TCWT Prediction                 | Notes                          |
+|--------------|------------------------------|---------------------------------|--------------------------------|
+| Ring Diameter | Set by photon-orbit radius  | Slightly larger (phase-stiffening) | Testable at 345–690 GHz    |
+| Shadow Edge  | Logarithmic blur             | Sharp phase-wall boundary       | Consistent with TCWT coherence |
+| Spin Chirality | Prograde for Sgr A*        | Co-rotating phase-wall shift    | Matches expected flow          |
+| Step Height  | Smooth GR decay              | Refractive "cliff" at phase wall | Requires higher-frequency imaging |
+
+### 3. Co-Rotating Case: Softened Refractive Step
+
+For a co-rotating black hole, TCWT predicts:
+
+- Inward shift of the phase wall
+- Reduced refractive step height
+- A broadened plateau region at the shadow edge
+
+Expected intensity jump:
+
+- 0.75–0.85 for co-rotation
+- ~1.45 for counter-rotation
+
+This follows from reduced phase-stiffness when the Hum oscillation aligns with the local spin.
+
+### 4. Connection to Growth-Rate Suppression
+
+TCWT includes a ghost-relaxation channel that introduces a small, scale-dependent damping of matter clustering. This mechanism:
+
+- Reduces the linear growth factor
+- Suppresses fσ₈
+- Aligns with low-redshift weak-lensing measurements
+
+The same phase-viscosity that sharpens black-hole shadow edges also contributes to suppressed structure formation on cosmological scales.
+
+### 5. Phase-Saturation Soliton Interpretation
+
+In TCWT, compact objects such as Sgr A* are interpreted as phase-saturation solitons rather than geometric singularities. This leads to:
+
+- Slightly enlarged shadow diameters
+- Sharper edges
+- Spin-dependent wall shifts
+- Refractive step features
+
+These predictions are falsifiable with future high-frequency VLBI observations.
+
 ### Summary Status
 
 - **Strongest near-term test**: Solar superflare clock jitter (2026–2027)  
