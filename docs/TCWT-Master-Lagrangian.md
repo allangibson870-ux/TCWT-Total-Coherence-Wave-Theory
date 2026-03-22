@@ -1,501 +1,307 @@
 # TCWT Master Lagrangian  
 **Pregeometric Hum Field Formulation**  
-**Version: 2026.9**  
-**Status: Core Theoretical Framework**
+**Version:** 2026.9  
+**Status:** Core Theoretical Framework
 
----
+## 1. Fundamental Fields
 
-# 1. Fundamental Fields
+Total Coherence Wave Theory (**TCWT**) describes all physical phenomena as excitations of a coherent phase field called the **Hum**.
 
-Total Coherence Wave Theory (TCWT) describes all physical phenomena as excitations of a coherent phase field called the **Hum**.  
 There is **no metric** and **no curvature tensor** at the fundamental level.  
-Geometry, gravity, and cosmic expansion emerge from the dynamics of the Hum field.
+Geometry, gravity, and cosmic expansion **emerge** from the dynamics of the Hum field.
 
 The fundamental degrees of freedom are:
 
-| Field | Description |
-|-------|-------------|
-| \( \theta(x,t) \) | Hum phase field |
-| \( \Omega(x,t) \) | Local oscillation frequency |
-| \( G(x,t) \) | Ghost‑leakage field |
+| Field          | Description                  |
+|----------------|------------------------------|
+| $\theta(x,t)$  | Hum phase field              |
+| $\Omega(x,t)$  | Local oscillation frequency  |
+| $G(x,t)$       | Ghost-leakage field          |
 
-All observable physics arises from interactions among these fields.
+All observable physics arises from interactions among these three fields.
 
----
-
-# 2. Coherent Hum Vacuum
+## 2. Coherent Hum Vacuum
 
 The coherent vacuum state is defined by
 
-\[
-\theta_0(t) = \Omega_{\rm hum}\, t,
-\]
+$$
+\theta_0(t) = \Omega_{\rm hum}\, t
+$$
 
-where \( \Omega_{\rm hum} \) is the fundamental Hum frequency.
+where $\Omega_{\rm hum}$ is the fundamental Hum frequency.
 
 Small deviations from this state generate:
 
-- matter  
-- gravity  
-- waves  
-- dark‑matter‑like distortions  
-- dark‑energy‑like relaxation  
+- matter
+- gravity
+- waves
+- dark-matter-like distortions
+- dark-energy-like relaxation
 
----
-
-# 3. Master Lagrangian
+## 3. Master Lagrangian
 
 The TCWT dynamics follow from the Lagrangian density
 
-\[
-\mathcal{L}
-= C_0(\partial_t\theta - \Omega)^2
-- \kappa a_0^2 F\!\left(\frac{|\nabla\theta|^2}{a_0^2}\right)
-- \alpha(\partial_t G - \nabla^2\theta)^2
-- V_\Omega(\Omega),
-\]
+$$
+\begin{aligned}
+\mathcal{L} ={}& C_0 (\partial_t \theta - \Omega)^2 \\
+& - \kappa a_0^2 \, F\!\left( \frac{|\nabla \theta|^2}{a_0^2} \right) \\
+& - \alpha (\partial_t G - \nabla^2 \theta)^2 \\
+& - V_\Omega(\Omega),
+\end{aligned}
+$$
 
 with constants:
 
-- \( C_0 \): temporal coherence constant  
-- \( \kappa \): spatial phase stiffness  
-- \( a_0 \): MOND acceleration scale  
-- \( \alpha \): ghost‑leakage coupling  
+- $C_0$ — temporal coherence constant  
+- $\kappa$ — spatial phase stiffness  
+- $a_0$ — MOND acceleration scale  
+- $\alpha$ — ghost-leakage coupling
 
-This is a **nonlinear scalar‑field theory** with:
+This is a nonlinear scalar-field theory with:
 
-- a MOND‑like gradient sector  
-- a curvature‑leakage relaxation channel  
-- no metric  
-- no Einstein–Hilbert term  
+- a MOND-like gradient sector  
+- a curvature-leakage relaxation channel  
+- **no metric**  
+- **no Einstein–Hilbert term**
 
----
+## 4. Nonlinear Gradient Function
 
-# 4. Nonlinear Gradient Function
+The spatial term uses the MOND-motivated function
 
-The spatial term uses the MOND‑motivated function
-
-\[
-F(x) = x + \frac{2}{3}x^{3/2}.
-\]
+$$
+F(x) = x + \frac{2}{3} x^{3/2}
+$$
 
 Its derivative defines the interpolation function
 
-\[
-\mu(x) = \frac{dF}{dx} = 1 + x^{1/2}.
-\]
+$$
+\mu(x) = \frac{dF}{dx} = 1 + \sqrt{x}
+$$
 
 This produces:
 
 - Newtonian behaviour at high accelerations  
-- MOND‑like behaviour at low accelerations  
+- MOND-like behaviour at low accelerations
 
----
+## 5. Euler–Lagrange Field Equations
 
-# 5. Euler–Lagrange Field Equations
+### 5.1 Lagrangian Density (recap)
 
-## 5.1 Hum Phase Equation
-
-# TCWT Master Lagrangian — Three-Field Dynamical System
-
-## Lagrangian Density
-
-\[
-\mathcal{L} =
-C_0(\partial_t\theta - \Omega)^2
-- \kappa a_0^2 F\!\left(\frac{|\nabla\theta|^2}{a_0^2}\right)
-+ \alpha(\partial_t G - \nabla^2\theta)^2
-- V_\Omega(\Omega)
-\]
+$$
+\begin{aligned}
+\mathcal{L} ={}& C_0 (\partial_t \theta - \Omega)^2
+    - \kappa a_0^2 \, F\!\left( \frac{|\nabla \theta|^2}{a_0^2} \right) \\
+& - \alpha (\partial_t G - \nabla^2 \theta)^2
+    - V_\Omega(\Omega)
+\end{aligned}
+$$
 
 with
 
-\[
-F(x) = x + \frac{2}{3}x^{3/2}, \qquad
-\mu(x) = \frac{dF}{dx} = 1 + x^{1/2}.
-\]
+$$
+F(x) = x + \frac{2}{3} x^{3/2}, \qquad \mu(x) = 1 + \sqrt{x}.
+$$
 
-A simple choice for the Ω‑potential is
+A simple choice for the $\Omega$-potential is
 
-\[
-V_\Omega(\Omega) = \frac{1}{2}m_\Omega^2(\Omega - \Omega_{\rm hum})^2.
-\]
+$$
+V_\Omega(\Omega) = \frac{1}{2} m_\Omega^2 (\Omega - \Omega_{\rm hum})^2.
+$$
 
----
+### 5.2 Field Equations
 
-# Field Equations
+**1. Hum Phase Field Equation ($\theta$)**
 
-## 1. Hum Phase Field Equation (θ)
+$$
+2 C_0 \partial_t (\partial_t \theta - \Omega)
+- \nabla \cdot \left[ \kappa \mu\!\left( \frac{|\nabla \theta|}{a_0} \right) \nabla \theta \right]
++ 2 \alpha \nabla^2 (\partial_t G - \nabla^2 \theta) = 0.
+$$
 
-\[
-2C_0\,\partial_t(\partial_t\theta - \Omega)
-- \nabla\cdot\!\left[
-\kappa\,\mu\!\left(\frac{|\nabla\theta|}{a_0}\right)\nabla\theta
-\right]
-- 2\alpha\,\nabla^2(\partial_t G - \nabla^2\theta)
-= 0.
-\]
+**2. Frequency Field Equation ($\Omega$)**
 
-This is the primary dynamical equation of the Hum field.
+$$
+-2 C_0 (\partial_t \theta - \Omega) + \frac{d V_\Omega}{d \Omega} = 0.
+$$
 
----
+For the quadratic potential:
 
-## 2. Frequency Field Equation (Ω)
+$$
+2 C_0 (\Omega - \partial_t \theta) + m_\Omega^2 (\Omega - \Omega_{\rm hum}) = 0.
+$$
 
-Variation with respect to Ω gives
+**3. Ghost-Leakage Field Equation ($G$)**
 
-\[
--2C_0(\partial_t\theta - \Omega)
-- \frac{dV_\Omega}{d\Omega} = 0.
-\]
+$$
+\partial_t \Bigl[ 2 \alpha (\partial_t G - \nabla^2 \theta) \Bigr] = 0.
+$$
 
-For the quadratic potential above:
+In the low-energy regime:
 
-\[
-2C_0(\Omega - \partial_t\theta)
-+ m_\Omega^2(\Omega - \Omega_{\rm hum}) = 0.
-\]
+$$
+\partial_t G \approx \nabla^2 \theta.
+$$
 
-This relates the local oscillation frequency to the time‑derivative of the Hum phase.
-
----
-
-## 3. Ghost‑Leakage Field Equation (G)
-
-\[
-\partial_t\left[2\alpha(\partial_t G - \nabla^2\theta)\right] = 0.
-\]
-
-In the low‑energy regime:
-
-\[
-\partial_t G \approx \nabla^2\theta.
-\]
-
-This term governs curvature‑leakage and the emergent dark‑energy‑like behaviour.
-
----
+This term governs curvature leakage and emergent dark-energy-like behaviour.
 
 ## 6. Weak-Field and Quasistatic Limit
 
-In the nonrelativistic, quasistatic regime relevant for galaxies and bound systems, we assume:
+Assumptions:
 
-- time derivatives are small compared to spatial variations:
-  \[
-  \partial_t^2\theta \approx 0, \qquad \partial_t G \approx 0,
-  \]
-- the ghost-leakage channel is slow:
-  \[
-  \partial_t G - \nabla^2\theta \approx 0.
-  \]
+- $\partial_t^2 \theta \approx 0$, $\partial_t G \approx 0$  
+- ghost-leakage channel is slow: $\partial_t G - \nabla^2 \theta \approx 0$
 
-Under these assumptions, the Hum phase equation reduces to
+The Hum phase equation reduces to
 
-\[
-\nabla\cdot\!\left[
-\kappa\,\mu\!\left(\frac{|\nabla\theta|}{a_0}\right)\nabla\theta
-\right]
-= \rho_{\rm eff},
-\]
+$$
+\nabla \cdot \left[ \kappa \mu\!\left( \frac{|\nabla \theta|}{a_0} \right) \nabla \theta \right] = \rho_{\rm eff},
+$$
 
-where \(\rho_{\rm eff}\) is an effective source term encoding matter knots and phase distortions. This is the fundamental quasistatic field equation of TCWT.
+where $\rho_{\rm eff}$ is an effective source term (matter knots + phase distortions).
 
-The gravitational acceleration is defined by
+Gravitational acceleration is defined as
 
-\[
-\mathbf{a} = -\chi\,\nabla\theta.
-\]
-
----
+$$
+\mathbf{a} = -\chi \nabla \theta.
+$$
 
 ## 7. Newtonian Limit
 
-In the strong-field regime \(|\nabla\theta| \gg a_0\), the interpolation function tends to
+Strong-field regime ($|\nabla \theta| \gg a_0$):
 
-\[
-\mu(x) \to 1,
-\]
+$$
+\mu(x) \to 1 \quad \Rightarrow \quad \kappa \nabla^2 \theta \approx \rho_{\rm eff}.
+$$
 
-and the field equation becomes approximately linear:
-
-\[
-\kappa\,\nabla^2\theta \approx \rho_{\rm eff}.
-\]
-
-Identifying \(\rho_{\rm eff}\) with the mass density \(\rho\) up to a constant factor, we obtain a Poisson-like equation
-
-\[
-\nabla^2\theta = \frac{\rho}{\kappa}.
-\]
-
-The acceleration
-
-\[
-\mathbf{a} = -\chi\,\nabla\theta
-\]
-
-then reproduces Newtonian gravity with an effective gravitational constant set by \(\chi\) and \(\kappa\).
-
----
+Identifying $\rho_{\rm eff} \propto \rho$ gives a Poisson-like equation and Newtonian gravity with effective $G$.
 
 ## 8. MOND Regime
 
-In the weak-field regime \(|\nabla\theta| \ll a_0\), the interpolation function behaves as
+Weak-field regime ($|\nabla \theta| \ll a_0$):
 
-\[
-\mu(x) \approx x^{1/2}
-= \left(\frac{|\nabla\theta|}{a_0}\right).
-\]
+$$
+\mu(x) \approx \sqrt{x} = \frac{|\nabla \theta|}{a_0}.
+$$
 
-The quasistatic field equation becomes
+The equation becomes
 
-\[
-\nabla\cdot\left[
-\left(\frac{|\nabla\theta|}{a_0}\right)\nabla\theta
-\right]
-= \rho_{\rm eff}.
-\]
+$$
+\nabla \cdot \left[ \left( \frac{|\nabla \theta|}{a_0} \right) \nabla \theta \right] = \rho_{\rm eff},
+$$
 
-With \(\mathbf{a} = -\chi\,\nabla\theta\), this yields a MOND-like acceleration law that produces flat galactic rotation curves without invoking dark matter. The transition between the Newtonian and MOND regimes is controlled by the nonlinear function \(\mu(x)\) inherited from the TCWT Lagrangian.
----
+yielding flat rotation curves without dark matter.
 
 ## 9. Energy Density of the Hum–Ghost System
 
-Although TCWT is pregeometric and does not assume a spacetime metric, the Lagrangian density still defines a natural energy density and energy flux for the Hum and ghost fields.
+Effective energy density (non-relativistic regime):
 
-In the nonrelativistic regime, we define the effective energy density as
-
-\[
-\mathcal{E} =
-C_0(\partial_t\theta - \Omega)^2
-+ \kappa a_0^2 F\!\left(\frac{|\nabla\theta|^2}{a_0^2}\right)
-+ \alpha(\partial_t G - \nabla^2\theta)^2
+$$
+\mathcal{E} = C_0 (\partial_t \theta - \Omega)^2
++ \kappa a_0^2 F\!\left( \frac{|\nabla \theta|^2}{a_0^2} \right)
++ \alpha (\partial_t G - \nabla^2 \theta)^2
 + V_\Omega(\Omega).
-\]
+$$
 
-The four contributions are:
+Contributions:
 
-- Hum temporal coherence energy:
-  \[
-  \mathcal{E}_{\rm hum,time}
-  = C_0(\partial_t\theta - \Omega)^2,
-  \]
-- Hum gradient (gravitational/MOND) energy:
-  \[
-  \mathcal{E}_{\rm hum,grad}
-  = \kappa a_0^2 F\!\left(\frac{|\nabla\theta|^2}{a_0^2}\right),
-  \]
-- ghost‑leakage (curvature‑relaxation) energy:
-  \[
-  \mathcal{E}_{\rm ghost}
-  = \alpha(\partial_t G - \nabla^2\theta)^2,
-  \]
-- frequency potential energy:
-  \[
-  \mathcal{E}_{\Omega}
-  = V_\Omega(\Omega).
-  \]
+- Hum temporal coherence: $C_0 (\partial_t \theta - \Omega)^2$  
+- Hum gradient (gravity/MOND): $\kappa a_0^2 F(\dots)$  
+- Ghost leakage (curvature relaxation): $\alpha (\partial_t G - \nabla^2 \theta)^2$  
+- Frequency potential: $V_\Omega(\Omega)$
 
-The total Hum–ghost energy density is
+Energy slowly transfers from gradient → ghost sector → dark-energy-like behaviour.
 
-\[
-\mathcal{E}_{\rm total}
-= \mathcal{E}_{\rm hum,time}
-+ \mathcal{E}_{\rm hum,grad}
-+ \mathcal{E}_{\rm ghost}
-+ \mathcal{E}_{\Omega}.
-\]
+## 10. Matter Knots (Phase Solitons)
 
-In regions where the ghost‑leakage channel is active
-\((\partial_t G - \nabla^2\theta \neq 0)\),
-energy is slowly transferred from the Hum gradient sector into the ghost sector. This provides a natural interpretation of dark‑energy‑like behaviour as long‑timescale relaxation of stored Hum curvature energy.
+Localized matter = stable solitons, e.g.
 
-# 10. Matter Knots (Phase Solitons)
+$$
+\theta_{\rm knot}(r) = \Theta_0 \exp\!\left( -\frac{r^2}{2 R^2} \right).
+$$
 
-Localized matter corresponds to stable soliton solutions:
+Matter is a **phase configuration**, not an added substance.
 
-\[
-\theta_{\rm knot}(r)
-= \Theta_0\,\exp\!\left(-\frac{r^2}{2R^2}\right).
-\]
+## 11. Gravitational Waves
 
-These represent:
+Linear perturbations $\delta\theta$ obey
 
-- particles  
-- stars  
-- compact objects  
+$$
+\square \delta\theta = 0
+$$
 
-Matter is **not added** to the theory — it is a **phase configuration**.
+→ Hum-phase gravitational waves propagating at speed $c$.
 
----
+## 12. Ghost Leakage and Dark Energy
 
-# 11. Gravitational Waves
+$$
+\rho_G = \alpha (\partial_t G - \nabla^2 \theta)^2
+$$
 
-Linear perturbations
+behaves as time-varying dark-energy-like component.
 
-\[
-\theta = \theta_0 + \delta\theta
-\]
+## 13. Cosmological Background (Metric-Free)
 
-yield the wave equation
+Cosmic expansion defined by
 
-\[
-\square\,\delta\theta = 0,
-\]
+$$
+H^2(t) = \frac{\rho_G(t)}{3 M_{\rm eff}^2}, \qquad \rho_G(t) = \alpha (\nabla^2 \theta)^2.
+$$
 
-with propagation speed \( c \).
+$$
+H(t) \propto |\nabla^2 \theta|.
+$$
 
-These are **Hum‑phase gravitational waves**.
+Acceleration = direct consequence of curvature leakage.
 
----
+## 14. Linear Perturbations (Metric-Free)
 
-# 12. Ghost Leakage and Dark Energy
+$$
+\ddot{\delta\theta} + \Gamma(t) \dot{\delta\theta} - c_s^2(t) \nabla^2 \delta\theta + m_{\rm eff}^2(t) \delta\theta = 0.
+$$
 
-The ghost equation
+Density contrast: $\delta \rho \propto \nabla^2 \delta\theta$.
 
-\[
-\partial_t G \approx \nabla^2\theta
-\]
+Growth equation:
 
-acts as a slow relaxation channel for curvature energy.
+$$
+\ddot{\delta} + 2 H \dot{\delta} - 4\pi G_{\rm eff}(t) \rho \delta + \mathcal{F}_{\rm leak}(t) \delta = 0.
+$$
 
-Define the **ghost‑leakage energy density**:
+## 15. Interpretation Summary
 
-\[
-\rho_G = \alpha(\partial_t G - \nabla^2\theta)^2.
-\]
+| Phenomenon          | TCWT Interpretation                     |
+|---------------------|------------------------------------------|
+| Matter              | Phase solitons                           |
+| Gravity             | Phase-gradient acceleration              |
+| Dark Matter         | Opaque phase distortions                 |
+| Dark Energy         | Ghost-leakage relaxation                 |
+| Gravitational Waves | Hum phase oscillations                   |
+| Cosmic Expansion    | Ghost-leakage energy                     |
 
-This behaves as a **time‑varying dark‑energy‑like component**.
+## 16. Emergent Gravitational Lensing
 
----
+Light follows Fermat’s principle with variable effective refractive index:
 
-# 13. Cosmological Background (Metric‑Free)
+$$
+n(x) = 1 + \frac{2 \chi}{c^2} \theta(x).
+$$
 
-TCWT does **not** assume a metric or Einstein equations.
+Deflection angle:
 
-Cosmic expansion is defined by the **ghost‑leakage energy density**:
+$$
+\alpha = -\int_{-\infty}^{\infty} \frac{1}{n} \nabla_\perp n \, ds.
+$$
 
-\[
-H^2(t) = \frac{\rho_G(t)}{3M_{\rm eff}^2}.
-\]
+**Regimes:**
 
-Here \( M_{\rm eff} \) is an emergent scale determined by the Hum field.
+- Strong field ($|\nabla\theta| \gg a_0$): recovers Einsteinian $\alpha \approx \frac{4GM}{b c^2}$  
+- Weak field ($|\nabla\theta| \ll a_0$): extra term $\sim \frac{2\pi G M}{a_0 c^2 b}$
 
-Since
+The extra term explains galactic lensing without dark matter — purely from nonlinear Hum gradient stiffness.
 
-\[
-\partial_t G \approx \nabla^2\theta,
-\]
+## 17. Cosmological Picture
 
-we obtain
+The universe emerges from large-scale Hum instabilities → relaxes toward coherent vacuum → ghost leakage drives acceleration → matter forms as phase knots → gravity from gradients → no fundamental dark matter or fixed cosmological constant.
 
-\[
-\rho_G(t) = \alpha\left(\nabla^2\theta\right)^2.
-\]
-
-Thus:
-
-\[
-H(t) \propto |\nabla^2\theta|.
-\]
-
-Cosmic acceleration is therefore a **direct consequence of curvature leakage**.
-
----
-
-# 14. Linear Perturbations (Metric‑Free)
-
-Let
-
-\[
-\theta = \bar{\theta}(t) + \delta\theta(x,t).
-\]
-
-Linearizing the master equation gives
-
-\[
-\ddot{\delta\theta}
-+ \Gamma(t)\dot{\delta\theta}
-- c_s^2(t)\nabla^2\delta\theta
-+ m_{\rm eff}^2(t)\delta\theta
-= 0,
-\]
-
-where:
-
-- \( \Gamma(t) \): damping from background relaxation  
-- \( c_s^2(t) \): effective sound speed from gradient sector  
-- \( m_{\rm eff}^2(t) \): curvature of the potential  
-
-Density contrast is defined by
-
-\[
-\delta\rho \propto \nabla^2\delta\theta.
-\]
-
-This yields the **TCWT growth equation**:
-
-\[
-\ddot{\delta}
-+ 2H\dot{\delta}
-- 4\pi G_{\rm eff}(t)\rho\,\delta
-+ \mathcal{F}_{\rm leak}(t)\delta
-= 0.
-\]
-
----
-
-# 15. Interpretation
-
-| Phenomenon | TCWT Interpretation |
-|------------|---------------------|
-| Matter | Phase solitons |
-| Gravity | Phase‑gradient acceleration |
-| Dark Matter | Opaque phase distortions |
-| Dark Energy | Ghost‑leakage relaxation |
-| Gravitational Waves | Hum phase oscillations |
-| Cosmic Expansion | Ghost‑leakage energy |
-
----
-
-# 16. Cosmological Picture
-
-The universe emerges from large‑scale instabilities in the Hum field.  
-Over cosmic time, the phase structure relaxes toward the coherent Hum vacuum.  
-Ghost‑leakage energy drives cosmic acceleration.  
-Matter forms as stable phase knots.  
-Gravity arises from phase gradients.  
-Dark matter is not a substance but a distortion.  
-Dark energy is not a constant but a relaxation channel.
-
-# 17. Emergent Gravitational Lensing
-
-In TCWT, light does not follow a "curved spacetime" geodesic. Instead, it follows **Fermat’s Principle** in a phase field with a variable **Effective Refractive Index ($n$)**.
-
-### 17.1 The Hum Refractive Index
-The local propagation speed $v$ of an electromagnetic wave is determined by the magnitude of the Hum phase field $\theta$:
-
-$$n(\mathbf{x}) = \frac{c}{v(\mathbf{x})} = 1 + \frac{2\chi}{c^2} \theta(\mathbf{x})$$
-
-Where:
-*   $\chi$: Gravitational coupling constant.
-*   $\theta(\mathbf{x})$: The local Hum phase potential.
-
-### 17.2 Bending Equation
-The deflection angle $\alpha$ for a photon passing a matter knot (soliton) at an impact parameter $b$ is calculated via the optical gradient:
-
-$$\alpha = -\int_{-\infty}^{\infty} \frac{1}{n} \nabla_\perp n \, ds$$
-
-### 17.3 Newtonian vs. MOND Lensing
-Because the Hum phase gradient $\nabla\theta$ follows the nonlinear interpolation function $\mu(x)$, TCWT predicts two distinct lensing regimes:
-
-1.  **Strong Field (Deep Newtonian):** For $|\nabla\theta| \gg a_0$, TCWT recovers the Einsteinian deflection:
-    $$\alpha \approx \frac{4GM}{bc^2}$$
-2.  **Weak Field (MOND/Galactic):** For $|\nabla\theta| \ll a_0$, the "stiffness" of the Hum field creates an additional refractive term:
-    $$\alpha \approx \frac{4GM}{bc^2} + \frac{2\pi \sqrt{GMa_0}}{c^2}$$
-
-### 17.4 Elimination of Dark Matter
-The constant term $\frac{2\pi \sqrt{GMa_0}}{c^2}$ provides the "extra" lensing observed in galaxies. In TCWT, this is not caused by invisible mass (Dark Matter), but by the **refractive power of the nonlinear Hum gradient** at galactic scales.
-
-
-TCWT is a **fully pregeometric, metric‑free theory** in which all geometry and dynamics emerge from the Hum field.
+**TCWT is fully pregeometric and metric-free**: all geometry and dynamics **emerge** from the Hum field.
