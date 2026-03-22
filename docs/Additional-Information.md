@@ -574,3 +574,5 @@ This provides a TCWT‑consistent, physically grounded explanation for why
 self‑maintaining structures — and eventually life — emerge in warm biological
 environments.
 
+<img width="1024" height="1536" alt="tcwt-visual" src="https://github.com/user-attachments/assets/caaffce8-b447-4825-88bb-a3b0a55d98a2" />
+
