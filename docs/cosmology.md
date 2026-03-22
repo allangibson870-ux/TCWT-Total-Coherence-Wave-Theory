@@ -888,7 +888,7 @@ This provides a single, coherent mechanism for:
 
 - ---
 
-## 7. Summary
+## 6. Summary
 
 This document provides the cosmological layer of TCWT:
 
