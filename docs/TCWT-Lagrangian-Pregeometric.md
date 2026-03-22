@@ -14,9 +14,13 @@ Total Coherence Wave Theory (**TCWT**) describes physics in terms of a coherence
 | $\Omega(x,t)$ | Informational drag density    |
 | $G(x,t)$      | Ghost / leakage regulator     |
 
-**Derived quantity:**  
-$\lambda = \nabla \theta$  
-(phase gradient responsible for gravitational acceleration)
+**Derived quantity:**
+
+$$
+\lambda = \nabla \theta
+$$
+
+which represents the phase gradient responsible for gravitational acceleration.
 
 ## 2. Hum Vacuum State
 
@@ -37,6 +41,8 @@ $$
 Matter corresponds to localized phase knots in $\delta\theta$.
 
 ## 3. Pregeometric Lagrangian Density (MOND-Extended)
+
+The TCWT Lagrangian density is
 
 $$
 \begin{aligned}
@@ -72,25 +78,31 @@ This prevents runaway gradients and eliminates singularities.
 
 ## 4. Action
 
+The full action of the theory is
+
 $$
 S = \int \mathcal{L}\, d^3x\, dt
 $$
 
-Field equations follow from $\delta S = 0$.
+All field equations are obtained by requiring the variation of the action to vanish:
+
+$$
+\delta S = 0
+$$
 
 ## 5. Euler–Lagrange Equation (general form)
 
-For a field $\phi$:
+For a generic field $\phi$ (which may depend on $\phi$, $\partial_\mu \phi$, $\partial_\mu \partial_\nu \phi$, etc.), the Euler–Lagrange equation reads:
 
 $$
 \frac{\partial \mathcal{L}}{\partial \phi} - \partial_\mu \left( \frac{\partial \mathcal{L}}{\partial (\partial_\mu \phi)} \right) + \partial_\mu \partial_\nu \left( \frac{\partial \mathcal{L}}{\partial (\partial_\mu \partial_\nu \phi)} \right) = 0
 $$
 
-Second derivatives arise from the $\nabla^2 \theta$ term.
+Higher-order derivatives appear due to the $\nabla^2 \theta$ term inside the ghost-leakage sector.
 
-## 6. Phase Field Equation (with MOND)
+## 6. Phase Field Equation (with MOND term)
 
-Variation w.r.t. $\theta$:
+Variation of the action with respect to $\theta$ yields the fundamental propagation equation for the phase field:
 
 $$
 2 C_0 \partial_t (\partial_t \theta - \Omega) 
@@ -98,55 +110,76 @@ $$
 - 2 \alpha \nabla^2 (\partial_t G - \nabla^2 \theta) = 0.
 $$
 
+This is the core dynamical equation of TCWT.
+
 ## 7. Informational Drag Equation
 
-Variation w.r.t. $\Omega$:
+Variation with respect to $\Omega$:
 
 $$
 -2 C_0 (\partial_t \theta - \Omega) - \frac{d V_\Omega}{d \Omega} = 0.
 $$
 
-**Low-energy regime:** $\Omega \approx \partial_t \theta$  
-**Cap regime:** $\Omega \to \Omega_{\rm max}$
+**Low-energy regime:**
+
+$$
+\Omega \approx \partial_t \theta
+$$
+
+**Cap regime (saturation):**
+
+$$
+\Omega \to \Omega_{\rm max}
+$$
 
 ## 8. Ghost Field Equation
 
-Variation w.r.t. $G$:
+Variation with respect to $G$:
 
 $$
 \partial_t \Bigl[ 2 \alpha (\partial_t G - \nabla^2 \theta) \Bigr] = 0.
 $$
 
-**Low-energy approximation:**  
-$\partial_t G \approx \nabla^2 \theta$  
-(slow curvature leakage → dark energy)
+**Low-energy approximation:**
+
+$$
+\partial_t G \approx \nabla^2 \theta
+$$
+
+This slow leakage channel is associated with emergent dark-energy-like behaviour.
 
 ## 9. Knot Solutions (Matter)
 
-Localized phase structures, example:
+Matter corresponds to localized phase structures.
+
+**Example Gaussian solution:**
 
 $$
 \theta_{\rm knot}(r) = \Theta_0 \exp\!\left( -\frac{r^2}{2 R^2} \right)
 $$
 
-Gradient energy (nonlinear):
+Gradient energy (nonlinear form):
 
 $$
 E = \int \kappa a_0^2 F\!\left( \frac{|\nabla \theta|^2}{a_0^2} \right) d^3x
 $$
 
-Particle-like solitons.
+These behave as particle-like solitons.
 
 ## 10. Gravity from Phase Gradients
+
+Test-particle acceleration is defined by
 
 $$
 \mathbf{a} = -\chi \nabla \theta, \qquad \chi = \frac{c^2 \kappa}{C_0 \Omega_{\rm max}}
 $$
 
+This links the phase field directly to gravitational acceleration.
+
 ## 11. Newtonian + MOND Limits
 
 **Strong-field (Newtonian) regime** ($|\nabla \theta| \gg a_0$):  
-$\mu(x) \to 1$ → $\kappa \nabla^2 \theta \approx \rho_{\rm eff}$
+$\mu(x) \to 1$ → reduces to $\kappa \nabla^2 \theta \approx \rho_{\rm eff}$
 
 **Weak-field (MOND) regime** ($|\nabla \theta| \ll a_0$):  
 $\mu(x) \approx \sqrt{x} = \frac{|\nabla \theta|}{a_0}$ →  
@@ -154,29 +187,49 @@ $$
 \nabla \cdot \left[ \left( \frac{|\nabla \theta|}{a_0} \right) \nabla \theta \right] = \frac{\rho_{\rm eff}}{\kappa}
 $$
 
-→ flat rotation curves without dark matter.
+This yields flat rotation curves without dark matter.
 
 ## 12. Mapping to the Gravitational Potential
 
-Define gravitational potential:
+Define the gravitational potential
 
 $$
-\Phi = \chi \theta \quad \Rightarrow \quad \nabla^2 \Phi = \chi \nabla^2 \theta
+\Phi = \chi \theta
 $$
 
-In Newtonian regime:
+Then
+
+$$
+\nabla^2 \Phi = \chi \nabla^2 \theta
+$$
+
+Substituting the Newtonian-limit field equation gives
 
 $$
 \nabla^2 \Phi = 4\pi G \rho, \qquad G = \frac{\chi}{4\pi \kappa}
 $$
 
+Thus TCWT reproduces the Newtonian Poisson equation
+
+$$
+\nabla^2 \Phi = 4\pi G \rho
+$$
+
 ## 13. Newtonian Acceleration Law
 
+Acceleration becomes
+
 $$
-\mathbf{a} = -\nabla \Phi \quad \Rightarrow \quad a(r) = -\frac{G M}{r^2}
+\mathbf{a} = -\nabla \Phi
 $$
 
-(for localized knot mass $M$)
+which yields the standard inverse-square law
+
+$$
+a(r) = -\frac{G M}{r^2}
+$$
+
+for a localized knot mass $M$.
 
 ## 14. Interpretation
 
@@ -220,7 +273,7 @@ Entropy corresponds to the unwinding of phase knots, returning the system toward
 - total gradient energy (linear vs. full MOND)  
 - Newtonian acceleration profile  
 - full MOND-nonlinear acceleration profile  
-- rotation curve toy demonstration
+- toy rotation curve
 
 **Runnable Python code** (copy-paste ready):
 
