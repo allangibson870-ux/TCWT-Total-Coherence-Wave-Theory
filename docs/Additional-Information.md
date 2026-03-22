@@ -170,6 +170,10 @@ These represent propagating disturbances of the Hum background.
 Macroscopic observers interpret these as **gravitational waves**.
 
 ---
+<img width="784" height="1168" alt="image" src="https://github.com/user-attachments/assets/388fafec-0077-4eb8-bd99-0efc8a776fef" />
+<img width="784" height="1168" alt="image" src="https://github.com/user-attachments/assets/5b82fbdf-3341-4a91-b8cf-ceb89967125c" />
+
+
 
 # 10. Summary
 
