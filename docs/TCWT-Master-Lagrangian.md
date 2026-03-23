@@ -744,7 +744,235 @@ Thus:
 
 CMB structure = interference pattern of sound waves in a phase-driven gravitational field
 
-## 16. Next Frontier
+---
+## 16. CMB Acoustic Peak Heights in TCWT
+
+### 16.1 Goal
+
+We derive the amplitude of acoustic peaks in the CMB temperature power spectrum within TCWT and identify how they differ from ΛCDM.
+
+Peak heights are sensitive to:
+
+- baryon loading
+- gravitational potential evolution
+- driving (early ISW effect)
+- effective dark-matter behaviour
+
+---
+
+## 16.2 Photon–Baryon Oscillator with Driving
+
+The photon perturbation obeys:
+
+δ̈_γ + c_s² k² δ_γ = -k² Φ - Φ̈
+
+Define:
+
+Θ ≡ δ_γ / 4
+
+Then:
+
+Θ̈ + c_s² k² Θ = -k² Φ / 3 - Φ̈
+
+---
+
+## 16.3 Solution Structure
+
+The general solution is:
+
+Θ(k, t) = [Θ₀ + Φ] cos(k r_s)
+          + (1/k c_s) Θ̇₀ sin(k r_s)
+          + ∫ dt' G(t, t') S(t')
+
+Where:
+
+S(t) = -Φ̈ - (k²/3)Φ
+
+---
+
+## 16.4 Baryon Loading Effect
+
+Define:
+
+R = 3ρ_b / (4ρ_γ)
+
+This modifies the oscillator:
+
+c_s² = 1 / [3(1 + R)]
+
+and shifts equilibrium:
+
+Θ_eq = -Φ (1 + R)
+
+---
+
+### Result: Odd–Even Peak Asymmetry
+
+At extrema:
+
+Compression peaks (odd n):
+Θ ≈ -(1 + R) Φ
+
+Rarefaction peaks (even n):
+Θ ≈ -Φ
+
+Thus:
+
+Peak ratio ≈ 1 + R
+
+---
+
+## 16.5 Gravitational Driving (Early ISW)
+
+If Φ evolves:
+
+S(t) = -Φ̈ contributes energy to oscillations
+
+Approximate solution:
+
+Amplitude ∝ (1 + Δ_ISW)
+
+Where:
+
+Δ_ISW ≈ ∫ (Φ̇ / Φ) dt
+
+---
+
+## 16.6 TCWT Modification: Potential Evolution
+
+From TCWT:
+
+(k²/a²) Φ = 4πG [ ρ_b δ_b + ρ_TCWT δ_TCWT ]
+
+---
+
+### Case 1: Ideal CDM-like limit
+
+If:
+
+c_s,TCWT² ≪ 1
+
+then:
+
+Φ ≈ constant
+
+→ Δ_ISW ≈ 0  
+→ standard peak heights
+
+---
+
+### Case 2: Small TCWT pressure
+
+If:
+
+c_s,TCWT² > 0
+
+then:
+
+Φ decays slowly:
+
+Φ(t) ≈ Φ₀ (1 - ε log a)
+
+This produces:
+
+Δ_ISW ≈ ε
+
+→ enhances all peaks
+
+---
+
+## 16.7 TCWT Peak Height Formula
+
+Combining effects:
+
+Peak amplitude:
+
+A_n ≈ Φ₀ × (1 + R δ_{n odd}) × (1 + Δ_ISW)
+
+Where:
+
+δ_{n odd} = 1 for odd peaks, 0 for even peaks
+
+---
+
+## 16.8 Comparison with ΛCDM
+
+| Effect | ΛCDM | TCWT |
+|------|------|------|
+| Baryon loading | R | same |
+| CDM support | particle CDM | Hum+Ghost |
+| Potential decay | small | model-dependent |
+| ISW driving | small | tunable |
+| Peak ratios | fixed by Ω_b | modified by TCWT |
+
+---
+
+## 16.9 Observational Constraints
+
+To match observations:
+
+1. First/second peak ratio:
+   fixes baryon density
+
+2. Third peak height:
+   requires sustained Φ
+
+3. Damping tail:
+   sensitive to expansion history
+
+---
+
+### Key Constraint
+
+TCWT must satisfy:
+
+|Φ̇/Φ| ≪ H   at recombination
+
+otherwise:
+
+- peaks become too large (overdriven)
+- peak ratios distort
+
+---
+
+## 16.10 Failure Modes
+
+1. Rapid Φ decay  
+   → excessive ISW → peaks too high  
+
+2. Nonzero TCWT pressure  
+   → phase shift + amplitude distortion  
+
+3. Incorrect clustering density  
+   → wrong third peak  
+
+---
+
+## 16.11 Final Result
+
+Peak amplitudes in TCWT are:
+
+A_n ≈ Φ₀ (1 + R δ_{n odd}) (1 + Δ_ISW)
+
+with:
+
+Δ_ISW ≈ ∫ (Φ̇ / Φ) dt
+
+---
+
+## 16.12 Interpretation
+
+In TCWT:
+
+- baryons set peak asymmetry  
+- Hum + Ghost set gravitational wells  
+- ghost leakage controls peak driving  
+
+Thus:
+
+Peak heights encode the dynamics of the Hum field.
+
+## 17. Next Frontier
 
 To make TCWT fully testable:
 
