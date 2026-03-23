@@ -1093,7 +1093,209 @@ In TCWT the damping tail is no longer purely a diffusion artefact of baryon–ph
 
 The tail therefore becomes a direct probe of the same auxiliary coupling α that also generates small-scale matter-power suppression and scale-dependent growth — unifying galactic MOND, linear cosmology, and the CMB damping tail within a single coherent phase-field mechanism.
 
-## 18. Next Frontier
+---
+## 18. Ghost-Induced k⁴ Damping from First Principles
+
+### 18.1 Goal
+
+We derive the high-k damping term arising from the ghost sector:
+
+    L_ghost = -α (∂ₜ G - ∇²θ)²
+
+and show explicitly how it generates a k⁴ suppression in phase perturbations and the CMB transfer function.
+
+---
+
+## 18.2 Linear Perturbations
+
+Expand around homogeneous background:
+
+    θ = θ̄(t) + δθ(x,t)
+    G = Ḡ(t) + δG(x,t)
+
+Work in the subhorizon regime:
+
+    k ≫ aH
+
+Fourier transform:
+
+    δθ(x,t) → δθ_k(t)
+    δG(x,t) → δG_k(t)
+
+---
+
+## 18.3 Quadratic Ghost Lagrangian
+
+To second order:
+
+    L_ghost^(2) = -α (∂ₜ δG - ∇² δθ)²
+
+In Fourier space:
+
+    ∇² → -k²
+
+⇒
+
+    L_ghost^(2) = -α (∂ₜ δG + k² δθ)²
+
+---
+
+## 18.4 Ghost Constraint Equation
+
+Varying with respect to δG:
+
+    ∂ₜ [2α (∂ₜ δG + k² δθ)] = 0
+
+Integrating:
+
+    ∂ₜ δG + k² δθ = C(k)
+
+For perturbations, take decaying mode:
+
+    C(k) ≈ 0
+
+Thus:
+
+    ∂ₜ δG = -k² δθ
+
+---
+
+## 18.5 Need for Finite Relaxation
+
+The exact constraint removes dynamics. To capture physical behaviour, we include a **finite response time**:
+
+    ∂ₜ δG = -k² δθ + ε
+
+where ε encodes a small lag in ghost relaxation.
+
+---
+
+## 18.6 Ghost Contribution to θ Equation
+
+The phase-field equation contains:
+
+    + 2α ∇² (∂ₜ δG - ∇² δθ)
+
+In Fourier space:
+
+    term = -2α k² (∂ₜ δG + k² δθ)
+
+Substitute:
+
+    ∂ₜ δG = -k² δθ + ε
+
+⇒
+
+    term = -2α k² ε
+
+---
+
+## 18.7 Effective θ Equation
+
+Including leading terms:
+
+    C₀ δ̈θ + κ k² δθ + 2α k² ε = 0
+
+---
+
+## 18.8 Closure Relation
+
+Assume relaxation lag proportional to rate of change:
+
+    ε ≈ τ ∂ₜ (k² δθ)
+
+⇒
+
+    ε ≈ τ k² δ̇θ
+
+---
+
+## 18.9 Final Evolution Equation
+
+Substitute:
+
+    C₀ δ̈θ + κ k² δθ + (2α τ) k⁴ δ̇θ = 0
+
+Define:
+
+    ν_eff = 2α τ
+
+Then:
+
+    δ̈θ + (ν_eff / C₀) k⁴ δ̇θ + (κ / C₀) k² δθ = 0
+
+---
+
+## 18.10 Dispersion Relation
+
+Assume:
+
+    δθ ∝ e^{iωt}
+
+Then:
+
+    -ω² + i (ν_eff / C₀) k⁴ ω + c_s² k² = 0
+
+where:
+
+    c_s² = κ / C₀
+
+---
+
+## 18.11 High-k Behaviour
+
+For large k:
+
+    ω ≈ i (ν_eff / C₀) k⁴
+
+Thus:
+
+    δθ ∝ exp(-γ k⁴ t)
+
+with:
+
+    γ = ν_eff / C₀
+
+---
+
+## 18.12 Transfer Function Suppression
+
+At recombination:
+
+    Δ_T(k) ∝ δθ(k, t_rec)
+
+⇒
+
+    Δ_T(k) ∝ exp(-k⁴ / k_ghost⁴)
+
+where:
+
+    k_ghost⁴ ∼ C₀ / (α τ t_rec)
+
+---
+
+## 18.13 Physical Interpretation
+
+- Ghost field enforces relaxation toward ∇²θ
+- Finite response time introduces lag
+- Lag produces viscous damping
+- Two spatial derivatives → k² × k² = k⁴
+
+Thus:
+
+    ghost leakage = higher-order diffusion
+
+---
+
+## 18.14 Key Result
+
+The ghost sector produces:
+
+- a dissipative k⁴ term in the phase equation
+- a super-exponential cutoff in the CMB transfer function
+- a unique high-ℓ signature absent in ΛCDM
+
+## 19. Next Frontier
 
 To make TCWT fully testable:
 
