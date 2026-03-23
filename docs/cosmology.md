@@ -187,6 +187,142 @@ $$
 
 Modified growth rate: $f(a) = \dfrac{d \ln D}{d \ln a}$.
 
+---
+## Hum Sector Energy–Momentum Tensor (TCWT)
+
+### 1. Covariant Hum Lagrangian
+
+The Hum sector of TCWT is governed by the covariant Lagrangian
+
+\[
+\mathcal{L}_{\rm hum}
+= -\frac{1}{2} C_0 \left(u^\mu \nabla_\mu \theta - \Omega\right)^2
+- V_\Omega(\Omega)
+- \kappa\, h^{\mu\nu} \nabla_\mu \theta \nabla_\nu \theta,
+\]
+
+where:
+
+- \(u^\mu\) is the cosmological 4‑velocity  
+- \(h^{\mu\nu} = g^{\mu\nu} + u^\mu u^\nu\) projects spatially  
+- \(\theta\) is the Hum phase  
+- \(\Omega\) is the informational drag  
+- \(C_0, \kappa\) are TCWT constants  
+
+The stress–energy tensor is
+
+\[
+T_{\mu\nu} = -2\frac{\partial \mathcal{L}}{\partial g^{\mu\nu}} + g_{\mu\nu}\mathcal{L}.
+\]
+
+---
+
+### 2. Background FLRW Fields
+
+Metric:
+
+\[
+ds^2 = -dt^2 + a^2(t)\,\delta_{ij}dx^i dx^j.
+\]
+
+Homogeneous fields:
+
+\[
+\theta = \bar{\theta}(t), \qquad \Omega = \bar{\Omega}(t).
+\]
+
+Define the background kinetic combination:
+
+\[
+X \equiv \dot{\bar{\theta}} - \bar{\Omega}.
+\]
+
+---
+
+### 3. Background Energy Density and Pressure
+
+The background Hum Lagrangian is
+
+\[
+\mathcal{L}^{\rm (bg)}_{\rm hum}
+= -\frac{1}{2} C_0 X^2 - V_\Omega(\bar{\Omega}).
+\]
+
+This yields the explicit background energy density and pressure:
+
+\[
+\bar{\rho}_{\rm hum}
+= \frac{1}{2} C_0 X^2 + V_\Omega(\bar{\Omega}),
+\]
+
+\[
+\bar{p}_{\rm hum}
+= \frac{1}{2} C_0 X^2 - V_\Omega(\bar{\Omega}).
+\]
+
+---
+
+### 4. Perturbations in Newtonian Gauge
+
+Metric:
+
+\[
+ds^2 = -(1+2\Phi)\,dt^2 + a^2(t)(1-2\Psi)\delta_{ij}dx^i dx^j.
+\]
+
+Perturbed fields:
+
+\[
+\theta = \bar{\theta} + \delta\theta, \qquad
+\Omega = \bar{\Omega} + \delta\Omega.
+\]
+
+To first order:
+
+\[
+u^\mu \nabla_\mu \theta
+= \dot{\bar{\theta}} + \delta\dot{\theta} - \Phi\,\dot{\bar{\theta}}.
+\]
+
+Thus:
+
+\[
+u^\mu\nabla_\mu\theta - \Omega
+= X + \left(\delta\dot{\theta} - \delta\Omega - \Phi\,\dot{\bar{\theta}}\right).
+\]
+
+---
+
+### 5. Perturbed Energy Density
+
+\[
+\delta\rho_{\rm hum}
+= C_0 X\left(\delta\dot{\theta} - \delta\Omega - \Phi\,\dot{\bar{\theta}}\right)
++ V_\Omega'(\bar{\Omega})\,\delta\Omega.
+\]
+
+---
+
+### 6. Perturbed Pressure
+
+\[
+\delta p_{\rm hum}
+= C_0 X\left(\delta\dot{\theta} - \delta\Omega - \Phi\,\dot{\bar{\theta}}\right)
+- V_\Omega'(\bar{\Omega})\,\delta\Omega.
+\]
+
+---
+
+### 7. Anisotropic Stress
+
+Because the Hum background has no spatial gradients, the gradient sector contributes only at second order.
+
+Thus the Hum sector has no linear anisotropic stress:
+
+\[
+\sigma_{\rm hum} = 0.
+\]
+
 ## 4. Numerical Implementation of TCWT (Boltzmann-Style Framework)
 
 [Outline of background module, perturbation module, observable module, minimal parameter set, and staged implementation strategy — content as in original document.]
