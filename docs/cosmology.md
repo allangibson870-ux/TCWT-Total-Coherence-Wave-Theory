@@ -329,8 +329,82 @@ Where:
 - \(\mathcal{F}_{\rm wilt}(a,k)\) is the phase‑relaxation damping term.
 
 ---
+## 9. Effective Dark-Matter-Like Behaviour for CMB Peaks
 
-## 9. Summary
+On CMB scales, TCWT must reproduce the ΛCDM-like acoustic peak structure without a cold dark matter particle. This requires that the combined Hum+Ghost sector behaves as an effectively pressureless clustering component before recombination.
+
+### 9.1 Effective DM-like density and sound speed
+
+Define the effective TCWT clustering density
+
+\[
+\bar{\rho}_{\rm TCWT,cl}(a)
+\equiv \bar{\rho}_{\rm hum}(a) + \bar{\rho}_{\rm ghost}(a),
+\]
+
+and its perturbation
+
+\[
+\delta_{\rm TCWT,cl}
+\equiv \frac{\delta\rho_{\rm hum} + \delta\rho_{\rm ghost}}{\bar{\rho}_{\rm hum} + \bar{\rho}_{\rm ghost}}.
+\]
+
+We introduce an effective sound speed for the TCWT clustering sector via
+
+\[
+c_{s,{\rm TCWT}}^2
+\equiv
+\frac{\delta p_{\rm hum} + \delta p_{\rm ghost}}{\delta\rho_{\rm hum} + \delta\rho_{\rm ghost}}.
+\]
+
+For TCWT to mimic cold dark matter at CMB acoustic scales \(k \sim k_{\rm peak}\), we require
+
+\[
+c_{s,{\rm TCWT}}^2(k_{\rm peak}, a_{\rm rec}) \ll 1,
+\]
+
+so that the Hum+Ghost sector does not support significant pressure waves at recombination.
+
+### 9.2 Modified Poisson equation in DM-like limit
+
+In the regime where \(c_{s,{\rm TCWT}}^2 \to 0\) and Hum+Ghost cluster like CDM, the Poisson equation reduces to
+
+\[
+k^2 \Psi
+\simeq
+4\pi G a^2
+\left[
+\bar{\rho}_b \delta_b
++ \bar{\rho}_{\rm TCWT,cl}\,\delta_{\rm TCWT,cl}
+\right],
+\]
+
+with \(\bar{\rho}_b\) the baryon density. Matching the ΛCDM CMB peak pattern then imposes the approximate constraint
+
+\[
+\bar{\rho}_{\rm TCWT,cl}(a_{\rm rec})
+\simeq
+\bar{\rho}_{\rm CDM}^{\Lambda{\rm CDM}}(a_{\rm rec}),
+\]
+
+up to small corrections from residual TCWT pressure and scale dependence.
+
+### 9.3 Phase-stiffness constraint
+
+The phase-stiffness parameters \(C_0\), \(\kappa\), and the Hum potential \(V_\Omega(\Omega)\) must be chosen such that
+
+\[
+\left|
+\frac{\delta p_{\rm hum} + \delta p_{\rm ghost}}{\delta\rho_{\rm hum} + \delta\rho_{\rm ghost}}
+\right|
+\ll 1
+\quad\text{for}\quad
+k \sim k_{\rm peak},\ a \sim a_{\rm rec},
+\]
+
+ensuring that the Hum+Ghost sector behaves as a nearly pressureless clustering component at recombination and can reproduce the observed CMB acoustic peak heights and spacings.
+
+## 10. Summary
 
 This document provides the full cosmological layer of TCWT:
 
