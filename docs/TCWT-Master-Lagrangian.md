@@ -1470,7 +1470,231 @@ Thus:
 
     polarization = probe of phase coherence at recombination
 
-## 20. Next Frontier
+    ---
+    ## 20. CMB Lensing in TCWT
+
+### 20.1 Goal
+We derive the gravitational lensing of the Cosmic Microwave Background (CMB) in TCWT and identify how the Hum–Ghost sector modifies:
+
+- the lensing potential  
+- the deflection field  
+- the smoothed temperature and polarization spectra  
+
+CMB lensing is a precision probe of structure growth and gravity, making it one of the strongest tests of TCWT vs ΛCDM.
+
+---
+
+### 20.2 Standard Lensing Framework
+
+The Weyl potential is:
+
+Φ_W = (Φ + Ψ) / 2
+
+The lensing potential is:
+
+φ(n̂) = −2 ∫₀^{χ_*} dχ [(χ_* − χ)/(χ_* χ)] Φ_W(χ n̂, η₀ − χ)
+
+where:
+
+- χ = comoving distance  
+- χ_* = distance to last scattering  
+- η₀ = conformal time today  
+
+The deflection angle is:
+
+α⃗ = ∇_{n̂} φ
+
+---
+
+### 20.3 TCWT Modification: Source of the Potential
+
+From the modified Poisson equation:
+
+(k² / a²) Φ = 4πG [ ρ̄_b δ_b + ρ̄_TCWT δ_TCWT ]
+
+where:
+
+ρ̄_TCWT = ρ̄_hum + ρ̄_ghost
+
+δ_TCWT = (δρ_hum + δρ_ghost) / (ρ̄_hum + ρ̄_ghost)
+
+Key difference from ΛCDM:
+
+- No particle dark matter  
+- Clustering sourced by phase + ghost perturbations  
+
+---
+
+### 20.4 Equality of Potentials (Slip Condition)
+
+σ_hum = σ_ghost = 0  ⇒  Φ = Ψ
+
+Thus:
+
+Φ_W = Φ
+
+There is no gravitational slip, matching ΛCDM at leading order.
+
+---
+
+### 20.5 Lensing Potential Power Spectrum
+
+C_ℓ^{φφ} = (2/π) ∫ dk k² P_Φ(k) |I_ℓ(k)|²
+
+where:
+
+I_ℓ(k) = ∫₀^{χ_*} dχ [(χ_* − χ)/(χ_* χ)] j_ℓ(kχ)
+
+and:
+
+P_Φ(k, z) ∝ [G_eff(a)² D(a,k)² / k⁴] P_prim(k)
+
+---
+
+### 20.6 TCWT Growth and Damping Effects
+
+Growth equation:
+
+δ¨ + 2H_TCWT δ˙ − 4π G_eff(a) ρ_m δ + F_wilt(a,k) δ = 0
+
+Key modifications:
+
+1. Modified growth factor  
+   D(a,k) ≠ D_ΛCDM(a)
+
+2. Scale-dependent damping  
+
+F_wilt(k) ≈ β k⁴
+
+⇒
+
+P_δ(k) ≈ P_ΛCDM(k) × exp(−β k⁴)
+
+---
+
+### 20.7 Resulting Lensing Modification
+
+C_ℓ^{φφ} ∝ ∫ dk [G_eff(a)² D(a,k)² / k⁴] P_prim(k) exp(−β k⁴)
+
+---
+
+### 20.8 Observable Signatures
+
+#### 1. Suppression of small-scale lensing (high ℓ)
+
+High-k modes are damped:
+
+exp(−β k⁴)
+
+⇒
+
+C_ℓ^{φφ} decreases for ℓ ≳ 500
+
+---
+
+#### 2. Reduced peak smoothing in TT spectrum
+
+Lensing smooths acoustic peaks:
+
+C_ℓ^{TT,lensed} = smoothed(C_ℓ^{TT,unlensed})
+
+In TCWT:
+
+- weaker lensing  
+- peaks remain slightly sharper than ΛCDM  
+
+---
+
+#### 3. Reduced B-mode lensing signal
+
+C_ℓ^{BB,lens} ∝ C_ℓ^{φφ}
+
+Thus:
+
+C_ℓ^{BB} < C_ℓ^{BB,ΛCDM}
+
+at ℓ ≈ 1000
+
+---
+
+#### 4. Degeneracy with neutrino mass
+
+Both suppress small-scale power:
+
+- Neutrinos → smooth k²-like suppression  
+- TCWT → sharp k⁴ suppression  
+
+This difference is observationally distinguishable.
+
+---
+
+### 20.9 Consistency Constraints
+
+To match current data:
+
+1. Large-scale growth:
+   D(a,k→0) ≈ D_ΛCDM
+
+2. Damping onset:
+   β k⁴ ≪ 1 for k ≲ 0.2 h/Mpc
+
+3. Clustering density:
+   ρ̄_TCWT(a) ≈ ρ̄_CDM(a)
+
+---
+
+### 20.10 Distinctive TCWT Signature
+
+C_ℓ^{φφ} ≈ C_ℓ^{ΛCDM} × exp(−β ℓ⁴ / ℓ_*⁴)
+
+This produces:
+
+- ΛCDM-like behaviour at low ℓ  
+- sharply suppressed lensing at high ℓ  
+
+This is not reproducible by:
+
+- cold dark matter  
+- warm dark matter  
+- neutrino mass alone  
+
+---
+
+### 20.11 Observational Tests
+
+Sensitive probes:
+
+- Planck lensing reconstruction  
+- ACT / SPT high-ℓ lensing  
+- CMB-S4 / Simons Observatory  
+
+Cross-correlations:
+
+- galaxy lensing × CMB lensing  
+- large-scale structure × CMB lensing  
+
+---
+
+### 20.12 Interpretation
+
+In TCWT:
+
+- Lensing is not sourced by particle dark matter  
+- It arises from phase-coherent clustering of the Hum–Ghost system  
+
+Small-scale suppression traces:
+
+- phase-relaxation damping  
+- ghost leakage strength α  
+
+Thus CMB lensing directly probes the same physics responsible for:
+
+- structure formation  
+- MOND-like behaviour  
+- the CMB damping tail  
+
+
+## 21. Next Frontier
 
 To make TCWT fully testable:
 
