@@ -190,7 +190,7 @@ Modified growth rate: $f(a) = \dfrac{d \ln D}{d \ln a}$.
 ---
 ## Hum Sector Energy–Momentum Tensor (TCWT)
 
-### 1. Covariant Hum Lagrangian
+### 4. Covariant Hum Lagrangian
 
 The Hum sector of TCWT is governed by the covariant Lagrangian
 
@@ -323,15 +323,15 @@ Thus the Hum sector has no linear anisotropic stress:
 \sigma_{\rm hum} = 0.
 \]
 
-## 4. Numerical Implementation of TCWT (Boltzmann-Style Framework)
+## 5. Numerical Implementation of TCWT (Boltzmann-Style Framework)
 
 [Outline of background module, perturbation module, observable module, minimal parameter set, and staged implementation strategy — content as in original document.]
 
-## 5. Parameter Fitting and Observational Confrontation
+## 6. Parameter Fitting and Observational Confrontation
 
 [Parameter lists, datasets, statistical inference framework, key signatures, model comparison — content as in original document.]
 
-## 6. Hum Condensation and the Origin of Matter and Dark Energy
+## 7. Hum Condensation and the Origin of Matter and Dark Energy
 
 [Condensation point, latent heat and ghost surge, post-condensation evolution, physical interpretation — content as in original document.]
 
