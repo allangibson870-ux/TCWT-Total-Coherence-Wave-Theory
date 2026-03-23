@@ -1691,10 +1691,200 @@ Thus CMB lensing directly probes the same physics responsible for:
 
 - structure formation  
 - MOND-like behaviour  
-- the CMB damping tail  
+- the CMB damping tail
+
+- ---
+## 21. Emergent Quantum Field Mechanics (QFM) in TCWT
+
+### 21.1 Goal
+We extend TCWT beyond classical field dynamics and show how quantum field behaviour emerges from the coherence properties of the Hum phase field.
+
+The objective is to reproduce:
+
+- discrete particle states  
+- wave–particle duality  
+- interference phenomena  
+- vacuum fluctuations  
+
+without introducing fundamental probabilistic axioms.
+
+---
+
+### 21.2 Core Principle: Phase-Coherence Quantization
+
+In TCWT, quantization does not arise from operator postulates but from **global phase-coherence constraints**.
+
+Allowed field configurations must satisfy:
+
+∮ ∇θ · dl = 2π n
+
+where:
+
+- n ∈ ℤ  
+- the integral is taken over closed loops in configuration space  
+
+This enforces **topological phase quantization**, analogous to:
+
+- superfluid circulation  
+- magnetic flux quantization  
+
+---
+
+### 21.3 Particles as Quantized Solitons
+
+Matter corresponds to stable phase knots:
+
+θ_knot(r) = Θ₀ exp(−r² / 2R²)
+
+Quantization arises because:
+
+- only specific phase-winding numbers are stable  
+- energy is minimized at discrete configurations  
+
+Thus:
+
+E_n ∝ n²
+
+This produces **discrete particle-like states without operators**.
+
+---
+
+### 21.4 Emergent Wavefunction
+
+Define an effective complex field:
+
+ψ(x,t) ≡ exp(i θ(x,t))
+
+Then:
+
+- |ψ|² encodes phase coherence density  
+- interference patterns arise from θ superposition  
+
+The Schrödinger-like equation emerges in the weak-field limit:
+
+i ∂_t ψ = −(c² / 2Ω_hum) ∇² ψ + nonlinear terms
+
+---
+
+### 21.5 Interference Without Probability Postulates
+
+From Section 8:
+
+Detection events correspond to **knot nucleation**, not wavefunction collapse.
+
+Probability emerges as:
+
+P(x) ∝ f(|∇θ|, ∇²θ)
+
+Thus:
+
+- high phase curvature → high detection likelihood  
+- destructive interference → suppressed knot formation  
+
+This reproduces quantum interference patterns deterministically.
+
+---
+
+### 21.6 Vacuum Fluctuations
+
+The Hum vacuum is not static:
+
+θ₀(t) = Ω_hum t
+
+Small perturbations:
+
+δθ(x,t)
+
+generate:
+
+- zero-point fluctuations  
+- stochastic phase noise  
+
+These act as the TCWT analogue of:
+
+quantum vacuum fluctuations.
+
+---
+
+### 21.7 Effective Field Quantization
+
+Linear perturbations satisfy:
+
+□ δθ = 0
+
+Mode expansion:
+
+δθ(x,t) = ∫ d³k [A_k e^{ikx} + A_k* e^{-ikx}]
+
+In TCWT:
+
+- A_k are classical amplitudes  
+- statistical ensembles of phase configurations reproduce quantum statistics  
+
+Thus QFT emerges as a **coarse-grained statistical description of the Hum field**.
+
+---
+
+### 21.8 Interactions
+
+Interactions arise from nonlinear terms in the Lagrangian:
+
+- κ F(|∇θ|²) → self-interaction  
+- α (Ġ − ∇²θ)² → dissipative coupling  
+- V_Ω(Ω) → saturation effects  
+
+These replace:
+
+- gauge interactions  
+- potential terms  
+
+in conventional QFT.
+
+---
+
+### 21.9 Correspondence with Standard Quantum Theory
+
+| Quantum Concept | TCWT Interpretation |
+|------|------|
+| Wavefunction ψ | exp(iθ) |
+| Particle | phase soliton |
+| Quantization | phase winding constraint |
+| Vacuum fluctuations | δθ fluctuations |
+| Measurement | knot formation |
+| Probability | curvature-dependent nucleation |
+
+---
+
+### 21.10 Key Result
+
+Quantum behaviour in TCWT is not fundamental.
+
+It emerges from:
+
+- phase coherence  
+- nonlinear field dynamics  
+- topological constraints  
+
+Thus:
+
+TCWT provides a **deterministic underlying theory** whose coarse-grained limit reproduces quantum field mechanics.
+
+---
+
+### 21.11 Open Problems
+
+To fully match quantum field theory, TCWT must still derive:
+
+- spin and fermionic statistics  
+- gauge symmetry structure  
+- renormalization behaviour  
+- scattering amplitudes  
+
+These define the next stage of development.
 
 
-## 21. Next Frontier
+
+## 22. Next Frontier
 
 To make TCWT fully testable:
 
