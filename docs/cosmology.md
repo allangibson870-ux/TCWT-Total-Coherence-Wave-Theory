@@ -323,6 +323,188 @@ Thus the Hum sector has no linear anisotropic stress:
 \sigma_{\rm hum} = 0.
 \]
 
+## Ghost Sector Energy–Momentum Tensor (TCWT)
+
+### 1. Covariant Ghost Lagrangian
+
+The ghost–relaxation field contributes the term
+
+\[
+\mathcal{L}_{\rm ghost}
+= -\alpha \left(u^\mu \nabla_\mu G - h^{\mu\nu}\nabla_\mu\nabla_\nu \theta\right)^2,
+\]
+
+where:
+
+- \(G\) is the ghost leakage field  
+- \(\theta\) is the Hum phase  
+- \(\alpha\) is the ghost–coupling constant  
+- \(u^\mu\) is the cosmological 4‑velocity  
+- \(h^{\mu\nu} = g^{\mu\nu} + u^\mu u^\nu\) projects spatially  
+
+The stress–energy tensor is
+
+\[
+T_{\mu\nu}^{\rm ghost}
+= -2\frac{\partial \mathcal{L}_{\rm ghost}}{\partial g^{\mu\nu}}
++ g_{\mu\nu}\mathcal{L}_{\rm ghost}.
+\]
+
+---
+
+### 2. Background FLRW Fields
+
+Metric:
+
+\[
+ds^2 = -dt^2 + a^2(t)\,\delta_{ij}dx^i dx^j.
+\]
+
+Homogeneous fields:
+
+\[
+G = \bar{G}(t), \qquad \theta = \bar{\theta}(t).
+\]
+
+Define the background ghost combination:
+
+\[
+Y \equiv \dot{\bar{G}} - \nabla^2\bar{\theta}.
+\]
+
+In FLRW, \(\nabla^2\bar{\theta} = 0\), so
+
+\[
+Y = \dot{\bar{G}}.
+\]
+
+---
+
+### 3. Background Energy Density and Pressure
+
+The background ghost Lagrangian is
+
+\[
+\mathcal{L}^{\rm (bg)}_{\rm ghost}
+= -\alpha\,\dot{\bar{G}}^{\,2}.
+\]
+
+This yields:
+
+\[
+\bar{\rho}_{\rm ghost}
+= \alpha\,\dot{\bar{G}}^{\,2},
+\]
+
+\[
+\bar{p}_{\rm ghost}
+= \alpha\,\dot{\bar{G}}^{\,2}.
+\]
+
+Thus the ghost sector behaves like a **stiff fluid** with equation of state
+
+\[
+w_{\rm ghost} = 1.
+\]
+
+---
+
+### 4. Perturbations in Newtonian Gauge
+
+Metric:
+
+\[
+ds^2 = -(1+2\Phi)\,dt^2 + a^2(t)(1-2\Psi)\delta_{ij}dx^i dx^j.
+\]
+
+Perturbed fields:
+
+\[
+G = \bar{G} + \delta G, \qquad
+\theta = \bar{\theta} + \delta\theta.
+\]
+
+To first order:
+
+\[
+u^\mu\nabla_\mu G
+= \dot{\bar{G}} + \delta\dot{G} - \Phi\,\dot{\bar{G}},
+\]
+
+\[
+h^{\mu\nu}\nabla_\mu\nabla_\nu\theta
+= -\frac{k^2}{a^2}\,\delta\theta.
+\]
+
+Thus the perturbed ghost combination is
+
+\[
+Y + \delta Y
+= \dot{\bar{G}}
++ \left(\delta\dot{G} - \Phi\,\dot{\bar{G}} + \frac{k^2}{a^2}\delta\theta\right).
+\]
+
+---
+
+### 5. Perturbed Energy Density
+
+\[
+\delta\rho_{\rm ghost}
+= 2\alpha\,\dot{\bar{G}}
+\left(\delta\dot{G} - \Phi\,\dot{\bar{G}} + \frac{k^2}{a^2}\delta\theta\right).
+\]
+
+---
+
+### 6. Perturbed Pressure
+
+Because \(p_{\rm ghost} = \mathcal{L}_{\rm ghost}\),
+
+\[
+\delta p_{\rm ghost}
+= 2\alpha\,\dot{\bar{G}}
+\left(\delta\dot{G} - \Phi\,\dot{\bar{G}} + \frac{k^2}{a^2}\delta\theta\right).
+\]
+
+Thus:
+
+\[
+\delta p_{\rm ghost} = \delta\rho_{\rm ghost}.
+\]
+
+---
+
+### 7. Anisotropic Stress
+
+The ghost sector contains only **time derivatives** and a **scalar Laplacian**, so it produces **no traceless spatial component** at linear order:
+
+\[
+\sigma_{\rm ghost} = 0.
+\]
+
+---
+
+### 8. Summary
+
+The ghost field behaves as a stiff fluid with:
+
+\[
+\bar{\rho}_{\rm ghost} = \bar{p}_{\rm ghost} = \alpha\,\dot{\bar{G}}^{\,2},
+\]
+
+\[
+\delta\rho_{\rm ghost}
+= \delta p_{\rm ghost}
+= 2\alpha\,\dot{\bar{G}}
+\left(\delta\dot{G} - \Phi\,\dot{\bar{G}} + \frac{k^2}{a^2}\delta\theta\right),
+\]
+
+\[
+\sigma_{\rm ghost} = 0.
+\]
+
+This sector provides the slow‑leakage channel responsible for TCWT’s effective dark‑energy‑like behaviour.
+
 ## 5. Numerical Implementation of TCWT (Boltzmann-Style Framework)
 
 [Outline of background module, perturbation module, observable module, minimal parameter set, and staged implementation strategy — content as in original document.]
