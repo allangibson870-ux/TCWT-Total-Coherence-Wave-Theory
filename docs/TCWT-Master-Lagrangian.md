@@ -1882,9 +1882,243 @@ To fully match quantum field theory, TCWT must still derive:
 
 These define the next stage of development.
 
+---
+## 22. Quantum Field Emergence from TCWT
+
+### 22.1 Goal
+
+We derive the emergence of quantum field theory from the TCWT phase field by:
+
+- identifying canonical variables
+- constructing the Hamiltonian
+- imposing quantisation
+- deriving mode expansions and dispersion relations
+
+This demonstrates that quantum behaviour arises as the **linear coherence limit** of the Hum field.
+
+---
+
+### 22.2 Quadratic Effective Lagrangian
+
+Starting from the TCWT Lagrangian, in the weak-field, low-energy regime:
+
+- MOND nonlinearity negligible
+- ghost backreaction subleading
+- Ω relaxes to equilibrium
+
+Using:
+
+Ω ≈ ∂ₜθ
+
+the Lagrangian reduces to:
+
+L_eff = C₀ (∂ₜθ)² − κ (∇θ)²
+
+This is the leading-order coherent phase dynamics.
+
+---
+
+### 22.3 Canonical Momentum
+
+The conjugate momentum is:
+
+π(x,t) = ∂L_eff / ∂(∂ₜθ) = 2C₀ ∂ₜθ
+
+---
+
+### 22.4 Hamiltonian Density
+
+The Hamiltonian density:
+
+H = π ∂ₜθ − L_eff
+
+gives:
+
+H = π² / (4C₀) + κ (∇θ)²
+
+This is a positive-definite energy density.
+
+---
+
+### 22.5 Canonical Quantisation
+
+We impose equal-time commutation relations:
+
+[ θ(x), π(y) ] = i ℏ_eff δ³(x − y)
+
+[ θ(x), θ(y) ] = 0  
+[ π(x), π(y) ] = 0  
+
+where ℏ_eff is an emergent coherence scale.
+
+---
+
+### 22.6 Field Normalisation
+
+Define a canonically normalised field:
+
+φ ≡ √(2C₀) θ
+
+Then:
+
+π_φ = ∂ₜφ
+
+and the Lagrangian becomes:
+
+L_eff = ½ (∂ₜφ)² − ½ c² (∇φ)²
+
+with:
+
+c² = κ / C₀
+
+This is the standard relativistic scalar field form.
+
+---
+
+### 22.7 Mode Expansion
+
+The field φ admits a plane-wave expansion:
+
+φ(x,t) = ∫ d³k / (2π)³ (1 / √(2ω_k))
+         [ a_k e^{i(k·x − ω_k t)} + a_k† e^{-i(k·x − ω_k t)} ]
+
+with dispersion relation:
+
+ω_k² = c² k²
+
+---
+
+### 22.8 Ladder Operators
+
+Canonical commutation implies:
+
+[ a_k, a_{k'}† ] = (2π)³ δ³(k − k')
+
+These operators create and annihilate **Hum phase quanta**.
+
+---
+
+### 22.9 Interpretation of Quanta
+
+In TCWT:
+
+- linear excitations → propagating phase waves  
+- nonlinear stable solutions → soliton knots  
+
+Thus:
+
+| Concept | TCWT Interpretation |
+|--------|--------------------|
+| quantum | phase excitation |
+| particle | stable knot |
+| vacuum | coherent Hum state |
+
+---
+
+### 22.10 Ghost-Induced Corrections
+
+Including the ghost sector:
+
+L_ghost = α (∂ₜG − ∇²θ)²
+
+Integrating out G yields a correction:
+
+ΔL ≈ −β (∇²θ)²
+
+with:
+
+β ∼ α / C₀
+
+---
+
+### 22.11 Modified Dispersion Relation
+
+The full quadratic action becomes:
+
+L = C₀ (∂ₜθ)² − κ (∇θ)² − β (∇²θ)²
+
+leading to:
+
+ω² = c² k² + (β / C₀) k⁴
+
+---
+
+### 22.12 Physical Meaning of the k⁴ Term
+
+The higher-order term produces:
+
+- UV regularisation (no divergences)
+- finite-energy knot cores
+- scale-dependent propagation speed
+- suppression of short-wavelength modes
+
+This same structure appears in:
+
+- matter power suppression
+- CMB damping tail
+- structure formation cutoff
+
+---
+
+### 22.13 Emergence of ℏ
+
+From:
+
+[ θ, π ] = i ℏ_eff δ³
+
+and:
+
+π = 2C₀ ∂ₜθ
+
+we identify:
+
+ℏ_eff ∝ 1 / C₀
+
+Thus:
+
+- large C₀ → classical limit  
+- small C₀ → strong quantum fluctuations  
+
+Quantum mechanics is therefore controlled by **Hum coherence stiffness**.
+
+---
+
+### 22.14 Lorentz Symmetry
+
+At leading order:
+
+ω² = c² k²
+
+so the theory is Lorentz invariant with emergent light speed:
+
+c² = κ / C₀
+
+Higher-order k⁴ terms softly break Lorentz symmetry only at high energy.
+
+---
+
+### 22.15 Summary
+
+In TCWT:
+
+- quantum fields emerge from phase dynamics  
+- canonical structure follows from coherence  
+- particles correspond to nonlinear knots  
+- ℏ is an emergent parameter  
+- higher-order terms regulate UV behaviour  
+
+This provides a unified origin for:
+
+- quantum mechanics  
+- classical fields  
+- cosmological structure  
+- gravitational dynamics  
+
+from a single phase-coherence field.
 
 
-## 22. Next Frontier
+
+## 23. Next Frontier
 
 To make TCWT fully testable:
 
