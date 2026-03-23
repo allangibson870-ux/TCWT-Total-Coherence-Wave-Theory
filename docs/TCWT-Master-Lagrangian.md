@@ -329,8 +329,196 @@ TCWT now provides:
 This is a **full alternative gravity + cosmology pipeline**.
 
 ---
+## 14. Dispersion Relation of TCWT Perturbations
 
-## 14. Next Frontier
+Starting from the quadratic perturbation Lagrangian:
+
+\[
+\mathcal{L}^{(2)} =
+C_{\rm eff}\dot{\delta\theta}^2
+- \kappa \mu_0 (\nabla\delta\theta)^2
+- \alpha (\dot{\delta G} - \nabla^2\delta\theta)^2
+\]
+
+we derive the dispersion relation by assuming plane-wave solutions:
+
+\[
+\delta\theta, \delta G \propto e^{i(\mathbf{k}\cdot x - \omega t)}.
+\]
+
+Solving the coupled equations of motion and integrating out the ghost field yields:
+
+\[
+\boxed{
+\omega^2(k)
+= c_s^2 k^2 + \beta k^4
+}
+\]
+
+where:
+
+\[
+c_s^2 = \frac{\kappa \mu_0}{C_{\rm eff}}, \qquad
+\beta = \frac{\alpha}{C_{\rm eff}}.
+\]
+
+---
+
+## 15. Physical Interpretation
+
+The dispersion relation contains two distinct regimes:
+
+### 15.1 Large-Scale Limit (k → 0)
+
+\[
+\omega^2 \approx c_s^2 k^2
+\]
+
+- Standard wave propagation
+- Behaves like pressureless matter if \( c_s^2 \to 0 \)
+
+---
+
+### 15.2 Small-Scale Limit (k → ∞)
+
+\[
+\omega^2 \approx \beta k^4
+\]
+
+- Unique TCWT prediction
+- Produces strong suppression of small-scale structure
+- Acts as an effective viscosity or pressure
+
+---
+
+## 16. Modified Growth Equation
+
+Using the relation:
+
+\[
+\delta(k,t) \propto -k^2 \delta\theta(k,t),
+\]
+
+the density perturbation evolves as:
+
+\[
+\boxed{
+\ddot{\delta} + 2H\dot{\delta}
+- 4\pi G_{\rm eff}\rho \delta
++ \beta \frac{k^4}{a^4} \delta = 0
+}
+\]
+
+---
+
+## 17. Phase-Relaxation Damping
+
+The additional term:
+
+\[
+\boxed{
+\mathcal{F}_{\rm wilt}(k,a) = \beta \frac{k^4}{a^4}
+}
+\]
+
+represents damping due to ghost-field coupling.
+
+This is a distinctive signature of TCWT.
+
+---
+
+## 18. Matter Power Spectrum
+
+The matter power spectrum evolves as:
+
+\[
+P_{\rm TCWT}(k,z) = D^2(k,z)\,P_{\rm prim}(k)
+\]
+
+Key features:
+
+- Large scales: identical to ΛCDM
+- Small scales: suppressed due to \( k^4 \) term
+
+Approximate form:
+
+\[
+P(k) \sim \frac{P_{\rm LCDM}(k)}{1 + (\beta k^2)^2}
+\]
+
+---
+
+## 19. Growth Rate
+
+The growth rate becomes scale-dependent:
+
+\[
+f(k,a) = \frac{d \ln D(k,a)}{d \ln a}
+\]
+
+This deviates from the ΛCDM approximation:
+
+\[
+f(a) \approx \Omega_m^{0.55}
+\]
+
+and provides a direct observational test via redshift-space distortions.
+
+---
+
+## 20. Observational Signatures
+
+TCWT predicts:
+
+### 1. Scale-dependent growth
+- Measurable via galaxy surveys
+
+### 2. Small-scale power suppression
+- Similar to warm dark matter
+- Originates from field dynamics
+
+### 3. Modified weak lensing
+- Reduced clustering at high k
+
+### 4. No particle dark matter required
+- Effects arise from phase-field dynamics
+
+---
+
+## 21. Stability Conditions
+
+From the dispersion relation:
+
+\[
+\omega^2 = c_s^2 k^2 + \beta k^4
+\]
+
+Stability requires:
+
+- \( C_{\rm eff} > 0 \)
+- \( \kappa \mu_0 > 0 \)
+- \( \alpha > 0 \)
+
+Ensuring:
+
+- No ghosts
+- No gradient instabilities
+- No tachyonic modes
+
+---
+
+## 22. Key Result
+
+TCWT produces a unified structure:
+
+- MOND-like gravity at galactic scales
+- Standard cosmology at large scales
+- k⁴ suppression at small scales
+- Dark-energy-like behavior from ghost leakage
+
+All emerging from a single coherent phase field.
+
+## 15. Next Frontier
 
 To make TCWT fully testable:
 
