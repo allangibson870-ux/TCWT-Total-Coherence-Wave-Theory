@@ -491,6 +491,13 @@ This expression determines the temporal coherence stiffness required for the Hum
 - The denominator represents the **Hum temporal coherence response**.  
 - A larger \(C_0\) corresponds to a stiffer Hum field, enabling TCWT to reproduce the depth of the potential wells that drive the observed CMB acoustic oscillations.
 
+- **Note on Parameter Degeneracy.**  
+The constraint equation for \(C_0\) should be interpreted as *solution‑dependent* rather than a unique determination of the temporal coherence stiffness. The gravitational potential at recombination can be supported by several TCWT sectors — the Hum temporal term, the Hum potential term \(V_\Omega'(\bar{\Omega})\,\delta\Omega\), and the ghost‑leakage term proportional to \(\alpha\). Because these contributions enter the Poisson equation additively, different combinations of \((C_0, V_\Omega, \alpha)\) and background evolution can reproduce the same CMB acoustic‑scale potential. Thus, the CMB peak condition constrains a **family of allowed parameter sets**, not a single fixed value of \(C_0\). In regimes where the temporal Hum response  
+\[
+X(\delta\dot{\theta} - \delta\Omega - \Phi\,\dot{\bar{\theta}})
+\]  
+is small, the required potential must instead be supplied predominantly by the gradient and ghost sectors.
+
 This constraint provides the direct link between TCWT microphysics and CMB observables.
 
 ## 11. Summary
