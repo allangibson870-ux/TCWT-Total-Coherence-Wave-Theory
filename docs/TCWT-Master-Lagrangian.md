@@ -2346,9 +2346,252 @@ No additional postulates are required.
 
 Quantum mechanics is recovered as the **statistical description of phase-field instabilities** in the Hum.
 
+---
+## 24. Path Integral Formulation of TCWT
+
+### 24.1 Goal
+
+We show that the standard quantum path integral emerges naturally from the dynamics of the TCWT phase field.
+
+This provides:
+
+- a bridge to conventional quantum field theory
+- a derivation of interference from phase dynamics
+- a unification of classical action and quantum amplitudes
+
+---
+
+### 24.2 Starting Point: TCWT Action
+
+The fundamental action is:
+
+S[θ, Ω, G] = ∫ d⁴x  
+[ C₀(∂ₜθ − Ω)² − κ(∇θ)² − α(∂ₜG − ∇²θ)² − V_Ω(Ω) ]
+
+In the low-energy limit:
+
+Ω ≈ ∂ₜθ  
+ghost backreaction small  
+
+giving:
+
+S_eff[θ] = ∫ d⁴x [ C₀(∂ₜθ)² − κ(∇θ)² − β(∇²θ)² ]
+
+---
+
+### 24.3 Classical Trajectories
+
+The classical evolution follows from:
+
+δS_eff = 0
+
+which yields the phase-field equation:
+
+∂ₜ²θ − c² ∇²θ + (β / C₀) ∇⁴θ = 0
+
+with:
+
+c² = κ / C₀
+
+---
+
+### 24.4 Sum Over Phase Configurations
+
+In TCWT, the system does not follow a single trajectory.
+
+Instead, all phase configurations contribute, weighted by their action:
+
+\[
+\boxed{
+\mathcal{Z} = \int \mathcal{D}\theta \; e^{i S_{\rm eff}[\theta] / \hbar_{\rm eff}}
+}
+\]
+
+This is the **partition function**, identical in structure to the quantum path integral.
+
+---
+
+### 24.5 Emergence of the Wavefunction
+
+Define a transition amplitude between configurations:
+
+\[
+\Psi[\theta_f, t_f] = \int_{\theta_i}^{\theta_f} \mathcal{D}\theta \; e^{i S_{\rm eff}[\theta] / \hbar_{\rm eff}}
+\]
+
+Thus:
+
+- the wavefunction is not fundamental  
+- it emerges as a sum over phase histories  
+
+---
+
+### 24.6 Stationary Phase Limit
+
+In the limit:
+
+ℏ_eff → 0
+
+the integral is dominated by stationary paths:
+
+δS_eff = 0
+
+Thus:
+
+- classical physics emerges from phase coherence  
+- quantum fluctuations arise from deviations around stationary paths  
+
+---
+
+### 24.7 Interference from Phase Action
+
+For two competing configurations θ₁ and θ₂:
+
+\[
+\mathcal{A} = e^{i S[\theta_1]/\hbar_{\rm eff}} + e^{i S[\theta_2]/\hbar_{\rm eff}}
+\]
+
+Probability:
+
+\[
+P = |\mathcal{A}|^2
+\]
+
+This produces interference terms:
+
+\[
+P \sim 1 + \cos\left(\frac{S[\theta_1] - S[\theta_2]}{\hbar_{\rm eff}}\right)
+\]
+
+Thus:
+
+interference arises from differences in **phase action**, not wavefunction superposition.
+
+---
+
+### 24.8 Connection to Double-Slit
+
+In the double-slit setup:
+
+- each path corresponds to a different phase configuration
+- action difference:
+
+ΔS ≈ p Δℓ
+
+Thus:
+
+\[
+P(x) \propto \cos^2\left(\frac{ΔS}{2\hbar_{\rm eff}}\right)
+\]
+
+which reproduces standard interference fringes.
+
+---
+
+### 24.9 Role of Knot Formation
+
+The path integral gives amplitudes, but observations correspond to knot formation.
+
+Thus:
+
+- path integral → amplitude distribution  
+- knot nucleation → actual detection  
+
+Combining:
+
+P_detection(x) ∝ |Ψ(x)|²
+
+recovering the Born rule derived in Section 23.
+
+---
+
+### 24.10 Ghost Sector Contribution
+
+Including the ghost term:
+
+S_ghost ≈ − ∫ d⁴x β (∇²θ)²
+
+This modifies the weight:
+
+\[
+e^{iS/\hbar} \rightarrow e^{iS/\hbar} \times e^{- \beta k^4 / \hbar}
+\]
+
+Thus:
+
+- high-k paths are suppressed  
+- UV divergences are regulated  
+- path integral becomes naturally finite  
+
+---
+
+### 24.11 Effective Action and Renormalisation
+
+Integrating out small-scale fluctuations yields an effective action:
+
+S_eff → S_eff + ΔS
+
+with corrections:
+
+- renormalised C₀ and κ  
+- scale-dependent β  
+- induced interaction terms  
+
+Thus TCWT naturally supports a **renormalisation flow**.
+
+---
+
+### 24.12 Interpretation
+
+In TCWT:
+
+| Concept | Interpretation |
+|--------|--------------|
+| path integral | sum over phase configurations |
+| action S | phase-coherence cost |
+| ℏ | coherence scale |
+| interference | action-phase difference |
+| measurement | knot nucleation |
+
+Quantum mechanics is therefore:
+
+> the statistical mechanics of phase-field configurations.
+
+---
+
+### 24.13 No Fundamental Wavefunction
+
+The wavefunction is not a physical object.
+
+Instead:
+
+- θ is the fundamental field  
+- Ψ emerges as a computational tool  
+- probabilities arise from knot statistics  
+
+---
+
+### 24.14 Summary
+
+The path integral formulation of TCWT shows:
+
+- quantum amplitudes emerge from phase dynamics  
+- interference arises from action differences  
+- ℏ is a coherence parameter  
+- UV behaviour is regulated by ghost terms  
+- measurement corresponds to nonlinear field transitions  
+
+This unifies:
+
+- classical action principles  
+- quantum interference  
+- statistical interpretation  
+
+within a single phase-coherence framework.
 
 
-## 24. Next Frontier
+
+## 25. Next Frontier
 
 To make TCWT fully testable:
 
