@@ -1295,7 +1295,182 @@ The ghost sector produces:
 - a super-exponential cutoff in the CMB transfer function
 - a unique high-ℓ signature absent in ΛCDM
 
-## 19. Next Frontier
+- ---
+## 19. CMB Polarization in TCWT
+
+### 19.1 Goal
+
+We derive the E-mode polarization spectrum in TCWT and identify conditions under which it matches ΛCDM while allowing distinctive signatures.
+
+Polarization arises from:
+
+- Thomson scattering at recombination
+- local quadrupole anisotropy in radiation
+- velocity and potential perturbations
+
+---
+
+## 19.2 Origin of Polarization
+
+Polarization is generated when photons scatter off electrons with a quadrupole temperature anisotropy:
+
+    Π ∼ Θ₂
+
+where Θ₂ is the ℓ = 2 moment of the photon distribution.
+
+---
+
+## 19.3 Boltzmann Equation (Photon Hierarchy)
+
+The photon perturbations satisfy:
+
+    Θ̇₀ = -k Θ₁ - Φ̇
+    Θ̇₁ = k(Θ₀ + Ψ)/3 - k Θ₂
+    Θ̇₂ = k(2Θ₁/5 - 3Θ₃/5) - τ̇ Θ₂ + source
+
+Polarization source:
+
+    S_P ∝ Θ₂
+
+---
+
+## 19.4 Tight-Coupling Approximation
+
+Before recombination:
+
+    τ̇ ≫ k
+
+⇒
+
+    Θ₂ ≈ (8/15)(k / τ̇) Θ₁
+
+Thus:
+
+    Π ∝ velocity
+
+---
+
+## 19.5 E-Mode Power Spectrum
+
+The E-mode transfer function:
+
+    Δ_E(k) ∝ ∫ dη g(η) Π(k, η)
+
+where:
+
+    g(η) = visibility function
+
+---
+
+## 19.6 TCWT Modifications
+
+TCWT modifies polarization through:
+
+### (A) Gravitational potentials
+
+From modified Poisson:
+
+    Φ depends on TCWT clustering
+
+Affects:
+
+    Θ₀ + Ψ → velocity → Θ₂ → polarization
+
+---
+
+### (B) Phase-field damping
+
+From Section 18:
+
+    δθ ∝ exp(-k⁴ / k_ghost⁴)
+
+⇒
+
+    high-k suppression of Θ₁ and Θ₂
+
+⇒
+
+    suppressed polarization at small scales
+
+---
+
+### (C) Expansion history
+
+Ghost leakage modifies:
+
+    H(a)
+
+⇒
+
+    changes visibility width and diffusion scale
+
+---
+
+## 19.7 E-Mode Spectrum in TCWT
+
+Approximate result:
+
+    C_ℓ^{EE} ≈ C_ℓ^{ΛCDM} × exp(-k⁴ / k_ghost⁴)
+
+Key features:
+
+- same peak positions
+- same phase as TT peaks
+- stronger damping at high ℓ
+
+---
+
+## 19.8 TE Cross-Correlation
+
+The TE spectrum depends on:
+
+    correlation between Θ₀ and velocity Θ₁
+
+TCWT effects:
+
+- small-scale suppression (k⁴)
+- possible amplitude shift if Φ evolves
+
+---
+
+## 19.9 Observational Constraints
+
+To match data from Planck polarization:
+
+1. Φ ≈ constant at recombination  
+2. c_s,TCWT² ≪ 1  
+3. k_ghost corresponds to ℓ ≳ 2000  
+
+Otherwise:
+
+- EE peaks suppressed too early  
+- TE correlation distorted  
+
+---
+
+## 19.10 Distinctive TCWT Signature
+
+Polarization provides a clean test:
+
+- TT and EE both show enhanced damping at high ℓ
+- TE remains correlated but suppressed
+- No particle dark matter model produces a pure k⁴ cutoff in both TT and EE
+
+---
+
+## 19.11 Interpretation
+
+In TCWT:
+
+- polarization traces velocity of photon–baryon fluid
+- velocity is sourced by phase gradients
+- ghost leakage damps small-scale phase structure
+
+Thus:
+
+    polarization = probe of phase coherence at recombination
+
+## 20. Next Frontier
 
 To make TCWT fully testable:
 
