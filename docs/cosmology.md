@@ -404,7 +404,96 @@ k \sim k_{\rm peak},\ a \sim a_{\rm rec},
 
 ensuring that the Hum+Ghost sector behaves as a nearly pressureless clustering component at recombination and can reproduce the observed CMB acoustic peak heights and spacings.
 
-## 10. Summary
+---
+## 10. CMB Peak Matching and the \(C_0\) Constraint
+
+To reproduce the ΛCDM-like acoustic peak structure of the Cosmic Microwave Background without a cold dark matter particle, TCWT must generate the same gravitational potential at the acoustic scale \(k_{\rm peak}\) during recombination. This imposes a direct constraint on the temporal coherence stiffness \(C_0\).
+
+### 10.1 Matching the gravitational potential at recombination
+
+In ΛCDM, the Poisson equation at recombination is
+
+\[
+k^2 \Psi_{\Lambda{\rm CDM}}
+=
+4\pi G a^2
+\left[
+\bar\rho_b \delta_b
++ \bar\rho_{\rm cdm}\,\delta_{\rm cdm}
+\right].
+\]
+
+In TCWT, the corresponding equation is
+
+\[
+k^2 \Psi_{\rm TCWT}
+=
+4\pi G a^2
+\left[
+\bar\rho_m \delta_m
++ C_0 X(\delta\dot{\theta} - \delta\Omega - \Phi\,\dot{\bar{\theta}})
++ V_\Omega'(\bar{\Omega})\,\delta\Omega
++ 2\alpha\,\dot{\bar{G}}
+\left(
+\delta\dot{G}
+- \Phi\,\dot{\bar{G}}
++ \frac{k^2}{a^2}\delta\theta
+\right)
+\right].
+\]
+
+Requiring equality of the potentials at the acoustic scale,
+
+\[
+\Psi_{\rm TCWT}(k_{\rm peak}, a_{\rm rec})
+=
+\Psi_{\Lambda{\rm CDM}}(k_{\rm peak}, a_{\rm rec}),
+\]
+
+yields a constraint equation for \(C_0\).
+
+### 10.2 Exact constraint equation for \(C_0\)
+
+Solving the above equality for \(C_0\) gives
+
+\[
+\boxed{
+C_0(k,a)
+=
+\frac{
+\bar\rho_b \delta_b
++ \bar\rho_{\rm cdm}\,\delta_{\rm cdm}
+- \bar\rho_m \delta_m
+- V_\Omega'(\bar{\Omega})\,\delta\Omega
+- 2\alpha\,\dot{\bar{G}}
+\left(
+\delta\dot{G}
+- \Phi\,\dot{\bar{G}}
++ \frac{k^2}{a^2}\delta\theta
+\right)
+}{
+X(\delta\dot{\theta} - \delta\Omega - \Phi\,\dot{\bar{\theta}})
+}
+}
+\]
+
+evaluated at
+
+\[
+k = k_{\rm peak}, \qquad a = a_{\rm rec}.
+\]
+
+This expression determines the temporal coherence stiffness required for the Hum+Ghost sector to supply the same gravitational potential normally attributed to cold dark matter in ΛCDM.
+
+### 10.3 Interpretation
+
+- The numerator represents the **ΛCDM gravitational source term** minus the **non‑temporal TCWT contributions**.  
+- The denominator represents the **Hum temporal coherence response**.  
+- A larger \(C_0\) corresponds to a stiffer Hum field, enabling TCWT to reproduce the depth of the potential wells that drive the observed CMB acoustic oscillations.
+
+This constraint provides the direct link between TCWT microphysics and CMB observables.
+
+## 11. Summary
 
 This document provides the full cosmological layer of TCWT:
 
