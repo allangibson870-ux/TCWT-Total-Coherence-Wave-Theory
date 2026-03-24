@@ -1522,3 +1522,384 @@ This explains:
 - entanglement structure
 
 within a single unified framework.
+
+---
+## 8. Spin–Statistics Connection from Phase Topology in TCWT
+
+### 8.1 Goal
+
+We derive the spin–statistics connection directly from the topology of the TCWT phase field:
+
+- half‑integer spin → antisymmetric (fermionic) statistics  
+- integer spin → symmetric (bosonic) statistics  
+
+No commutation relations are assumed.  
+Statistics emerges from:
+
+- phase‑field topology  
+- knot exchange properties  
+- continuity of the Hum field
+
+---
+
+### 8.2 Identical Knots and Exchange
+
+Consider two identical localized phase knots:
+
+
+
+\[
+K_1,\; K_2
+\]
+
+
+
+Each knot is a topological excitation of the phase field \(\theta(x,t)\).
+
+Define the exchange operation:
+
+
+
+\[
+E : (K_1, K_2) \rightarrow (K_2, K_1)
+\]
+
+
+
+Exchange is implemented by a continuous deformation of the field:
+
+
+
+\[
+\theta(x,t) \;\longrightarrow\; \theta_E(x,t)
+\]
+
+
+
+subject to the TCWT constraint:
+
+- \(\theta\) remains **single‑valued and continuous**  
+- no singularities or discontinuities are allowed  
+
+---
+
+### 8.3 Exchange as a Topological Operation
+
+In 3D, exchanging two identical objects is homotopic to:
+
+- one object looping around the other
+
+Thus exchange induces a **topological phase transformation**.
+
+Let the internal phase state of each knot be:
+
+
+
+\[
+\chi \in SU(2)
+\]
+
+
+
+From Section 7:
+
+- spin‑½ knots are double‑valued  
+- require a \(4\pi\) rotation to return to identity  
+
+---
+
+### 8.4 Exchange–Rotation Equivalence
+
+A standard topological fact in 3D:
+
+
+
+\[
+\text{Exchange of two identical objects}
+\;\simeq\;
+\text{rotation by } \pi \text{ of each}
+\;\simeq\;
+\text{total } 2\pi \text{ rotation in configuration space}
+\]
+
+
+
+Thus:
+
+
+
+\[
+E \quad\Rightarrow\quad \text{effective } 2\pi \text{ rotation in internal phase space}
+\]
+
+
+
+---
+
+### 8.5 Half‑Integer Spin Knots
+
+For spin‑½ knots:
+
+
+
+\[
+\chi \xrightarrow{2\pi} -\chi
+\]
+
+
+
+Therefore under exchange:
+
+
+
+\[
+\chi_1 \otimes \chi_2 \;\longrightarrow\; -(\chi_1 \otimes \chi_2)
+\]
+
+
+
+The two‑knot wavefunction transforms as:
+
+
+
+\[
+\boxed{
+\Psi(x_1,x_2) \;\longrightarrow\; -\Psi(x_2,x_1)
+}
+\]
+
+
+
+This is **antisymmetry** → fermionic statistics.
+
+---
+
+### 8.6 Integer‑Spin Knots
+
+For integer‑spin configurations:
+
+
+
+\[
+\chi \xrightarrow{2\pi} +\chi
+\]
+
+
+
+Thus:
+
+
+
+\[
+\boxed{
+\Psi(x_1,x_2) \;\longrightarrow\; +\Psi(x_2,x_1)
+}
+\]
+
+
+
+This is **symmetry** → bosonic statistics.
+
+---
+
+### 8.7 Emergence of Statistics
+
+We identify:
+
+- antisymmetric states → fermions  
+- symmetric states → bosons  
+
+Thus:
+
+
+
+\[
+\boxed{
+\text{Exchange phase} = (-1)^{2S}
+}
+\]
+
+
+
+Statistics is not an independent postulate — it follows from phase topology.
+
+---
+
+### 8.8 Field‑Theoretic Interpretation
+
+The multi‑knot configuration is:
+
+
+
+\[
+\theta(x,t) = \theta_1(x,t) + \theta_2(x,t)
+\]
+
+
+
+Exchange corresponds to a continuous deformation:
+
+
+
+\[
+\theta \rightarrow \theta_E
+\]
+
+
+
+The induced global phase shift is:
+
+
+
+\[
+\Delta\theta =
+\begin{cases}
+\pi & \text{half‑integer spin} \\
+0   & \text{integer spin}
+\end{cases}
+\]
+
+
+
+Thus:
+
+
+
+\[
+\Psi \rightarrow e^{i\Delta\theta}\Psi = \pm \Psi
+\]
+
+
+
+---
+
+### 8.9 Exclusion Principle
+
+For fermionic knots:
+
+
+
+\[
+\Psi(x,x) = -\Psi(x,x) \quad\Rightarrow\quad \Psi(x,x)=0
+\]
+
+
+
+Therefore:
+
+- two identical fermionic knots cannot occupy the same state  
+- Pauli exclusion emerges automatically  
+
+This follows from:
+
+- continuity of \(\theta\)  
+- antisymmetric phase structure  
+
+---
+
+### 8.10 Many‑Body States
+
+For \(N\) identical knots:
+
+
+
+\[
+\Psi(x_1,\ldots,x_N)
+\]
+
+
+
+Exchange of any pair yields:
+
+
+
+\[
+\Psi \rightarrow (\pm 1)\Psi
+\]
+
+
+
+Thus:
+
+- symmetric sector → bosons  
+- antisymmetric sector → fermions  
+
+No additional axioms are required.
+
+---
+
+### 8.11 Dimensionality
+
+This derivation relies on:
+
+- 3D spatial topology  
+- trivial braid group  
+
+In lower dimensions:
+
+- nontrivial braiding  
+- anyonic phases  
+
+are possible.  
+TCWT naturally accommodates these extensions.
+
+---
+
+### 8.12 Role of the \(k^4\) Term
+
+The higher‑derivative term:
+
+
+
+\[
+\beta (\nabla^2 \phi)^2
+\]
+
+
+
+ensures:
+
+- finite knot core size  
+- smooth exchange paths  
+- no singular crossings  
+
+Thus the topological classification is stable.
+
+---
+
+### 8.13 Final Result
+
+
+
+\[
+\boxed{
+\text{Spin–statistics connection in TCWT:}\qquad
+\text{Exchange phase} = (-1)^{2S}
+}
+\]
+
+
+
+- \(S = \tfrac{1}{2}\) → fermions  
+- \(S = 1\) → bosons  
+
+arising from:
+
+- phase continuity  
+- topological rotation properties  
+- SU(2) structure of knots  
+
+---
+
+### 8.14 Key Insight
+
+Statistics is not imposed.
+
+It **emerges** from:
+
+- geometry (rotation)  
+- topology (exchange)  
+- continuity of the Hum field  
+
+Spin and statistics are unified within a single coherent phase‑topological framework.
+
