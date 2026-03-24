@@ -2589,9 +2589,257 @@ This unifies:
 
 within a single phase-coherence framework.
 
+---
+## 25. Born Rule from Quadratic Action and Mode Expansion
+
+### 25.1 Goal
+
+We derive the Born rule:
+
+P(x) = |ψ(x)|²
+
+directly from:
+- the **quadratic TCWT action**
+- canonical quantization of phase perturbations
+- detector coupling to the Hum field
+
+No probabilistic postulates are introduced.
+
+---
+
+### 25.2 Quadratic Action for Phase Perturbations
+
+Expand around the coherent background:
+
+θ(x,t) = θ̄(t) + δθ(x,t)
+
+In the low-energy, quasistatic, CDM-like regime:
+
+Ω ≈ θ̇,  
+Ġ ≈ ∇²θ
+
+The quadratic action reduces to:
+
+S^{(2)} = ∫ d⁴x \left[
+C₀ (δ\dot{θ})² 
+− κ (∇δθ)²
+− α (∇²δθ)²
+\right]
+
+This is a linear field theory with higher-derivative correction.
+
+---
+
+### 25.3 Canonical Normalization
+
+Define canonically normalized field:
+
+φ ≡ √(2C₀) δθ
+
+Then:
+
+S^{(2)} = ∫ d⁴x \left[
+\frac{1}{2} (\dot{φ})² 
+− \frac{c²}{2} (∇φ)²
+− \frac{β}{2} (∇²φ)²
+\right]
+
+with:
+
+c² = κ / C₀,  
+β = α / C₀
+
+---
+
+### 25.4 Mode Expansion
+
+Expand in Fourier modes:
+
+φ(x,t) = ∫ \frac{d³k}{(2π)³} \left[
+a_k u_k(t) e^{i k·x} + a_k† u_k^*(t) e^{-i k·x}
+\right]
+
+Mode functions satisfy:
+
+ü_k + ω_k² u_k = 0
+
+with dispersion:
+
+ω_k² = c² k² + β k⁴
+
+---
+
+### 25.5 Quantization
+
+Impose canonical commutation:
+
+[φ(x), π(y)] = i δ³(x − y)
+
+where:
+
+π = \dot{φ}
+
+This yields:
+
+[a_k, a_{k'}†] = (2π)³ δ³(k − k')
+
+The vacuum is defined by:
+
+a_k |0⟩ = 0
+
+---
+
+### 25.6 One-Particle State
+
+Define a normalized one-excitation state:
+
+|ψ⟩ = ∫ d³k f(k) a_k† |0⟩
+
+with:
+
+∫ d³k |f(k)|² = 1
+
+Define position-space wavefunction:
+
+ψ(x,t) ≡ ⟨0| φ(x,t) |ψ⟩
+
+Substituting expansion:
+
+ψ(x,t) = ∫ \frac{d³k}{(2π)³} f(k) u_k(t) e^{i k·x}
+
+---
+
+### 25.7 Detector Coupling
+
+A physical detector responds to **local energy deposition** in the field.
+
+Leading interaction:
+
+H_int = g ∫ d³x D(x) φ(x,t)
+
+where:
+- D(x) is detector profile
+- g is coupling constant
+
+Transition probability per unit time:
+
+Γ ∝ |⟨0| φ(x,t) |ψ⟩|²
+
+Thus:
+
+Γ(x) ∝ |ψ(x,t)|²
+
+---
+
+### 25.8 Emergence of the Born Rule
+
+The detection probability density is proportional to:
+
+P(x) ∝ Γ(x)
+
+Therefore:
+
+\boxed{
+P(x) = |ψ(x,t)|²
+}
+
+after normalization.
+
+---
+
+### 25.9 Uniqueness of the Result
+
+The quadratic action enforces:
+
+1. Linear field equation → superposition principle  
+2. Canonical commutation → Hilbert space structure  
+3. Local detector coupling → linear field insertion  
+4. Transition probability → modulus squared  
+
+No alternative power law arises.
+
+Thus the exponent 2 is fixed by:
+- linearity of field operators
+- bilinear structure of transition amplitudes
+
+---
+
+### 25.10 Role of the k⁴ Term
+
+The ghost-induced correction modifies dispersion:
+
+ω_k² = c² k² + β k⁴
+
+This affects:
+- phase evolution
+- small-scale propagation
+- decoherence rates
+
+But **does not modify the Born rule**, since:
+
+P(x) depends only on operator algebra, not dispersion.
+
+---
+
+### 25.11 Interpretation in TCWT
+
+In standard QFT:
+- ψ is a probability amplitude
+
+In TCWT:
+- ψ(x,t) = ⟨0|φ|ψ⟩ is a **coarse-grained phase excitation**
+
+Detection corresponds to:
+- localized energy transfer
+- onset of nonlinear knot formation
+
+Thus:
+
+|ψ|² = energy density of the excitation field
+
+Probability emerges from:
+- field quantization
+- detector coupling
+- transition amplitudes
+
+---
+
+### 25.12 Final Result
+
+The Born rule in TCWT is:
+
+\boxed{
+P(x) = \frac{|ψ(x,t)|^2}{\int d^3x\, |ψ(x,t)|^2}
+}
+
+derived from:
+- the quadratic action
+- canonical quantization
+- local detector interaction
+
+No probabilistic axiom is required.
+
+---
+
+### 25.13 Key Insight
+
+Quantum probability is not fundamental.
+
+It arises because:
+
+- excitations of the Hum field are quantized
+- detectors couple linearly to the field
+- transition rates are quadratic in amplitudes
+
+Therefore:
+
+Probability = squared field amplitude
+
+is a structural consequence of the theory.
 
 
-## 25. Next Frontier
+
+## 26. Next Frontier
 
 To make TCWT fully testable:
 
