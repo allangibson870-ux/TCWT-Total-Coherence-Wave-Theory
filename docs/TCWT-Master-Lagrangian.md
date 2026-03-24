@@ -389,6 +389,46 @@ The dispersion relation contains two distinct regimes:
 - Produces strong suppression of small-scale structure
 - Acts as an effective viscosity or pressure
 
+- ### Scale‑Dependent Ghost Regulator
+
+To reconcile laboratory sensitivity with high‑energy gamma‑ray bounds, the coefficient
+
+
+\[
+\beta = \frac{\alpha}{C_{0}}
+\]
+
+
+is promoted to a scale‑dependent function in the dispersion relation
+
+
+\[
+\omega^{2} = c^{2}k^{2} + \beta(k)\,k^{4}.
+\]
+
+
+A minimal TCWT‑compatible form is
+
+
+\[
+\beta(k) = \frac{\beta_{0}}{1 + \left(k/k_{\ast}\right)^{n}},
+\qquad n \ge 2,
+\]
+
+
+which yields
+
+
+\[
+k \ll k_{\ast}:\ \beta(k) \simeq \beta_{0},
+\qquad
+k \gg k_{\ast}:\ \beta(k) \simeq \beta_{0}\left(k_{\ast}/k\right)^{n} \to 0.
+\]
+
+
+Thus the \(k^{4}\) correction is active in the infrared (laboratory and cosmological scales) but strongly suppressed in the ultraviolet, ensuring compatibility with gamma‑ray time‑of‑flight constraints.
+
+
 ---
 
 ## 16. Modified Growth Equation
