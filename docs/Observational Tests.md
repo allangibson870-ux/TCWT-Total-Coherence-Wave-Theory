@@ -1,220 +1,314 @@
-# TCWT Observational Checks & Near-Term Predictions (2026–2028)
-
-These are the main testable predictions and anomalies TCWT currently explains or anticipates, ordered by approximate timeframe and accessibility. All are derived from internal parameters (Ω_max ≈ 16.91, σ ≈ 6.58×10⁻³⁶ m/rad, N_knot ≈ 6.17×10³⁵, κ = 1.455, fractal dimension d ≈ 1.585, etc.).
-
-### 1. Near-term / Existing Instruments (2025–2027)
-
-
-The TCWT Master Lagrangian predicts that major solar eruptions are preceded by a local collapse of the coherence field ($\Psi$) before the electromagnetic stress-energy tensor ($T_{\mu\nu}$) manifests. This is not "faster-than-light" signaling, but a **pre-metric phase transition** in the vacuum.
-
-#### The "March 2026" Calibration Event
-Recent observations of the **M1.2 flare (March 15, 2026)** and the **X8.3 flare (Feb 1, 2026)** suggest a non-linear relationship between flare magnitude and phase jitter:
-
-1.  **Phase-Warning Jitter ($\delta f/f$):** High-precision atomic clocks (e.g., Sr-lattice or Thorium-229) should exhibit a transient frequency "flicker" ($\approx 10^{-18} – 10^{-17}$) roughly **5–10 seconds** before the GOES X-ray onset.
-2.  **Coherence vs. Entropy:** Unlike previous "Superflare Ping" models, the updated TCWT math suggests that **compact, high-coherence flares** (M-class) may produce a clearer signature than **turbulent, high-entropy flares** (X-class), due to the damping of the $\Psi$ field in chaotic magnetic topologies.
-3.  **Gravitational Coupling:** The jitter is theorized to be the high-frequency longitudinal component of the emergent metric, detectable as a **synchronous frequency shift** across the global GNSS and optical clock network, independent of the signal's line-of-sight propagation.
-
-#### Falsification Criteria
-The theory is falsified if high-rate (20Hz+) clock comparison data during a compact M5+ flare shows a noise floor stability of $<10^{-19}$ without any detectable sub-second transients in the 10-second pre-light window.
-
-
-
-### 2. Mid-term / Upcoming Missions & Arrays (2026–2030)
-
-**21 cm Anomaly (EDGES / HERA / SKA upgrades)**  
-- **Prediction**: IGM warmer than adiabatic by ~1–10 K at z ≈ 17–20 due to pre-stellar phase-viscosity from α(z) descent.  
-- **Signature**: Deeper 21 cm absorption trough than standard models predict.  
-- **Falsification**: T_IGM matches adiabatic cooling exactly in the anomaly window.
-
-**ISS / GNSS / Satellite Timing Residuals**  
-- **Prediction**: Tiny path- and velocity-dependent clock residuals (10⁻¹⁸ level) from logarithmic phase accumulation θ(r) and Ω-drag.  
-- **Signature**: Configuration-dependent offsets in Atomic Clock Ensemble in Space or GNSS data.  
-- **Falsification**: Perfect agreement with GR across orbits and solar conditions.
-
-**CME / Flare Radio & Navigation Lag**  
-- **Prediction**: Synthetic dispersion measure lag up to 4–8 hours after CME/flare peak from lingering ghost density G.  
-- **Signature**: Prolonged signal delay in GNSS or pulsar timing links.  
-- **Falsification**: Standard ionospheric recovery time only.
-
-### 3. Long-term / Large Surveys (2026–2035+)
-
-**Bullet Cluster & Abell 520 (future lensing + X-ray follow-up)**  
-- **Prediction**: Lensing mass follows phase-opaque knot filaments (1D noodle sliding) — zero self-interaction, even in messy collisions.  
-- **Signature**: Mass offset from both gas and galaxies (Abell 520 dark core); no detectable DM–DM scattering.  
-- **Falsification**: Measurable self-interaction in lensing mass during future collisions.
-
-**JWST Early Chemistry & Galaxy Abundances**  
-- **Prediction**: Apparent “impossible” abundances or gradients from visibility distortions V = exp(−σ λ) and logarithmic phase bleed.  
-- **Falsification**: Perfect match to standard stellar evolution + nucleosynthesis with no residuals.
-
-**GRACE-FO / Future Gravity Mapping**  
-- **Prediction**: λ-field anomalies and phase-lags from Ω-drag and ghost density; dark-matter-like effects at large scales from logarithmic accumulation.  
-- **Falsification**: Perfect mass–gravity correlation after all Earth-model improvements.
-
-**NIST Optical Clocks & Deep-Space Timing**  
-- **Prediction**: Configuration- and path-dependent residuals from Ω-drag and logarithmic θ(r) accumulation.  
-- **Falsification**: No residuals beyond GR at 10⁻¹⁹ stability across all paths and frequencies.
-
-- ## Testable Predictions of TCWT
-
-## Constraints on Hum-Induced Gravitational Wave Dispersion
-
-In TCWT the linearized phase perturbation equation receives a higher-order
-coherence correction
-
-∂ₜ² δθ − c² ∇² δθ + (1 / Ω_hum²) ∇⁴ δθ = 0
-
-This modifies the dispersion relation of gravitational waves to
-
-ω² = c² k² (1 + k² / k_c²)
-
-where the cutoff scale is
-
-k_c = Ω_hum / c
-
-and the corresponding coherence length is
-
-L_c = 1 / k_c = c / Ω_hum.
+# TCWT Observational Tests  
+### Updated for the Master Lagrangian, Cosmology, and Quantum Field Mechanics (QFM)
 
 ---
 
-### Observational Constraints
+## 1. Overview
 
-Current observations from gravitational-wave detectors show **no measurable
-dispersion** in the propagation of gravitational waves across cosmological
-distances.
+This document summarises the **testable observational predictions** of  
+**Total Coherence Wave Theory (TCWT)** in its modern form, incorporating:
 
-Measurements from detectors such as
+- the **Master Lagrangian**
+- the **linearised quantum sector (QFM)**
+- the **cosmological background evolution**
+- the **knot‑based detection mechanism**
 
-- :contentReference[oaicite:0]{index=0}  
-- :contentReference[oaicite:1]{index=1}  
+TCWT differs from standard quantum field theory (QFT) and ΛCDM cosmology in several key ways:
 
-place strong bounds on deviations from the standard dispersion relation
-ω = ck.
+- a **preferred temporal direction** via the background Hum field  
+- a **modified dispersion relation** for perturbations  
+- **nonlinear MOND‑like infrared behaviour**  
+- **ghost‑regulated ultraviolet behaviour**  
+- **knot‑based detection and collapse**  
+- **emergent Born rule**  
+- **enhanced large‑scale coherence**  
+- **suppressed small‑scale power**
 
-These constraints require
-
-k_c ≳ 10¹² m⁻¹
-
-which corresponds to a coherence length
-
-L_c ≲ 10⁻¹² m.
-
-This implies that the Hum coherence scale must lie **far above the frequency
-band currently accessible to gravitational-wave detectors**.
+These features lead to **distinct, falsifiable predictions** across laboratory physics, astrophysics, and cosmology.
 
 ---
 
-### Implications
+## 2. Predictions from the Linearised Quantum Sector (QFM)
 
-Because the correction term scales as
+The quadratic action for the canonical field \( \phi \) yields the dispersion relation:
 
-(k / k_c)²
 
-the dispersion effect becomes significant only for **very large wavenumbers
-(high frequencies)**.
 
-Consequently:
+\[
+\omega^2 = c^2 k^2 + \beta k^4
+\]
 
-| Detector | Sensitivity to TCWT dispersion |
-|--------|--------------------------------|
-Ground-based detectors (10–1000 Hz) | negligible effect |
-Space detectors (mHz band) | even smaller effect |
-High-frequency GW detectors | possible detection |
 
-The TCWT dispersion effect would therefore be most visible in:
 
-- the **ringdown phase of intermediate-mass black hole mergers**
-- **future high-frequency gravitational-wave detectors**
-- next-generation observatories such as  
-  :contentReference[oaicite:2]{index=2}.
+This modifies wave propagation, decoherence, and detection.
 
 ---
 
-### Physical Interpretation
+### 2.1 Wavepacket Spreading
 
-In TCWT the dispersion arises from the **finite coherence scale of the Hum
-phase field**.
+The \( \beta k^4 \) term produces:
 
-At wavelengths much larger than this scale
+- **faster spreading** of high‑frequency wavepackets  
+- **suppressed propagation** of very short‑wavelength modes  
 
-λ ≫ L_c
+**Tests:**
 
-the phase field behaves as a perfectly coherent medium and gravitational waves
-propagate at exactly the speed of light.
-
-Only when wavelengths approach the coherence scale does the underlying
-phase structure of the Hum begin to affect wave propagation.
+- atom interferometry  
+- long‑baseline optical interferometers  
+- superconducting qubit coherence envelopes  
 
 ---
-## TCWT Black-Hole and Growth-Sector Supplementary Notes
 
-This section contains optional, non-core interpretations and prediction tables related to TCWT strong-gravity behaviour, spin–chirality effects, and potential links to large-scale structure growth. These items are not part of the main cosmological derivation but may guide future observational comparisons.
+### 2.2 Time‑Asymmetric Decoherence
 
-### 1. Spin–Chirality Effects on the Phase Wall
+Because TCWT has a preferred temporal direction \( \bar{\theta}(t) \), decoherence rates differ slightly between forward and backward temporal evolution.
 
-TCWT predicts that the radius and sharpness of the black-hole phase wall depend on the relative orientation between the black-hole spin and the surrounding flow.
+**Tests:**
 
-| Spin Type           | Phase-Wall Position  | Step Height        | Expected Visual Signature              |
-|---------------------|----------------------|--------------------|----------------------------------------|
-| Static (non-rotating) | Baseline radius    | Baseline value     | Standard TCWT sharp-edge shadow        |
-| Co-rotating         | Slight inward shift  | Reduced step height | Broader, dimmer annulus ("fat ring")  |
-| Counter-rotating    | Outward shift        | Increased step height | Thin, high-contrast "razor ring"    |
+- Ramsey interferometry  
+- spin‑echo asymmetry  
+- macroscopic superposition decay rates  
 
-These effects arise from the interaction between frame-dragging and the phase-stiffness of the Hum field.
+---
 
-### 2. TCWT vs Kerr: Shadow-Edge and Diameter Predictions
+### 2.3 Finite Localization Width
 
-The table below summarises how TCWT predictions differ from standard Kerr expectations. These are theoretical predictions intended for comparison with future high-frequency VLBI observations.
+Knot nucleation imposes a minimum localisation scale:
 
-| Parameter     | GR (Kerr) Expectation        | TCWT Prediction                 | Notes                          |
-|--------------|------------------------------|---------------------------------|--------------------------------|
-| Ring Diameter | Set by photon-orbit radius  | Slightly larger (phase-stiffening) | Testable at 345–690 GHz    |
-| Shadow Edge  | Logarithmic blur             | Sharp phase-wall boundary       | Consistent with TCWT coherence |
-| Spin Chirality | Prograde for Sgr A*        | Co-rotating phase-wall shift    | Matches expected flow          |
-| Step Height  | Smooth GR decay              | Refractive "cliff" at phase wall | Requires higher-frequency imaging |
 
-### 3. Co-Rotating Case: Softened Refractive Step
 
-For a co-rotating black hole, TCWT predicts:
+\[
+\ell_{\text{knot}} \sim \sqrt{\frac{\beta}{c^2}}
+\]
 
-- Inward shift of the phase wall
-- Reduced refractive step height
-- A broadened plateau region at the shadow edge
 
-Expected intensity jump:
 
-- 0.75–0.85 for co-rotation
-- ~1.45 for counter-rotation
+**Tests:**
 
-This follows from reduced phase-stiffness when the Hum oscillation aligns with the local spin.
+- quantum gas microscopes  
+- trapped‑ion fluorescence imaging  
+- ultra‑cold atom detection resolution  
 
-### 4. Connection to Growth-Rate Suppression
+---
 
-TCWT includes a ghost-relaxation channel that introduces a small, scale-dependent damping of matter clustering. This mechanism:
+### 2.4 Energy‑Dependent Detection Thresholds
 
-- Reduces the linear growth factor
-- Suppresses fσ₈
-- Aligns with low-redshift weak-lensing measurements
+Detectors couple linearly to \( \phi \), but knot formation is nonlinear.  
+This predicts:
 
-The same phase-viscosity that sharpens black-hole shadow edges also contributes to suppressed structure formation on cosmological scales.
+- slight **nonlinearity near threshold**  
+- **energy‑dependent detection efficiency**  
+- suppressed false positives  
 
-### 5. Phase-Saturation Soliton Interpretation
+**Tests:**
 
-In TCWT, compact objects such as Sgr A* are interpreted as phase-saturation solitons rather than geometric singularities. This leads to:
+- superconducting nanowire detectors  
+- avalanche photodiodes  
+- Rydberg‑atom detectors  
 
-- Slightly enlarged shadow diameters
-- Sharper edges
-- Spin-dependent wall shifts
-- Refractive step features
+---
 
-These predictions are falsifiable with future high-frequency VLBI observations.
+## 3. Predictions from the Master Lagrangian
 
-### Summary Status
+The full nonlinear theory introduces:
 
-- **Strongest near-term test**: Solar superflare clock jitter (2026–2027)  
-- **Most distinctive long-term signatures**: Zero self-interaction in cluster collisions + pre-reionization 21 cm heat  
-- **Current limitations**: Dark energy scaling still phenomenological; precise quantitative predictions need refinement
+- MOND‑like infrared behaviour  
+- ghost‑regulated ultraviolet behaviour  
+- curvature‑locking  
+- preferred‑frame effects  
 
-All predictions are derived from internal TCWT parameters (Ω cap, phase-viscosity, fractal foam d ≈ 1.585, N_knot resonance, etc.).  
-Detailed derivations in [TCWT Lagrangian (Orthodox Form)](docs/TCWT-Lagrangian-Orthodox.md).
+These produce observational signatures across astrophysics and cosmology.
+
+---
+
+### 3.1 MOND‑Like Infrared Regime
+
+At accelerations \( a \lesssim a_0 \), TCWT predicts:
+
+- flat galaxy rotation curves  
+- baryonic Tully–Fisher relation  
+- mass–discrepancy–acceleration relation (MDAR)  
+
+**Tests:**
+
+- SPARC rotation curve data  
+- weak lensing around low‑surface‑brightness galaxies  
+- dwarf galaxy kinematics  
+
+---
+
+### 3.2 Suppressed Small‑Scale Structure
+
+The \( \beta k^4 \) term suppresses high‑k modes, predicting:
+
+- fewer dwarf galaxies  
+- reduced subhalo abundance  
+- smoother matter distribution at small scales  
+
+**Tests:**
+
+- Lyman‑α forest cutoff  
+- strong lensing flux anomalies  
+- Milky Way satellite counts  
+
+---
+
+### 3.3 Enhanced Large‑Scale Coherence
+
+The IR sector enhances long‑wavelength coherence, predicting:
+
+- alignment of low‑ℓ CMB multipoles  
+- large‑scale cosmic anisotropies  
+- “axis of evil” correlations  
+
+**Tests:**
+
+- Planck low‑ℓ data  
+- radio galaxy polarisation alignment  
+- quasar optical polarisation correlations  
+
+---
+
+### 3.4 Preferred Cosmic Frame
+
+The background Hum field defines a global temporal direction.  
+This predicts:
+
+- a natural explanation for the CMB dipole  
+- hemispherical power asymmetry  
+- large‑scale velocity flows  
+
+**Tests:**
+
+- CMB dipole and quadrupole alignment  
+- kinetic Sunyaev–Zel’dovich bulk flows  
+- galaxy peculiar velocity surveys  
+
+---
+
+## 4. Predictions from TCWT Cosmology
+
+The cosmological background \( \bar{\theta}(t) \) produces:
+
+- accelerated expansion without dark energy  
+- modified Hubble evolution  
+- scale‑dependent growth of structure  
+
+---
+
+### 4.1 Cosmic Acceleration Without Λ
+
+TCWT predicts late‑time acceleration from the background Hum field, not a cosmological constant.
+
+**Tests:**
+
+- H(z) measurements  
+- BAO  
+- supernovae distance ladder  
+- cosmic chronometers  
+
+---
+
+### 4.2 Modified Growth of Structure
+
+The combination of MOND‑like IR behaviour and \( k^4 \) UV suppression predicts:
+
+- enhanced growth at large scales  
+- suppressed growth at small scales  
+
+**Tests:**
+
+- redshift‑space distortions  
+- weak lensing shear power spectrum  
+- galaxy clustering multipoles  
+
+---
+
+### 4.3 CMB Signatures
+
+TCWT predicts:
+
+- suppressed high‑ℓ power (UV suppression)  
+- enhanced low‑ℓ coherence (IR enhancement)  
+- preferred‑axis correlations  
+- modified ISW effect  
+
+**Tests:**
+
+- Planck TT/TE/EE spectra  
+- low‑ℓ anomalies  
+- cross‑correlation with large‑scale structure  
+
+---
+
+## 5. Laboratory‑Scale Tests
+
+TCWT predicts measurable deviations from standard QFT in controlled experiments.
+
+---
+
+### 5.1 Modified Vacuum Fluctuations
+
+The TCWT vacuum is a coherent phase flow, not a Lorentz‑invariant ground state.
+
+**Tests:**
+
+- Casimir force at sub‑micron separations  
+- Lamb shift corrections  
+- vacuum birefringence  
+
+---
+
+### 5.2 Collapse Dynamics
+
+Knot nucleation gives:
+
+- finite collapse speed  
+- finite spatial collapse width  
+- energy‑dependent collapse probability  
+
+**Tests:**
+
+- weak measurement experiments  
+- delayed‑choice setups  
+- entanglement swapping timing  
+
+---
+
+## 6. Summary of Key Predictions
+
+| Domain | TCWT Prediction | Standard Theory |
+|--------|-----------------|-----------------|
+| **Quantum** | ω² = c²k² + βk⁴ | ω² = k² + m² |
+| | finite localisation width | arbitrary |
+| | time‑asymmetric decoherence | symmetric |
+| **Detection** | knot‑based collapse | postulated |
+| **Astrophysics** | MOND‑like IR | dark matter |
+| | suppressed small‑scale power | CDM small‑scale excess |
+| **Cosmology** | acceleration without Λ | ΛCDM |
+| | preferred cosmic frame | none |
+| | enhanced large‑scale coherence | statistical fluke |
+
+TCWT is therefore **falsifiable** across multiple independent domains.
+
+---
+
+## 7. Outlook
+
+The modern TCWT framework provides a unified set of predictions spanning:
+
+- quantum mechanics  
+- astrophysics  
+- cosmology  
+- detector physics  
+- vacuum structure  
+
+Future work includes:
+
+- full perturbation theory for cosmology  
+- numerical simulations of structure formation  
+- laboratory tests of decoherence asymmetry  
+- precision Casimir and Lamb‑shift measurements  
+
+TCWT is now in a position to be **experimentally constrained** across a wide range of scales.
+
