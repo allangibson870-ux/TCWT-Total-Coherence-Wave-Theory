@@ -1124,7 +1124,6 @@ Under the CDM-like conditions of Sections 15–16 (c_s,TCWT² ≪ 1 and |Φ̇/Φ
 ### 17.9 Distinctive TCWT Signature
 The ghost leakage produces a **scale-dependent damping index** that steepens from ~ℓ² (Silk) to ~ℓ⁴ at the highest multipoles.
 
-This is a smoking-gun prediction:
 - No particle DM can produce a clean k⁴ cutoff in the photon transfer function.
 - Observable as a sharper drop-off in future high-resolution polarization and temperature spectra.
 
