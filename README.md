@@ -11,6 +11,11 @@
 **Summary**  
 Total Coherence Wave Theory (TCWT) proposes that spacetime, matter, and the dark sector emerge from distortions in a global coherent oscillatory background — the Hum. Version 1.1.0 introduces the **Saturated Field Equation**, which mathematically resolves gravitational singularities by imposing a physical upper bound on phase-gradient stiffness via the Ω-Cap potential.
 
+## Call for Collaborators
+
+TCWT has reached the point where the core framework is defined, but several mathematical components now require expertise beyond my skillset. I’m looking for collaborators with strong backgrounds in theoretical or mathematical physics to help formalise the stability analysis, perturbation structure, and scale‑dependent dispersion sector. If you’re interested in contributing to the development of the theory, feel free to open an issue or get in touch.
+
+
 **Key Advancements**  
 - The **Saturated Field Equation** expresses emergent spacetime curvature (R_μν) as the energy-momentum response of the phase field θ(x,t), regulated by the Ω-Cap to prevent infinite densities. This yields finite Gaussian Phase-Knots as the fundamental structure of matter.  
 - **Non-Singular Gravity**: At the knot core (r < R_crit), the phase gradient |∇θ| saturates and drops effectively to zero, eliminating infinite gravitational pull. The classical "event horizon" is replaced by a physical **Saturation Boundary** (r_sat), a finite-gradient surface.  
