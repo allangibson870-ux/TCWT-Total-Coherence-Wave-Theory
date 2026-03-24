@@ -1133,6 +1133,107 @@ It arises because:
 
 - excitations of the Hum field are quantized
 - detectors couple linearly to the field
+
+- ---
+## 6. Bell Inequality Violation (CHSH)
+
+The linearised TCWT field reproduces the standard quantum prediction for Bell–CHSH experiments directly from its two‑mode Hilbert structure, without hidden variables or nonlocal signaling.
+
+### 6.1 Two‑Mode State
+
+Using the mode expansion of the canonical field,
+
+
+\[
+\phi(x,t)=\!\int\!\frac{d^{3}k}{(2\pi)^{3}}
+\left[a_{k}u_{k}e^{ik\cdot x}+a_{k}^{\dagger}u_{k}^{*}e^{-ik\cdot x}\right],
+\]
+
+
+construct the symmetric two‑mode excitation
+
+
+\[
+|\Psi\rangle=\frac{1}{\sqrt{2}}
+\left(a_{k_{1}}^{\dagger}a_{k_{2}}^{\dagger}
+     +a_{k_{2}}^{\dagger}a_{k_{1}}^{\dagger}\right)|0\rangle.
+\]
+
+
+
+### 6.2 Measurement Operators
+
+Within the two‑mode subspace, define effective Pauli operators
+
+
+\[
+A(a)=\hat{n}_{a}\!\cdot\!\vec{\sigma},\qquad
+B(b)=\hat{n}_{b}\!\cdot\!\vec{\sigma},
+\]
+
+
+representing detector projections along settings \(a\) and \(b\).
+
+### 6.3 Correlation Function
+
+The expectation value is
+
+
+\[
+E(a,b)=\langle\Psi|A(a)\otimes B(b)|\Psi\rangle
+      =-\cos\theta_{ab},
+\]
+
+
+where \(\theta_{ab}\) is the angle between detector settings.
+
+### 6.4 CHSH Value
+
+The CHSH combination
+
+
+\[
+S=E(a,b)+E(a,b')+E(a',b)-E(a',b')
+\]
+
+
+achieves the quantum maximum
+
+
+\[
+S_{\max}=2\sqrt{2}
+\]
+
+
+for the standard choice of angles.
+
+### 6.5 Interpretation
+
+TCWT violates Bell inequalities because the linearised field supports globally coherent two‑mode states that cannot be factorised into local hidden variables.  
+Signal locality is preserved; Bell locality is not.
+
+### 6.6 Effect of the \(k^{4}\) Term
+
+The dispersion relation
+
+
+\[
+\omega_{k}^{2}=c^{2}k^{2}+\beta(k)k^{4}
+\]
+
+
+reduces long‑range coherence at high \(k\), giving
+
+
+\[
+E(a,b)\rightarrow -V\cos\theta_{ab},\qquad
+S=2\sqrt{2}\,V,
+\]
+
+
+with visibility \(V\le 1\).  
+In the infrared limit \(V\approx 1\), TCWT reproduces the full quantum value.
+
 - transition rates are quadratic in amplitudes
 
 Therefore:
