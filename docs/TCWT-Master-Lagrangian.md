@@ -334,33 +334,58 @@ This is a **full alternative gravity + cosmology pipeline**.
 Starting from the quadratic perturbation Lagrangian:
 
 \[
-\mathcal{L}^{(2)} =
-C_{\rm eff}\dot{\delta\theta}^2
-- \kappa \mu_0 (\nabla\delta\theta)^2
-- \alpha (\dot{\delta G} - \nabla^2\delta\theta)^2
+\mathcal{L}^{(2)} = C_{\rm eff} \dot{\delta\theta}^2 - \kappa \mu_0 (\nabla \delta\theta)^2 + \alpha (\dot{\delta G} - \nabla^2 \delta\theta)^2
 \]
 
 we derive the dispersion relation by assuming plane-wave solutions:
 
 \[
-\delta\theta, \delta G \propto e^{i(\mathbf{k}\cdot x - \omega t)}.
+\delta\theta, \ \delta G \propto e^{i(\mathbf{k}\cdot \mathbf{x} - \omega t)}.
 \]
 
-Solving the coupled equations of motion and integrating out the ghost field yields:
+### 14.1 Explicit Derivation
+
+The Euler-Lagrange equations from the quadratic Lagrangian are obtained by varying with respect to \(\delta G\) and \(\delta\theta\).
+
+Variation with respect to \(\delta G\) yields the constraint equation:
 
 \[
-\boxed{
-\omega^2(k)
-= c_s^2 k^2 + \beta k^4
-}
+\partial_t \delta G = \nabla^2 \delta\theta
 \]
 
-where:
+(in Fourier space: \(-i\omega \, \hat{G} = -k^2 \, \hat{\theta}\), so \(\hat{G} = i k^2 / \omega \, \hat{\theta}\)).
+
+Variation with respect to \(\delta\theta\) gives the dynamical equation, which after substituting the constraint (i.e., integrating out the auxiliary ghost field \(\delta G\)) becomes a higher-order equation for \(\delta\theta\):
 
 \[
-c_s^2 = \frac{\kappa \mu_0}{C_{\rm eff}}, \qquad
-\beta = \frac{\alpha}{C_{\rm eff}}.
+C_{\rm eff} (-\omega^2) \hat{\theta} + \kappa \mu_0 k^2 \hat{\theta} + \alpha k^4 \hat{\theta} = 0
 \]
+
+Rearranging immediately yields the dispersion relation:
+
+\[
+\boxed{\omega^2(k) = c_s^2 k^2 + \beta k^4}
+\]
+
+where
+
+\[
+c_s^2 = \frac{\kappa \mu_0}{C_{\rm eff}}, \qquad \beta = \frac{\alpha}{C_{\rm eff}}.
+\]
+
+(The derivation holds in the flat-space limit; the full covariant version with projectors \(h_{\mu\nu}\) and \(D_t\) reduces to the same leading-order result in the Newtonian/sub-horizon regime.)
+
+### 14.2 Physical Interpretation (renamed from old 15)
+
+The dispersion relation contains two distinct regimes:
+
+**Large-scale limit** (\(k \to 0\)):  
+\(\omega^2 \approx c_s^2 k^2\) — standard wave propagation, behaving like pressureless matter when \(c_s^2 \to 0\).
+
+**Small-scale limit** (\(k \to \infty\)):  
+\(\omega^2 \approx \beta k^4\) — unique TCWT signature from ghost leakage, producing strong suppression of small-scale structure (acts as effective viscosity or pressure).
+
+This \(k^4\) term is the origin of the “phase-relaxation damping” (\(\mathcal{F}_{\rm wilt} \propto \beta k^4 / a^4\)) in the modified growth equation and explains the small-scale power suppression in the matter power spectrum as well as the steeper CMB damping tail.
 
 ---
 
