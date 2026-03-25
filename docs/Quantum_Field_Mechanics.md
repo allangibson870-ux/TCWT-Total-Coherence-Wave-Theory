@@ -96,8 +96,15 @@ TCWT therefore provides a deterministic underlying theory whose low-energy limit
 ### 1.11 Open Problems
 While TCWT provides a promising deterministic foundation for emergent quantum field mechanics via phase coherence and topological knots, several important challenges remain before it can achieve full equivalence with the Standard Model of particle physics.
 
-- **Spin and fermionic statistics**  
-  The current scalar phase field naturally produces bosonic excitations and integer-winding knots. Obtaining half-integer spin and Fermi–Dirac statistics requires extensions such as oriented or twisted knots (e.g., Hopfions with nonzero Hopf index), chiral zero modes bound to knot cores (Jackiw–Rebbi mechanism), or additional internal degrees of freedom in the Hum phase to realise spinorial representations.
+-**Spin and fermionic statistics**  
+The current formulation of TCWT is based on a single real scalar phase field θ. This naturally gives rise to bosonic excitations and integer-winding topological knots, but does not produce half-integer spin or Fermi–Dirac antisymmetric statistics.
+
+Developing a consistent description of fermions remains a major open challenge. Possible avenues include:
+- Oriented or twisted knots (e.g. Hopfions carrying nonzero Hopf index) that could support fractional or fermionic statistics through topological linking or Berry phases.
+- Chiral zero modes bound to knot cores, in the spirit of the Jackiw–Rebbi mechanism.
+- Extending the Hum phase field with internal degrees of freedom (multi-component scalars or an internal symmetry group) capable of realising spinorial representations.
+
+None of these approaches have yet been fully worked out within the TCWT framework, and it is not yet clear whether they can emerge naturally from the existing Hum coherence and ghost sector without introducing additional fundamental structure.
 
 - **Emergent gauge symmetries (U(1), SU(2), SU(3))**  
   Gauge fields should arise as effective low-energy descriptions rather than being fundamental. Possible mechanisms include redundant degrees of freedom in the phase field that enforce local symmetries (analogous to emergent gauge fields in condensed-matter systems), promotion of global symmetries via Goldstone-like modes, or composite gauge bosons formed from knot interactions. Showing how the ghost sector or nonlinear F-term generates effective Maxwell or Yang–Mills dynamics is a key task.
