@@ -21,16 +21,20 @@ In appropriate limits, the resulting behaviour reproduces the statistical and in
 
 We decompose the Hum field as:
 
-θ(x,t) = θ₀(t) + δθ(x,t)
+```math
+\theta(x,t) = \theta_0(t) + \delta\theta(x,t)
+```
 
 where:
 
-- θ₀(t) = Ω_hum t is the coherent background,
-- δθ represents physical excitations.
+- \(\theta_0(t) = \Omega_{\text{hum}} t\) is the coherent background,
+- \(\delta\theta\) represents physical excitations.
 
 To quadratic order, the perturbations behave as a propagating scalar field with dispersion:
 
-ω² = c_s² k² + m_eff²
+```math
+\omega^2 = c_s^2 k^2 + m_{\text{eff}}^2
+```
 
 where the effective parameters are determined by the TCWT Lagrangian.
 
@@ -38,13 +42,19 @@ where the effective parameters are determined by the TCWT Lagrangian.
 
 ## 3. Mode Expansion
 
-The phase perturbation can be expanded in Fourier modes:
-
-δθ(x,t) = ∫ d³k [ a_k u_k(t) e^{i k·x} + a_k† u_k*(t) e^{-i k·x} ]
+```math
+\delta\theta(x,t) =
+\int d^3k \left[
+a_k u_k(t) e^{i k\cdot x} +
+a_k^\dagger u_k^*(t) e^{-i k\cdot x}
+\right]
+```
 
 with mode functions satisfying:
 
-ü_k + ω_k² u_k = 0
+```math
+\ddot{u}_k + \omega_k^2 u_k = 0
+```
 
 This structure provides the basis for quantized excitations of the phase field.
 
@@ -52,19 +62,28 @@ This structure provides the basis for quantized excitations of the phase field.
 
 ## 4. Emergent Probability Measure
 
-From the quadratic action, the energy of a configuration is:
+The quadratic energy functional is:
 
-E[δθ] ∝ ∫ d³x [ (∂ₜδθ)² + c_s² (∇δθ)² + m_eff² δθ² ]
+```math
+E[\delta\theta] \propto
+\int d^3x \left[
+(\partial_t \delta\theta)^2 +
+c_s^2 (\nabla \delta\theta)^2 +
+m_{\text{eff}}^2 \delta\theta^2
+\right]
+```
 
 In the path-integral formulation:
 
-Z = ∫ Dδθ e^{iS[δθ]}
+```math
+Z = \int \mathcal{D}\delta\theta \, e^{iS[\delta\theta]}
+```
 
-the Gaussian structure of the action leads to a natural weighting of configurations.
+The Gaussian structure of the action leads to:
 
-The squared amplitude associated with a mode arises from the quadratic form of the action, yielding:
-
-P(k) ∝ |a_k|²
+```math
+P(k) \propto |a_k|^2
+```
 
 This reproduces the standard probabilistic interpretation for measurement outcomes without introducing it as an independent postulate.
 
@@ -74,13 +93,17 @@ This reproduces the standard probabilistic interpretation for measurement outcom
 
 Interference patterns arise from superposition of phase configurations:
 
-θ = θ₁ + θ₂
+```math
+\theta = \theta_1 + \theta_2
+```
 
 The observable detection pattern corresponds to regions where nonlinear dynamics favour knot formation.
 
 The likelihood of knot nucleation depends on local phase structure:
 
-P_knot(x) ∝ f(|∇θ|, ∇²θ)
+```math
+P_{\text{knot}}(x) \propto f(|\nabla\theta|, \nabla^2\theta)
+```
 
 Constructive phase regions enhance knot formation, while destructive regions suppress it, reproducing familiar interference patterns.
 
@@ -92,7 +115,9 @@ Correlated configurations of the phase field give rise to entanglement-like beha
 
 For two spatially separated regions:
 
-⟨δθ(x₁) δθ(x₂)⟩ ≠ 0
+```math
+\langle \delta\theta(x_1)\, \delta\theta(x_2) \rangle \neq 0
+```
 
 due to shared origin in a coherent field configuration.
 
@@ -104,11 +129,15 @@ These correlations propagate according to the Hum dynamics and remain consistent
 
 Localized knots can carry topological winding:
 
-θ → θ + 2π n
+```math
+\theta \rightarrow \theta + 2\pi n
+```
 
 The associated circulation:
 
-∮ ∇θ · dl = 2π n
+```math
+\oint \nabla\theta \cdot d\ell = 2\pi n
+```
 
 defines quantized angular momentum.
 
@@ -122,12 +151,14 @@ The exchange of two knots corresponds to a topological braiding of their worldli
 
 The phase accumulated under exchange is determined by the topology of the configuration space:
 
-Ψ → e^{iϕ_ex} Ψ
+```math
+\Psi \rightarrow e^{i\phi_{\text{ex}}} \Psi
+```
 
 with:
 
-- ϕ_ex = 0 for symmetric configurations,
-- ϕ_ex = π for antisymmetric configurations.
+- \(\phi_{\text{ex}} = 0\) for symmetric configurations,
+- \(\phi_{\text{ex}} = \pi\) for antisymmetric configurations.
 
 Thus, particle statistics emerge from the topology of phase configurations.
 
@@ -157,144 +188,154 @@ Within TCWT, quantum behaviour arises naturally from:
 This provides a unified framework in which quantum phenomena are understood as emergent properties of an underlying coherent field.
 
 ---
----
 
-## 11. Canonical Quantization of the Phase Field
+# 11. Canonical Quantization of the Phase Field
 
-To make the quantum structure fully explicit, we quantize the phase perturbation field δθ starting from the quadratic TCWT action.
-
-### 11.1 Quadratic Action
-
-Expanding the TCWT Lagrangian to second order around the coherent background yields:
-
-S^{(2)} = ∫ d⁴x \,
-\frac{1}{2} C_0 (\partial_t δθ)^2
-- \frac{1}{2} κ (\nabla δθ)^2
-- \frac{1}{2} m_{\rm eff}^2 (δθ)^2
-
-where:
-
-c_s^2 = κ / C_0
-
-This defines a relativistic scalar field with effective propagation speed c_s.
+To make the quantum structure fully explicit, we quantize the phase perturbation field \(\delta\theta\) starting from the quadratic TCWT action.
 
 ---
 
-### 11.2 Canonical Momentum
+## 11.1 Quadratic Action
 
-The canonical conjugate momentum is:
+```math
+S^{(2)} = \int d^4x \left[
+\frac{1}{2} C_0 (\partial_t \delta\theta)^2 +
+\frac{1}{2} \kappa (\nabla \delta\theta)^2 +
+\frac{1}{2} m_{\text{eff}}^2 (\delta\theta)^2
+\right]
+```
 
-π(x,t) = ∂L / ∂(∂_t δθ) = C_0 ∂_t δθ
+with:
 
----
-
-### 11.3 Equal-Time Commutation Relations
-
-We impose canonical commutation relations:
-
-[ δθ(x,t), π(y,t) ] = i δ³(x - y)
-
-[ δθ(x,t), δθ(y,t) ] = 0
-
-[ π(x,t), π(y,t) ] = 0
-
-These define the quantum structure of the phase field.
+```math
+c_s^2 = \frac{\kappa}{C_0}
+```
 
 ---
 
-### 11.4 Mode Expansion
+## 11.2 Canonical Momentum
 
-The field operator can be expanded as:
-
-δθ(x,t) = ∫ \frac{d^3k}{(2π)^3} \frac{1}{\sqrt{2 C_0 ω_k}}
-\left(
-a_k e^{i(k·x - ω_k t)} + a_k^\dagger e^{-i(k·x - ω_k t)}
-\right)
-
-with dispersion relation:
-
-ω_k^2 = c_s^2 k^2 + m_{\rm eff}^2
+```math
+\pi(x,t) = C_0 \, \partial_t \delta\theta
+```
 
 ---
 
-### 11.5 Ladder Operator Algebra
+## 11.3 Equal-Time Commutation Relations
 
-The creation and annihilation operators satisfy:
+```math
+[\delta\theta(x,t), \pi(y,t)] = i \delta^3(x - y)
+```
 
-[ a_k, a_{k'}^\dagger ] = (2π)^3 δ³(k - k')
+```math
+[\delta\theta(x,t), \delta\theta(y,t)] = 0
+```
 
-[ a_k, a_{k'} ] = 0
-
-[ a_k^\dagger, a_{k'}^\dagger ] = 0
-
-These operators create and annihilate quanta of phase excitation.
-
----
-
-### 11.6 Hamiltonian Operator
-
-The Hamiltonian becomes:
-
-H = ∫ \frac{d^3k}{(2π)^3} \, ω_k
-\left(
-a_k^\dagger a_k + \frac{1}{2}
-\right)
-
-This corresponds to a collection of harmonic oscillators—one per mode.
+```math
+[\pi(x,t), \pi(y,t)] = 0
+```
 
 ---
 
-## 12. Two-Point Function and Propagator
+## 11.4 Mode Expansion
 
-### 12.1 Time-Ordered Propagator
+```math
+\delta\theta(x,t) =
+\int \frac{d^3k}{(2\pi)^3}
+\frac{1}{\sqrt{2 C_0 \omega_k}}
+\left[
+a_k e^{i(k\cdot x - \omega_k t)} +
+a_k^\dagger e^{-i(k\cdot x - \omega_k t)}
+\right]
+```
 
-The fundamental propagator is defined as:
+with:
 
-D_F(x - y) = ⟨0| T{ δθ(x) δθ(y) } |0⟩
-
-In momentum space:
-
-D_F(k) = \frac{i}{C_0} \frac{1}{k_0^2 - c_s^2 k^2 - m_{\rm eff}^2 + iε}
-
----
-
-### 12.2 Position-Space Representation
-
-D_F(x - y) = ∫ \frac{d^4k}{(2π)^4}
-\frac{i}{C_0 (k_0^2 - c_s^2 k^2 - m_{\rm eff}^2 + iε)}
-e^{ik·(x - y)}
+```math
+\omega_k^2 = c_s^2 k^2 + m_{\text{eff}}^2
+```
 
 ---
 
-### 12.3 Interpretation
+## 11.5 Ladder Operator Algebra
+
+```math
+[a_k, a_{k'}^\dagger] = (2\pi)^3 \delta^3(k - k')
+```
+
+```math
+[a_k, a_{k'}] = 0
+```
+
+```math
+[a_k^\dagger, a_{k'}^\dagger] = 0
+```
+
+---
+
+## 11.6 Hamiltonian Operator
+
+```math
+H = \int \frac{d^3k}{(2\pi)^3}
+\omega_k \left( a_k^\dagger a_k + \frac{1}{2} \right)
+```
+
+---
+
+# 12. Two-Point Function and Propagator
+
+## 12.1 Time-Ordered Propagator
+
+```math
+D_F(x-y) = \langle 0 | T\{ \delta\theta(x)\, \delta\theta(y) \} | 0 \rangle
+```
+
+Momentum-space form:
+
+```math
+D_F(k) =
+\frac{i}{C_0}
+\frac{1}{k_0^2 - c_s^2 k^2 - m_{\text{eff}}^2 + i\epsilon}
+```
+
+---
+
+## 12.2 Position-Space Representation
+
+```math
+D_F(x-y) =
+\int \frac{d^4k}{(2\pi)^4}
+\frac{i}{C_0 (k_0^2 - c_s^2 k^2 - m_{\text{eff}}^2 + i\epsilon)}
+e^{ik\cdot(x-y)}
+```
+
+---
+
+## 12.3 Interpretation
 
 The propagator describes the propagation of phase disturbances through the Hum field.
 
-Key features:
+---
 
-- propagation speed set by c_s
-- mass scale set by m_eff
-- normalization controlled by C₀
+# 13. Correlation Functions and Observables
+
+```math
+\langle \delta\theta(k)\, \delta\theta(k') \rangle
+= (2\pi)^3 \delta^3(k + k')
+\frac{1}{2 C_0 \omega_k}
+```
+
+Thus:
+
+```math
+P(k) \propto |\delta\theta_k|^2
+```
 
 ---
 
-## 13. Correlation Functions and Observables
+# 14. Emergent Particle Interpretation
 
-The two-point correlation function is:
-
-⟨ δθ(k) δθ(k') ⟩ = (2π)^3 δ³(k + k') \frac{1}{2 C_0 ω_k}
-
-This directly leads to:
-
-P(k) ∝ |δθ_k|²
-
-which connects to observable power spectra.
-
----
-
-## 14. Emergent Particle Interpretation
-
-Quanta created by a_k^\dagger correspond to localized excitations of the phase field.
+Quanta created by \(a_k^\dagger\) correspond to localized excitations of the phase field.
 
 In the nonlinear regime:
 
@@ -304,37 +345,35 @@ In the nonlinear regime:
 
 Thus:
 
-linear regime → field quanta  
-nonlinear regime → matter knots  
+- linear regime → field quanta  
+- nonlinear regime → matter knots
 
 ---
 
-## 15. Interaction Terms (Beyond Quadratic Order)
+# 15. Interaction Terms (Beyond Quadratic Order)
 
-Higher-order terms in the TCWT Lagrangian introduce interactions:
-
-L_int ⊃ λ₃ (δθ)^3 + λ₄ (δθ)^4 + ...
+```math
+\mathcal{L}_{\text{int}} \supset
+\lambda_3 (\delta\theta)^3 +
+\lambda_4 (\delta\theta)^4 + \cdots
+```
 
 These generate:
 
-- scattering of phase quanta
-- knot formation processes
-- effective self-interactions
-
-The perturbative expansion can be constructed using the propagator:
-
-⟨ T{ δθ(x₁)...δθ(x_n) } ⟩
+- scattering of phase quanta  
+- knot formation processes  
+- effective self-interactions  
 
 ---
 
-## 16. Summary of Quantum Structure
+# 16. Summary of Quantum Structure
 
 The TCWT phase field admits a quantum description:
 
-- canonical quantization from the quadratic action
-- well-defined commutation relations
-- harmonic oscillator mode structure
-- propagators governing phase propagation
-- interaction terms generating nonlinear dynamics
+- canonical quantization from the quadratic action  
+- well-defined commutation relations  
+- harmonic oscillator mode structure  
+- propagators governing phase propagation  
+- interaction terms generating nonlinear dynamics  
 
 In this framework, quantum field behaviour emerges directly from the dynamics of the Hum phase field and its excitations.
