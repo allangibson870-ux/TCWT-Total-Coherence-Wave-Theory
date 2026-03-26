@@ -882,8 +882,388 @@ Consequences:
 
 This regime is compatible with standard early‑universe behaviour
 
+---
+# 18. One‑Loop β‑Functions for the TCWT Perturbation Sector
 
-# 18. Summary of Quantum Structure
+This section summarizes the leading one‑loop renormalization behaviour of the perturbative TCWT phase field.  
+The analysis follows standard scalar‑field techniques applied to the quadratic and quartic terms of the expanded Lagrangian.
+
+The goal is to obtain the running of:
+
+- the quartic interaction,
+- the effective mass,
+- and the parameters \(C_0\) and \(\kappa\),
+
+within the regime where perturbation theory is applicable.
+
+---
+
+## 18.1 Perturbative Lagrangian
+
+Expanding around the Hum background gives:
+
+
+
+\[
+\mathcal{L}
+= \frac{1}{2} C_0 (\partial_t \delta\theta)^2
+- \frac{1}{2} \kappa (\nabla \delta\theta)^2
+- \frac{1}{2} m^2 (\delta\theta)^2
+- \frac{\lambda_4}{4!} (\delta\theta)^4
++ \cdots
+\]
+
+
+
+Introduce a canonically normalized field:
+
+
+
+\[
+\phi \equiv \sqrt{C_0}\,\delta\theta
+\]
+
+
+
+so that:
+
+
+
+\[
+\mathcal{L}
+= \frac{1}{2} (\partial_t \phi)^2
+- \frac{1}{2} c_s^2 (\nabla \phi)^2
+- \frac{1}{2} m^2 \phi^2
+- \frac{g}{4!} \phi^4
+\]
+
+
+
+with:
+
+
+
+\[
+c_s^2 = \frac{\kappa}{C_0}, \qquad
+g = \frac{\lambda_4}{C_0^2}.
+\]
+
+
+
+---
+
+## 18.2 Propagator
+
+In momentum space, the free propagator is:
+
+
+
+\[
+D(k) = \frac{i}{k_0^2 - c_s^2 k^2 - m^2 + i\varepsilon}.
+\]
+
+
+
+This form reflects the broken Lorentz symmetry (\(c_s \neq 1\)).
+
+---
+
+## 18.3 One‑Loop Correction to the Quartic Coupling
+
+The one‑loop “fish” diagram gives:
+
+
+
+\[
+\Delta g
+= 3 g^2 \int \frac{d^4k}{(2\pi)^4}
+\frac{1}{(k^2 - m^2)^2}.
+\]
+
+
+
+Using dimensional regularization:
+
+
+
+\[
+\int \frac{d^4k}{(2\pi)^4}
+\frac{1}{(k^2 - m^2)^2}
+= \frac{i}{16\pi^2}
+\log\!\left(\frac{\Lambda^2}{\mu^2}\right).
+\]
+
+
+
+Thus:
+
+
+
+\[
+\Delta g
+= \frac{3 g^2}{16\pi^2}
+\log\!\left(\frac{\Lambda^2}{\mu^2}\right).
+\]
+
+
+
+---
+
+## 18.4 β‑Function for the Quartic Coupling
+
+Differentiating with respect to \(\ln\mu\):
+
+
+
+\[
+\beta_g
+\equiv \frac{dg}{d\ln\mu}
+= \frac{3 g^2}{16\pi^2}.
+\]
+
+
+
+This is the standard one‑loop result for a quartic scalar interaction.
+
+---
+
+## 18.5 Wavefunction Renormalization
+
+The one‑loop self‑energy:
+
+
+
+\[
+\Sigma(p)
+= \frac{g}{2}
+\int \frac{d^4k}{(2\pi)^4}
+\frac{1}{k^2 - m^2}
+\]
+
+
+
+is momentum‑independent at leading order.  
+Therefore:
+
+
+
+\[
+Z = 1 + O(g^2),
+\qquad
+\beta_Z = 0 \quad (\text{one loop}).
+\]
+
+
+
+---
+
+## 18.6 Running of \(c_s^2 = \kappa / C_0\)
+
+Because Lorentz symmetry is broken, time and space derivatives renormalize differently.  
+At one loop, the correction to \(c_s^2\) is of order \(g^2\):
+
+
+
+\[
+\beta_{c_s^2} = 0 \quad (\text{one loop}),
+\qquad
+\beta_{c_s^2} \neq 0 \quad (\text{two loops and higher}).
+\]
+
+
+
+---
+
+## 18.7 Mass Running
+
+The one‑loop mass correction is:
+
+
+
+\[
+\Delta m^2
+= \frac{g}{2}
+\int \frac{d^4k}{(2\pi)^4}
+\frac{1}{k^2 - m^2}
+= \frac{g m^2}{16\pi^2}
+\log\!\left(\frac{\Lambda^2}{\mu^2}\right).
+\]
+
+
+
+Thus:
+
+
+
+\[
+\beta_{m^2}
+= \frac{g m^2}{16\pi^2}.
+\]
+
+
+
+---
+
+## 18.8 Returning to TCWT Parameters
+
+Using:
+
+
+
+\[
+g = \frac{\lambda_4}{C_0^2},
+\qquad
+c_s^2 = \frac{\kappa}{C_0},
+\]
+
+
+
+we obtain:
+
+
+
+\[
+\beta_{\lambda_4}
+= C_0^2 \beta_g
++ 2\lambda_4 \frac{\beta_{C_0}}{C_0}.
+\]
+
+
+
+To leading order (\(\beta_{C_0} \approx 0\)):
+
+
+
+\[
+\beta_{\lambda_4}
+= \frac{3}{16\pi^2}
+\frac{\lambda_4^2}{C_0^2}.
+\]
+
+
+
+---
+
+## 18.9 Running of \(\kappa\) and \(C_0\)
+
+From:
+
+
+
+\[
+c_s^2 = \frac{\kappa}{C_0},
+\qquad
+\beta_{c_s^2} \approx 0,
+\]
+
+
+
+we have:
+
+
+
+\[
+\frac{d}{d\ln\mu}
+\left(\frac{\kappa}{C_0}\right)
+\approx 0.
+\]
+
+
+
+Thus:
+
+
+
+\[
+\beta_\kappa \approx
+\left(\frac{\kappa}{C_0}\right)\beta_{C_0}.
+\]
+
+
+
+At one loop:
+
+
+
+\[
+\beta_{C_0} \approx 0,
+\qquad
+\beta_\kappa \approx 0.
+\]
+
+
+
+Non‑zero running appears at higher loops or from nonlinear gradient interactions.
+
+---
+
+## 18.10 Gradient‑Sector Contributions
+
+The expansion:
+
+
+
+\[
+F(x) = x + \frac{2}{3}x^{3/2} + \cdots
+\]
+
+
+
+introduces derivative interactions such as:
+
+
+
+\[
+\mathcal{L} \supset (\nabla\delta\theta)^3.
+\]
+
+
+
+These generate loop corrections scaling as:
+
+
+
+\[
+\beta_\kappa
+\sim \frac{\kappa^2}{16\pi^2 a_0}.
+\]
+
+
+
+This provides a mechanism for infrared enhancement of \(\kappa\).
+
+---
+
+## 18.11 Summary of Leading β‑Functions
+
+
+
+\[
+\boxed{
+\begin{aligned}
+\beta_g &= \frac{3 g^2}{16\pi^2}, \\
+\beta_{m^2} &= \frac{g m^2}{16\pi^2}, \\
+\beta_{C_0} &= 0, \\
+\beta_\kappa &\sim \frac{\kappa^2}{16\pi^2 a_0}
+\quad (\text{from gradient sector}), \\
+\beta_\alpha &\sim -\frac{\alpha^2}{16\pi^2}.
+\end{aligned}
+}
+\]
+
+
+
+These expressions summarize the leading perturbative behaviour.
+
+---
+
+## 18.12 Interpretation
+
+- The quartic interaction grows logarithmically at low scales.  
+- The mass parameter runs proportion
+
+
+# 19. Summary of Quantum Structure
 
 The TCWT phase field admits a quantum description:
 
