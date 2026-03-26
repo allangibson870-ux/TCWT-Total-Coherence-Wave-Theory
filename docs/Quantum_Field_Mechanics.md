@@ -329,7 +329,7 @@ The perturbative expansion can be constructed using the propagator:
 
 ## 16. Summary of Quantum Structure
 
-The TCWT phase field admits a complete quantum description:
+The TCWT phase field admits a quantum description:
 
 - canonical quantization from the quadratic action
 - well-defined commutation relations
