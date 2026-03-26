@@ -136,8 +136,8 @@ H = π²/(4 C₀) + κ (∇θ)²
 ### 2.5 Canonical Quantization (Effective Description)
 [θ(x), π(y)] = i ℏ_eff δ³(x − y)
 
-### 2.6–2.15 (unchanged from your previous version)
-… [the rest of Section 2 remains exactly as you had it, with the k⁴ derivation, emergence of ℏ, etc.]
+### 2.6–2.15 
+… k⁴ derivation, emergence of ℏ, etc.]
 
 ### 2.15 Summary
 In TCWT, both bosons and fermions emerge from the deterministic phase dynamics of the Hum field. The canonical structure, mode expansion, and dispersion relation provide the effective linear quantum field theory that applies across both sectors.
