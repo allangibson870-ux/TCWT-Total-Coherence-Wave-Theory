@@ -749,8 +749,141 @@ The TCWT phase field exhibits:
 
 This establishes TCWT as a **quantum‑consistent effective field theory**, with nonlinear behaviour emerging at large scales rather than signaling breakdown.
 
+---
+# 17. Scale‑Dependent Behaviour from Cosmological to Galactic Regimes
 
-# 17. Summary of Quantum Structure
+TCWT describes a single phase field whose effective parameters vary with physical scale.  
+This section outlines how the same underlying dynamics can exhibit different behaviour across:
+
+- early‑universe linear perturbations,
+- large‑scale structure formation,
+- and low‑acceleration galactic environments.
+
+The goal is to provide a consistent scale‑dependent picture, without assuming a specific ultraviolet completion or committing to a full cosmological model.
+
+---
+
+## 17.1 Running Scale
+
+We introduce a physical momentum scale:
+
+
+
+\[
+\mu \equiv \frac{k}{a}
+\]
+
+
+
+where:
+
+- \(k\) is comoving wavenumber,
+- \(a\) is the scale factor.
+
+Interpretation:
+
+- high \(\mu\): early times / small physical scales,
+- low \(\mu\): late times / large physical scales.
+
+This provides a convenient way to discuss how effective parameters change with scale.
+
+---
+
+## 17.2 Scale‑Dependent Parameters
+
+The effective coefficients of the TCWT phase field may vary with \(\mu\):
+
+
+
+\[
+C_0 \rightarrow C_0(\mu), \qquad
+\kappa \rightarrow \kappa(\mu), \qquad
+\alpha \rightarrow \alpha(\mu)
+\]
+
+
+
+Derived quantities inherit this dependence:
+
+
+
+\[
+c_s^2(\mu) = \frac{\kappa(\mu)}{C_0(\mu)}
+\]
+
+
+
+
+
+\[
+G_{\text{eff}}(\mu) \propto \frac{\kappa(\mu)}{C_0(\mu)}
+\]
+
+
+
+These expressions summarize how the propagation speed and effective coupling can vary across scales.
+
+---
+
+## 17.3 Phenomenological Flow Equations
+
+A general scale‑dependence may be written in terms of beta functions:
+
+
+
+\[
+\frac{dC_0}{d\ln\mu} = \beta_C(C_0,\kappa,\alpha)
+\]
+
+
+
+
+
+\[
+\frac{d\kappa}{d\ln\mu} = \beta_\kappa(C_0,\kappa,\alpha)
+\]
+
+
+
+
+
+\[
+\frac{d\alpha}{d\ln\mu} = \beta_\alpha(C_0,\kappa,\alpha)
+\]
+
+
+
+A simple leading‑order structure consistent with the interaction terms is:
+
+- \(\beta_\kappa \sim +A \kappa^2\)
+- \(\beta_C \sim +B \kappa C_0\)
+- \(\beta_\alpha \sim -D \alpha^2\)
+
+with \(A,B,D > 0\).  
+These forms are illustrative and capture the qualitative behaviour implied by the interaction structure.
+
+---
+
+## 17.4 Behaviour Across Regimes
+
+### 17.4.1 High‑Scale Regime (Early Universe)
+
+At large \(\mu\):
+
+- \(\kappa\) small,
+- \(\alpha\) small,
+- \(C_0\) approximately constant.
+
+Consequences:
+
+- nearly constant sound speed,
+- effective coupling close to its background value,
+- linear perturbations dominate.
+
+This regime is compatible with standard early‑universe behaviour
+
+
+# 18. Summary of Quantum Structure
 
 The TCWT phase field admits a quantum description:
 
