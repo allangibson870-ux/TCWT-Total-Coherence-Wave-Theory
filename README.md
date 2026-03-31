@@ -69,14 +69,25 @@ Trapped in fractal foam (d ≈ 1.585), they form gravitational scaffolding witho
 In standard Newtonian gravity, orbital speeds should drop as 1/√r at large radii.  
 In TCWT, phase-bleed accumulation is logarithmic and filtered by the fractal foam, making effective gravity stronger at larger scales.
 
-**Illustrative comparison** (normalised at 1 unit distance, e.g. stellar/galactic core scale):
+# TCWT Mathematical Architecture (v2026.9)
 
-| Coordinate Radius | Standard Pull (1/r²) | TCWT Effective Pull | Extra Pull Factor (TCWT / Standard) |
-|-------------------|----------------------|---------------------|--------------------------------------|
-| 1 (Normalization) | 1.0                  | 1.0                 | 1.0×                                 |
-| 2 (Stellar Scale) | 0.25                 | 0.67                | 2.6×                                 |
-| 5 (Galactic Sub-scale) | 0.04            | 0.39                | 9.7×                                 |
-| 10 (Galactic Rim) | 0.01                 | 0.26                | 26×                                  |
+| Component | Mathematical Definition / Lagrangian Term | Physical Interpretation |
+| :--- | :--- | :--- |
+| **Total Action** ($S$) | $S = \int d^4x \sqrt{-g} \left[ \frac{R}{16\pi G} + \mathcal{L}_{TCWT} \right]$ | Unified Einstein-Hilbert and Phase-Field coupling [1]. |
+| **Hum Sector** | $C_0(D_t \theta - \Omega)^2 - \kappa a_0^2 F\left( \frac{\lvert\nabla\theta\rvert^2}{a_0^2} \right)$ | Drives MONDian rotation curves and mass-knot stability [1, 85]. |
+| **Ghost Sector** | $-\alpha(D_t G - \Delta \theta)^2$ | Drives late-time expansion and high-$z$ "thawing" [31, 35]. |
+| **$\Omega$-Cap Potential** | $V_\Omega(\Omega) = \frac{\lambda_\Omega}{4}(\Omega^2 - \Omega_{max}^2)^2$ | Prevents singularities by capping the maximum gradient density [1]. |
+| **MOND Limit** | $F(x) = x + \frac{2}{3}x^{3/2} \implies \mu(x) = 1 + \sqrt{x}$ | Bridges Newtonian ($x \gg 1$) and MOND ($x \ll 1$) regimes [1, 81]. |
+
+## Correspondence & Field Limits
+
+| Physical Regime | TCWT Limit | Standard Physics Mapping |
+| :--- | :--- | :--- |
+| **Strong Field** | $\lvert\nabla\theta\rvert \gg a_0 \implies \mu(x) \to 1$ | Newtonian Inverse Square Law [1]. |
+| **Weak Field** | $\lvert\nabla\theta\rvert \ll a_0 \implies \mu(x) \to \sqrt{x}$ | Milgromian Dynamics (MOND) [81, 82]. |
+| **Cosmological** | $\alpha > 0 \implies \omega^2 = c_s^2 k^2 + \beta k^4$ | Dark Energy Expansion + Small-Scale Damping [31]. |
+| **Quantum** | $[ \delta\theta(x), \pi(y) ] = i \delta^3(x-y)$ | Renormalizable Effective Field Theory (EFT) [46, 47]. |
+
 
 At small radii TCWT ≈ Newtonian; at galactic scales the pull is much stronger → flat rotation curves without exotic particles.
 
