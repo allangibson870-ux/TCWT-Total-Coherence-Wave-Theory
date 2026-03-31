@@ -7,7 +7,7 @@ In Total Coherence Wave Theory (TCWT), quantum phenomena arise from the dynamics
 Rather than introducing separate probabilistic postulates, TCWT provides a framework in which familiar quantum-mechanical structures emerge from coherent phase dynamics, localized soliton configurations (knots), and their interactions within the background Hum field. In appropriate limits, the resulting behaviour reproduces the statistical and interference patterns described by conventional quantum mechanics.
 
 ## 2. Phase Field and Perturbations
-We decompose the Hum field as:
+We decompose the Hum field as
 
 \[
 \theta(x,t) = \theta_0(t) + \delta\theta(x,t)
@@ -15,7 +15,7 @@ We decompose the Hum field as:
 
 where \(\theta_0(t) = \Omega_{\rm hum}\, t\) is the coherent background, and \(\delta\theta\) represents physical excitations.
 
-To quadratic order, the perturbations behave as a propagating scalar field with dispersion:
+To quadratic order, the perturbations behave as a propagating scalar field with dispersion
 
 \[
 \omega^2 = c_s^2 k^2 + m_{\rm eff}^2
@@ -25,18 +25,22 @@ where the effective parameters are determined by the TCWT Lagrangian.
 
 ## 3. Mode Expansion
 \[
-\delta\theta(x,t) = \int d^3k \left[ a_k u_k(t) e^{ik\cdot x} + a_k^\dagger u_k^*(t) e^{-ik\cdot x} \right]
+\delta\theta(x,t) = \int \frac{d^3k}{(2\pi)^3} \left[ a_k u_k(t) e^{ik\cdot x} + a_k^\dagger u_k^*(t) e^{-ik\cdot x} \right]
 \]
 
-with mode functions satisfying \(\ddot{u}_k + \omega_k^2 u_k = 0\).
+with mode functions satisfying
+
+\[
+\ddot{u}_k + \omega_k^2 u_k = 0.
+\]
 
 This structure provides the basis for quantized excitations of the phase field.
 
 ## 4. Emergent Probability Measure
-The quadratic energy functional is:
+The quadratic energy functional is
 
 \[
-E[\delta\theta] \propto \int d^3x \left[ (\partial_t \delta\theta)^2 + c_s^2 (\nabla \delta\theta)^2 + m_{\rm eff}^2 \delta\theta^2 \right]
+E[\delta\theta] \propto \int d^3x \left[ (\partial_t \delta\theta)^2 + c_s^2 (\nabla \delta\theta)^2 + m_{\rm eff}^2 \delta\theta^2 \right].
 \]
 
 In the path-integral formulation \( Z = \int \mathcal{D}\delta\theta \, e^{iS[\delta\theta]} \), the Gaussian structure leads to \( P(k) \propto |a_k|^2 \). This reproduces the standard probabilistic interpretation for measurement outcomes without introducing it as an independent postulate.
@@ -45,7 +49,7 @@ In the path-integral formulation \( Z = \int \mathcal{D}\delta\theta \, e^{iS[\d
 Interference patterns arise from superposition of phase configurations \(\theta = \theta_1 + \theta_2\). The observable detection pattern corresponds to regions where nonlinear dynamics favour knot formation. The likelihood of knot nucleation depends on local phase structure:
 
 \[
-P_{\rm knot}(x) \propto f(|\nabla\theta|, \nabla^2\theta)
+P_{\rm knot}(x) \propto f(|\nabla\theta|, \nabla^2\theta).
 \]
 
 Constructive phase regions enhance knot formation, while destructive regions suppress it.
@@ -123,7 +127,7 @@ This is a concrete proposal consistent with TCWT’s unification philosophy. Det
 Thus fermions appear as **topological traps** — collective excitations bound to coherent Hum Hopfions — rather than fundamental entities.
 
 ## 13. Canonical Quantization of the Phase Field
-To make the quantum structure fully explicit, we quantize the phase perturbation field (\(\delta\theta\)) starting from the quadratic TCWT action.
+To make the quantum structure fully explicit, we quantize the phase perturbation field \(\delta\theta\) starting from the quadratic TCWT action.
 
 ### 13.1 Quadratic Action
 \[
@@ -200,7 +204,6 @@ Thus: linear regime → field quanta; nonlinear regime → matter knots.
 These generate scattering of phase quanta, knot formation processes, and effective self-interactions.
 
 ## 18. Renormalization and Effective Field Behaviour
-
 To establish consistency at the quantum level, we analyze the renormalization properties of the TCWT phase field. The aim is not to assume a specific ultraviolet completion, but to show that TCWT defines a well-behaved effective field theory (EFT) with controlled quantum corrections.
 
 ### 18.1 Canonical Dimensions
@@ -236,11 +239,9 @@ where \( E \) is the number of external legs. This implies the quadratic + quart
 \]
 → quadratic divergence, absorbed into \( m_{\rm eff}^2 \to m_{\rm eff}^2 + \delta m^2 \).
 
-**Wave-function renormalization**:
-Momentum-dependent loops generate \(\delta Z \sim \lambda_4 \log(\Lambda/\mu)\), so \(\delta\theta_R = Z^{-1/2} \delta\theta\).
+**Wave-function renormalization**: Momentum-dependent loops generate \(\delta Z \sim \lambda_4 \log(\Lambda/\mu)\), so \(\delta\theta_R = Z^{-1/2} \delta\theta\).
 
-**Coupling running**:
-The quartic coupling runs logarithmically:
+**Coupling running**: The quartic coupling runs logarithmically:
 \[
 \beta(\lambda_4) \sim A \lambda_4^2 \quad (A > 0)
 \]
@@ -296,7 +297,6 @@ The hierarchy \( m_{\rm eff} \gg a_0 \) is technically natural because \( a_0 \)
 These expressions summarize the leading perturbative behaviour. The quartic interaction grows logarithmically at low scales, while the gradient sector provides infrared enhancement of \(\kappa\).
 
 ## 19. Summary of Quantum Structure
-
 The TCWT phase field admits a quantum description:
 - Canonical quantization from the quadratic action
 - Well-defined commutation relations
@@ -308,5 +308,3 @@ The TCWT phase field admits a quantum description:
 In this framework, quantum field behaviour — including the proposed fermion mechanism via Hopfions and zero modes — emerges directly from the dynamics of the Hum phase field and its excitations. The theory remains consistent at the quantum level while naturally producing MOND-like behaviour at galactic scales.
 
 **Current Status**: The linear and renormalization structure is reasonably developed. Full integration of the nonlinear F term, ghost sector at loop level, and the Hopfion fermion proposal into a complete EFT calculation remains ongoing work.
-
-In this framework, quantum field behaviour emerges directly from the dynamics of the Hum phase field and its excitations.
