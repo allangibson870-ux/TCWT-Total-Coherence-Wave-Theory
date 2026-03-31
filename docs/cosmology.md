@@ -7,125 +7,101 @@ This document extends the TCWT Lagrangian into the cosmological regime. It deriv
 TCWT is built on three interacting fields: the Hum phase field θ, the local oscillation frequency Ω, and the ghost-relaxation field G.
 
 ### 1.1 Covariant Structure
-We work in a general spacetime with metric \( g_{\mu\nu} \). Introduce:
-- A unit timelike 4-velocity \( u^\mu \) representing the cosmological rest frame,
-- The spatial projector \( h_{\mu\nu} = g_{\mu\nu} + u_\mu u_\nu \).
+We work in a general spacetime with metric g_μν. Introduce:
+- A unit timelike 4-velocity u^μ representing the cosmological rest frame,
+- The spatial projector h_μν = g_μν + u_μ u_ν.
 
 These define:
-- Temporal derivative: \( D_t \equiv u^\mu \nabla_\mu \),
-- Spatial gradient: \( \nabla_\perp^\mu = h^{\mu\nu} \nabla_\nu \),
-- Spatial Laplacian: \( \Delta = h^{\mu\nu} \nabla_\mu \nabla_\nu \).
+- Temporal derivative: D_t ≡ u^μ ∇_μ,
+- Spatial gradient: ∇_⊥^μ = h^μν ∇_ν,
+- Spatial Laplacian: Δ = h^μν ∇_μ ∇_ν.
 
 In an FLRW background these reduce to ordinary time derivatives and spatial gradients.
 
 ### 1.2 Covariant TCWT Lagrangian
-\[
-\mathcal{L}_{\rm TCWT} = - \frac{1}{2} C_0 (D_t \theta - \Omega)^2 - \kappa a_0^2 F\left( \frac{h^{\mu\nu} \nabla_\mu \theta \nabla_\nu \theta}{a_0^2} \right) - V_\Omega(\Omega) - \alpha (D_t G - \Delta \theta)^2 + \mathcal{L}_{\rm soliton}
-\]
+L_TCWT = - (1/2) C_0 (D_t θ - Ω)^2 - κ a_0² F( (h^μν ∇_μ θ ∇_ν θ) / a_0² ) - V_Ω(Ω) - α (D_t G - Δ θ)^2 + L_soliton
 
 ### 1.3 Full Action
-\[
-S = \int d^4x \sqrt{-g} \left[ \frac{R}{16\pi G} + \mathcal{L}_{\rm TCWT} \right]
-\]
+S = ∫ d⁴x √(-g) [ R / (16πG) + L_TCWT ]
 
 ## 2. Background Cosmology
 
 ### 2.1 FLRW Metric and Homogeneous Fields
-\[
-ds^2 = -dt^2 + a^2(t) \delta_{ij} dx^i dx^j, \qquad H = \frac{\dot{a}}{a}
-\]
+ds² = -dt² + a²(t) δ_ij dx^i dx^j , H = ȧ / a
 
-Homogeneous background fields: \( \bar{\theta}(t) \), \( \bar{\Omega}(t) \), \( \bar{G}(t) \).
+Homogeneous background fields: θ-bar(t), Ω-bar(t), G-bar(t).
 
-Define \( X \equiv \dot{\bar{\theta}} - \bar{\Omega} \).
+Define X ≡ θ-bar-dot - Ω-bar.
 
 ### 2.2 Background Energy Densities and Pressures
-**Hum sector:**
-\[
-\bar{\rho}_{\rm hum} = \frac{1}{2} C_0 X^2 + V_\Omega(\bar{\Omega}), \qquad \bar{p}_{\rm hum} = \frac{1}{2} C_0 X^2 - V_\Omega(\bar{\Omega})
-\]
 
-**Ghost sector:**
-\[
-\bar{\rho}_{\rm ghost} = \alpha \dot{\bar{G}}^2, \qquad \bar{p}_{\rm ghost} = \alpha \dot{\bar{G}}^2
-\]
+Hum sector:
+ρ-bar_hum = (1/2) C_0 X² + V_Ω(Ω-bar),   p-bar_hum = (1/2) C_0 X² - V_Ω(Ω-bar)
+
+Ghost sector:
+ρ-bar_ghost = α Ġ-bar²,   p-bar_ghost = α Ġ-bar
+²
 
 ### 2.3 Modified Friedmann Equations
-\[
-H^2 = \frac{8\pi G}{3} (\bar{\rho}_{\rm hum} + \bar{\rho}_{\rm ghost} + \bar{\rho}_m + \bar{\rho}_{\rm rad})
-\]
+H² = (8πG/3) (ρ-bar_hum + ρ-bar_ghost + ρ-bar_m + ρ-bar_rad)
 
-\[
-\dot{H} = -4\pi G (\bar{\rho}_{\rm tot} + \bar{p}_{\rm tot})
-\]
+Ḣ = -4πG (ρ-bar_tot + p-bar_tot)
 
 ## 3. Linear Perturbations
 
 ### 3.1 Newtonian Gauge
-\[
-ds^2 = -(1 + 2\Phi) dt^2 + a^2(t) (1 - 2\Psi) \delta_{ij} dx^i dx^j
-\]
+ds² = -(1 + 2Φ) dt² + a
+²(t) (1 - 2Ψ) δ_ij dx^i dx^j
 
-Perturbed fields: \( \theta = \bar{\theta} + \delta\theta \), \( \Omega = \bar{\Omega} + \delta\Omega \), \( G = \bar{G} + \delta G \).
+Perturbed fields: θ = θ-bar + δθ, Ω = Ω-bar + δΩ, G = G-bar + δG.
 
-Matter perturbations: \( \rho_m = \bar{\rho}_m (1 + \delta_m) \), velocity \( v_i = \partial_i v \).
+Matter perturbations: ρ_m = ρ-bar_m (1 + δ_m), velocity v_i = ∂_i v.
 
 ## 4. Hum Sector Energy-Momentum Tensor
 
 Perturbed energy density:
-\[
-\delta\rho_{\rm hum} = C_0 X (\dot{\delta\theta} - \delta\Omega - \Phi \dot{\bar{\theta}}) + V_\Omega'(\bar{\Omega}) \delta\Omega
-\]
+δρ_hum = C_0 X (δθ-dot - δΩ - Φ θ-bar-dot) + V_Ω'(Ω-bar) δΩ
 
-Perturbed pressure is similar (adiabatic to leading order). Anisotropic stress \( \sigma_{\rm hum} = 0 \).
+Perturbed pressure is similar (adiabatic to leading order). Anisotropic stress σ_hum = 0.
 
 ## 5. Ghost Sector Energy-Momentum Tensor
 
 Perturbed energy density:
-\[
-\delta\rho_{\rm ghost} = 2\alpha \dot{\bar{G}} (\dot{\delta G} - \Phi \dot{\bar{G}} - \frac{k^2}{a^2} \delta\theta)
-\]
+δρ_ghost = 2α Ġ-bar (δG-dot - Φ Ġ-bar - (k²/a²) δθ)
 
-Perturbed pressure \( \delta p_{\rm ghost} \approx \delta\rho_{\rm ghost} \). Anisotropic stress \( \sigma_{\rm ghost} = 0 \).
+Perturbed pressure δp_ghost ≈ δρ_ghost. Anisotropic stress σ_ghost = 0.
 
 ## 6. Modified Poisson Equation
 
 In the Newtonian gauge, the gravitational potential is sourced by:
-\[
-\frac{k^2}{a^2} \Psi = 4\pi G \Bigl[ \bar{\rho}_m \delta_m + \delta\rho_{\rm hum} + \delta\rho_{\rm ghost} \Bigr]
-\]
 
-Since anisotropic stress vanishes from both sectors, \( \Phi = \Psi \) (no gravitational slip at linear level).
+(k²/a²) Ψ = 4πG [ ρ-bar_m δ_m + δρ_hum + δρ_ghost ]
+
+Since anisotropic stress vanishes from both sectors, Φ = Ψ (no gravitational slip at linear level).
 
 ## 7. Matter Perturbations
-\[
-\dot{\delta}_m = - \frac{k^2}{a^2} v + 3 \dot{\Psi}, \qquad \dot{v} = - \Phi
-\]
+δ_m-dot = - (k
+²/a²) v + 3 Ψ-dot ,   v-dot = - Φ
 
 ## 8. TCWT Growth Equation
 
-Using the mapping \( \delta_m \propto -k^2 \delta\theta \) (valid on sub-horizon scales), the density contrast evolves as:
-\[
-\ddot{\delta} + 2 H_{\rm TCWT} \dot{\delta} - 4\pi G_{\rm eff}(a) \bar{\rho}_m \delta + \mathcal{F}_{\rm wilt}(a,k) \delta = 0
-\]
+Using the mapping δ_m ∝ -k² δθ (valid on sub-horizon scales), the density contrast evolves as:
 
-where \( G_{\rm eff}(a) \) encodes modifications from the Hum and Ghost sectors, and \( \mathcal{F}_{\rm wilt}(a,k) \propto \beta k^4 / a^4 \) is the phase-relaxation damping term.
+δ-double-dot + 2 H_TCWT δ-dot - 4π G_eff(a) ρ-bar_m δ + F_wilt(a,k) δ = 0
+
+where G_eff(a) encodes modifications from the Hum and Ghost sectors, and F_wilt(a,k) ∝ β k⁴ / a⁴ is the phase-relaxation damping term.
 
 ## 9. Effective CDM-like Behaviour for CMB Peaks
 
 To reproduce ΛCDM acoustic peaks without a cold dark matter particle, the combined Hum + Ghost sector must behave as an effectively pressureless clustering component at recombination.
 
 Require:
-\[
-c_{s,{\rm TCWT}}^2 (k_{\rm peak}, a_{\rm rec}) \ll 1
-\]
+c_s,TCWT² (k_peak, a_rec) ≪ 1
 
 and
-\[
-\bar{\rho}_{\rm TCWT,cl}(a_{\rm rec}) \approx \bar{\rho}_{\rm CDM}(a_{\rm rec})
-\]
+ρ-bar_TCWT,cl(a_rec) ≈ ρ-bar_CDM(a_rec)
 
-This imposes constraints on \( C_0 \), \( V_\Omega(\Omega) \), and \( \alpha \).
+This imposes constraints on C_0, V_Ω(Ω), and α.
 
 ## 10. Summary
 
