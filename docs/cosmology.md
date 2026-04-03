@@ -101,6 +101,81 @@ $\bar ρ_{TCWT,cl}(a_rec) ≈ \bar ρ_CDM(a_rec)$
 
 This imposes constraints on $C_0$, $V_Ω(Ω)$, and $α$.
 
+## TCWT FLRW Background Evolution
+
+### Background Variables
+We work in a flat FLRW universe with metric $ds^2 = -dt^2 + a^2(t)\delta_{ij}dx^idx^j$ and Hubble parameter $H = \dot{a}/a$.
+
+The homogeneous background fields are:
+- $\bar{\theta}(t)$ — background Hum phase field
+- $\bar{\Omega}(t)$ — background informational drag field
+- $\bar{G}(t)$ — background ghost regulator field
+
+We define the key derived variable:
+$$
+X(t) \equiv \dot{\bar{\theta}} - \bar{\Omega}
+$$
+which drives the Hum sector energy density.
+
+On the homogeneous background, spatial gradients vanish, so the MOND nonlinearity $F(x)$ is inactive.
+
+### Exact Energy Density and Pressure
+The TCWT contribution to the background is:
+
+$$
+\rho_{\rm TCWT} = \frac{1}{2} C_0 X^2 + V_\Omega(\bar{\Omega}) + \alpha \dot{\bar{G}}^2
+$$
+
+$$
+p_{\rm TCWT} = \frac{1}{2} C_0 X^2 - V_\Omega(\bar{\Omega}) + \alpha \dot{\bar{G}}^2
+$$
+
+### Algebraic Constraint
+From variation with respect to $\Omega$ we have the algebraic relation:
+
+$$
+X = \frac{1}{2 C_0} V_\Omega'(\bar{\Omega})
+$$
+
+### Ghost Evolution
+The ghost field evolves as a constant leakage rate:
+
+$$
+\dot{\bar{G}} = \dot{\bar{G}}_0 = \text{constant}
+$$
+
+### Relaxation Dynamics for the Drag Field
+To allow $\rho_{\rm TCWT}$ to evolve from early-time matter-like behaviour to late-time dark-energy-like behaviour, we introduce a relaxation law for the drag field:
+
+$$
+\frac{d\bar{\Omega}}{d\ln a} = -\gamma \, (\bar{\Omega} - \Omega_{\rm min})
+$$
+
+or equivalently in cosmic time:
+
+$$
+\dot{\bar{\Omega}} = -H \gamma \, (\bar{\Omega} - \Omega_{\rm min})
+$$
+
+where $\gamma > 0$ is the dimensionless relaxation rate and $\Omega_{\rm min}$ is the late-time minimum value of $\bar{\Omega}$.
+
+### Full Background System
+The complete background evolution is governed by:
+- The Friedmann and acceleration equations using $\rho_{\rm TCWT}$ and $p_{\rm TCWT}$ above,
+- The algebraic constraint relating $X$ and $\bar{\Omega}$,
+- The constant ghost leakage $\dot{\bar{G}} = \dot{\bar{G}}_0$,
+- The relaxation equation for $\bar{\Omega}$.
+
+This closes the system and provides a genuine, evolving TCWT-driven cosmology without relying on an external $\Lambda$ term.
+
+### New Parameters Introduced
+- `gamma_tcwt` — relaxation rate $\gamma$
+- `omega_min_tcwt` — late-time floor $\Omega_{\rm min}$
+- `omega_ini_tcwt` — initial value of $\bar{\Omega}$ at early times
+- `gdot0_tcwt` — constant ghost leakage rate $\dot{\bar{G}}_0$
+
+These parameters allow TCWT to transition naturally from radiation/matter domination at early times to accelerated expansion at late times.
+
 ## 10. Summary
 
 This document provides the cosmological layer of TCWT:
