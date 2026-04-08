@@ -77,44 +77,42 @@ Fermions remain the most challenging sector in TCWT. We propose they emerge as t
 
 #### 12.1 Hopfion Ansatz
 
-Stable fermionic configurations are described as **Hopfions** — three-dimensional topological solitons carrying integer Hopf invariant \( Q \).
+Stable fermionic configurations are described as **Hopfions** — three-dimensional topological solitons carrying integer Hopf invariant Q.
 
-For the lowest fermionic state (\( Q = 1 \)) we use the ansatz:
+For the lowest fermionic state (Q = 1) we use the ansatz:
 
-$$
-\theta_{\rm Hopf}(r, \phi, \psi) = 2 \arctan\left(\frac{r}{R}\right) \cos(\phi + \psi)
-$$
+θ_Hopf(r, ϕ, ψ) = 2 arctan(r/R) cos(ϕ + ψ)
 
-where \( R \) is the equilibrium radius of the knot.
+where R is the equilibrium radius of the knot.
 
 #### 12.2 Stabilization by Nonlinear and Ghost Terms
 
 Derrick’s theorem is avoided through two mechanisms:
 
-- The nonlinear MOND-like term \( \kappa a_0^2 F(|\nabla\theta|^2 / a_0^2) \) with \( F(x) = x + \frac{2}{3}x^{3/2} \), which supplies effective quartic repulsion at high gradients.
-- The ghost sector \( \alpha (D_t G - \Delta\theta)^2 \), which introduces higher-derivative (\( k^4 \)-like) stabilization.
+- The nonlinear MOND-like term κ a₀² F(|∇θ|² / a₀²) with F(x) = x + (2/3)x^(3/2), which supplies effective quartic repulsion at high gradients.
+- The ghost sector α (D_t G - Δθ)², which introduces higher-derivative (k⁴-like) stabilization.
 
-The equilibrium radius \( R \) emerges from balancing these contributions using the existing TCWT parameters \( \kappa \), \( \alpha \), and \( a_0 \).
+The equilibrium radius R emerges from balancing these contributions using the existing TCWT parameters κ, α, and a₀.
 
 #### 12.3 Chiral Zero Modes via the Ghost Sector (Jackiw–Rebbi)
 
-The ghost term \( \alpha (D_t G - \Delta\theta)^2 \) couples strongly to regions of high curvature \( \nabla^2\theta \).
+The ghost term α (D_t G - Δθ)² couples strongly to regions of high curvature ∇²θ.
 
-When expanding around the Hopfion background \( \theta = \theta_{\rm Hopf} + \delta\theta \), and adiabatically following (or integrating out) the ghost field \( G \), an effective position-dependent mass term for \( \delta\theta \) is generated:
+When expanding around the Hopfion background θ = θ_Hopf + δθ, and adiabatically following (or integrating out) the ghost field G, an effective position-dependent mass term for δθ is generated:
 
-$$
-m_{\rm eff}^2(r) \propto \alpha \, (\nabla^2 \theta_{\rm Hopf}(r))^2
-$$
+m_eff²(r) ∝ α (∇² θ_Hopf(r))²
 
-Because \( \nabla^2 \theta_{\rm Hopf}(r) \) changes sign at the knot core, \( m_{\rm eff}^2(r) \) crosses zero. This traps a **chiral zero-energy bound state** — a mode that behaves as a Dirac fermion carrying half-integer spin from the topological twist of the Hopfion.
+Because ∇
+² θ_Hopf(r) changes sign at the knot core, m_eff
+²(r) crosses zero. This traps a **chiral zero-energy bound state** — a mode that behaves as a Dirac fermion carrying half-integer spin from the topological twist of the Hopfion.
 
 The ghost sector thus provides the natural mechanism that creates the sign-changing mass without additional fields.
 
 #### 12.4 Emergent Fermi–Dirac Statistics
 
-Exchange of two identical \( Q=1 \) Hopfions corresponds to braiding their worldlines in the presence of the oscillating Hum background \( \theta_0(t) = \Omega_{\rm hum}\, t \).
+Exchange of two identical Q=1 Hopfions corresponds to braiding their worldlines in the presence of the oscillating Hum background θ₀(t) = Ω_hum t.
 
-The ghost sector mediates the interaction during braiding. Because the two knots have opposite polarity (energetically favored), their curvature contributions to \( G \) are antisymmetric. Combined with the global Hum oscillation, this braiding accumulates a geometric phase of \( \pi \), yielding a factor of \( -1 \) in the wavefunction.
+The ghost sector mediates the interaction during braiding. Because the two knots have opposite polarity (energetically favored), their curvature contributions to G are antisymmetric. Combined with the global Hum oscillation, this braiding accumulates a geometric phase of π, yielding a factor of -1 in the wavefunction.
 
 Thus Fermi–Dirac statistics emerge from the interplay of topological braiding, the preferred temporal direction of the Hum, and ghost-mediated dynamics.
 
@@ -124,11 +122,11 @@ Different generations are associated with increasing topological complexity:
 
 | Generation | Hopf Invariant | Topology                     | Analogue |
 |------------|----------------|------------------------------|----------|
-| I          | \( Q=1 \)      | Simple Hopf link             | Electron |
-| II         | \( Q=2 \)      | Double-linked configuration  | Muon     |
-| III        | \( Q=3 \)      | Trefoil-like knot            | Tau      |
+| I          | Q=1            | Simple Hopf link             | Electron |
+| II         | Q=2            | Double-linked configuration  | Muon     |
+| III        | Q=3            | Trefoil-like knot            | Tau      |
 
-Mass splittings arise from differences in linking energy and zero-mode binding strength controlled by the ghost coupling \( \alpha \).
+Mass splittings arise from differences in linking energy and zero-mode binding strength controlled by the ghost coupling α.
 
 #### 12.6 Current Status and Limitations
 
@@ -136,10 +134,11 @@ This mechanism keeps fermions fully within the Hum + ghost framework and natural
 
 However, important steps remain:
 - Explicit derivation of the effective Dirac operator from small fluctuations around the Hopfion + ghost background.
-- Quantitative demonstration that the exchange phase is exactly \( \pi \).
+- Quantitative demonstration that the exchange phase is exactly π.
 - Numerical verification of soliton stability and zero-mode existence in the full nonlinear Lagrangian.
 
 Until these are completed, the fermion sector remains the weakest part of TCWT, although the ghost sector offers a promising unification path.
+
 ## 13. Canonical Quantization of the Phase Field
 To make the quantum structure fully explicit, we quantize the phase perturbation field $\delta\theta$ starting from the quadratic TCWT action.
 
