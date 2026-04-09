@@ -371,6 +371,7 @@ $$\alpha \approx \frac{\kappa^2}{2 a_0^2 C_0} \approx \frac{\rho_{\rm info}}{H_0
 
 This shows that $a_0$ (galactic scale), $H_0$ (cosmological scale), and $\ell_P$ (quantum scale) are manifestations of the same underlying **Information Phase Field**.
 
+<img width="1189" height="490" alt="image" src="https://github.com/user-attachments/assets/ef1ef8d7-e7ee-4d0d-b9d5-7fb7a0eef18d" />
 
 
 
