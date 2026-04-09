@@ -373,6 +373,17 @@ This shows that $a_0$ (galactic scale), $H_0$ (cosmological scale), and $\ell_P$
 
 <img width="1189" height="490" alt="image" src="https://github.com/user-attachments/assets/ef1ef8d7-e7ee-4d0d-b9d5-7fb7a0eef18d" />
 
+### The Mass Lock: Electron Mass as a Cosmological Observable
+
+The TCWT framework identifies the electron rest mass as the binding energy of a fermion zero-mode trapped within a ghost-induced mass profile. 
+
+1. **Mass Scaling:** $m_e \propto \frac{\sqrt{\alpha}}{R}$
+2. **Ghost Relaxation:** $\alpha \approx \frac{\rho_{\text{info}}}{H_0^4}$
+3. **Unified Relation:** $m_e(H_0) \propto H_0^{-2}$
+
+This relation suggests that the "Standard Model" of particle physics is only stable at a specific cosmological expansion rate ($H_0 \approx 71$). Any significant deviation would alter the fine-structure constant and the stability of atomic matter.
+
+<img width="856" height="559" alt="image" src="https://github.com/user-attachments/assets/dc7a1bd5-d3af-4a47-888e-66d6abfeac79" />
 
 
 ## 23. Summary
