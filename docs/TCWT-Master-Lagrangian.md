@@ -16,6 +16,62 @@ $\mathcal{L} = C_0 (D_t \theta - \Omega)^2 - \kappa a_0^2 F\left( \frac{\nabla_\
 
 This Lagrangian preserves Lorentz symmetry in the low-energy limit.
 
+### 2.1 Stability and Constraint Algebra (Hamiltonian Reduction)
+
+To establish the stability of the ghost sector and prove the theory is free from Ostrogradsky instabilities, we perform a Hamiltonian decomposition.
+
+**1. Canonical Momenta and Primary Constraints**
+
+Defining the momenta from the Lagrangian density $\mathcal{L}$:
+
+$$
+\pi_\theta = \frac{\partial \mathcal{L}}{\partial \dot{\theta}} = 2 C_0 (\dot{\theta} - \Omega)
+$$
+
+$$
+\pi_G = \frac{\partial \mathcal{L}}{\partial \dot{G}} = -2 \alpha (\dot{G} - \nabla^2 \theta)
+$$
+
+$$
+\pi_\Omega = \frac{\partial \mathcal{L}}{\partial \dot{\Omega}} = 0 \implies \phi_1 \equiv \pi_\Omega \approx 0
+$$
+
+**2. Total Hamiltonian Density**
+
+By solving for velocities and substituting into $\mathcal{H} = \sum \pi_i \dot{q}_i - \mathcal{L}$, we obtain:
+
+$$
+\mathcal{H} = \frac{\pi_\theta^2}{4C_0} + \pi_\theta \Omega + \frac{\pi_G^2}{4\alpha} - \pi_G \nabla^2 \theta + \kappa a_0^2 F\left( \frac{|\nabla \theta|^2}{a_0^2} \right) + V_\Omega(\Omega)
+$$
+
+**3. Reduced Physical Hamiltonian**
+
+The ghost constraint $\phi_3 \equiv \dot{G} - \nabla^2 \theta \approx 0$ is second-class. Eliminating the auxiliary ghost dynamics in favor of the phase field $\theta$ yields the reduced Hamiltonian on the physical phase space:
+
+$$
+H_{\rm red} \approx \int d^3x \left[ \frac{\pi_\theta^2}{4 C_0} + \kappa a_0^2 F\left( \frac{|\nabla \theta|^2}{a_0^2} \right) + \alpha (\Delta \theta)^2 + V_\Omega\left( \frac{\pi_\theta}{2 C_0} \right) \right]
+$$
+
+*   The term $\alpha (\Delta \theta)^2$ provides the "stiffness" for topological stability.
+*   The $V_\Omega$ potential (the $\Omega$-cap) ensures the Hamiltonian is bounded from below.
+
+---
+
+**4 Explicit Fourier-Space Ghost Mode Equation**
+
+Expanding perturbations $\delta\theta$ and $\delta G$ in Fourier space ($\nabla^2 \to -k^2$, $\partial_t \to -i\omega$):
+
+$$
+\omega^2 = \frac{\kappa a_0^2}{C_0} \left( \frac{\partial F}{\partial x} \right) k^2 + \frac{2\alpha}{C_0} k^4
+$$
+
+**Physical Implications:**
+
+*   **Low $k$ (Acoustic):** $\omega^2 \approx c_s^2 k^2$, where $c_s = \sqrt{\kappa/C_0}$.
+*   **High $k$ (Ghost):** The $k^4$ term dominates, leading to **anomalous dispersion**.
+*   **Group Velocity ($v_g$):** At small scales, $v_g \approx 2\sqrt{\beta}k$. This superluminal coordination within the ghost sector is what maintains the integrity of Hopfion-like matter knots.
+
+
 ## 3. Stress–Energy Tensor
 Defined via metric variation:
 
