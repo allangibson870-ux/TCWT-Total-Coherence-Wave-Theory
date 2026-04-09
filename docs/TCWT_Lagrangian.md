@@ -385,6 +385,22 @@ This relation suggests that the "Standard Model" of particle physics is only sta
 
 <img width="856" height="559" alt="image" src="https://github.com/user-attachments/assets/dc7a1bd5-d3af-4a47-888e-66d6abfeac79" />
 
+### The Electron Mass-Hubble Relation
+
+In TCWT, the electron mass ($m_e$) is the binding energy of a fermion zero-mode within a Hopfion knot. Its value is determined by the Ghost Coupling ($\alpha$) and the Hubble Constant ($H_0$):
+
+1. **Zero-Mode Mass:** $m_e \propto \sqrt{\alpha} / R^3$
+2. **Knot Radius (Stability):** $R \propto (\kappa / \alpha)^{1/4}$
+3. **Information Pressure:** $\alpha \propto \rho_{\text{info}} / H_0^4$
+4. **Holographic Constraint:** $\kappa \propto \alpha / \ell_P^2$
+
+**Resulting Slope:**
+Combining these yields the universal scaling:
+$$m_e \propto \frac{1}{H_0^2}$$
+
+The "Mass Lock" occurs at $H_0 \approx 71 \text{ km/s/Mpc}$, where the predicted mass matches the CODATA value. This identifies the electron not as an input parameter, but as a resonance of the expanding vacuum.
+
+
 
 ## 23. Summary
 TCWT describes reality as a coherence field with an oscillatory vacuum.
