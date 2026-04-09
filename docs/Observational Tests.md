@@ -291,6 +291,8 @@ Knot nucleation gives:
 
 TCWT is therefore **falsifiable** across multiple independent domains.
 
+<img width="864" height="557" alt="image" src="https://github.com/user-attachments/assets/dc140f7b-783f-4270-9316-b0e0504005cd" />
+
 ---
 
 ## 7. Outlook
