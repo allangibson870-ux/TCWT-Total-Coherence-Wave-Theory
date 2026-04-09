@@ -158,6 +158,29 @@ $$
 V_{\rm eff}(r) = m_{\rm eff}^2(r) + \vec{\sigma} \cdot \vec{\nabla} m_{\rm eff}(r)
 $$
 
+### 14.2 Emergent Spin-Statistics and the Braiding Phase
+
+The transition from the scalar phase field $\theta$ to fermionic antisymmetry arises from the geometric phase (Berry phase) accumulated during the exchange of two Hopfion knots.
+
+#### 1. Topological Exchange as Braiding
+In 3+1 dimensions, the exchange of two Hopfion shells is topologically equivalent to a $2\pi$ rotation of the field configuration. Because the zero-mode $\psi$ is trapped within the "twist" of the Hopfion, its wavefunction is slaved to the orientation of the knot's internal coordinates $(\phi, \psi)$.
+
+#### 2. The Ghost-Mediated $-1$ Sign
+The ghost sector term $\alpha (D_t G - \Delta \theta)^2$ enforces a rigid connection between the knots and the background Hum. During an exchange path $\mathcal{C}$, the system accumulates a geometric phase $\Gamma$:
+
+$$
+\Gamma = \exp \left( i \oint_{\mathcal{C}} \mathcal{A} \cdot d\mathbf{x} \right) = -1
+$$
+
+This $\pi$ phase shift occurs because the Hopfion carries a topological charge $Q=1$. In the double-covering of the rotation group (SU(2)), a $2\pi$ rotation yields a sign flip for states with half-integer spin. 
+
+#### 3. Summary of Statistics
+*   **Integer Spin (The Hum):** Low-frequency waves without knots follow Bose-Einstein statistics (gravity/light).
+*   **Half-Integer Spin (The Knots):** Trapped zero-modes follow Fermi-Dirac statistics due to the $Q$-induced phase flip during braiding.
+
+This derivation completes the "Matter from Phase" bridge: the ghost sector doesn't just stabilize matter; it enforces the Pauli Exclusion Principle via the geometry of the phase field.
+
+
 #### Structure of the Potential
 
 *   **Trapping Well:** The gradient term $\vec{\sigma} \cdot \vec{\nabla} m_{\rm eff}(r)$ creates a deep attractive well centered near the knot radius $R$. This is the region where the zero mode is bound.
