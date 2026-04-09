@@ -295,6 +295,18 @@ TCWT is therefore **falsifiable** across multiple independent domains.
 
 <img width="857" height="551" alt="image" src="https://github.com/user-attachments/assets/e1bccb93-79df-485e-9270-e6739f7f27bd" />
 
+### TCWT Observational Status and Predictions
+
+
+| Parameter | TCWT Prediction | Current Observational Constraint | Status |
+| :--- | :--- | :--- | :--- |
+| **Electron mass ($m_e$)** | $m_e \propto H^{-2}$ (increases as $H$ decreases) | Fixed to high precision (CODATA) | Matched at "Mass Lock" point (~71 km/s/Mpc); predicted variation $\sim 10^{-3}–10^{-4}$ near $z=0$. |
+| **Fine-structure constant ($\alpha_{em}$)** | Mild variation $\Delta\alpha/\alpha \propto H^{-2}$ at low $z$ | $\Delta\alpha/\alpha < 10^{-5}$ (Quasar lines, atomic clocks) | **JWST:** Potentially detectable at $z \approx 0–2$. **Quasar (mid-z):** Mild conflict if variation $> 10^{-5}$. **Local:** Consistent. |
+| **Bohr radius ($a_0$)** | $a_0(z) \propto H(z)^2$ (larger atoms at high $z$) | Fixed in laboratory; no direct high-z measurement | **JWST:** Explains early massive galaxies via enhanced cooling. **White Dwarf:** Potential mild conflict at low $z$. **Local:** Consistent. |
+| **MOND acceleration ($a_0$)** | Fixed by ghost coupling $\alpha$ (linked to $H_0$) | $a_0 \approx 1.2 \times 10^{-10} \text{ m/s}^2$ (SPARC) | Matched locally; predicted mild redshift evolution. |
+| **Effective Dark Energy** | Dynamic Info Pressure $\rho_{info} \approx \alpha H^4$ | $\Omega_\Lambda \approx 0.7$ (Planck) | Resolves $H_0$ tension naturally; predicts phantom-like transition at low $z$. |
+
+
 
 ---
 
