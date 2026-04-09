@@ -142,6 +142,37 @@ The Ω-cap imposes a minimum size: $R_{\rm crit} \sim \kappa / \Omega_{\rm max}$
 
 Knots smaller than this radius cannot exist.
 
+### 14.1 Radial Effective Potential and Localization of the Zero Mode
+
+To confirm that the proposed fermion zero mode is physically localized around the Hopfion knot, we examine the effective potential felt by the mode after integrating out the ghost field.
+
+The ghost term $\alpha (D_t G - \Delta\theta)^2$ generates an effective position-dependent mass for small fluctuations $\delta\theta$ around the Hopfion background $\theta_{\rm Hopf}$. After adiabatic elimination of $G$, the leading contribution to the effective mass squared is:
+
+$$
+m_{\rm eff}^2(r) \propto \alpha \, [\nabla^2 \theta_{\rm Hopf}(r)]^2
+$$
+
+Because the Laplacian $\nabla^2 \theta_{\rm Hopf}(r)$ changes sign at the knot core, $m_{\rm eff}(r)$ crosses zero near $r \approx R$. The effective radial potential for the zero mode, obtained from the squared Dirac operator, takes the form:
+
+$$
+V_{\rm eff}(r) = m_{\rm eff}^2(r) + \vec{\sigma} \cdot \vec{\nabla} m_{\rm eff}(r)
+$$
+
+#### Structure of the Potential
+
+*   **Trapping Well:** The gradient term $\vec{\sigma} \cdot \vec{\nabla} m_{\rm eff}(r)$ creates a deep attractive well centered near the knot radius $R$. This is the region where the zero mode is bound.
+*   **Core Repulsion:** Near $r \to 0$, $m_{\rm eff}^2(r)$ becomes large and positive due to high curvature. This produces a repulsive barrier that prevents the mode from collapsing into the origin.
+*   **Asymptotic Behaviour:** Outside the knot ($r \gg R$), $m_{\rm eff}(r) \to 0$ and the potential vanishes. The wavefunction decays exponentially:
+
+$$
+\psi_0(r) \sim \exp\left( -\int^R_r |m_{\rm eff}(r')| \, dr' \right)
+$$
+
+#### Physical Interpretation
+
+The zero mode is not a point-like particle but a **topologically protected shell** of fermionic excitation. The fermion "lives" on the interface between the high-curvature knot core and the smoother Hum background. This structure ensures that matter is a stable, localized distortion of the coherent phase field, deriving its identity from the interplay between topology and the ghost sector.
+
+
 ## 15. Gravity as Phase Gradient
 Define $\lambda = \nabla \theta$
 
