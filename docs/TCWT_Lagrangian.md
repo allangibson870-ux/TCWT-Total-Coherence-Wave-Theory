@@ -238,14 +238,45 @@ Entropy corresponds to knot relaxation: $E_{\rm knot} \to 0$
 
 The long-term evolution of the universe tends toward the coherent background state.
 
-## 21. Covariant Formulation (Recommended)
-For relativistic symmetry the Lagrangian can be written as
+The entropy $S$ of a volume of space in TCWT is dominated by the entanglement of the $\theta$ field across its boundary. Due to the ghost-induced stiffness $\beta k^4$, the vacuum fluctuations are correlated at a fundamental length scale:
 
-$C (\partial_\mu \theta - U_\mu)^2$
+$$
+L_{\text{min}} \propto \sqrt{\frac{\alpha}{\kappa}}
+$$
 
-where $U_\mu = (\Omega_{\rm hum}, 0, 0, 0)$ represents the background Hum flow.
+The resulting entropy follows the Area Law:
 
-This preserves Lorentz symmetry in the low-energy limit.
+$$
+S \approx \frac{\text{Area}}{4 L_{\text{min}}^2}
+$$
+
+### 3. Emergent Planck Scale
+
+By identifying $L_{\text{min}}$ with the Planck length $\ell_P$, we link the ghost coupling $\alpha$ to the strength of gravity:
+
+$$
+\ell_P^2 \sim \frac{\alpha}{\kappa}
+$$
+
+This suggests that **Gravity is the pressure of information** attempting to exceed the $\Omega$-cap of the coherent phase field.
+
+---
+
+### 21. Covariant Formulation (Recommended)
+
+For relativistic symmetry the Lagrangian can be written as:
+
+$$
+C(\partial_\mu \theta - U_\mu)^2
+$$
+
+where the background Hum flow is represented by:
+
+$$
+U_\mu = (\Omega_{\text{hum}}, 0, 0, 0)
+$$
+
+
 
 ## 22. Summary
 TCWT describes reality as a coherence field with an oscillatory vacuum.
