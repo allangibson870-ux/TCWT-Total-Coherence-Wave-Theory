@@ -7,6 +7,9 @@
 **TCWT Software Release (GitHub-linked)**  
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19075414.svg)](https://doi.org/10.5281/zenodo.19075414)
 
+[![Software Heritage](https://shields.io)](https://softwareheritage.org)
+
+
 
 **Summary**  
 Total Coherence Wave Theory (TCWT) proposes that spacetime, matter, and the dark sector emerge from distortions in a global coherent oscillatory background — the Hum. Version 1.1.0 introduces the **Saturated Field Equation**, which mathematically resolves gravitational singularities by imposing a physical upper bound on phase-gradient stiffness via the Ω-Cap potential.
