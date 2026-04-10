@@ -7,7 +7,10 @@
 **TCWT Software Release (GitHub-linked)**  
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19075414.svg)](https://doi.org/10.5281/zenodo.19075414)
 
-[![Software Heritage](https://shields.io)](https://softwareheritage.org)
+<a href="https://softwareheritage.org">
+  <img src="https://shields.io" alt="Software Heritage">
+</a>
+
 
 
 
