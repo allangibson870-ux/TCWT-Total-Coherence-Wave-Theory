@@ -152,8 +152,8 @@ If you use TCWT in your research, please cite:
   title        = {Total Coherence Wave Theory: A Unified Phase-Field Framework for Matter, Gravity, and Cosmic Structure},
   year         = {2026},
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.19134583},
-  url          = {https://doi.org/10.5281/zenodo.19134583}
+  doi          = {10.5281/zenodo.19134582},
+  url          = {https://doi.org/10.5281/zenodo.19134582}
 }
 
 
