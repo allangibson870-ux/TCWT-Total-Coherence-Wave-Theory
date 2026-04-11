@@ -138,7 +138,7 @@ authors:
     given-names: "Allan"
 title: "TCWT: Total Coherence Wave Theory"
 version: "1.0.0"
-date-released: "2024-05-22"
+date-released: "2026-03-20"
 url: "https://github.com"
 license: "Apache-2.0"
 abstract: "A framework for interpreting quantum decoherence as a function of informational density (Omega) and temporal curvature."
