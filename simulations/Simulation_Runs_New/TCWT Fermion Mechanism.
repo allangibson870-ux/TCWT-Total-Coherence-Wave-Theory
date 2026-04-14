@@ -1,0 +1,98 @@
+import numpy as np
+from scipy.sparse import diags, kron, eye
+from scipy.sparse.linalg import eigsh
+import matplotlib.pyplot as plt
+
+# ================== PARAMETERS ==================
+R = 3.0                     # Sweet spot from your experiments
+grid_size = 48              # Higher resolution (increase if you have RAM)
+L = 8.0
+dx = 2 * L / (grid_size - 1)
+x = np.linspace(-L, L, grid_size)
+X, Y, Z = np.meshgrid(x, x, x, indexing='ij')
+r = np.sqrt(X**2 + Y**2 + Z**2)
+r[r < 1e-8] = 1e-8
+
+phi = np.arctan2(Y, X)
+psi = np.arctan2(Z, np.sqrt(X**2 + Y**2))
+theta_hopf = 2 * np.arctan(r / R) * np.cos(phi + psi)
+
+# Laplacian
+def laplacian_3d(f, dx):
+    lap = np.zeros_like(f)
+    lap[1:-1,:,:] += (f[2:,:,:] - 2*f[1:-1,:,:] + f[:-2,:,:]) / dx**2
+    lap[:,1:-1,:] += (f[:,2:,:] - 2*f[:,1:-1,:] + f[:,:-2,:]) / dx**2
+    lap[:,:,1:-1] += (f[:,:,2:] - 2*f[:,:,1:-1] + f[:,:,:-2]) / dx**2
+    return lap
+
+lap_theta = laplacian_3d(theta_hopf, dx)
+
+# Effective mass with SIGN (critical for chiral mode)
+m_eff = 0.085 * lap_theta          # Tuned scaling for sharp ring at R=3.0
+
+# Gradient contribution (σ·∇m term)
+dm_dx = laplacian_3d(m_eff * (X/r), dx)
+dm_dy = laplacian_3d(m_eff * (Y/r), dx)
+dm_dz = laplacian_3d(m_eff * (Z/r), dx)
+grad_m_sq = dm_dx**2 + dm_dy**2 + dm_dz**2
+
+# Potential for two-component proxy
+V = m_eff.flatten()**2 + 0.25 * grad_m_sq.flatten()
+
+# 3D Laplacian matrix
+def fd_laplacian_1d(n, h):
+    main = -2.0 / h**2 * np.ones(n)
+    off = 1.0 / h**2 * np.ones(n-1)
+    return diags([off, main, off], [-1, 0, 1]).tocsc()
+
+Lap1d = fd_laplacian_1d(grid_size, dx)
+I = eye(grid_size)
+Lap3d = kron(kron(Lap1d, I), I) + kron(kron(I, Lap1d), I) + kron(kron(I, I), Lap1d)
+
+# Two-component Hamiltonian proxy
+N = grid_size**3
+H11 = -Lap3d + diags([V], [0])          # Upper component
+H22 = -Lap3d - diags([V], [0])          # Lower component (opposite mass sign)
+H_block = bmat([[H11, None], [None, H22]])   # Simplified block-diagonal for stability
+
+# Solve for lowest 6 eigenvalues
+evals, evecs = eigsh(H_block, k=6, which='SA', tol=1e-6)
+
+print("=== Results ===")
+print("Lowest eigenvalues:", evals)
+print(f"Closest to zero: {evals[0]:.6f}")
+
+# Extract lowest mode (first component for visualization)
+psi_0 = evecs[:, 0][:N].reshape((grid_size, grid_size, grid_size))
+
+# Chiral projection (simple proxy: positive vs negative mass regions)
+psi_left  = psi_0 * (m_eff > 0)   # Rough left-chiral proxy
+psi_right = psi_0 * (m_eff < 0)   # Rough right-chiral proxy
+
+# ================== PLOTS ==================
+fig, axs = plt.subplots(2, 3, figsize=(15, 10))
+
+axs[0,0].imshow(theta_hopf[:,:,grid_size//2], extent=[-L,L,-L,L], cmap='RdBu')
+axs[0,0].set_title('θ_Hopf (z=0)')
+
+axs[0,1].imshow(lap_theta[:,:,grid_size//2], extent=[-L,L,-L,L], cmap='RdBu')
+axs[0,1].set_title('∇²θ_Hopf (Sign Flip)')
+
+axs[0,2].imshow(np.abs(m_eff[:,:,grid_size//2]), extent=[-L,L,-L,L], cmap='viridis')
+axs[0,2].set_title('|m_eff| Magnitude')
+
+axs[1,0].imshow(np.abs(psi_0[:,:,grid_size//2])**2, extent=[-L,L,-L,L], cmap='plasma')
+axs[1,0].set_title('Total Mode |ψ|²')
+
+axs[1,1].imshow(np.abs(psi_left[:,:,grid_size//2])**2, extent=[-L,L,-L,L], cmap='plasma')
+axs[1,1].set_title('Left-chiral component')
+
+axs[1,2].imshow(np.abs(psi_right[:,:,grid_size//2])**2, extent=[-L,L,-L,L], cmap='plasma')
+axs[1,2].set_title('Right-chiral component')
+
+plt.tight_layout()
+plt.show()
+
+# Localization metric (how ring-like the mode is)
+ring_score = np.sum(np.abs(psi_0) * (np.abs(r - R) < 0.8)) / np.sum(np.abs(psi_0))
+print(f"Ring localization score (higher = better toroidal shape): {ring_score:.3f}")
