@@ -17,6 +17,9 @@ Total Coherence Wave Theory (TCWT) proposes that spacetime, matter, and the dark
 
 TCWT has reached the point where the core framework is defined, but several mathematical components now require expertise beyond my skillset. I’m looking for collaborators with strong backgrounds in theoretical or mathematical physics to help formalise the stability analysis, perturbation structure, and scale‑dependent dispersion sector. If you’re interested in contributing to the development of the theory, feel free to open an issue or get in touch.
 
+[Summary_For_Potential_Collaborators.pdf](https://github.com/user-attachments/files/26707778/Summary_For_Potential_Collaborators.pdf)
+
+
 
 **Key Advancements**  
 - The **Saturated Field Equation** expresses emergent spacetime curvature (R_μν) as the energy-momentum response of the phase field θ(x,t), regulated by the Ω-Cap to prevent infinite densities. This yields finite Gaussian Phase-Knots as the fundamental structure of matter.  
