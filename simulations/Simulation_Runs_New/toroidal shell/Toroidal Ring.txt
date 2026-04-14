@@ -1,0 +1,79 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.sparse import diags, kron, eye
+from scipy.sparse.linalg import eigsh
+
+# Parameters
+R = 3.0
+grid_size = 50
+L = 8.0
+dx = 2 * L / (grid_size - 1)
+x = np.linspace(-L, L, grid_size)
+X, Y, Z = np.meshgrid(x, x, x, indexing='ij')
+r = np.sqrt(X**2 + Y**2 + Z**2)
+r[r < 1e-8] = 1e-8
+
+phi = np.arctan2(Y, X)
+psi = np.arctan2(Z, np.sqrt(X**2 + Y**2))
+theta_hopf = 2 * np.arctan(r / R) * np.cos(phi + psi)
+
+def laplacian_3d(f, dx):
+    lap = np.zeros_like(f)
+    lap[1:-1,:,:] += (f[2:,:,:] - 2*f[1:-1,:,:] + f[:-2,:,:]) / dx**2
+    lap[:,1:-1,:] += (f[:,2:,:] - 2*f[:,1:-1,:] + f[:,:-2,:]) / dx**2
+    lap[:,:,1:-1] += (f[:,:,2:] - 2*f[:,:,1:-1] + f[:,:,:-2]) / dx**2
+    return lap
+
+lap_theta = laplacian_3d(theta_hopf, dx)
+m_eff = 0.12 * lap_theta   # increased to strengthen shell
+
+# Proper gradient
+def grad_3d(f, dx):
+    gx = np.zeros_like(f)
+    gy = np.zeros_like(f)
+    gz = np.zeros_like(f)
+    gx[1:-1,:,:] = (f[2:,:,:] - f[:-2,:,:]) / (2*dx)
+    gy[:,1:-1,:] = (f[:,2:,:] - f[:,:-2,:]) / (2*dx)
+    gz[:,:,1:-1] = (f[:,:,2:] - f[:,:,:-2]) / (2*dx)
+    return gx, gy, gz
+
+dm_dx, dm_dy, dm_dz = grad_3d(m_eff, dx)
+grad_m_mag = np.sqrt(dm_dx**2 + dm_dy**2 + dm_dz**2)
+
+# Improved potential with stronger shell + angular modulation
+angular_mod = np.cos(phi + psi)   # from Hopfion twist
+V_new = (m_eff**2) - 2.5 * grad_m_mag + 0.8 * angular_mod * grad_m_mag
+
+# Laplacian matrix
+def fd_laplacian_1d(n, h):
+    main = -2.0 / h**2 * np.ones(n)
+    off = 1.0 / h**2 * np.ones(n-1)
+    return diags([off, main, off], [-1, 0, 1]).tocsc()
+
+Lap1d = fd_laplacian_1d(grid_size, dx)
+I = eye(grid_size)
+Lap3d = kron(kron(Lap1d, I), I) + kron(kron(I, Lap1d), I) + kron(kron(I, I), Lap1d)
+
+H = -Lap3d + diags([V_new.flatten()], [0])
+
+# Solve
+evals, evecs = eigsh(H, k=6, which='SA', tol=1e-6)
+print("Lowest eigenvalues:", evals)
+
+psi_0 = evecs[:, 0].reshape((grid_size, grid_size, grid_size))
+
+# Plots
+z0 = grid_size // 2
+fig, axs = plt.subplots(1, 3, figsize=(18, 5))
+
+axs[0].imshow(V_new[:,:,z0], extent=[-L,L,-L,L], cmap='viridis')
+axs[0].set_title('Improved V_new = m² - 2.5|∇m| + angular')
+
+axs[1].imshow(np.abs(psi_0[:,:,z0])**2, extent=[-L,L,-L,L], cmap='plasma')
+axs[1].set_title('Ground State |ψ|²')
+
+axs[2].imshow(lap_theta[:,:,z0], extent=[-L,L,-L,L], cmap='RdBu')
+axs[2].set_title('∇²θ_Hopf (sign flip)')
+
+plt.tight_layout()
+plt.show()
