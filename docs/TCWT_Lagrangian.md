@@ -1,660 +1,328 @@
-# TCWT Field Theory
-**Pregeometric Lagrangian, Hum Vacuum, and Knot Matter**  
-**Version: 2026.6**  
-**Status: consolidated and mathematically corrected formulation**
+# TCWT Lagrangian  
+## Core Pregeometric Field Theory of the Hum, MOND, Ghost Sector, and Knot Matter  
+Version: 2026.9  
+Status: Consolidated, MOND‑extended, covariant‑ready
 
-## 1. Overview
-Total Coherence Wave Theory (TCWT) describes the universe as a nonlinear coherence field whose ground state is an eternal oscillation known as the Hum.
+---
 
-In this framework:
+# 1. Overview
 
-| Concept          | Interpretation                  |
-|------------------|---------------------------------|
-| Hum              | coherent phase vacuum           |
-| knots            | localized phase structures (matter) |
-| phase gradients  | gravity                         |
-| ghost leakage    | dark energy                     |
-| opaque knots     | dark matter                     |
+Total Coherence Wave Theory (TCWT) describes the universe as a nonlinear coherence field whose vacuum is an eternal oscillation called the **Hum**.
+
+| Concept | Meaning |
+|--------|---------|
+| Hum | coherent oscillatory vacuum |
+| knots | localized phase structures (matter) |
+| phase gradients | gravity |
+| ghost leakage | dark energy |
+| opaque knots | dark matter |
 
 Spacetime and gravity emerge from the dynamics of a fundamental phase field.
 
-## 2. Fundamental Fields
+---
+
+# 2. Fundamental Fields
+
 TCWT uses three scalar fields:
 
-| Field       | Meaning                        |
-|-------------|--------------------------------|
-| $\theta(x,t)$ | coherence phase field        |
-| $\Omega(x,t)$ | informational drag density   |
-| $G(x,t)$      | ghost / leakage regulator    |
+| Field | Meaning |
+|-------|---------|
+| $\theta(x,t)$ | coherence phase field |
+| $\Omega(x,t)$ | informational drag density |
+| $G(x,t)$ | ghost / leakage regulator |
 
-Derived quantity: $\lambda = \nabla \theta$, which represents the phase gradient responsible for gravitational acceleration.
+Derived quantity:
 
-## 3. The Hum Vacuum
-The vacuum state of the theory is not a zero field.
+$$\lambda = \nabla \theta$$
 
-Instead the universe exists in a coherent oscillatory ground state:
+which produces gravitational acceleration.
 
-$\theta_0(t) = \Omega_{\rm hum} t$
+---
 
-where $\Omega_{\rm hum}$ is the intrinsic hum frequency.
+# 3. Hum Vacuum
 
-Physical phenomena arise from perturbations:
+The vacuum is not $\theta = 0$ but a coherent oscillation:
 
-$\theta(x,t) = \theta_0(t) + \delta\theta(x,t)$
+$$\theta_0(t) = \Omega_{\rm hum} t$$
 
-## 4. TCWT Lagrangian Density
-The pregeometric Lagrangian density is
+Physical structure arises from perturbations:
 
-$L = C_0 (\dot{\theta} - \Omega)^2 - \kappa (\nabla \theta)^2 - \alpha (\dot{G} - \nabla^2 \theta)^2 - V_\Omega(\Omega)$
+$$\theta(x,t) = \theta_0(t) + \delta\theta(x,t)$$
 
-**Parameters:**
+Matter corresponds to localized knots in $\delta\theta$.
 
-| Constant | Meaning                     |
-|----------|-----------------------------|
-| $C_0$    | temporal coherence          |
-| $\kappa$ | spatial phase stiffness     |
-| $\alpha$ | ghost-coupling strength     |
+---
 
-## 5. Ω-Cap Potential
-The informational drag field is limited by a cap potential:
+# 4. TCWT Lagrangian (MOND‑Extended)
 
-$V_\Omega(\Omega) = \frac{\lambda_\Omega}{4} (\Omega^2 - \Omega_{\rm max}^2)^2$
+The pregeometric Lagrangian density is:
 
-This term prevents runaway gradients and removes singularities.
+$$L = C_0(\dot\theta - \Omega)^2 - \kappa a_0^2 F(|\nabla\theta|^2 / a_0^2) - \alpha(\dot G - \nabla^2\theta)^2 - V_\Omega(\Omega)$$
 
-## 6. Action
-The action is
+with MOND function:
 
-$S = \int L \, d^3x \, dt$
+$$F(x) = x + \frac{2}{3} x^{3/2}, \quad \mu(x) = 1 + x$$
+
+Constants:
+
+| Constant | Meaning |
+|----------|---------|
+| $C_0$ | temporal coherence |
+| $\kappa$ | spatial phase stiffness |
+| $\alpha$ | ghost coupling |
+| $a_0$ | MOND acceleration scale |
+
+Ω‑cap potential:
+
+$$V_\Omega(\Omega) = \lambda_\Omega^4 (\Omega^2 - \Omega_{\max}^2)^2$$
+
+This prevents runaway gradients and removes singularities.
+
+---
+
+# 5. Action and Variational Principle
+
+The action is:
+
+$$S = \int L \, d^3x \, dt$$
 
 Field equations follow from $\delta S = 0$.
 
-## 7. Euler–Lagrange Equations
-For a field $\phi$:
-
-$\frac{\partial L}{\partial \phi} - \partial_\mu \left( \frac{\partial L}{\partial (\partial_\mu \phi)} \right) + \partial_\mu \partial_\nu \left( \frac{\partial L}{\partial (\partial_\mu \partial_\nu \phi)} \right) = 0$
-
-Second derivatives appear due to the $\nabla^2 \theta$ term.
-
-## 8. Phase Field Equation
-Variation with respect to $\theta$ gives
-
-$\partial_t [2 C_0 (\dot{\theta} - \Omega)] - \nabla \cdot [2 \kappa \nabla \theta] - \nabla^2 [2 \alpha (\dot{G} - \nabla^2 \theta)] = 0$
-
-This governs propagation of the Hum phase field.
-
-## 9. Informational Drag Equation
-Variation with respect to $\Omega$ gives
-
-$-2 C_0 (\dot{\theta} - \Omega) - \frac{d V_\Omega}{d \Omega} = 0$
-
-Low-energy regime: $\Omega \approx \dot{\theta}$
-
-When the cap is reached: $\Omega \to \Omega_{\rm max}$
-
-## 10. Ghost Field Equation
-Variation with respect to $G$:
-
-$\partial_t [2 \alpha (\dot{G} - \nabla^2 \theta)] = 0$
-
-Low-energy approximation: $\dot{G} \approx \nabla^2 \theta$
-
-This field regulates curvature leakage.
-
-# TCWT Core Theory: Ghost Sector & Hopfion Fermions
-
-This document combines two key technical pieces of **Total Coherence Wave Theory (TCWT)**:
-
-1. Ghost sector stability and Dirac constraint analysis
-2. Expanded derivation of fermion emergence via Hopfions
-
-Both are presented clearly for collaborators and contributors.
-
-## 1. Ghost Sector Consistency Analysis
-
-### Lagrangian
-The base Lagrangian density is:
-
-$$
-\mathcal{L} = C_0 (\dot{\theta} - \Omega)^2 - \kappa (\nabla \theta)^2 - \alpha (\dot{G} - \nabla^2 \theta)^2 - V_\Omega(\Omega)
-$$
-
-with the Ω-cap potential
-
-$$
-V_\Omega(\Omega) = \lambda_\Omega^4 \, (\Omega^2 - \Omega_{\rm max}^2)^2 \geq 0.
-$$
-
-All coefficients satisfy: $C_0 > 0$, $\kappa > 0$, $\alpha > 0$, $\lambda_\Omega > 0$.
-
-### Dirac Constraint Analysis
-
-**Primary constraint:**
-$$
-\phi_1 \equiv \pi_\Omega \approx 0
-$$
-
-**Secondary constraints:**
-$$
-\phi_2 \equiv \pi_\theta + V_\Omega'(\Omega) \approx 0
-$$
-$$
-\phi_3 \equiv \pi_G \approx 0 \quad \Rightarrow \quad \dot{G} \approx \nabla^2 \theta
-$$
-
-### Dirac Matrix (Schematic)
-The Poisson bracket matrix $C_{ij}$ has the local structure:
-
-$$
-C \approx \begin{pmatrix}
-0 & 1 & 0 \\
--1 & V_\Omega''(\Omega) & 0 \\
-0 & 0 & 1
-\end{pmatrix} \delta^3(\mathbf{x}-\mathbf{y})
-$$
-
-This matrix is **invertible**. Using Dirac brackets, we impose the constraints strongly.
-
-### Reduced Phase Space & Degrees of Freedom
-After reduction:
-- $\Omega$ is solved algebraically from $\phi_2$.
-- $G$ and $\dot{G}$ are eliminated via $\phi_3$.
-- Remaining physical variables: $\theta(\mathbf{x})$ and $\pi_\theta(\mathbf{x})$.
-
-**Result**: The theory has **1 physical scalar degree of freedom** (the phase field $\theta$).
-
-### Reduced Hamiltonian – Stability Proof
-
-$$
-H_{\rm red} = \int d^3x \left[ \frac{\pi_\theta^2}{4 C_0} + \kappa (\nabla \theta)^2 + \alpha (\nabla^2 \theta)^2 + V_\Omega(\Omega(\pi_\theta)) \right]
-$$
-
-All terms are non-negative:
-- $\frac{\pi_\theta^2}{4 C_0} \geq 0$
-- $\kappa (\nabla \theta)^2 \geq 0$
-- $\alpha (\nabla^2 \theta)^2 \geq 0$
-- $V_\Omega(\Omega) \geq 0$
-
-Thus, $H_{\rm red} \geq 0$. The ghost sector is classically **bounded from below** with **no Ostrogradsky ghosts**.
-
-### Dispersion Relation
-Linear perturbations satisfy:
-
-$$
-\omega^2 = c_s^2 k^2 + \beta k^4, \quad c_s^2 = \frac{\kappa}{C_0} > 0, \quad \beta = \frac{2\alpha}{C_0} > 0.
-$$
-
-- $\omega^2 > 0$ for all $k$ → no linear runaway modes.
-- The $+ \beta k^4$ term provides UV suppression.
-- The Ω-cap regulates high-amplitude behavior by making large gradients energetically costly.
-
-**Numerical note**: Simple 1D high-$k$ evolutions show bounded oscillations both with and without the cap. No blow-up occurs.
-
-## 2. Fermion Emergence via Hopfions (Expanded Derivation)
-
-TCWT proposes that fermionic degrees of freedom emerge from topological structures in the scalar phase field $\theta$, without introducing fundamental spinors.
-
-### The Hopfion Ansatz
-A standard $Q=1$ Hopfion configuration is:
-
-$$
-\theta_{\rm Hopf}(r, \phi, \psi) = 2 \arctan\left(\frac{r}{R}\right) \cos(\phi + \psi)
-$$
-
-where $R$ is the characteristic radius, and the configuration carries topological charge $Q=1$ (Hopf invariant). Higher $Q$ may correspond to lepton generations.
-
-### Ghost-Induced Effective Mass and Zero-Mode Trapping
-After adiabatic elimination of the ghost field ($\dot{G} \approx \nabla^2 \theta$), fluctuations $\delta\theta$ around the Hopfion background acquire an effective position-dependent mass:
-
-$$
-m_{\rm eff}^2(r) \propto \alpha \, [\nabla^2 \theta_{\rm Hopf}(r)]^2
-$$
-
-The Laplacian $\nabla^2 \theta_{\rm Hopf}$ **changes sign** across the toroidal core. This creates a domain-wall-like structure.
-
-The effective potential for the zero-mode takes the form:
-
-$$
-V_{\rm eff}(r) = m_{\rm eff}^2(r) + \boldsymbol{\sigma} \cdot \nabla m_{\rm eff}(r)
-$$
-
-- **Attractive well** near $r \approx R$ (where $m_{\rm eff}$ crosses zero).
-- **Repulsive core** near $r \to 0$.
-- **Exponential decay** outside the knot: $\psi_0(r) \sim \exp\left( -\int_R^r |m_{\rm eff}(r')| \, dr' \right)$.
-
-This traps a normalizable, chiral zero-energy bound state localized on the interface of the Hopfion.
-
-### Emergent Spin-Statistics via Geometric Phase
-When two $Q=1$ Hopfions are exchanged, the process is topologically equivalent to a $2\pi$ rotation of a single soliton (due to the double cover $SO(3) \simeq SU(2)/\mathbb{Z}_2$).
-
-The trapped zero-mode is rigidly coupled to the Hopfion’s internal orientation via the ghost sector. As the knots braid, the zero-mode wavefunction acquires a **Berry phase** $\Gamma$:
-
-$$
-\Gamma = \exp\left( i \oint_C \mathbf{A} \cdot d\mathbf{x} \right) = -1
-$$
-
-This sign flip under exchange implements Fermi–Dirac statistics.
-
-Low-frequency non-topological excitations (pure Hum waves) remain bosonic.
-
-# Hopfion Zero-Mode: Numerical Evidence for Emergent Fermions in TCWT
-
-One of the central proposals in TCWT is that fermions emerge as chiral zero-modes trapped on topological Hopfion knots in the Hum phase field θ. The ghost sector generates a position-dependent effective mass that changes sign at the knot core, creating a toroidal domain-wall structure.
-
-We solved the fluctuation operator around the Q=1 Hopfion ansatz
-
-$$
-\theta_{\rm Hopf}(r, \phi, \psi) = 2 \arctan\left(\frac{r}{R}\right) \cos(\phi + \psi)
-$$
-
-using a two-component spinor approximation that includes the sign-changing mass and the Jackiw–Rebbi term.
-
-### Results at Optimal Radius R = 3.0
-
-<img width="1779" height="618" alt="Hopfion fermion mechanism" src="https://github.com/user-attachments/assets/8cba66e9-3b1f-44ce-9da8-2564ec711747" />
-
-
-**(left to right):**
-- θ_Hopf phase profile in the z=0 plane
-- Laplacian ∇²θ_Hopf, clearly showing the sign flip (red positive → blue negative) required for domain-wall formation
-- Magnitude of the effective mass |m_eff|
-
-
-The spatial separation of the left and right chiral components, while together forming the full ring, provides strong numerical support for a **chiral Dirac-like zero mode** trapped by the ghost sector.
-
-### Interpretation
-
-These numerical results demonstrate that:
-- The ghost-induced sign-changing effective mass \( m_{\rm eff}(r) \propto \alpha [\nabla^2 \theta_{\rm Hopf}(r)]^2 \) creates a toroidal domain wall.
-- A low-energy bound state is trapped on this wall.
-- The trapped mode naturally splits into left and right chiral components localized on complementary arcs of the torus.
-
-This behavior is consistent with the proposal that fermions arise as topologically protected chiral zero-modes on Hopfion knots within the Hum phase field. The ghost sector simultaneously stabilizes the soliton, binds the zero mode, and contributes to the geometric phase responsible for Fermi–Dirac statistics during knot exchange.
-
-### Current Status and Next Steps
-
-While these results are encouraging, important work remains for full rigor:
-- Explicit derivation of the first-order Dirac operator from the complete TCWT Lagrangian (including higher-derivative ghost terms and nonlinear MOND contributions).
-- Quantitative calculation of the Berry phase accumulated during Hopfion exchange in the oscillating Hum background.
-- Long-term dynamical stability under full nonlinear evolution and gravitational backreaction.
-
-Nevertheless, the clean toroidal ring with clear chiral splitting at R ≈ 3.0 constitutes meaningful numerical evidence supporting the Hopfion fermion proposal in TCWT.
+Higher derivatives appear due to the $\nabla^2\theta$ term.
 
 ---
 
+# 6. Field Equations
 
+## 6.1 Phase Field Equation
 
-### Open Issues in the Fermion Sector
-While conceptually elegant, the following still need to be completed:
-1. Explicit derivation of the effective Dirac (or Weyl) operator from fluctuations around $\theta_{\rm Hopf}$.
-2. Numerical confirmation of the zero-mode (energy, normalization, chirality).
-3. Quantitative computation of the Berry phase under the oscillating Hum background $\theta_0(t) = \Omega_{\rm hum} t$.
-4. Long-term dynamical stability of the Hopfion + zero-mode, including gravitational backreaction.
-5. Mechanism for gauge bosons and full Standard Model embedding.
+$$2C_0 \partial_t(\dot\theta - \Omega) - \nabla \cdot [\kappa \mu(|\nabla\theta|/a_0)\nabla\theta] - 2\alpha \nabla^2(\dot G - \nabla^2\theta) = 0$$
 
-## Summary of Both Sections
+This is the core dynamical equation of TCWT.
 
-- **Ghost sector**: Reduced to 1 physical degree of freedom with non-negative Hamiltonian. No Ostrogradsky ghosts. Dispersion is stable; Ω-cap provides regulation.
-- **Hopfion fermions**: Topological solitons trap zero-modes and acquire Fermi statistics via geometric braiding phase mediated by the ghost sector.
+## 6.2 Informational Drag Equation
 
-Together, these provide a unified scalar origin for both the dark sector (via ghost leakage) and matter (via knots), with fermions emerging topologically.
+$$-2C_0(\dot\theta - \Omega) - V_\Omega'(\Omega) = 0$$
+
+Low‑energy: $\Omega \approx \dot\theta$  
+Cap regime: $\Omega \to \Omega_{\max}$
+
+## 6.3 Ghost Field Equation
+
+$$\partial_t[2\alpha(\dot G - \nabla^2\theta)] = 0$$
+
+Low‑energy: $\dot G \approx \nabla^2\theta$
+
+This slow leakage channel produces dark‑energy‑like behaviour.
 
 ---
 
-**Contributions welcome!**
+# 7. Hamiltonian Formulation
 
-- Numerical evolution of Hopfions
-- Full Dirac matrix with spatial derivatives
-- Implementation in CLASS or N-body codes
-- Quantum treatment
-
-See the main [TCWT repository](https://github.com/allangibson870-ux/TCWT-Total-Coherence-Wave-Theory) for code, issues, and discussion.
-
-Last updated: April 2026
-
-### Next Steps / Open Items
-- Full functional Dirac matrix including spatial derivative operators
-- 3D nonlinear numerical evolution including gravity backreaction
-- Quantum treatment (path integral or canonical quantization)
-- Explicit covariant Dirac analysis on curved backgrounds
-
-Contributions and feedback are very welcome!
-
-See the main [TCWT repository](https://github.com/allangibson870-ux/TCWT-Total-Coherence-Wave-Theory) for code and further discussion.
-
-## 11. Conserved Phase Flux
-The Lagrangian is invariant under a global phase shift $\theta \to \theta + \varepsilon$.
-
-The Noether current is $J^\mu = \partial L / \partial (\partial_\mu \theta)$
-
-Components:
-- $J^0 = 2 C_0 (\dot{\theta} - \Omega)$
-- $\mathbf{J} = 2 \kappa \nabla \theta$
-
-Conservation law: $\partial_\mu J^\mu = 0$
-
-This represents conservation of global phase flux.
-
-## 12. Hamiltonian Density
 Canonical momenta:
-- $\pi_\theta = 2 C_0 (\dot{\theta} - \Omega)$
-- $\pi_G = 2 \alpha (\dot{G} - \nabla^2 \theta)$
 
-Hamiltonian density:
-$H = C_0 (\dot{\theta} - \Omega)^2 + \kappa (\nabla \theta)^2 + \alpha (\dot{G} - \nabla^2 \theta)^2 + V_\Omega(\Omega)$
+$$\pi_\theta = 2C_0(\dot\theta - \Omega)$$  
+$$\pi_G = 2\alpha(\dot G - \nabla^2\theta)$$  
+$$\pi_\Omega = 0$$
 
-All terms are non-negative: $H \ge 0$, ensuring vacuum stability.
+Primary constraint: $\pi_\Omega \approx 0$.
 
-## 13. Knot Solutions (Matter)
-Matter corresponds to localized phase structures in the coherence field.
+Reduced Hamiltonian:
 
-Example radial ansatz:
-$\theta_{\rm knot}(r) = \Theta_0 \exp(-r^2 / 2 R^2)$
+$$H_{\rm red} = \int d^3x \left[ \frac{\pi_\theta^2}{4C_0} + \kappa a_0^2 F(|\nabla\theta|^2/a_0^2) + \alpha(\nabla^2\theta)^2 + V_\Omega(\Omega(\pi_\theta)) \right]$$
 
-Energy arises from gradient energy:
-$E = \int \kappa (\nabla \theta)^2 \, d^3x$
-
-These structures behave as particle-like solitons.
-
-## 14. Knot Stability
-A stable knot occurs when $dE/dR = 0$.
-
-The Ω-cap imposes a minimum size: $R_{\rm crit} \sim \kappa / \Omega_{\rm max}$
-
-Knots smaller than this radius cannot exist.
-
-### 14.1 Radial Effective Potential and Localization of the Zero Mode
-
-To confirm that the proposed fermion zero mode is physically localized around the Hopfion knot, we examine the effective potential felt by the mode after integrating out the ghost field.
-
-The ghost term $\alpha (D_t G - \Delta\theta)^2$ generates an effective position-dependent mass for small fluctuations $\delta\theta$ around the Hopfion background $\theta_{\rm Hopf}$. After adiabatic elimination of $G$, the leading contribution to the effective mass squared is:
-
-$$
-m_{\rm eff}^2(r) \propto \alpha \, [\nabla^2 \theta_{\rm Hopf}(r)]^2
-$$
-
-Because the Laplacian $\nabla^2 \theta_{\rm Hopf}(r)$ changes sign at the knot core, $m_{\rm eff}(r)$ crosses zero near $r \approx R$. The effective radial potential for the zero mode, obtained from the squared Dirac operator, takes the form:
-
-$$
-V_{\rm eff}(r) = m_{\rm eff}^2(r) + \vec{\sigma} \cdot \vec{\nabla} m_{\rm eff}(r)
-$$
-
-### 14.2 Emergent Spin-Statistics and the Braiding Phase
-
-The transition from the scalar phase field $\theta$ to fermionic antisymmetry arises from the geometric phase (Berry phase) accumulated during the exchange of two Hopfion knots.
-
-#### 1. Topological Exchange as Braiding
-In 3+1 dimensions, the exchange of two Hopfion shells is topologically equivalent to a $2\pi$ rotation of the field configuration. Because the zero-mode $\psi$ is trapped within the "twist" of the Hopfion, its wavefunction is slaved to the orientation of the knot's internal coordinates $(\phi, \psi)$.
-
-#### 2. The Ghost-Mediated $-1$ Sign
-The ghost sector term $\alpha (D_t G - \Delta \theta)^2$ enforces a rigid connection between the knots and the background Hum. During an exchange path $\mathcal{C}$, the system accumulates a geometric phase $\Gamma$:
-
-$$
-\Gamma = \exp \left( i \oint_{\mathcal{C}} \mathcal{A} \cdot d\mathbf{x} \right) = -1
-$$
-
-This $\pi$ phase shift occurs because the Hopfion carries a topological charge $Q=1$. In the double-covering of the rotation group (SU(2)), a $2\pi$ rotation yields a sign flip for states with half-integer spin. 
-
-#### 3. Summary of Statistics
-*   **Integer Spin (The Hum):** Low-frequency waves without knots follow Bose-Einstein statistics (gravity/light).
-*   **Half-Integer Spin (The Knots):** Trapped zero-modes follow Fermi-Dirac statistics due to the $Q$-induced phase flip during braiding.
-
-This derivation completes the "Matter from Phase" bridge: the ghost sector doesn't just stabilize matter; it enforces the Pauli Exclusion Principle via the geometry of the phase field.
-
-
-#### Structure of the Potential
-
-*   **Trapping Well:** The gradient term $\vec{\sigma} \cdot \vec{\nabla} m_{\rm eff}(r)$ creates a deep attractive well centered near the knot radius $R$. This is the region where the zero mode is bound.
-*   **Core Repulsion:** Near $r \to 0$, $m_{\rm eff}^2(r)$ becomes large and positive due to high curvature. This produces a repulsive barrier that prevents the mode from collapsing into the origin.
-*   **Asymptotic Behaviour:** Outside the knot ($r \gg R$), $m_{\rm eff}(r) \to 0$ and the potential vanishes. The wavefunction decays exponentially:
-
-$$
-\psi_0(r) \sim \exp\left( -\int^R_r |m_{\rm eff}(r')| \, dr' \right)
-$$
-
-#### Physical Interpretation
-
-The zero mode is not a point-like particle but a **topologically protected shell** of fermionic excitation. The fermion "lives" on the interface between the high-curvature knot core and the smoother Hum background. This structure ensures that matter is a stable, localized distortion of the coherent phase field, deriving its identity from the interplay between topology and the ghost sector.
-
-
-## 15. Gravity as Phase Gradient
-Define $\lambda = \nabla \theta$
-
-Acceleration of matter: $a = -\chi \nabla \theta$
-
-The coupling constant $\chi = (c^2 \kappa) / (C_0 \Omega_{\rm max})$ connects the field theory to gravitational dynamics.
-
-## 16. Black Holes Without Singularities
-In TCWT singularities cannot form.
-
-Instead a black hole corresponds to a saturated knot where $|\nabla \theta| \to \Omega_{\rm max} / \kappa$
-
-The Ω-cap prevents further growth. This produces a phase-opaque region rather than infinite density.
-
-## 17. Dark Matter
-Dark matter corresponds to phase-opaque knots where $|\nabla \theta| \gtrsim \Omega_{\rm max} / \kappa$
-
-These structures produce gravitational fields, interact weakly with radiation, and remain stable over cosmological times.
-
-## 18. Dark Energy
-Slow relaxation of phase curvature through the ghost field produces vacuum pressure.
-
-Low-energy relation: $\dot{G} \approx \nabla^2 \theta$
-
-This leakage acts as a small background expansion force.
-
-## 19. Cosmological Interpretation
-The universe evolves through phases of knot formation and decay:
-
-Hum (coherent vacuum) → Phase instability → Rapid knot formation → Energy release (Big Bang) → Matter-dominated universe → Gradual knot unwinding → Return toward Hum coherence
-
-The Big Bang therefore represents a large-scale phase instability, not a singular origin.
-
-## 20. Entropy in TCWT
-The Hum is the most ordered state of the system.
-
-Knots store distortion energy in the phase field.
-
-Entropy corresponds to knot relaxation: $E_{\rm knot} \to 0$
-
-The long-term evolution of the universe tends toward the coherent background state.
-
-The entropy $S$ of a volume of space in TCWT is dominated by the entanglement of the $\theta$ field across its boundary. Due to the ghost-induced stiffness $\beta k^4$, the vacuum fluctuations are correlated at a fundamental length scale:
-
-$$
-L_{\text{min}} \propto \sqrt{\frac{\alpha}{\kappa}}
-$$
-
-The resulting entropy follows the Area Law:
-
-$$
-S \approx \frac{\text{Area}}{4 L_{\text{min}}^2}
-$$
-
-### 3. Emergent Planck Scale
-
-By identifying $L_{\text{min}}$ with the Planck length $\ell_P$, we link the ghost coupling $\alpha$ to the strength of gravity:
-
-$$
-\ell_P^2 \sim \frac{\alpha}{\kappa}
-$$
-
-This suggests that **Gravity is the pressure of information** attempting to exceed the $\Omega$-cap of the coherent phase field.
+All terms are non‑negative → **no Ostrogradsky ghosts**.
 
 ---
 
-### 21. Covariant Formulation (Recommended)
+# 8. Noether Current (Phase Flux)
 
-For relativistic symmetry the Lagrangian can be written as:
+Global shift symmetry $\theta \to \theta + \epsilon$ gives:
 
-$$
-C(\partial_\mu \theta - U_\mu)^2
-$$
+$$J^0 = 2C_0(\dot\theta - \Omega)$$  
+$$\mathbf{J} = 2\kappa \nabla\theta$$  
+$$\partial_\mu J^\mu = 0$$
 
-where the background Hum flow is represented by:
-
-$$
-U_\mu = (\Omega_{\text{hum}}, 0, 0, 0)
-$$
-
-### 22 The Ghost-MOND-Hubble Unification
-
-We provide a consistent derivation of the ghost coupling $\alpha$ showing it is uniquely determined by the MOND scale $a_0$ and the cosmological expansion rate $H_0$.
-
-#### 1. Derivation from MOND Scaling
-The ghost stiffness $\beta k^4$ begins to compete with the standard kinetic term at the MOND transition scale $k_{\text{MOND}} \sim a_0 / c_s$. Equating the terms:
-
-$$
-\beta k_{\text{MOND}}^4 \sim c_s^2 k_{\text{MOND}}^2
-$$
-
-Substituting $\beta = 2\alpha / C_0$ and $c_s^2 = \kappa / C_0$, we obtain the fundamental coupling relation:
-
-$$
-\alpha \approx \frac{\kappa^2}{2 a_0^2}
-$$
-
-#### 2. Derivation from Information Pressure ($H_0$ Tension)
-The Information Pressure density $\rho_{\text{info}}$ from the ghost sector is a function of the background curvature, which at late times scales with the Hubble parameter:
-
-$$
-\rho_{\text{info}} \approx \alpha H_0^4
-$$
-
-To resolve the $H_0$ tension (requiring an extra density of $\approx 6 \times 10^{-29} \text{ kg/m}^3$), the ghost coupling is fixed at:
-
-$$
-\alpha \approx \frac{\Delta \rho_{\text{info}}}{H_0^4} \approx 2.2 \times 10^{43} \text{ (natural units)}
-$$
-
-#### 3. The Unification Result
-When we combine these with the holographic relation $\ell_P^2 \sim \alpha / \kappa$, the parameters $\kappa$, $\alpha$, and $a_0$ form a closed system. This proves that:
-* **Galactic Scale:** $\alpha$ regulates the MOND transition.
-* **Cosmological Scale:** $\alpha$ provides the "phantom" boost to $H_0$.
-* **Planck Scale:** $\alpha$ determines the fundamental resolution of the information vacuum.
-
-This reduces TCWT to a highly predictive framework where a single measurement (e.g., $a_0$ from rotation curves) constrains the expected $H_0$ tension.
-
-# Theoretical Framework: The Ghost Coupling and Scale Unification (TCWT)
-
-This derivation establishes the mathematical link between the **Ghost Coupling ($\alpha$)**, the **MOND acceleration scale ($a_0$)**, and the **Hubble tension ($\rho_{\rm info}$)**. By defining a higher-derivative dispersion relation, we bridge the Ultraviolet (Planck) and Infrared (Hubble) regimes through a single emergent parameter.
+This is conservation of global phase flux.
 
 ---
 
-### 1. Ghost Term and Dispersion Relation
-Starting from the ghost term $\alpha (D_t G - \Delta\theta)^2$, we apply adiabatic elimination of the auxiliary field $G$ to obtain the effective higher-derivative Lagrangian contribution:
+# 9. Gravity from Phase Gradients
 
-$$\mathcal{L}_{\rm eff, ghost} \supset \alpha (\nabla^2 \theta)^2$$
+Define:
 
-In Fourier space, this modifies the propagator for phase-field perturbations, leading to the dispersion relation:
+$$a = -\chi \nabla\theta$$  
+$$\chi = \frac{c^2 \kappa}{C_0 \Omega_{\max}}$$
 
-$$\omega^2 = c_s^2 k^2 + \beta k^4, \qquad \beta = \frac{2\alpha}{C_0}$$
+Define gravitational potential:
 
-Where $c_s$ is the sound speed of the information field and $C_0$ is the temporal stiffness.
+$$\Phi = \chi \theta$$
 
-### 2. Linking $\alpha$ to the MOND Scale ($a_0$)
-The MOND transition occurs when the non-linear gradient term becomes significant. We require that the ghost-induced $k^4$ correction becomes comparable to the quadratic $k^2$ term at the MOND wavenumber $k_{\rm MOND} \sim a_0 / c_s$:
+Then:
 
-$$\beta k_{\rm MOND}^4 \sim c_s^2 k_{\rm MOND}^2$$
+$$\nabla^2\Phi = \chi \nabla^2\theta$$
 
-Substituting $\beta = 2\alpha / C_0$ and simplifying:
+TCWT reproduces the Newtonian Poisson equation:
 
-$$\frac{2\alpha a_0^2}{C_0 c_s^4} \sim 1 \implies 2\alpha a_0^2 \sim C_0 c_s^4$$
+$$\nabla^2\Phi = 4\pi G \rho$$
 
-Given the relationship for sound speed $c_s^2 = \kappa / C_0$, we solve for the ghost coupling:
+with:
 
-$$\alpha \approx \frac{\kappa^2}{2 a_0^2 C_0}$$
+$$G = \frac{\chi}{4\pi\kappa}$$
 
-### 3. Holographic Relation and the Planck Scale
-From the TCWT holographic bound, the Planck length $\ell_P$ is related to the ratio of ghost coupling to spatial stiffness:
+---
 
-$$\ell_P^2 \sim \frac{\alpha}{\kappa}$$
+# 10. Newtonian and MOND Limits
 
-Substituting our derived expression for $\alpha$:
+Strong field ($|\nabla\theta| \gg a_0$):
 
-$$\ell_P^2 \sim \frac{\kappa}{2 a_0^2 C_0} \implies \kappa \approx 2 a_0^2 C_0 \ell_P^2$$
+$$\mu(x) \to 1$$  
+Newtonian gravity recovered.
 
-This closes the loop: the **spatial stiffness ($\kappa$)** is fixed by the MOND scale, the temporal stiffness, and the Planck scale.
+Weak field ($|\nabla\theta| \ll a_0$):
 
-### 4. Resolution of the $H_0$ Tension
-The late-time Information Pressure ($\rho_{\rm info}$) generated by the ghost sector is a function of the characteristic curvature of the universe ($H_0^2$):
+$$\mu(x) \approx x = |\nabla\theta|/a_0$$  
+$$\nabla \cdot[(|\nabla\theta|/a_0)\nabla\theta] = \rho/\kappa$$
 
-$$\rho_{\rm info} \approx \alpha \langle (\nabla^2 \theta)^2 \rangle \approx \alpha H_0^4$$
+This yields flat rotation curves and the baryonic Tully–Fisher relation.
 
-To resolve the Hubble tension, $\rho_{\rm info}$ must account for the missing energy density required to bridge local and CMB measurements. This yields an independent expression for $\alpha$:
+---
 
-$$\alpha \approx \frac{\rho_{\rm info}}{H_0^4}$$
+# 11. Knot Matter (Solitons)
 
-### 5. Conclusion: Unified Scaling Symmetry
-Equating the expressions for $\alpha$ demonstrates that the ghost coupling is the fundamental scaling parameter of the theory:
+Example Gaussian knot:
 
-$$\alpha \approx \frac{\kappa^2}{2 a_0^2 C_0} \approx \frac{\rho_{\rm info}}{H_0^4}$$
+$$\theta_{\rm knot}(r) = \Theta_0 \exp(-r^2 / 2R^2)$$
 
-This shows that $a_0$ (galactic scale), $H_0$ (cosmological scale), and $\ell_P$ (quantum scale) are manifestations of the same underlying **Information Phase Field**.
+Gradient energy:
 
-<img width="1189" height="490" alt="image" src="https://github.com/user-attachments/assets/ef1ef8d7-e7ee-4d0d-b9d5-7fb7a0eef18d" />
+$$E = \int \kappa a_0^2 F(|\nabla\theta|^2/a_0^2) \, d^3x$$
 
-### The Mass Lock: Electron Mass as a Cosmological Observable
+Stability condition:
 
-The TCWT framework identifies the electron rest mass as the binding energy of a fermion zero-mode trapped within a ghost-induced mass profile. 
+$$\frac{dE}{dR} = 0$$
 
-1. **Mass Scaling:** $m_e \propto \frac{\sqrt{\alpha}}{R}$
-2. **Ghost Relaxation:** $\alpha \approx \frac{\rho_{\text{info}}}{H_0^4}$
-3. **Unified Relation:** $m_e(H_0) \propto H_0^{-2}$
+Ω‑cap imposes minimum radius:
 
-This relation suggests that the "Standard Model" of particle physics is only stable at a specific cosmological expansion rate ($H_0 \approx 71$). Any significant deviation would alter the fine-structure constant and the stability of atomic matter.
+$$R_{\rm crit} \sim \kappa / \Omega_{\max}$$
 
-<img width="856" height="559" alt="image" src="https://github.com/user-attachments/assets/dc7a1bd5-d3af-4a47-888e-66d6abfeac79" />
+Opaque knots behave as dark matter.
 
-### The Electron Mass-Hubble Relation
+---
 
-In TCWT, the electron mass ($m_e$) is the binding energy of a fermion zero-mode within a Hopfion knot. Its value is determined by the Ghost Coupling ($\alpha$) and the Hubble Constant ($H_0$):
+# 12. Black Holes Without Singularities
 
-1. **Zero-Mode Mass:** $m_e \propto \sqrt{\alpha} / R^3$
-2. **Knot Radius (Stability):** $R \propto (\kappa / \alpha)^{1/4}$
-3. **Information Pressure:** $\alpha \propto \rho_{\text{info}} / H_0^4$
-4. **Holographic Constraint:** $\kappa \propto \alpha / \ell_P^2$
+Maximum gradient:
 
-**Resulting Slope:**
-Combining these yields the universal scaling:
-$$m_e \propto \frac{1}{H_0^2}$$
+$$|\nabla\theta| \le \Omega_{\max}/\kappa$$
 
-The "Mass Lock" occurs at $H_0 \approx 71 \text{ km/s/Mpc}$, where the predicted mass matches the CODATA value. This identifies the electron not as an input parameter, but as a resonance of the expanding vacuum.
+Collapse saturates at finite density → **no singularities**.
 
-## Derivation of the Fine-Structure Constant ($\alpha_{em}$)
+Black holes are **phase‑opaque knots**, not infinite curvature.
 
-In the TCWT framework, the Fine-Structure Constant is an emergent dimensionless ratio dictated by the self-consistency of the **Q=1 Hopfion Knot**.
+---
 
-### 1. Stability Condition
-For a topological soliton to remain stable within the "Hum" of the Information Phase Field, the ratio of temporal kinetic energy to spatial twisting energy must be quantized:
-$$\alpha_{\rm em} = \frac{C_0 \Omega_{\rm hum}^2}{2\pi^2 \kappa \cdot \Gamma_{\rm ghost}}$$
-where $\Gamma_{\rm ghost}$ is the curvature suppression factor.
+# 13. Dark Energy from Ghost Leakage
 
-### 2. Numerical Convergence
-Substituting the Ghost Coupling ($\alpha$) derived from the **MOND scale** and **Hubble Tension**, the dimensional units (kilograms, meters, seconds) cancel out, leaving a pure topological winding number.
+Low‑energy ghost equation:
 
-### 3. The Result
-For the standard Hopf fibration topology ($Q=1$):
-$$\alpha_{\rm em} \approx \frac{1}{137.036}$$
+$$\dot G \approx \nabla^2\theta$$
 
-### 4. Conclusion
-The value $1/137$ is the **Soliton Self-Consistency Number**. It represents the precise "twist" required for a phase-field knot to remain coherent against the background information expansion of the universe.
+This slow relaxation produces vacuum pressure → dark‑energy‑like acceleration.
+
+---
+
+# 14. Cosmological Interpretation (Background Only)
+
+Universe evolves through:
+
+Hum vacuum → phase instability → knot formation → energy release → matter era → knot relaxation → return to coherence.
+
+Entropy corresponds to knot unwinding.
+
+---
+
+# 15. Planck Scale and Holographic Relation
+
+Minimum correlation length:
+
+$$L_{\min} \propto \sqrt{\alpha \kappa}$$
+
+Planck length emerges from:
+
+$$\ell_P^2 \sim \alpha / \kappa$$
+
+Gravity is information pressure resisting Ω‑cap saturation.
+
+---
+
+# 16. Ghost–MOND–Hubble Unification
+
+Ghost coupling from MOND:
+
+$$\alpha \approx \kappa^2 / (2 a_0^2 C_0)$$
+
+Ghost coupling from Hubble tension:
+
+$$\alpha \approx \rho_{\rm info} / H_0^4$$
+
+Holographic relation:
+
+$$\ell_P^2 \sim \alpha / \kappa$$
+
+Together:
+
+- $a_0$ (galaxies)  
+- $H_0$ (cosmology)  
+- $\ell_P$ (quantum gravity)  
+
+are unified by the same parameter $\alpha$.
+
+---
+
+# 17. Mass‑Lock and Fine‑Structure Constant
+
+Electron mass scaling:
+
+$$m_e \propto \alpha / R^3$$  
+$$R \propto (\kappa/\alpha)^{1/4}$$  
+$$m_e \propto 1/H_0^2$$
+
+Fine‑structure constant:
+
+$$\alpha_{\rm em} \approx 1/137$$
+
+arises as a soliton self‑consistency number.
+
+---
+
+# 18. Worked Examples
+
+## 18.1 Rotation Curve
+
+MOND‑regime equation:
+
+$$\nabla \cdot[\mu(|\nabla\theta|/a_0)\nabla\theta] = \rho/\kappa$$
+
+In vacuum:
+
+$$\theta' \propto 1/r$$  
+$$a = -\chi \theta' \propto 1/r$$  
+$$v^2 = \text{constant}$$
+
+## 18.2 Gravitational Lensing
+
+Refractive index:
+
+$$n(x) = 1 + (2\chi/c^2)\theta(x)$$
+
+Deflection angle:
+
+$$\alpha \approx -(2\chi/c^2)\int \nabla_\perp\theta \, ds$$
+
+TCWT predicts enhanced lensing without dark matter.
+
+---
 
 
 
-
-## 23. Summary
-TCWT describes reality as a coherence field with an oscillatory vacuum.
-
-From this structure emerge:
-- matter as phase knots
-- gravity from phase gradients
-- dark matter from opaque knots
-- dark energy from ghost leakage
-- a cosmology driven by knot formation and decay
-
-The governing Lagrangian remains
-
-$L = C_0 (\dot{\theta} - \Omega)^2 - \kappa (\nabla \theta)^2 - \alpha (\dot{G} - \nabla^2 \theta)^2 - V_\Omega(\Omega)$
-
-from which the observable universe emerges as a dynamic structure within the background Hum.
