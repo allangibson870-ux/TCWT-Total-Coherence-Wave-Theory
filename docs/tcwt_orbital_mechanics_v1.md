@@ -1,146 +1,137 @@
-# TCWT Orbital Mechanics
+# TCWT Orbital Mechanics  
+## Phase‑bleed gravity, χ calibration, Newtonian limit, and galactic rotation  
+Version: 2026.9  
+Status: Complete orbital‑dynamics layer
 
-### Phase-Bleed Gravity Formulation
+---
 
-Version: 2026.5-corrected
+## 1. Core Postulate: Phase‑Bleed Acceleration
 
-------------------------------------------------------------------------
+In Total Coherence Wave Theory (TCWT), gravity arises from gradients in the temporal phase field $\theta$:
 
-## 1. Core Postulate: Phase-Bleed Acceleration
-
-In Total Coherence Wave Theory (TCWT), gravity arises from gradients in
-the temporal phase field θ.
-
-a(r) = -χ ∇θ(r)
+$$a(r) = -\chi \nabla\theta(r)$$
 
 Where:
 
-  Symbol   Meaning                Units
-  -------- ---------------------- ---------------
-  θ        Temporal phase field   dimensionless
-  λ = ∇θ   Phase gradient         1/m
-  a        Acceleration           m/s²
-  χ        Coupling constant      m²/s²
+| Symbol | Meaning | Units |
+|--------|---------|--------|
+| $\theta$ | temporal phase field | dimensionless |
+| $\lambda = \nabla\theta$ | phase gradient | 1/m |
+| $a$ | acceleration | m/s² |
+| $\chi$ | coupling constant | m²/s² |
 
-------------------------------------------------------------------------
+---
 
-## 2. Coupling Constant χ
+## 2. Coupling Constant $\chi$
 
-The coupling constant connects emergent gravitational acceleration to
-Hum-flow parameters.
+The coupling constant connects emergent gravitational acceleration to Hum‑flow parameters:
 
-χ = (c² κ) / (C₀ Ω_max)
+$$\chi = \frac{c^2 \kappa}{C_0 \Omega_{\max}}$$
 
 ### Calibration
 
-  Parameter   Value
-  ----------- ------------------
-  c           2.9979 × 10⁸ m/s
-  κ           1.455
-  Ω_max       16.91
-  C₀          0.0594
+| Parameter | Value |
+|----------|--------|
+| $c$ | $2.9979\times10^8$ m/s |
+| $\kappa$ | $1.455$ |
+| $\Omega_{\max}$ | $16.91$ |
+| $C_0$ | $0.0594$ |
 
-Calculation:
+Compute:
 
-c² = 8.9874 × 10¹⁶
+$$c^2 = 8.9874\times10^{16}$$  
+$$\chi \approx 1.30\times10^{17}\ \text{m}^2/\text{s}^2$$
 
-χ ≈ 1.30 × 10¹⁷ m²/s²
-
-------------------------------------------------------------------------
+---
 
 ## 3. Circular Orbit Law
 
 For circular motion:
 
-v² / r = a(r)
+$$\frac{v^2}{r} = a(r)$$
 
 Substituting phase‑bleed acceleration:
 
-v² / r = χ \|λ\|
+$$\frac{v^2}{r} = \chi |\lambda|$$
 
-Therefore:
+Thus:
 
-λ(r) = v² / (χ r)
+$$\lambda(r) = \frac{v^2}{\chi r}$$
 
-This allows the phase gradient field to be inferred directly from
-orbital observations.
+This allows the phase gradient field to be inferred directly from orbital observations.
 
-------------------------------------------------------------------------
+---
 
 ## 4. Phase Gradients for Known Orbits
 
-Using χ = 1.30 × 10¹⁷:
+Using $\chi = 1.30\times10^{17}$:
 
-  Orbit   Radius r (m)   Velocity v (m/s)   λ (rad/m)
-  ------- -------------- ------------------ -------------
-  ISS     6.78 × 10⁶     7660               6.6 × 10⁻¹⁷
-  GPS     2.66 × 10⁷     3870               4.3 × 10⁻¹⁸
-  Moon    3.84 × 10⁸     1022               2.1 × 10⁻²⁰
+| Orbit | Radius (m) | Velocity (m/s) | $\lambda$ (rad/m) |
+|-------|------------|----------------|--------------------|
+| ISS | $6.78\times10^6$ | 7660 | $6.6\times10^{-17}$ |
+| GPS | $2.66\times10^7$ | 3870 | $4.3\times10^{-18}$ |
+| Moon | $3.84\times10^8$ | 1022 | $2.1\times10^{-20}$ |
 
-These gradients are extremely small, consistent with weak gravitational
-fields in the Solar System.
+These gradients are extremely small, consistent with weak gravitational fields in the Solar System.
 
-------------------------------------------------------------------------
+---
 
 ## 5. Newtonian Limit
 
 For planetary systems:
 
-v² = GM / r
+$$v^2 = \frac{GM}{r}$$
 
-Substituting into the gradient relation:
+Substitute into the gradient relation:
 
-λ(r) = GM / (χ r²)
+$$\lambda(r) = \frac{GM}{\chi r^2}$$
 
-Integrating:
+Integrate:
 
-θ(r) = θ∞ − GM / (χ r)
+$$\theta(r) = \theta_\infty - \frac{GM}{\chi r}$$
 
 Thus:
 
-∇θ ∝ 1 / r²
+$$\nabla\theta \propto \frac{1}{r^2}$$
 
-and the acceleration becomes:
+Acceleration becomes:
 
-a(r) = −GM / r²
+$$a(r) = -\frac{GM}{r^2}$$
 
-Therefore Newtonian gravity is recovered when the phase field is sourced
-by localized mass.
+Newtonian gravity is recovered when the phase field is sourced by localized mass.
 
-------------------------------------------------------------------------
+---
 
 ## 6. Galactic Halo Regime
 
-For galaxies the rotation curve becomes approximately flat:
+For galaxies, rotation curves become approximately flat:
 
-v ≈ v₀
+$$v \approx v_0$$
 
-Substituting:
+Then:
 
-λ(r) = v₀² / (χ r)
+$$\lambda(r) = \frac{v_0^2}{\chi r}$$
 
 Integrating:
 
-θ(r) = θ₀ − (v₀² / χ) ln(r / r₀)
+$$\theta(r) = \theta_0 - \frac{v_0^2}{\chi}\ln\left(\frac{r}{r_0}\right)$$
 
-This produces a logarithmic phase profile, which yields flat rotation
-curves without additional dark matter particles.
+This logarithmic phase profile yields **flat rotation curves without dark matter particles**.
 
-------------------------------------------------------------------------
+---
 
 ## 7. Binary Pulsar Prediction
 
-TCWT predicts a small additional contribution to relativistic periastron
-advance due to Ω‑cap coupling.
+TCWT predicts a small additional contribution to relativistic periastron advance due to $\Omega$‑cap coupling.
 
-  System           Extra Precession
-  ---------------- --------------------
-  PSR B1913+16     +0.066 arcsec/year
-  PSR J0737‑3039   +0.11 arcsec/year
+| System | Extra Precession |
+|--------|------------------|
+| PSR B1913+16 | +0.066 arcsec/year |
+| PSR J0737‑3039 | +0.11 arcsec/year |
 
 Future pulsar timing arrays may be able to test this deviation.
 
-------------------------------------------------------------------------
+---
 
 ## 8. Empirical Consistency
 
@@ -148,410 +139,36 @@ Future pulsar timing arrays may be able to test this deviation.
 
 Acceleration depends only on the background phase gradient:
 
-a = −χ ∇θ
+$$a = -\chi \nabla\theta$$
 
 Test‑body composition cancels, preserving universal free fall.
 
 ### Multi‑Messenger Timing
 
-Low‑energy phase propagation remains Lorentz invariant, maintaining
-coincidence between gravitational‑wave and electromagnetic signals.
+Low‑energy phase propagation remains Lorentz‑invariant, maintaining coincidence between gravitational‑wave and electromagnetic signals.
 
-------------------------------------------------------------------------
+---
 
 ## 9. Summary
 
 Key relations:
 
-Phase‑bleed acceleration:
+- Phase‑bleed acceleration:  
+  $$a = -\chi \nabla\theta$$
 
-a = −χ ∇θ
+- Orbital gradient:  
+  $$\lambda = \frac{v^2}{\chi r}$$
 
-Orbital gradient:
+- Newtonian regime:  
+  $$\theta(r) \propto \frac{1}{r}$$
 
-λ = v² / (χ r)
+- Galactic halo regime:  
+  $$\theta(r) \propto \ln r$$
 
-Newtonian regime:
+TCWT orbital mechanics:
 
-θ(r) ∝ 1 / r
-
-Galactic halo regime:
-
-θ(r) ∝ ln r
-
-The framework:
-
-• reproduces Newtonian gravity in the Solar System\
-• naturally generates flat galactic rotation curves\
-• predicts small measurable pulsar timing deviations\
-• does not require additional dark matter particles
-
-# Stellar Mass Scaling and Testable Predictions
-
-## 1. Gravity as Hum Leakage
-
-In **Total Coherence Wave Theory (TCWT)** gravitational attraction is not a fundamental force but a **secondary effect arising from Hum phase leakage around matter knots**.
-
-Localized matter structures distort the Hum coherence field, producing gradients in the phase field ( \theta ). These gradients propagate outward and create a radial standing-wave structure around a star.
-
-The phase field obeys the Hum wave equation
-
-[
-\partial_t^2 \theta - c^2 \nabla^2 \theta = 0
-]
-
-where
-
-* ( \theta ) is the Hum phase
-* ( c ) is the Hum propagation speed.
-
-Planetary systems form where **radial phase nodes of the Hum field produce coherence wells** within the protoplanetary disk.
-
----
-
-# 2. Radial Node Structure
-
-For a central star the standing-wave solution produces nodes at
-
-[
-r_n = \frac{n}{2}\lambda_*
-]
-
-where
-
-* ( n = 1,2,3,\dots )
-* ( \lambda_* ) is the effective Hum wavelength generated by the star.
-
-These nodes represent **stable coherence radii** where disk material accumulates.
-
----
-
-# 3. Stellar Mass Scaling
-
-The distortion amplitude of the Hum field increases with stellar mass.
-Dimensional analysis of the phase equation implies the stellar wavenumber satisfies
-
-[
-k_* \propto \sqrt{\frac{M_*}{M_\odot}}
-]
-
-where
-
-* ( M_* ) is stellar mass
-* ( M_\odot ) is solar mass.
-
-Since
-
-[
-\lambda_* = \frac{2\pi}{k_*}
-]
-
-the Hum wavelength scales approximately as
-
-[
-\lambda_* \propto \sqrt{M_*}
-]
-
-Substituting into the node equation gives
-
-[
-r_n \propto \sqrt{M_*}
-]
-
----
-
-# 4. Consequence for Planetary System Size
-
-Planetary systems around lower-mass stars should be **radially compressed**, while systems around more massive stars should be **expanded**.
-
-Example scaling relative to the Solar System:
-
-| Stellar Mass  | Expected Orbital Scale |
-| ------------- | ---------------------- |
-| 0.2 (M_\odot) | ~0.45 × Solar System   |
-| 1.0 (M_\odot) | Solar System scale     |
-| 2.0 (M_\odot) | ~1.4 × Solar System    |
-
-Thus the entire orbital ladder shifts proportionally with the square root of stellar mass.
-
----
-
-# 5. Interference Regions
-
-Multiple Hum modes may overlap around a star.
-The phase field then becomes
-
-[
-\theta(r) = A_1 \sin(k_1 r) + A_2 \sin(k_2 r)
-]
-
-Regions where these modes destructively interfere produce **coherence instability zones** where stable planetary formation is suppressed.
-
-These regions are expected to appear observationally as
-
-* asteroid belts
-* debris disks
-* gaps in protoplanetary disks.
-
----
-
-# 6. TCWT Orbital Predictions
-
-The Hum resonance framework produces several observable predictions.
-
-## 6.1 Log-Spaced Orbital Structure
-
-Planetary radii should approximately follow a geometric progression
-
-[
-r_n \approx r_0 a^n
-]
-
-which implies
-
-[
-\log(r_n)
-]
-
-should increase linearly with orbital index.
-
-This structure is a natural outcome of nested standing-wave modes in the Hum field.
-
----
-
-## 6.2 Asteroid / Debris Belts
-
-Where Hum modes interfere, stable nodes vanish and matter fails to coalesce into planets.
-
-These regions should produce
-
-* asteroid belts
-* debris rings
-* dust-dominated orbital bands.
-
----
-
-## 6.3 Stellar Mass Scaling
-
-Planetary orbital ladders should scale approximately with
-
-[
-r \propto \sqrt{M_*}
-]
-
-This prediction can be tested by comparing planetary system sizes across stars of different masses.
-
-Compact planetary systems should preferentially occur around **low-mass stars**, while wider systems should occur around **more massive stars**.
-
----
-
-# 7. Proto-Planet Stripping
-
-TCWT predicts that the innermost Hum nodes may initially form **gas proto-planets**.
-
-Near the star, strong radiation and stellar wind can strip these proto-planets of their gaseous envelopes, leaving metallic cores or partially eroded rocky remnants.
-
-This mechanism provides a natural explanation for extremely dense inner planets and stripped planetary bodies in some systems.
-
----
-
-# 8. Summary
-
-In TCWT planetary systems are interpreted as **Hum resonance cavities surrounding stars**.
-
-The formation process can be summarized as
-
-Star formation
-→ Hum phase distortion
-→ radial standing-wave modes
-→ coherence nodes
-→ disk density maxima
-→ planetary formation radii.
-
-Gravity then appears as a **secondary leakage phenomenon** resulting from the residual phase gradients of matter knots embedded in the Hum field.
-
-# Stellar Mass Scaling and Testable Predictions
-
-## 1. Gravity as Hum Leakage
-
-In **Total Coherence Wave Theory (TCWT)** gravitational attraction is not a fundamental force but a **secondary effect arising from Hum phase leakage around matter knots**.
-
-Localized matter structures distort the Hum coherence field, producing gradients in the phase field ( \theta ). These gradients propagate outward and create a radial standing-wave structure around a star.
-
-The phase field obeys the Hum wave equation
-
-[
-\partial_t^2 \theta - c^2 \nabla^2 \theta = 0
-]
-
-where
-
-* ( \theta ) is the Hum phase
-* ( c ) is the Hum propagation speed.
-
-Planetary systems form where **radial phase nodes of the Hum field produce coherence wells** within the protoplanetary disk.
-
----
-
-# 2. Radial Node Structure
-
-For a central star the standing-wave solution produces nodes at
-
-[
-r_n = \frac{n}{2}\lambda_*
-]
-
-where
-
-* ( n = 1,2,3,\dots )
-* ( \lambda_* ) is the effective Hum wavelength generated by the star.
-
-These nodes represent **stable coherence radii** where disk material accumulates.
-
----
-
-# 3. Stellar Mass Scaling
-
-The distortion amplitude of the Hum field increases with stellar mass.
-Dimensional analysis of the phase equation implies the stellar wavenumber satisfies
-
-[
-k_* \propto \sqrt{\frac{M_*}{M_\odot}}
-]
-
-where
-
-* ( M_* ) is stellar mass
-* ( M_\odot ) is solar mass.
-
-Since
-
-[
-\lambda_* = \frac{2\pi}{k_*}
-]
-
-the Hum wavelength scales approximately as
-
-[
-\lambda_* \propto \sqrt{M_*}
-]
-
-Substituting into the node equation gives
-
-[
-r_n \propto \sqrt{M_*}
-]
-
----
-
-# 4. Consequence for Planetary System Size
-
-Planetary systems around lower-mass stars should be **radially compressed**, while systems around more massive stars should be **expanded**.
-
-Example scaling relative to the Solar System:
-
-| Stellar Mass  | Expected Orbital Scale |
-| ------------- | ---------------------- |
-| 0.2 (M_\odot) | ~0.45 × Solar System   |
-| 1.0 (M_\odot) | Solar System scale     |
-| 2.0 (M_\odot) | ~1.4 × Solar System    |
-
-Thus the entire orbital ladder shifts proportionally with the square root of stellar mass.
-
----
-
-# 5. Interference Regions
-
-Multiple Hum modes may overlap around a star.
-The phase field then becomes
-
-[
-\theta(r) = A_1 \sin(k_1 r) + A_2 \sin(k_2 r)
-]
-
-Regions where these modes destructively interfere produce **coherence instability zones** where stable planetary formation is suppressed.
-
-These regions are expected to appear observationally as
-
-* asteroid belts
-* debris disks
-* gaps in protoplanetary disks.
-
----
-
-# 6. TCWT Orbital Predictions
-
-The Hum resonance framework produces several observable predictions.
-
-## 6.1 Log-Spaced Orbital Structure
-
-Planetary radii should approximately follow a geometric progression
-
-[
-r_n \approx r_0 a^n
-]
-
-which implies
-
-[
-\log(r_n)
-]
-
-should increase linearly with orbital index.
-
-This structure is a natural outcome of nested standing-wave modes in the Hum field.
-
----
-
-## 6.2 Asteroid / Debris Belts
-
-Where Hum modes interfere, stable nodes vanish and matter fails to coalesce into planets.
-
-These regions should produce
-
-* asteroid belts
-* debris rings
-* dust-dominated orbital bands.
-
----
-
-## 6.3 Stellar Mass Scaling
-
-Planetary orbital ladders should scale approximately with
-
-[
-r \propto \sqrt{M_*}
-]
-
-This prediction can be tested by comparing planetary system sizes across stars of different masses.
-
-Compact planetary systems should preferentially occur around **low-mass stars**, while wider systems should occur around **more massive stars**.
-
----
-
-# 7. Proto-Planet Stripping
-
-TCWT predicts that the innermost Hum nodes may initially form **gas proto-planets**.
-
-Near the star, strong radiation and stellar wind can strip these proto-planets of their gaseous envelopes, leaving metallic cores or partially eroded rocky remnants.
-
-This mechanism provides a natural explanation for extremely dense inner planets and stripped planetary bodies in some systems.
-
----
-
-# 8. Summary
-
-In TCWT planetary systems are interpreted as **Hum resonance cavities surrounding stars**.
-
-The formation process can be summarized as
-
-Star formation
-→ Hum phase distortion
-→ radial standing-wave modes
-→ coherence nodes
-→ disk density maxima
-→ planetary formation radii.
-
-Gravity then appears as a **secondary leakage phenomenon** resulting from the residual phase gradients of matter knots embedded in the Hum field.
-
+- reproduces Newtonian gravity in the Solar System  
+- naturally generates flat galactic rotation curves  
+- predicts small measurable pulsar timing deviations  
+- does not require additional dark matter particles  
 
