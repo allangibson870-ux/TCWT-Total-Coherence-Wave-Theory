@@ -169,11 +169,12 @@ The zero‑mode is the bound state at $m_{\rm eff}=0$.
 
 Your 3D eigenmode plots show:
 
-- a **toroidal total density**  
-- a **left‑chiral arc**  
-- a **right‑chiral arc**  
-- no overlap  
-- correct Hopfion radius  
+<img width="784" height="1168" alt="Hopfion zero-mode and braiding dynamics in TCWT" src="https://github.com/user-attachments/assets/6c04e643-7a4b-4f9f-9f11-4173699e69cc" />
+
+
+
+<img width="1475" height="998" alt="image" src="https://github.com/user-attachments/assets/e8010c5e-d564-445d-a6cf-c280e7b785de" />
+
 - clean domain wall  
 
 This is exactly the predicted TCWT fermion structure.
