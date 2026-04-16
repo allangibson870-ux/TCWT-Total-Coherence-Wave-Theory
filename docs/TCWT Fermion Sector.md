@@ -272,6 +272,55 @@ Transporting a zero‑mode once around the ring accumulates a Berry phase:
 A full `2π` rotation multiplies the wavefunction by `−1`, giving the emergent spin‑1/2 behaviour without fundamental spinors — a key prediction of the TCWT fermion mechanism.
 
 ---
+## Effective Dirac Operator from the Ghost-Induced Mass Wall
+
+The numerical two‑component operator used in the simulations is a second‑order fluctuation operator around the Hopfion background. It captures the sign‑changing effective mass `m_eff ∝ ∇²θ_Hopf` and the leading `σ · ∇m` chiral‑splitting term.
+
+Projecting onto the thin toroidal ring (coordinate `s` along the core at radius `R`) freezes the transverse modes and yields a 1D first‑order Dirac Hamiltonian with spatially varying mass:
+
+`i ∂t ψ(s) = [ -i v ∂s σ¹ + m_eff(s) σ³ + A(s) σ² ] ψ(s)`
+
+where:
+- `v = sqrt(κ / C0)` is the propagation speed along the ring  
+- `m_eff(s)` is the ghost‑induced mass that flips sign across the domain wall  
+- `A(s)` is a geometric (Berry) connection from the Hopfion twist  
+
+The zero‑mode satisfies:
+
+`[ -i v ∂s σ¹ + m_eff(s) σ³ ] ψ₀(s) = 0`
+
+Because `m_eff(s)` changes sign twice, the ring supports two localized zero‑modes:
+- a left‑chiral mode  
+- a right‑chiral mode  
+
+This is the TCWT analogue of the [Jackiw–Rebbi mechanism](ca://s?q=Explain_Jackiw_Rebbi).
+
+### Consistency with Numerics
+
+The numerical operator is approximately:
+
+`H_num ≈ ( -i v ∂s σ¹ + m_eff(s) σ³ )† ( -i v ∂s σ¹ + m_eff(s) σ³ )`
+
+so the observed features follow directly:
+- strong chirality ratio (`≈ 0.96`)  
+- toroidal localization  
+- complementary left/right arcs  
+
+All arise from the sign‑changing `m_eff(s)` on the Hopfion ring.
+
+### Spin‑1/2 from Topology
+
+Transporting a zero‑mode once around the ring accumulates a Berry phase:
+
+`γ = π (mod 2π)`
+
+A full `2π` rotation multiplies the wavefunction by `−1`, giving emergent spin‑1/2 behaviour without fundamental spinors — a key feature of the TCWT fermion mechanism.
+
+---
+
+
+This effective Dirac picture places TCWT fermions on firm mathematical ground: chiral zero‑modes bound to topological defects in the Hum + ghost system.
+
 
 ### Next Refinements
 - compute the full geometric connection `A(s)`  
