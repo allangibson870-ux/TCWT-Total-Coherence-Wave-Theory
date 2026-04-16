@@ -348,7 +348,27 @@ Goals:
 
 ---
 
-# 19. Key Testable Predictions
+### 19. Early-universe fermion size and structure formation
+
+The Hum–fermion coupling implies that the electron coherence radius is not constant in cosmic time but scales with the background Hum amplitude:
+
+    R_e(a) = R_e0 * [ H(a) / H0 ]^γ    with γ > 0
+
+Because H(a) is larger in the early universe, TCWT predicts that electrons (and baryonic fermions more generally) were effectively larger just after the Big Bang:
+
+    a → 0  ⇒  H(a) >> H0  ⇒  R_e(a) >> R_e0
+
+An inflated fermion coherence radius reduces the effective microphysical stiffness of baryonic matter, lowering the threshold for gravitational collapse. In practice, this shifts the onset of structure formation to earlier times compared to a purely geometric ΛCDM model with pointlike fermions. Mature galaxies at high redshift are therefore less surprising in TCWT: the baryonic sector is “softer” in the early universe, and collapse can proceed earlier without exotic feedback.
+
+When this effect is folded into the background expansion and distance ladder, the preferred Hubble constant naturally drifts toward a higher value, with TCWT favouring an inferred
+
+    H0 ≈ 71 km s⁻¹ Mpc⁻¹
+
+without requiring late-time new physics. The same Hum-driven mechanism that sets the electron’s present coherence radius thus also participates in easing the tension between early structure and the local Hubble scale.
+
+---
+
+# 20. Key Testable Predictions
 
 - scale‑dependent growth rate  
 - modified weak lensing maps  
@@ -358,7 +378,7 @@ Goals:
 
 ---
 
-# 20. Summary
+# 21. Summary
 
 This document provides the full cosmological layer of TCWT:
 
