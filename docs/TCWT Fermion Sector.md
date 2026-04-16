@@ -179,9 +179,26 @@ Your 3D eigenmode plots show:
 
 This is exactly the predicted TCWT fermion structure.
 
+### 11 Electron coherence radius and Hum coupling
+
+In TCWT, a fermion is not a point particle but a bound coherence defect in the phase field. For the electron, we define a coherence radius R_e(a) as the characteristic size of its bound phase structure at cosmological scale factor a.
+
+We introduce a minimal coupling between the electron sector and the Hum field H(a) such that the bound-state solution yields a Hum-dependent coherence radius,
+
+    R_e(a) = R_e0 * [ H(a) / H0 ]^γ
+
+with γ > 0, R_e0 the present-day electron coherence radius, and H0 ≡ H(a = 1) the current Hum amplitude.
+
+In the early universe, the Hum amplitude is larger, H(a) >> H0 as a → 0, and the electron coherence radius correspondingly inflates,
+
+    a → 0  ⇒  R_e(a) >> R_e0
+
+Electrons (and, by the same mechanism, other fermions) are therefore effectively larger just after the Big Bang in TCWT. As the Hum relaxes toward H0, the coherence radius contracts to its present value, locking in the observed electron properties.
+
+
 ---
 
-## 11. Summary
+## 12. Summary
 
 TCWT fermions arise from:
 
