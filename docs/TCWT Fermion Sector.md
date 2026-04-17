@@ -220,7 +220,9 @@ These results provide direct numerical support for the TCWT fermion mechanism:
 
 - the ghost sector generates a **sign‑changing mass wall** on the Hopfion ring  
 - a **chiral zero‑mode** binds to this wall  
-- the spatial separation of left/right components matches the predicted structure  
+- the spatial separation of left/right components matches the predicted structure
+
+  <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/ae0d85af-482f-4d24-91f9-7e9fb0a3a730" />
 
 
 This is exactly the predicted TCWT fermion structure.
