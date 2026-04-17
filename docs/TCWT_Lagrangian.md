@@ -109,11 +109,50 @@ Cap regime: $\Omega \to \Omega_{\max}$
 
 ## 6.3 Ghost Field Equation
 
-$$\partial_t[2\alpha(\dot G - \nabla^2\theta)] = 0$$
+## Ghost Sector: Full Equation of Motion
 
-Low‑energy: $\dot G \approx \nabla^2\theta$
+The ghost field $G$ encodes curvature storage and relaxation in TCWT. Its dynamics follow from the curvature‑penalty term in the action, which enforces that the ghost sector tracks the Laplacian of the Hum phase.
 
-This slow leakage channel produces dark‑energy‑like behaviour.
+### Ghost Lagrangian
+
+The ghost contribution to the TCWT action is
+
+$$ \mathcal{L}_G = \alpha\,(\dot{G} - \nabla^2\theta)^2, $$
+
+where $\alpha$ sets the strength of curvature storage.
+
+### Variation and Euler–Lagrange Equation
+
+Varying the action with respect to $G$ gives
+
+$$ \partial_t\big[2\alpha(\dot{G} - \nabla^2\theta)\big] = 0. $$
+
+This states that the curvature‑excess quantity
+
+$$ T = \dot{G} - \nabla^2\theta $$
+
+is locally conserved in time in the absence of damping or external sources.
+
+### Full Ghost PDE with Relaxation
+
+To allow realistic relaxation of curvature excess, introduce a damping coefficient $\gamma > 0$. The full equation of motion becomes
+
+$$ \partial_t\big[2\alpha(\dot{G} - \nabla^2\theta)\big] = -\gamma(\dot{G} - \nabla^2\theta). $$
+
+Expanding this gives the driven, damped second‑order PDE
+
+$$ 2\alpha\,\ddot{G} + \gamma\,\dot{G} = 2\alpha\,\partial_t(\nabla^2\theta) + \gamma\,\nabla^2\theta. $$
+
+This is the complete ghost‑sector evolution equation in TCWT.
+
+### Leakage Limit
+
+In the low‑frequency or relaxed regime, the second‑order and time‑derivative curvature terms are negligible, giving the leakage approximation
+
+$$ \dot{G} \approx \nabla^2\theta. $$
+
+This is the regime used in the strong‑field reduction and in the $\lambda/T$ diagnostic maps.
+
 
 ---
 
