@@ -42,7 +42,77 @@ Hopfions provide:
 
 - a closed loop (toroidal core)  
 - a stable topological radius  
-- a natural domain wall for zero‑mode trapping  
+- a natural domain wall for zero‑mode trapping
+
+- # TCWT: FLRW Diagonalisation of the Hum Spectral Operator
+
+## FLRW Background
+
+$$ ds^2 = -dt^2 + a(t)^2 d\mathbf{x}^2 $$
+
+$$ \nabla^2 \rightarrow \frac{1}{a(t)^2} \nabla^2 $$
+
+---
+
+## Mode Decomposition
+
+$$ \psi(\mathbf{x},t) = \int \frac{d^3k}{(2\pi)^3} \psi_k(t) e^{i\mathbf{k}\cdot\mathbf{x}} $$
+
+---
+
+## Hum Spectral Operator in FLRW
+
+$$ \hat{H}_k = - C_0^{-1}(\partial_t^2 + 3H\partial_t) + \frac{\kappa k^2}{a(t)^2} - \frac{\alpha k^4}{a(t)^4} + V_{\Omega}'' $$
+
+---
+
+## Eigenmode Equation
+
+$$ \hat{H}_k \psi_k = \omega_k^2 \psi_k $$
+
+$$ C_0^{-1}(\ddot{\psi}_k + 3H\dot{\psi}_k) + \left( \frac{\kappa k^2}{a^2} - \frac{\alpha k^4}{a^4} + V_{\Omega}'' \right)\psi_k = \omega_k^2 \psi_k $$
+
+---
+
+## WKB Dispersion Relation
+
+$$ \omega_k^2 = C_0 \left( \frac{\kappa k^2}{a^2} + \frac{\alpha k^4}{a^4} + V_{\Omega}'' \right) $$
+
+---
+
+## Regimes
+
+Super-Hubble
+$$\omega_{k}^{2} \approx C_{0} V_{\Omega}''$$
+
+Sub-Hubble
+$$\omega_{k}^{2} \approx C_{0} \frac{\kappa k^{2}}{a^{2}}$$
+
+UV / Ghost Regime
+$$\omega_{k}^{2} \approx C_{0} \frac{\alpha k^{4}}{a^{4}}$$
+
+---
+
+
+## Horizon Crossing
+
+$$ k \approx aH $$
+
+---
+
+## Final Compact Operator
+
+$$ \hat{H}_{Hum}(k,a) = - C_0^{-1}(\partial_t^2 + 3H\partial_t) + \frac{\kappa k^2}{a^2} - \frac{\alpha k^4}{a^4} + V_{\Omega}'' $$
+
+---
+
+## Interpretation
+
+- **Low k:** GR / Newtonian limit  
+- **Mid k:** Structure formation / MOND regime  
+- **High k:** Ghost suppression / UV stability  
+- **Horizon crossing:** Quantum-classical transition
+
 
 ---
 
