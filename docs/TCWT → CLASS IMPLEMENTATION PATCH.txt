@@ -1,0 +1,172 @@
+TCWT → CLASS IMPLEMENTATION PATCH (v1.0)
+0. NEW MODULE STRUCTURE
+
+Add a new directory:
+
+/source/TCWT/
+
+Files:
+
+tcwt_background.c
+tcwt_perturbations.c
+tcwt_gravity.c
+tcwt_transfer.c
+tcwt_parameters.c
+
+And modify:
+
+background.c
+perturbations.c
+gravitation.c
+transfer.c
+input.c
+1. NEW PARAMETERS (input.c / .ini interface)
+
+Add to CLASS parameter parser:
+
+// TCWT PARAMETERS
+double tcwt_C0;
+double tcwt_kappa;
+double tcwt_alpha;
+double tcwt_Lambda;
+double tcwt_a0;
+double tcwt_gamma;
+double tcwt_Omega_min;
+Derived parameters (computed once):
+tcwt_Geff = 1.0 / (8.0 * M_PI * tcwt_kappa);
+
+tcwt_kLambda = tcwt_Lambda;
+
+tcwt_mond_scale = tcwt_a0;
+
+tcwt_uv_scale = sqrt(tcwt_kappa / tcwt_alpha);
+2. BACKGROUND MODULE (tcwt_background.c)
+Add new energy density components:
+double rho_Omega;
+double rho_G;
+Ω evolution equation
+
+Insert into background ODE system:
+
+dq->dOmega = - tcwt_gamma * H * (Omega - tcwt_Omega_min);
+Ω energy density
+rho_Omega = V_Omega(Omega);
+
+Example:
+
+V_Omega = lambda_Omega * pow(Omega*Omega - Omega_max*Omega_max, 2);
+Ghost background closure
+
+At background level:
+
+rho_G = 0.0;
+
+(only perturbations contribute physically)
+
+3. GRAVITY MODULE REPLACEMENT (tcwt_gravity.c)
+Replace Poisson solver:
+ORIGINAL CLASS:
+k2 * Psi = -4πG a^2 rho delta
+TCWT VERSION:
+double mu_k_a;
+
+mu_k_a =
+(1.0 + sqrt(k2 / (k2 + tcwt_kLambda*tcwt_kLambda)))
+/
+(1.0 + pow(k2,2) / pow(tcwt_Lambda,4) * pow(a,-4));
+Modified Poisson equation:
+Psi = -4.0 * M_PI * tcwt_Geff * a*a *
+      (rho_m * delta_m + delta_rho_Omega + delta_rho_G)
+      * mu_k_a;
+Ensure:
+Phi = Psi;
+
+(no anisotropic stress introduced)
+
+4. PERTURBATIONS MODULE (tcwt_perturbations.c)
+NEW VARIABLES:
+double dtheta;
+double dtheta_prime;
+double dOmega;
+double dG;
+θ evolution equation:
+dtheta_dd =
+-2.0 * H * dtheta_prime
+- cs2 * k2 * dtheta
+- tcwt_alpha * k4 / pow(a,4) * dtheta
++ source_Phi;
+Ω perturbation:
+dOmega_prime =
+- tcwt_gamma * H * dOmega
++ dtheta_prime;
+Ghost perturbation:
+dG_dd =
+- tcwt_gamma * dG_prime
++ k2 * dtheta;
+5. MATTER GROWTH EQUATION (tcwt_growth.c patch)
+
+Replace standard δ equation:
+
+delta_m_dd =
+- 2.0 * H * delta_m_prime
++ 4.0 * M_PI * tcwt_Geff * rho_m * delta_m
+- (k4 / (a4 * tcwt_Lambda*tcwt_Lambda)) * delta_m;
+Key feature:
+MOND regime: enhanced growth
+UV regime: suppression
+6. CONTINUITY & EULER (unchanged but sourced)
+delta_m_prime = -k * v + 3.0 * Phi_prime;
+
+v_prime = -H * v + k * Psi;
+
+BUT:
+
+Psi is TCWT-modified → already handled.
+
+7. TRANSFER FUNCTION MODIFICATION (tcwt_transfer.c)
+
+Modify transfer function:
+
+double T_tcwt;
+
+T_tcwt = T_LCDM(k)
+         / (1.0 + pow(k/tcwt_kLambda,4));
+Apply to all spectra:
+P_k = A_s * pow(k, n_s) * T_tcwt * T_tcwt;
+8. CMB SPECTRUM MODIFICATION (spectra.c)
+
+Modify:
+
+C_ell_TCWT = C_ell_LCDM
+           * mu_k_a
+           * exp(- pow(ell/ell_Lambda,2));
+Where:
+ell_Lambda ~ k_Lambda * D_A
+9. INITIAL CONDITIONS (tcwt_perturbations.c)
+
+Radiation era:
+
+dtheta = A_s * pow(k, (n_s-1)/2);
+dOmega = 0;
+dG = 0;
+
+Ω saturation:
+
+Omega = Omega_max;
+10. LIKELIHOOD / MCMC INTERFACE
+
+Add parameter block:
+
+tcwt_C0
+tcwt_kappa
+tcwt_alpha
+tcwt_Lambda
+tcwt_gamma
+tcwt_Omega_min
+Recommended priors:
+Parameter	Prior
+κ	narrow (gravity calibration)
+α	log-flat
+Λ	log-flat (UV scale)
+γ	flat
+Ω_min	flat
