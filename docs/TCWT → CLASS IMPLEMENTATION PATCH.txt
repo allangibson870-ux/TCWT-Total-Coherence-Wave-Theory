@@ -1,0 +1,229 @@
+/************************************************************
+ TCWT v1.0 — Minimal Reproducible CLASS Patch (Full Physics)
+ All files combined into one plain-text block for Notepad.
+************************************************************/
+
+/***********************
+  tcwt/tcwt.h
+***********************/
+#ifndef __TCWT__
+#define __TCWT__
+
+struct tcwt_parameters {
+  double C0;
+  double kappa;
+  double alpha;
+  double Lambda;
+  double a0;
+  double gamma;
+  double Omega_min;
+
+  double Geff;
+  double kLambda;
+  double mond_scale;
+  double uv_scale;
+
+  int tcwt_on;
+};
+
+int tcwt_init(struct tcwt_parameters *tcp);
+
+int tcwt_background_step(double a, double H, double Omega, double *dOmega,
+                         struct tcwt_parameters *tcp);
+
+double tcwt_mu_k_a(double k, double a, struct tcwt_parameters *tcp);
+
+double tcwt_modified_Psi(double k, double a,
+                         double rho_m, double delta_m,
+                         double delta_rho_Omega, double delta_rho_G,
+                         struct tcwt_parameters *tcp);
+
+void tcwt_theta_rhs(double a, double H, double k,
+                    double theta, double theta_prime,
+                    double cs2, double source_Phi,
+                    double *theta_dd,
+                    struct tcwt_parameters *tcp);
+
+void tcwt_Omega_rhs(double a, double H,
+                    double dOmega, double theta_prime,
+                    double *dOmega_prime,
+                    struct tcwt_parameters *tcp);
+
+void tcwt_ghost_rhs(double k,
+                    double G, double G_prime,
+                    double theta,
+                    double *G_dd,
+                    struct tcwt_parameters *tcp);
+
+double tcwt_growth_uv_term(double a, double k, double delta_m,
+                           struct tcwt_parameters *tcp);
+
+double tcwt_T_tcwt(double k, double T_LCDM, struct tcwt_parameters *tcp);
+
+double tcwt_C_ell_factor(double k, double ell, double D_A,
+                         struct tcwt_parameters *tcp);
+
+#endif
+
+/***********************
+  tcwt/tcwt_parameters.c
+***********************/
+#include "tcwt.h"
+#include "common.h"
+#include <math.h>
+
+int tcwt_init(struct tcwt_parameters *tcp) {
+
+  tcp->Geff       = 1.0 / (8.0 * _PI_ * tcp->kappa);
+  tcp->kLambda    = tcp->Lambda;
+  tcp->mond_scale = tcp->a0;
+  tcp->uv_scale   = sqrt(tcp->kappa / tcp->alpha);
+
+  return _SUCCESS_;
+}
+
+/***********************
+  tcwt/tcwt_background.c
+***********************/
+#include "tcwt.h"
+#include "common.h"
+#include <math.h>
+
+int tcwt_background_step(double a, double H, double Omega, double *dOmega,
+                         struct tcwt_parameters *tcp) {
+
+  *dOmega = - tcp->gamma * H * (Omega - tcp->Omega_min);
+  return _SUCCESS_;
+}
+
+/***********************
+  tcwt/tcwt_gravity.c
+***********************/
+#include "tcwt.h"
+#include "common.h"
+#include <math.h>
+
+double tcwt_mu_k_a(double k, double a, struct tcwt_parameters *tcp) {
+
+  double k2      = k * k;
+  double kL2     = tcp->kLambda * tcp->kLambda;
+  double num     = 1.0 + sqrt(k2 / (k2 + kL2));
+
+  double k4      = k2 * k2;
+  double L4      = pow(tcp->Lambda, 4);
+  double denom   = 1.0 + (k4 / L4) * pow(a, -4.0);
+
+  return num / denom;
+}
+
+double tcwt_modified_Psi(double k, double a,
+                         double rho_m, double delta_m,
+                         double delta_rho_Omega, double delta_rho_G,
+                         struct tcwt_parameters *tcp) {
+
+  double mu      = tcwt_mu_k_a(k, a, tcp);
+  double source  = rho_m * delta_m + delta_rho_Omega + delta_rho_G;
+
+  double Psi     = -4.0 * _PI_ * tcp->Geff * a * a * source * mu;
+  return Psi;
+}
+
+/***********************
+  tcwt/tcwt_perturbations.c
+***********************/
+#include "tcwt.h"
+#include "common.h"
+#include <math.h>
+
+void tcwt_theta_rhs(double a, double H, double k,
+                    double theta, double theta_prime,
+                    double cs2, double source_Phi,
+                    double *theta_dd,
+                    struct tcwt_parameters *tcp) {
+
+  double k2  = k * k;
+  double k4  = k2 * k2;
+  double a4  = pow(a, 4);
+
+  *theta_dd =
+    -2.0 * H * theta_prime
+    - cs2 * k2 * theta
+    - tcp->alpha * (k4 / a4) * theta
+    + source_Phi;
+}
+
+void tcwt_Omega_rhs(double a, double H,
+                    double dOmega, double theta_prime,
+                    double *dOmega_prime,
+                    struct tcwt_parameters *tcp) {
+
+  *dOmega_prime =
+    - tcp->gamma * H * dOmega
+    + theta_prime;
+}
+
+void tcwt_ghost_rhs(double k,
+                    double G, double G_prime,
+                    double theta,
+                    double *G_dd,
+                    struct tcwt_parameters *tcp) {
+
+  double k2 = k * k;
+
+  *G_dd =
+    - tcp->gamma * G_prime
+    + k2 * theta;
+}
+
+double tcwt_growth_uv_term(double a, double k, double delta_m,
+                           struct tcwt_parameters *tcp) {
+
+  double k2  = k * k;
+  double k4  = k2 * k2;
+  double a4  = pow(a, 4);
+  double L2  = tcp->Lambda * tcp->Lambda;
+
+  return - (k4 / (a4 * L2)) * delta_m;
+}
+
+/***********************
+  tcwt/tcwt_transfer.c
+***********************/
+#include "tcwt.h"
+#include "common.h"
+#include <math.h>
+
+double tcwt_T_tcwt(double k, double T_LCDM, struct tcwt_parameters *tcp) {
+
+  double kL   = tcp->kLambda;
+  double ratio = k / kL;
+  double denom = 1.0 + pow(ratio, 4.0);
+
+  return T_LCDM / denom;
+}
+
+/***********************
+  tcwt/tcwt_spectra.c (optional)
+***********************/
+#include "tcwt.h"
+#include "common.h"
+#include <math.h>
+
+double tcwt_C_ell_factor(double k, double ell, double D_A,
+                         struct tcwt_parameters *tcp) {
+
+  double a      = 1.0;
+  double mu     = tcwt_mu_k_a(k, a, tcp);
+
+  double ell_L  = tcp->kLambda * D_A;
+  double ratio  = ell / ell_L;
+  double damp   = exp(- ratio * ratio);
+
+  return mu * damp;
+}
+
+/***********************
+  input.c (patch snippet)
+***********************/
+class_read_double("tcwt_C0",        pth->tcwt.C0);
+class_read
