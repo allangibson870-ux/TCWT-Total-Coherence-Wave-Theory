@@ -99,7 +99,6 @@ For $Q \geq 4$, leakage $\to$ rapid evaporation. This limits stable matter to th
 ---
 
 ## 5. Cross-Document Requirements
-- Reference this Master Framework at the top.
 - Use canonical $\chi = c^2 \kappa / (C_0 \Omega_{\text{max}})$.
 - Propagate references when math is updated here.
 
