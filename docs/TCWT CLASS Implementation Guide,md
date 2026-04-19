@@ -1,0 +1,101 @@
+# TCWT CLASS Implementation Guide
+**Version:** 2026.9.2 (Single Consolidated Document)  
+**Status:** Minimal, clean, and reproducible integration of TCWT into CLASS
+
+This is a **single-file reference**. All code, instructions, and explanations are contained here. Copy the relevant sections directly into your CLASS source tree.
+
+---
+
+## 1. Overview
+
+TCWT modifies CLASS in two main places:
+*   Scale-dependent effective gravity $G_{\rm eff}(k,a)$
+*   Additional ghost-induced $k^4$ damping in the growth equation
+
+---
+
+## 2. Consolidated Code
+
+### 2.1 tcwt.h
+```c
+#ifndef __TCWT__
+#define __TCWT__
+
+struct tcwt_parameters {
+  double C0;
+  double kappa;
+  double alpha;
+  double a0;
+  double gamma;
+  double Omega_min;
+  double beta_tcwt;     // = alpha / C0
+  double k_g;           // h/Mpc
+  double p_smooth;      // smoothing exponent (~1.6)
+  int tcwt_on;
+};
+
+int tcwt_init(struct tcwt_parameters *tcp);
+int tcwt_background_step(double a, double H, double Omega, double *dOmega,
+                         struct tcwt_parameters *tcp);
+double tcwt_Geff(double k, double a, struct tcwt_parameters *tcp);
+
+#endif
+
+#include "tcwt.h"
+#include "common.h"
+#include <math.h>
+
+int tcwt_init(struct tcwt_parameters *tcp) {
+  tcp->beta_tcwt = tcp->alpha / tcp->C0;
+  tcp->k_g       = 0.12;      // tune this
+  tcp->p_smooth  = 1.6;       // recommended
+  return _SUCCESS_;
+}
+
+#include "tcwt.h"
+#include "common.h"
+#include <math.h>
+
+int tcwt_background_step(double a, double H, double Omega, double *dOmega,
+                         struct tcwt_parameters *tcp) {
+  *dOmega = -tcp->gamma * H * (Omega - tcp->Omega_min);
+  return _SUCCESS_;
+}
+
+#include "tcwt.h"
+#include "common.h"
+#include <math.h>
+
+double tcwt_Geff(double k, double a, struct tcwt_parameters *tcp) {
+  if (!tcp->tcwt_on) return 1.0;
+  double ratio = k / tcp->k_g;
+  double T_k = 1.0 / (1.0 + pow(ratio, 2.0 * tcp->p_smooth));
+  return T_k;   // G_eff = G * T_k
+}
+
+double G_eff = tcwt_Geff(k, a, tcp);
+
+delta_m_ddot = -2.0 * H * delta_m_dot
+               - 4.0 * _PI_ * G * G_eff * rho_m * delta_m
+               - tcp->beta_tcwt * pow(k, 4.0) / pow(a, 4.0) * delta_m;
+
+class_read_double("tcwt_C0", pth->tcwt.C0);
+class_read_double("tcwt_kappa", pth->tcwt.kappa);
+class_read_double("tcwt_alpha", pth->tcwt.alpha);
+class_read_double("tcwt_a0", pth->tcwt.a0);
+class_read_double("tcwt_gamma", pth->tcwt.gamma);
+class_read_double("tcwt_Omega_min", pth->tcwt.Omega_min);
+class_read_int("tcwt_on", pth->tcwt.tcwt_on);
+
+tcwt_init(&(pth->tcwt));
+
+tcwt_on = 1
+tcwt_C0 = 0.0594
+tcwt_kappa = 1.455
+tcwt_alpha = 1e17
+tcwt_a0 = 1.2e-10
+tcwt_gamma = 0.5
+tcwt_Omega_min = 0.0
+
+output = mPk tCl
+z_pk = 0.0
