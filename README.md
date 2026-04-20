@@ -42,7 +42,7 @@ This repository contains the complete, modular TCWT framework.
 
 ### **1. Master Summary**  
 High‑level overview of the entire theory.  
-➡️ `docs/TCWT_Master_Summary.md`
+➡️ `docs/00_TCWT Master Framework & Consistency Rules
 
 ### **2. Fundamental Dynamics**  
 Covariant Lagrangian, stability, dispersion, field equations.  
