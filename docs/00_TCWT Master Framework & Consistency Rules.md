@@ -116,5 +116,3 @@ This document is the single source of truth. When mathematics change, update onl
 ---
 
 
-
-Let me know — this should now be a solid, reliable master reference.
