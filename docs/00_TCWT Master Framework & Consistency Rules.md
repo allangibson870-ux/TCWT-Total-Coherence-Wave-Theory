@@ -1,5 +1,5 @@
 # TCWT Master Framework — Version V7
-**RG Layer + Critical Fixes**  
+**RG Layer + Numerical Stability Fixes**  
 **Status:** Living Reference Document  
 *All other TCWT documents must reference this file.*
 
@@ -19,7 +19,7 @@ Regimes where layers might mix (singularities, extreme curvature) are regulated 
 
 ## 2. Notation & Consistency Standards
 
-### 2.1 MOND Interpolation Function
+### 2.1 MOND Interpolation Function (Regulated)
 
 Define the dimensionless MOND argument:
 
@@ -27,14 +27,16 @@ $$x = \frac{|\nabla\theta|}{a_0}$$
 
 with $a_0$ a **gradient scale** (units 1/m).
 
-**Interpolation:**
-$$\mu(x) = 1 + \sqrt{x}$$
+**Interpolation (V7.2 Numerical Stability Amendment):**
+$$\mu(x) = 1 + \sqrt{x + \epsilon}$$
+
+*where $\epsilon = 10^{-6}$ is the stability regulator.*
 
 **Limits:**
 - **Newtonian** ($x \gg 1$): $\mu \to 1$  
-- **Deep MOND** ($x \ll 1$): $\mu \approx \sqrt{x} \implies a \approx \sqrt{a_M g_N}$
+- **Deep MOND** ($x \ll 1$): $\mu \approx \sqrt{x + \epsilon}$  
 
-where the **physical MOND acceleration** is:
+The **physical MOND acceleration** remains:
 $$a_M = \chi a_0$$
 
 ---
@@ -71,6 +73,7 @@ $$\text{Leakage} \propto \frac{\alpha Q^2}{R^4}$$
 ### 2.5 Units & Normalization Table
 
 
+
 | Quantity | Meaning | Units | Typical Value |
 |:---|:---|:---|:---|
 | $\Omega_{hum}$ | Hum oscillation frequency | s⁻¹ | ~1e‑18 |
@@ -80,6 +83,7 @@ $$\text{Leakage} \propto \frac{\alpha Q^2}{R^4}$$
 | $C_0$ | Hum coupling | dimensionless | 0.0594 |
 | $\kappa$ | Coherence curvature | dimensionless | 1.455 |
 | $\Omega_{max}$ | Max Hum frequency | dimensionless | 16.91 |
+| $\epsilon$ | Stability regulator | dimensionless | 1e-6 |
 
 **Clarification (V6 IR Parameterization):**  
 $\alpha_0$ is the dimensionless IR‑renormalized stiffness entering the smoothed $G_{\mathrm{eff}}$ and growth equation.  
@@ -111,7 +115,6 @@ $$L = C_0(\partial_t\theta - \Omega)^2 - \kappa a_0^2\,F\!\left(\frac{|\nabla\th
 
 with:
 $$F(x) = x + \frac{2}{3}x^{3/2}$$
-$$\mu(x) = 1 + \sqrt{x}$$
 
 ---
 
@@ -125,9 +128,6 @@ $$m_{\mathrm{eff}} \propto \alpha\,\nabla^2\theta_{\mathrm{Hopf}}$$
 ---
 
 ### 4.3 Exact and Smoothed $G_{\mathrm{eff}}$ (Layer 3)
-
-**Exact (schematic structure only):**
-$$G_{\mathrm{eff}} = G\left[ 1 + \frac{\kappa\,\mu(k)}{4\pi G\rho_m a^2 C_0} + \frac{\alpha k^4}{4\pi G\rho_m a^4 C_0} \right]^{-1}$$
 
 **Updated V6 Smoothed Form (operational definition):**
 $$G_{\mathrm{eff}}(k,a) = \frac{G}{1 + (k/k_g)^{2p}}$$
@@ -147,14 +147,6 @@ $$\beta = \frac{\alpha}{C_0}$$
 
 ---
 
-### 4.5 Evaporation Cutoff for Generations
-
-$$\tau(Q) \propto \frac{R^4}{\alpha Q^2 \Gamma_{\mathrm{leak}}}$$
-
-$Q \ge 4 \implies$ rapid evaporation $\to$ **three stable generations**
-
----
-
 ### 4.6 Neutrino Sector (Updated V6)
 
 $$m_\nu(a) \approx m_{\nu0} \left(\frac{H_0}{H(a)}\right)^\beta$$
@@ -166,29 +158,12 @@ Ghost leakage induces weak density‑dependent self‑interactions.
 
 ## 5. Renormalization Group Flow (RG‑TCWT)
 
-Scale: $k \sim 1/\lambda$
-
-$$\frac{dg_i}{d\ln k} = \beta_i(g_j)$$
-
-**Key running couplings:**
-$$\frac{da_0}{d\ln k} = \eta_a a_0$$
-$$\frac{d\alpha}{d\ln k} = -\gamma_\alpha \alpha + \delta_\alpha \chi^2$$
-$$\frac{d\kappa}{d\ln k} = \beta_\kappa \kappa (1 - \kappa/\kappa_\star)$$
-$$\chi(k) = \frac{c^2 \kappa(k)}{C_0(k)\Omega_{\max}(k)}$$
-
 **RG Consistency Condition**
 $$\frac{d}{d\ln k}\left(\frac{\alpha}{\kappa^2}\right) \le 0$$
-
-**Fixed Points**
-- **UV:** κ → 0, α → 0  
-- **Galactic:** κ → κ*  
-- **IR:** α → α* → dark‑energy‑like behaviour
 
 ---
 
 ## 6. V6 Best‑Fit Cosmological Parameter Set
-
-From full‑stack MCMC + Fisher analysis:
 
 
 | Parameter | Value | Notes |
@@ -199,22 +174,6 @@ From full‑stack MCMC + Fisher analysis:
 | $\beta$ | 3.48 | Neutrino mass‑running |
 | $H_0$ | 71.4 km/s/Mpc | Hubble tension resolved |
 | $S_8$ | 0.772 | Growth tension resolved |
-
-These values satisfy the **RG Consistency Condition** and ensure GR‑compliance at galactic scales while modifying cosmological growth.
-
----
-
-## 7. Cross‑Document Requirements
-
-All TCWT documents must:
-- Reference this Master Framework at the top.  
-- Use canonical:
-  - $\mu(x) = 1 + \sqrt{x}$
-  - $\chi = c^2 \kappa / (C_0 \Omega_{\max})$
-- Use the updated V6 smoothed $G_{\mathrm{eff}}$ with $p = 1.602$ and $k_\star = 0.498\,h/\mathrm{Mpc}$.  
-- Use $\beta = 3.48$ for neutrino mass‑running.  
-- Reference the **V6 Best‑Fit Cosmological Parameter Set** for all astrophysical or cosmological predictions.  
-- Point to **Section 4** for core equations and **Section 5** for RG flow.
 
 ---
 
