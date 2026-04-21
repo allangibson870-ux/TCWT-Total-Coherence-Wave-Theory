@@ -183,4 +183,4 @@ All TCWT documents must:
 
 **Last updated:** April 21, 2026  
 **Status:** Ongoing  
-**This document is the single source of truth.**
+
