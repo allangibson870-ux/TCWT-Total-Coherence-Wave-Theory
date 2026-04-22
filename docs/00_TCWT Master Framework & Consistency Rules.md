@@ -157,7 +157,7 @@ $$\frac{d}{d\ln k}\left(\frac{\alpha}{\kappa^2}\right) \le 0$$
 
 ---
 
-## 6. V7.2 Verified Parameter Set
+## 6. V7.2 Parameter Set
 
 
 | Parameter | Value | Notes |
