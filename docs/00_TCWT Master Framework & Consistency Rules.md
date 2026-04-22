@@ -166,8 +166,8 @@ $$\frac{d}{d\ln k}\left(\frac{\alpha}{\kappa^2}\right) \le 0$$
 | $k_\star$ | 0.498 h/Mpc | MOND/RG transition scale |
 | $p$ | 1.602 | Smoothing exponent |
 | $\beta_{\text{IR}}$ | 3.48 | Late-time neutrino/ghost pressure |
-| $H_0$ | 71.4 km/s/Mpc | Hubble tension resolved |
-| $S_8$ | 0.772 | Growth tension resolved |
+| $H_0$ | 71.4 km/s/Mpc | Hubble tension matched |
+| $S_8$ | 0.772 | Growth tension matched |
 
 ---
 
