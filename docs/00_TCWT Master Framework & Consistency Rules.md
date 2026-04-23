@@ -1,4 +1,4 @@
-# TCWT Master Framework — Version V7
+# TCWT Master Framework — Version V8
 **RG Layer + Numerical Stability & Running Beta Amendments**  
 **Status:** Living Reference Document 
 *All other TCWT documents must reference this file.*
@@ -145,31 +145,42 @@ $$m_\nu(a) \approx m_{\nu0} \left(\frac{H_0}{H(a)}\right)^\beta$$
 ---
 
 ## 5. Renormalization Group Flow (RG‑TCWT)
+### 5.1 The Unified Running Parameter Amendment (V7)
+To achieve the **Tsirelson Bound (2.828)** at the current epoch without washing out the CMB acoustic peaks, TCWT utilizes a dual-running protocol for both the stiffness $\beta$ and the temporal coherence $C_0$.
 
-**The Running Beta Amendment (V7.2):**  
-To preserve the CMB acoustic peaks, the stiffness parameter $\beta$ runs with the scale factor $a$:
-$$\beta(a) = \beta_{\text{UV}} + (\beta_{\text{IR}} - \beta_{\text{UV}}) \frac{a^2}{a_\star^2 + a^2}$$
-- **IR (Late Universe):** $\beta \to 3.48$  
-- **UV (Early Universe):** $\beta \to 0.01$ (Protects CMB Phase Shift)
+**The Coherence Evolution ($C_0$):**
+Ensures the universe transitions from a "fluid" state to a "quantum-locked" state.
+$$C_0(a) = C_{0, \text{UV}} + (C_{0, \text{IR}} - C_{0, \text{UV}}) \frac{a^2}{a_\star^2 + a^2}$$
+*   **$C_{0, \text{UV}} = 0.0594$**: (Early Universe) Preserves dark-matter-like clustering and $H_0$ stability.
+*   **$C_{0, \text{IR}} = 0.1819$**: (Late Universe) Satisfies the **Tsirelson Identity** ($ \kappa / C_0 = 8 $).
 
-**RG Consistency Condition:**
-$$\frac{d}{d\ln k}\left(\frac{\alpha}{\kappa^2}\right) \le 0$$
+**The Stiffness Evolution ($\beta$):**
+$$\beta(a) = \beta_{UV} + (\beta_{IR} - \beta_{UV}) \frac{a^2}{a_\star^2 + a^2}$$
+*   **$\beta_{UV} \to 0.01$**: Protects CMB phase-shift and high-$z$ growth.
+*   **$\beta_{IR} \to 3.48$**: Stabilizes late-time neutrino interactions and ghost pressure.
 
----
+### 5.2 The Tsirelson Consistency Condition
+At $a = 1$ ($z = 0$), the framework enforces a "Pure Wave" phase-locking constraint. The propagation speed $v$ of the Layer-2 fluctuations must satisfy:
+$$\lim_{a \to 1} \sqrt{\frac{\kappa}{C_0(a)}} = 2\sqrt{2} \approx 2.8284$$
+This identity ensures that the **Effective Dirac Operator** (Section 4.2) accumulates the exact Berry phase ($\gamma = \pi$) required for maximum Bell inequality violation in the present epoch.
 
-## 6. V7.2 Parameter Set
-
+## 6. V7.3 Parameter Set (Quantum-Locked)
 
 | Parameter | Value | Notes |
-|:---|:---|:---|
-| $\alpha_0$ | 0.0502 | IR stiffness (scaled) |
+| :--- | :--- | :--- |
+| $C_{0, \text{IR}}$ | **0.1819** | **Quantum Lock:** Reaches 2.828 limit at $z=0$ |
+| $C_{0, \text{UV}}$ | 0.0594 | **Fluid Limit:** Matches CMB acoustic peaks |
+| $\kappa$ | 1.455 | Global spatial phase stiffness |
+| $\chi$ (at $a=1$) | **4.25e16 m²/s²** | Adjusted for $C_{0, \text{IR}}$ saturation |
 | $k_\star$ | 0.498 h/Mpc | MOND/RG transition scale |
-| $p$ | 1.602 | Smoothing exponent |
-| $\beta_{\text{IR}}$ | 3.48 | Late-time neutrino/ghost pressure |
-| $H_0$ | 71.4 km/s/Mpc | Hubble tension matched |
-| $S_8$ | 0.772 | Growth tension matched |
+| $a_\star$ | 0.50 | Midpoint of the Coherence Transition ($z=1$) |
+| $p$ | 1.602 | Smoothing exponent (S2 Precession Prior) |
+| $H_0$ | 71.4 km/s/Mpc | Hubble tension matched via Mass-Lock |
+| $S_8$ | 0.772 | Growth tension matched via Ghost-Damping |
 
----
+### 6.1 Stability Check
+The reduction of $\chi$ at $a=1$ is compensated by the **Ghost-Tension Diagnostic ($T$)** in strong-field regimes. This prevents the collapse of galactic rotation curves while allowing the vacuum to reach the 2.828 correlation peak.
+
 
 ## 7. Cross‑Document Requirements
 
