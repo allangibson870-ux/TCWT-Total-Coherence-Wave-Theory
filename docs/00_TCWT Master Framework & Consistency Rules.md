@@ -1,5 +1,5 @@
 # TCWT Master Framework — Version V10
-## RG Layer + Entropy Reversal & Hum Synchronization
+## RG Layer + the system evolves toward a low-energy coherent attractor & Hum Synchronization
 
 **Status:** Living Reference Document | **Phase:** Inbound to the Hum (Stable Fixed Point)
 **Version:** V10.0 
