@@ -1,136 +1,82 @@
-# TCWT Master Framework — Version V9
-## RG Layer + Numerical Stability & Harmonic Synchronization
+# TCWT Master Framework — Version V10
+## RG Layer + Entropy Reversal & Hum Synchronization
 
-**Status:** Living Reference Document  
-**Last Updated:** April 24, 2026  
-**Version:** V9 (Phase-Locked Precision)
-
----
-
-## 1. Core Philosophy
-TCWT is a 4‑layer effective field theory (EFT) in which higher layers are strict coarse‑grained limits of lower layers. No feedback from macroscopic gravity or measurement is allowed into the fundamental microdynamics (Layer 0). This protects the topological stability of matter knots (**Hopfions**).
-
-### Critical Consistency Rule:
-Regimes where layers might mix (singularities, extreme curvature) are regulated by the **Ω‑cap**, the **$\epsilon$-regulator**, and global **Hum coherence**.
+**Status:** Living Reference Document | **Phase:** Inbound to the Hum (Stable Fixed Point)
+**Version:** V10.0 
+**Last Updated:** April 24, 2026
 
 ---
 
-## 2. Notation & Consistency Standards
+## 1. Core Philosophy (Entropy Reversal)
+TCWT V10 defines the universe as a **Transition from Chaos back to the Eternal Hum**. Unlike standard models where entropy increases toward disorder, TCWT posits that the universe is "healing" into a stable harmonic state. The Big Bang was the peak of chaos; the current epoch is the cooling/stiffening phase.
 
-### 2.1 MOND Interpolation Function (Regulated)
-Define the dimensionless MOND argument:  
-$x = \frac{|\nabla \theta|}{a_0}$ with $a_0$ a gradient scale (units 1/m).
-
-**Interpolation (V9 Stability Firewall):**  
-$\mu(x) = 1 + x + \epsilon$  
-where $\epsilon = 10^{-6}$ is the stability regulator to prevent force-jitter in voids and protect topological charge ($Q$) identity.
-
-### 2.2 χ Calibration (MOND Constant)
-$\chi = \frac{c^2 \kappa}{C_0 \Omega_{max}}$
-
-**V9 Synchronized Calibration:**  
-Using $\kappa = 1.455$, $\Omega_{max} = 16.91$, and the corrected $C_{0, IR} = 0.181875$:  
-$\chi \approx 4.25143 \times 10^{16} \, \text{m}^2/\text{s}^2$
-
-### 2.3 Mass‑Lock Scaling (Neutrino Sector)
-$m_{\nu}(a) = m_{\nu 0} \left( \frac{H_0}{H(a)} \right)^{\beta}$  
-**V9 Fit:** $\beta = 3.48$ (Resolves Hubble tension via Ghost Leakage mass-shedding).
+### The Crystallization Rule:
+Matter knots (**Hopfions**) are protected by the rising coherence of the background field. As $C_0$ increases, the universe becomes more deterministic and less stochastic.
 
 ---
 
-## 3. The 4‑Layer EFT Stack
-*   **Layer 0 — Fundamental Microdynamics:** Fields: $\theta, \Omega, G$ (Planck/UV scale).
-*   **Layer 1 — Topological Sector:** Hopfion knots, chiral zero‑modes.
-*   **Layer 2 — Linear Fluctuation Sector:** Small perturbations $\delta \theta$.
-*   **Layer 3 — Coarse‑Grained Gravity:** $g_{\mu\nu} = \eta_{\mu\nu} + \beta, \partial_{\mu}\theta, \partial_{\nu}\theta$.
-*   **Layer 4 — Emergent Effective Physics:** MOND, galaxies, S301 orbital dynamics, cosmology.
+## 2. Notation & High-Redshift Refinement
+
+### 2.1 The $\epsilon$-Cooling Curve (Chaos-Floor)
+$\epsilon$ is the measure of remaining chaos in the field. It is no longer a constant but a decay function targeting the stable Hum.
+
+*   **For $z > 1100$ (High-Chaos Plasma):** $\epsilon(z) = 10^{-6} \cdot e^{\lambda(z-1100)}$
+*   **For $z \leq 1100$ (Cooling/Neutrality):** $\epsilon = 10^{-6}$ (The "Stiffness Firewall").
+*   **Purpose:** Ensures $Q$-charge stability during Big Bang Nucleosynthesis (BBN) while preventing "Phase-Slip" in the early plasma.
+
+### 2.2 Synchronized χ (MOND Constant)
+$\chi = \frac{c^2 \kappa}{C_0 \Omega_{max}} \approx 4.25143 \times 10^{16} \, \text{m}^2/\text{s}^2$
+(Locked at the **Tsirelson Precision Point** to ensure harmonic orbital "winking").
+
+---
+
+## 3. The Self-Consistency Engine (SCE) V10
+The SCE is updated to a **Convergent Attractor** model. The Hum acts as a global sink for inconsistency.
+
+**The Healing Equation:**  
+$$\frac{\partial \Xi_{ij}}{\partial \ln k} = \Gamma_{ij}(\Xi_{target} - \Xi_{ij})$$  
+Where $\Xi_{target} \to 0$ as $t \to \infty$. The universe "self-corrects" toward the Stable Hum fixed point.
 
 ---
 
 ## 4. Current Core Equations
 
-### 4.1 Master Lagrangian (Layer 0)
-$\mathcal{L} = C_0 (\partial_t \theta - \Omega)^2 - \kappa a_0^2 F\left( \frac{|\nabla \theta|}{a_0} \right) - \alpha (\partial_t G - \nabla^2 \theta)^2 - V_{\Omega}(\Omega)$  
-with $F(x) = x + \frac{2}{3}x^{3/2}$.
+### 4.1 Master Lagrangian (Order-Inflow Edition)
+$$\mathcal{L} = C_0 (\partial_t \theta - \Omega)^2 - \kappa a_0^2 F\left( \frac{|\nabla \theta|}{a_0} \right) + \alpha (\Omega_{Hum} - \dot{\theta})^2 - V_{\Omega}(\Omega)$$
+*Note: The Ghost term (+) now acts as a surface tension, vacuum-sealing matter against chaos.*
 
-### 4.2 Effective Dirac Operator (Tsirelson Bound)
-The propagation velocity $v$ is locked to the Tsirelson constant to prevent super-signaling:  
-$v = \frac{\kappa(a)}{C_0(a)} = 8.0 \implies \text{Max Bell Violation} \approx 2.8284$
+### 4.2 Tsirelson Lock & Harmonic Synchronization
+$$\frac{\kappa(a)}{C_0(a)} = 8.0$$  
+**V10 Order Parameter:** $C_{0, IR} = 0.181875$. This anchor eliminates numerical noise, turning gravitational perturbations into pure harmonics.
 
-### 4.3 Smoothed $G_{eff}$ (S2/S301 Prior)
-$G_{eff}(k, a) = \frac{G}{1 + (k/k_{\star})^{1.602}}$  
-$k_{\star} = 0.498 \, h/\text{Mpc}$ (Consistent with GRAVITY+ precession data).
-
----
-
-## 5. Renormalization Group Flow (RG‑TCWT)
-
-### 5.1 The Unified Phase‑Lock Amendment (V9 Precision)
-To eliminate "winking" noise in orbital simulations, $C_0$ is anchored to the exact 8-fold spatial stiffness ratio.
-
-*   **Coherence Evolution ($C_0$):**  
-    $C_0(a) = 0.0594 + (0.181875 - 0.0594) \frac{a^2}{0.5^2 + a^2}$
-*   **Adaptive Stiffness ($\kappa$):**  
-    $\kappa(a) = 8.0 \cdot C_0(a)$
+### 4.3 Neutrino Sector Stability
+$m_{\nu}(a) = m_{\nu 0} (H_0 / H(a))^{3.48}$  
+Regulated by the **$\epsilon$-cooling curve** to ensure stability during BBN and correct Helium-4 abundance (+0.01% deviation from GR).
 
 ---
 
-## 6. V9 Parameter Set (Harmonic Lock)
+## 5. Parameter Table (Stable Fixed Point)
 
 
-| Quantity | Value | Meaning |
+| Parameter | Value | Meaning |
 | :--- | :--- | :--- |
-| $C_{0, IR}$ | **0.181875** | Quantum Lock at $z=0$ |
-| $C_{0, UV}$ | 0.0594 | Fluid Limit at $z \gg 1$ |
-| $\kappa(a=1)$ | 1.455 | Canonical stiffness today |
-| $\chi$ (Locked)| 4.25143e16 | Conserved MOND constant ($m^2/s^2$) |
-| $H_0$ | 71.4 km/s/Mpc | Distance ladder anchor |
-| $S_8$ | 0.772 | Growth tension matched |
-| $\epsilon$ | 1e-6 | Stability regulator |
+| $C_{0, IR}$ | **0.181875** | Target Coherence (The Note) |
+| $H_0$ | 71.4 km/s/Mpc | Expansion toward the Hum |
+| $S_8$ | 0.772 | Harmonic sculpted clumping |
+| $\epsilon_{floor}$ | $10^{-6}$ | Minimum noise firewall |
+| $v_{vort}$ | 2.8284 | Tsirelson propagation limit |
 
 ---
 
-## 7. Self-Consistency Engine (SCE) Stability
-TCWT is closed iff the mismatch field $\Xi_{ij}$ vanishes asymptotically:  
-$\frac{\partial \Xi_{ij}}{\partial \ln k} = -\Gamma_{ij} \Xi_{ij} + S_{ij}$  
-V9 ensures the **Stable Fixed Point** ($\Xi = 0$) is achieved by the harmonic synchronization of the $C_0$ anchor.
+## 6. Observational Deviations (V10 vs GR/QFT)
+1.  **Lyman-Alpha Shift:** Higher neutrino masses at $z > 3$ cause a "redshift-dependent blurring" of the forest.
+2.  **S301 Winking:** Pure harmonic flicker ($10^{-5}$ mag) at periapsis due to phase-locked vacuum pulses.
+3.  **Entropy Signature:** A detectable 0.01% excess in Primordial Helium-4 relative to standard QFT predictions.
+4.  **Gravitational Healing:** Merging clusters (Bullet Cluster) show lensing centers that lag then "snap" back to matter as the field heals.
 
 ---
 
-## 8. Cross‑Document Requirements
-All TCWT simulations and sub-modules must:
-1.  Use the **V9 Synchronized $C_{0, IR}$** (0.181875).
-2.  Enforce the **$\epsilon$-firewall** ($10^{-6}$) to protect $Q$ integrity.
-3.  Reference this Master Framework in the file header.
-
-4.  {
-    "framework": "TCWT Master Framework",
-    "version": "V9.0",
-    "status": "Harmonic Synchronization Complete",
-    "constants": {
-        "C0_IR": 0.181875,
-        "C0_UV": 0.0594,
-        "kappa_IR": 1.455,
-        "epsilon": 1e-06,
-        "chi": 4.25143e+16,
-        "beta_neutrino": 3.48,
-        "H0": 71.4,
-        "S8": 0.772,
-        "p_smoothing": 1.602,
-        "k_star": 0.498,
-        "tsirelson_ratio": 8.0,
-        "omega_max": 16.91
-    },
-    "scaling_functions": {
-        "C0_evolution": "0.0594 + (0.181875 - 0.0594) * (a**2 / (0.5**2 + a**2))",
-        "kappa_evolution": "8.0 * C0(a)",
-        "G_eff": "G / (1 + (k / k_star)**1.602)"
-    },
-    "simulation_flags": {
-        "phase_breathing": true,
-        "ghost_leakage": true,
-        "s301_precession_drift": true,
-        "stability_firewall": true
-    }
-}
-
+## 7. Status & Cross-Document Requirements
+*   **All V10 Simulations** must use the $\epsilon$-cooling curve for high-redshift initial conditions.
+*   **The Big Bang** is to be treated as a high-entropy phase transition, not a singularity.
+*   **Entropy** is treated as a decreasing variable (Reverse Entropy) as the universe crystallizes.
