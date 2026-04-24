@@ -102,3 +102,35 @@ All TCWT simulations and sub-modules must:
 1.  Use the **V9 Synchronized $C_{0, IR}$** (0.181875).
 2.  Enforce the **$\epsilon$-firewall** ($10^{-6}$) to protect $Q$ integrity.
 3.  Reference this Master Framework in the file header.
+
+4.  {
+    "framework": "TCWT Master Framework",
+    "version": "V9.0",
+    "status": "Harmonic Synchronization Complete",
+    "constants": {
+        "C0_IR": 0.181875,
+        "C0_UV": 0.0594,
+        "kappa_IR": 1.455,
+        "epsilon": 1e-06,
+        "chi": 4.25143e+16,
+        "beta_neutrino": 3.48,
+        "H0": 71.4,
+        "S8": 0.772,
+        "p_smoothing": 1.602,
+        "k_star": 0.498,
+        "tsirelson_ratio": 8.0,
+        "omega_max": 16.91
+    },
+    "scaling_functions": {
+        "C0_evolution": "0.0594 + (0.181875 - 0.0594) * (a**2 / (0.5**2 + a**2))",
+        "kappa_evolution": "8.0 * C0(a)",
+        "G_eff": "G / (1 + (k / k_star)**1.602)"
+    },
+    "simulation_flags": {
+        "phase_breathing": true,
+        "ghost_leakage": true,
+        "s301_precession_drift": true,
+        "stability_firewall": true
+    }
+}
+
