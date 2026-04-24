@@ -13,28 +13,8 @@
 
 ## Overview
 
-Total Coherence Wave Theory (TCWT) proposes that the universe is built from a single underlying field:
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/3659ce5b-c764-42f8-bf44-3a45dafffaa6" />
 
-- **Hum phase field**: `θ(x,t)`  
-- **Ghost field**: `G(x,t)`
-
-Matter, gravity, quantum mechanics, and cosmology emerge from the geometry, topology, and coherence properties of these fields.  
-TCWT replaces the usual “many‑forces, many‑particles” picture with a **single coherent mechanism**.
-
-This repository contains the complete, modular TCWT framework.
-
-
-
----
-
-## Four Fundamental Fields
-
-| Symbol | Meaning |
-|--------|---------|
-| `θ` | Hum phase (temporal coherence) |
-| `Ω` | temporal drag / informational density |
-| `λ = ∇θ` | phase‑bleed (gravity analogue) |
-| `G` | ghost density (dark‑energy analogue) |
 
 ---
 
