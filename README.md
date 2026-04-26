@@ -9,11 +9,6 @@
 
 
 
----
-
-## Overview
-
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/3659ce5b-c764-42f8-bf44-3a45dafffaa6" />
 
 
 ---
