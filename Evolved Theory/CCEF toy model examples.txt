@@ -336,4 +336,26 @@ chi on delta.
 
 End of chi = 0.5 interpretation block.
 
+Toy model -3
+import numpy as np
+
+# CCEF-Lite v1.1 + Quantum Sector
+a = np.logspace(-3, 0, 100)
+rho0 = 1.0 * (a**-3)
+sigma2 = 0.1 * (a**-0.05)
+
+# 1. Emergent Temperature T_eff
+# Defined by the kinetic jitter (variance) of the soliton gas
+T_eff = sigma2 * rho0**(1/3) # Heuristic transport-based temperature
+
+# 2. Bispectrum / Non-Gaussianity (f_NL)
+# Sourced by the non-linear coupling chi and the noise floor
+# At late times, dilution increases the relative noise, boosting f_NL
+f_NL = (sigma2 / (rho0 + 1e-9))**0.25 # Relative variance scale
+
+# Final state at a=1.0
+print(f"Final T_eff: {T_eff[-1]:.2e}")
+print(f"Final f_NL: {f_NL[-1]:.2e}")
+
+
 
