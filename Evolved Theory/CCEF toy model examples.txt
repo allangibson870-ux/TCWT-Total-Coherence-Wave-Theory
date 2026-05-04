@@ -380,6 +380,37 @@ print(f"S_init: {S_eff[0]:.4f}")
 print(f"S_final: {S_eff[-1]:.4f}")
 print(f"Arrow Status: {'Increasing' if dS_dln_a[-1] > 0 else 'Decreasing'}")
 
+import numpy as np
+
+# Parametric setup
+a = np.logspace(-3, 0, 500)
+xi_0 = 10.0
+beta_xi = 0.5
+xi_max = 50.0
+
+# RG Flow of xi_R (correlation length)
+xi_R = xi_max / (1 + (xi_max/xi_0 - 1) * a**(-beta_xi))
+
+# Define Internal Time tau as the cumulative change in xi_R
+# tau = Integral[ d(xi_R) ] or simpler: normalized xi_R expansion
+tau = (xi_R - xi_0) / (xi_max - xi_0)
+
+# Calculate the "Time Dilatation" dtau / dln(a)
+# This represents how fast the internal state is changing relative to the expansion
+dtau_dln_a = np.gradient(tau, np.log(a))
+
+# Output key values for final response
+results = {
+    "a_early": a[0],
+    "tau_early": tau[0],
+    "a_late": a[-1],
+    "tau_late": tau[-1],
+    "peak_dilatation": np.max(dtau_dln_a),
+    "peak_a": a[np.argmax(dtau_dln_a)]
+}
+print(results)
+
+
 
 
 
