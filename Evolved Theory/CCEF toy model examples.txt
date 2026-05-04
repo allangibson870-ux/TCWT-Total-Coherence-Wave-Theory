@@ -358,4 +358,28 @@ print(f"Final T_eff: {T_eff[-1]:.2e}")
 print(f"Final f_NL: {f_NL[-1]:.2e}")
 
 
+Toy model -4 (Entropy)
+import numpy as np
+
+# Simulation parameters
+a_vals = np.logspace(-3, 0, 100)
+rho0 = a_vals**-3
+sigma_a2 = 0.1 * a_vals**-0.05
+xi_R = 10.0 * a_vals**0.5
+
+# 1. Effective Entropy (S_eff)
+# S_eff is proportional to the number of accessible response states.
+# In CCEF, this relates to the 'Correlation Volume' (xi_R^3) relative to density.
+S_eff = np.log(rho0 * xi_R**3 + 1.0)
+
+# 2. Arrow of Time (dS/dt)
+# Use d/d ln(a) as our time-like derivative.
+dS_dln_a = np.gradient(S_eff, np.log(a_vals))
+
+print(f"S_init: {S_eff[0]:.4f}")
+print(f"S_final: {S_eff[-1]:.4f}")
+print(f"Arrow Status: {'Increasing' if dS_dln_a[-1] > 0 else 'Decreasing'}")
+
+
+
 
