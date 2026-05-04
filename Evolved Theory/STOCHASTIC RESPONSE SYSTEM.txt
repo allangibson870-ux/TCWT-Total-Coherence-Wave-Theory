@@ -1,0 +1,60 @@
+CCEF-LITE v1.2: STOCHASTIC RESPONSE SYSTEM (QUANTUM FLOOR)
+
+
+1. Overview
+
+This extension introduces irreducible fluctuations of the soliton gas
+("Quantum Floor") directly into the CCEF transport equations. No Hilbert
+spaces, no GR, and no external QFT structures are used. All stochastic
+terms arise from the internal variance sigma_a2(a) of the continuum.
+
+2. Quantum-Corrected Coupling Perturbation
+
+The beta equation becomes a stochastic differential equation in ln a:
+
+beta' + [Gamma_alpha + D_alpha * k^2 / a^2] * beta
+    = s(a) * delta + P(k,a)
+
+where P(k,a) is a Gaussian white-noise source term representing the
+microscopic jitter of the soliton gas.
+
+3. Noise Amplitude: The Quantum Floor
+
+The noise power is set by:
+
+hbar_eff(a) = sigma_a2(a) * rho0(a)
+
+This quantity defines the minimum fluctuation level of the continuum.
+As rho0(a) dilutes, hbar_eff(a) decreases more slowly, so the relative
+noise per unit volume increases. This prevents the power spectrum from
+ever reaching zero.
+
+4. Stochastic Behavior of delta(k,a)
+
+On large scales (k << 1):
+    Classical growth dominates.
+    Noise is negligible.
+
+On intermediate scales (k ~ 1):
+    Noise is subdominant but detectable.
+
+On small scales (k >> 1):
+    Diffusion kills classical structure.
+    The stochastic term P(k,a) dominates.
+    delta(k,a) approaches a finite noise floor.
+
+5. Interpretation
+
+Zero-Point Floor:
+    The residual delta(k,a) at high k is the CCEF analogue of
+    zero-point energy. It is the irreducible variance of the soliton gas.
+
+Decoherence via RG Flow:
+    As xi_R(a) approaches its IR fixed point, collective behavior
+    suppresses small-scale fluctuations. The system classicalizes.
+
+No External Quantum Theory:
+    All stochasticity arises from sigma_a2(a), the internal variance
+    of the continuum. No Hilbert space or metric structure is required.
+
+End of block.
