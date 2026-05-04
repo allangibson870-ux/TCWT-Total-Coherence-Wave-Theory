@@ -645,5 +645,107 @@ anomalies without invoking exotic dark matter or modified gravity.
 
 End of block.
 
+CCEF-LITE v1.3: INTERNAL-TIME REDSHIFT REINTERPRETATION
+NOTEPAD-SAFE ASCII BLOCK
+
+1. Purpose
+
+This block defines how observed redshift z_obs is reinterpreted in CCEF
+when the internal time variable tau(a) is included. The goal is to
+explain the apparent maturity of high-redshift galaxies (JWST tension)
+without invoking modified gravity, exotic dark matter, or external
+quantum field theory. All effects arise from the internal evolution of
+the energy continuum.
+
+2. Expansion Redshift (Standard)
+
+The expansion component of redshift is unchanged:
+
+    1 + z_exp = 1 / a
+
+This is the purely geometric contribution from the scale factor.
+
+3. Internal Time tau(a)
+
+The correlation length xi_R(a) follows a logistic RG flow:
+
+    d xi_R / d ln a = beta_xi * xi_R * (1 - xi_R / xi_R_max)
+
+Internal time is defined as:
+
+    tau(a) = [xi_R(a) - xi_R_init] / [xi_R_max - xi_R_init]
+
+tau runs from 0 (early, weakly correlated) to 1 (late, fully correlated).
+
+The rate of internal evolution is:
+
+    d tau / d ln a
+
+This quantity peaks at an intermediate scale factor a_peak, indicating
+the epoch of fastest internal reorganization of the continuum.
+
+4. Aging Redshift z_tau
+
+We define an internal-time contribution to redshift:
+
+    1 + z_tau(a) = 1 + C_tau * [tau(a) - tau_ref]
+
+where C_tau is a dimensionless coefficient and tau_ref is a reference
+internal time (typically tau at a = 1). This term captures the mismatch
+between the internal clock of the continuum and the external expansion
+clock.
+
+5. Composite Observed Redshift
+
+The observed redshift is the product of expansion and internal aging:
+
+    1 + z_obs = (1 + z_exp) * (1 + z_tau)
+
+Interpretation:
+    - z_exp measures geometric stretching.
+    - z_tau measures internal aging of the soliton gas.
+    - z_obs is what telescopes detect.
+
+6. Resolution of the High-Redshift Galaxy Mass Anomaly
+
+JWST has observed massive, well-structured galaxies at z_obs ~ 10-14.
+In LambdaCDM, the expansion age at z ~ 14 is ~0.3 Gyr, which appears
+insufficient for the formation of such systems.
+
+In CCEF:
+
+    - The same galaxy has:
+        expansion age: t_exp ~ 0.3 Gyr
+        internal age:  t_int ~ 1-2 Gyr (in tau units)
+
+Reason:
+    During early times, d tau / d ln a is large. The internal clock of
+    the continuum runs faster than the expansion clock. Galaxies evolve
+    according to tau, not t_exp.
+
+Result:
+    High-z galaxies are internally older than their expansion age.
+    Their mass, rotation curves, and morphology are consistent with
+    their internal age, removing the JWST tension.
+
+7. Example Mapping (Illustrative)
+
+    z_obs    t_exp (Gyr)    tau(a)    Internal Status
+    0.1      12.5           0.95      Mature
+    5.0      1.2            0.60      Massive structures allowed
+    14.0     0.3            0.35      "Impossibly" well-formed
+
+8. Summary
+
+CCEF introduces a second clock: the internal time tau(a). Observed
+redshift is a composite of expansion and internal aging. Early galaxies
+experience accelerated internal evolution due to rapid growth of xi_R.
+This provides sufficient internal time for massive, mature structures
+to form at high observed redshift, resolving the JWST anomaly without
+modifying gravity or invoking exotic physics.
+
+End of block.
+
+
 
 
