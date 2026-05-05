@@ -92,3 +92,207 @@ At high k and late times:
 
 End of block.
 
+1. Origin of Stochasticity
+
+Coarse-graining over a discrete soliton ensemble leaves residual
+fluctuations that cannot be removed by further smoothing. These
+fluctuations arise from:
+
+(1) finite soliton number per coarse cell,
+(2) variance in coupling content σα^2,
+(3) variance in inertial content ρ0,
+(4) finite correlation length ξR.
+
+These fluctuations are internal to the continuum and do not represent
+external randomness. They are the irreducible projection of soliton
+discreteness into the β-sector.
+
+2. Stochastic Coupling Equation
+
+The deterministic coupling equation (39) becomes:
+
+    βdot + [Γα + Dα k^2 / a^2] β = s(a) δ + Ξβ(k,t)
+
+The term Ξβ(k,t) is the unresolved remainder of the soliton ensemble
+after coarse-graining. No new ontology is introduced.
+
+3. Noise Amplitude from Internal Variance
+
+The noise Ξβ(k,t) has zero mean:
+
+    <Ξβ(k,t)> = 0
+
+and a two-point correlation:
+
+    <Ξβ(k,t) Ξβ(k',t')>
+        = Nβ(a,k) δD(t - t') δD(k - k')
+
+The amplitude Nβ(a,k) is determined entirely by existing CCEF
+quantities. Define the effective fluctuation scale:
+
+    ħeff(a) = σα^2(a) ρ0(a)
+
+This quantity measures the variance of coupling per unit inertial
+content. The noise amplitude is:
+
+    Nβ(a,k) = Cβ ħeff(a) fβ(k)
+
+where Cβ is dimensionless and fβ(k) is a dimensionless shape function
+determined by the response kernel. No external stochastic model is used.
+
+4. Propagation of Stochasticity into δ
+
+The density contrast δ obeys the modified growth equation (40). With β
+containing a stochastic component, δ inherits a stochastic contribution
+through the χ β term:
+
+    δ(k,a) = δcl(k,a) + δnoise(k,a)
+
+The power spectrum becomes:
+
+    Pδ(k,a) = <|δ(k,a)|^2>
+            = Pδ,cl(k,a) + Pδ,noise(k,a)
+
+5. Noise Floor
+
+At large scales and early times:
+
+    Pδ,cl >> Pδ,noise
+
+At small scales and late times, diffusion suppresses Pδ,cl while
+Pδ,noise approaches a finite limit set by Nβ(a,k) and the response
+kernel K(k,a):
+
+    Pδ,noise(k,a) → const(k)
+
+This constant is the irreducible noise floor of the continuum. It is not
+a quantum vacuum. It is the residual soliton discreteness after
+coarse-graining.
+
+. Interpretation of ħeff(a)
+
+The quantity:
+
+    ħeff(a) = σα^2(a) ρ0(a)
+
+acts as an internal fluctuation scale. As ρ0(a) dilutes and σα^2(a)
+evolves under RG flow, ħeff(a) determines how strongly unresolved
+soliton discreteness imprints on β and, through χ, on δ.
+
+This defines a CCEF-native "quantum-like" floor: an irreducible
+stochastic component of the response that persists even when classical
+growth is suppressed.
+
+6. High‑k Limit and Local Response Approximation
+
+In the regime k >> 1/ξR, the response kernel becomes local:
+
+    K(k,a) ≈ A(a) / k^2
+
+and the effective response strength becomes:
+
+    Geff(k,a) ≈ A(a)
+
+This regime corresponds to short‑wavelength perturbations probing
+individual coarse cells rather than collective response. Diffusion and
+viscosity dominate the deterministic δ evolution, suppressing δcl.
+
+7. Reduced Growth Equation in the High‑k Limit
+
+In this limit, the δ equation (40) simplifies to:
+
+    δddot + 2 H δdot + (cs^2 k^2 / a^2) δ
+        = 4π A(a) ρ0 χ β
+
+Since β contains a stochastic component, the right-hand side becomes:
+
+    4π A(a) ρ0 χ [βdet + βstoch]
+
+The deterministic part decays rapidly at high k. The stochastic part
+drives a stationary solution.
+
+8. Green’s Function for δnoise
+
+Define the operator:
+
+    Lδ = d^2/dt^2 + 2 H d/dt + (cs^2 k^2 / a^2)
+
+The stochastic solution is:
+
+    δnoise(k,t) = ∫ dt' Gδ(t,t';k) Sβ(t',k)
+
+where:
+
+    Sβ(t',k) = 4π A(a') ρ0(a') χ Ξβ(k,t')
+
+and Gδ is the Green’s function of Lδ.
+
+9. High‑k Green’s Function Approximation
+
+For k >> 1/ξR and slowly varying H(a):
+
+    Gδ(t,t';k) ≈ (a'/a) exp[-(cs k / a)(t - t')]
+
+This form arises from the dominance of the cs^2 k^2 / a^2 term in Lδ.
+It is internal to the continuum and does not represent geometric
+propagation.
+
+10. Noise‑Driven Power Spectrum
+
+Using the noise statistics of Ξβ:
+
+    <Ξβ(k,t) Ξβ(k',t')>
+        = Nβ(a,k) δD(t - t') δD(k - k')
+
+the δnoise power spectrum becomes:
+
+    Pδ,noise(k,a)
+        = [4π A(a) ρ0(a) χ]^2
+          ∫ dt' |Gδ(t,t';k)|^2 Nβ(a',k)
+
+11. Stationary Noise Floor
+
+In the high‑k limit, the integral converges to:
+
+    Pδ,noise(k,a)
+        ≈ [4π A(a) ρ0(a) χ]^2
+           Nβ(a,k)
+           / [2 cs k / a]
+
+Substituting:
+
+    Nβ(a,k) = Cβ ħeff(a) fβ(k)
+    ħeff(a) = σα^2(a) ρ0(a)
+
+gives:
+
+    Pδ,noise(k,a)
+        ≈ [4π A(a) ρ0(a) χ]^2
+           Cβ σα^2(a) ρ0(a) fβ(k)
+           / [2 cs k / a]
+
+12. Interpretation
+
+The noise floor scales as:
+
+    Pδ,noise ∝ A(a)^2 ρ0(a)^3 σα^2(a) fβ(k) a / k
+
+This is a purely CCEF result:
+
+(1) It depends only on A(a), ρ0(a), σα^2(a), χ, and fβ(k).
+(2) It arises from soliton discreteness and coarse-graining.
+(3) It contains no geometric, metric, or quantum-field-theoretic input.
+(4) It defines the irreducible fluctuation level of δ at high k.
+
+13. Physical Meaning
+
+The continuum cannot be made perfectly smooth at small scales. Even if
+deterministic growth is suppressed, the soliton gas produces a finite
+residual variance. This is the CCEF-native analogue of a "quantum
+floor," but it arises entirely from internal variance and response
+structure, not from any external quantum theory.
+
+End of high‑k stochastic solution.
+
+
+
