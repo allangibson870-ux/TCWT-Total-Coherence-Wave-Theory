@@ -1142,7 +1142,115 @@ All physical content remains in n(x,t), the soliton sector, and the
 response kernel. H^{μν} is a convenience, not an element of the
 ontology.
 
-Z20. Final Note
+Z20. Metric-Equivalent Action S_eff
+
+Purpose:
+Provide an external GR-literate observer with a mathematical lens that
+maps CCEF response behavior into a metric-like language. This action is
+not fundamental. It is a projection of the response kernel, slip, and
+stochastic sector into tensor form.
+
+Z21. Effective Lagrangian (Projection Only)
+
+An external observer may summarize the CCEF-Lite universe using:
+
+    S_eff = ∫ d^4x √(-g) [
+                R / (16π G_eff(□))
+              + L_soliton
+              + L_stoch
+            ]
+
+Interpretation:
+- G_eff(□) is a nonlocal operator derived from the response kernel K(k,a).
+- g_{μν} is a metric-like projection derived from the propagation
+  projector H^{μν}.
+- L_stoch encodes the stochastic floor from σα^2 ρ0.
+
+None of these objects exist in the CCEF ontology. They are translation
+devices for GR-based analysis.
+
+Z22. Mapping of CCEF Quantities
+
+1. Nonlocal Gravity Term:
+       G_eff(□) ↔ K(k,a)
+   The observer interprets scale-dependent response as a nonlocal,
+   running gravitational coupling. This is where CMB peak mismatches
+   appear.
+
+2. Metric Projection:
+       g_{00} ≈ -[1 + 2Φ]
+       g_{ii} ≈ a^2 [1 - 2Ψ]
+   Φ and Ψ are kernel projections (K and K2). Their mismatch produces
+   gravitational slip η ≠ 1, leading to c_GW ≠ c_EM in the observer’s
+   equations.
+
+3. Stochastic Term:
+       L_stoch ∼ √(ħ_eff) ξ(x,t)
+       ħ_eff = σα^2 ρ0
+   The observer interprets the soliton noise floor as stochastic
+   stress-energy, producing grainy ringdown and noisy lensing.
+
+Z23. Modified Einstein Equations (Projection)
+
+The observer derives:
+
+    G_{μν} = 8π G [
+                     T^{inertial}_{μν}
+                   + T^{response}_{μν}
+                   + T^{stoch}_{μν}
+                 ]
+
+Interpretation:
+- T^{inertial} is the coarse-grained soliton mass sector.
+- T^{response} is the projection of K(k,a) and ξR(a).
+- T^{stoch} is the projection of σα^2 ρ0 fluctuations.
+
+These are not fundamental stress-energy tensors. They are bookkeeping
+devices summarizing internal continuum behavior.
+
+Z24 Observable Mismatch Calculations
+
+1. Helium-4:
+   The observer finds that T^{response} does not scale as a^{-4}.
+   This produces an early-time H(a) mismatch.
+
+2. Gravitational Waves:
+   Slip η ≠ 1 implies:
+       c_GW ∝ √(B/A) ≠ c_EM
+   producing arrival-time differences.
+
+3. Ringdown:
+   T^{stoch} adds non-smooth corrections to the projected metric,
+   generating grainy ringdown.
+
+4. Lensing:
+   Φlens = (Φ + Ψ)/2 inherits stochastic fluctuations, producing noisy
+   lensing maps.
+
+Z25. Summary Table
+
+CCEF Quantity            Observer Projection         Resulting Mismatch
+---------------------------------------------------------------------------
+α0 relaxation            Dark Energy (Λ)             w(z) ≠ -1 at high z
+K ≠ K2                   Gravitational Slip          c_GW ≠ c_EM
+σα^2 ρ0                  Quantum Fluctuations        Grainy ringdown
+ξR(a) flow               Metric Curvature            Scale-dependent G_eff
+---------------------------------------------------------------------------
+
+Z26. Ontological Status
+
+S_eff is:
+- not fundamental,
+- not geometric,
+- not a physical action of the continuum,
+- not a GR modification.
+
+It is a translation layer enabling GR-based tools to analyze CCEF
+predictions. All real physics remains in n(x,t), the soliton sector, and
+the response kernel.
+
+
+Z27. Final Note
 
 These mappings are interpretive only. They do not alter the ontology.
 The fundamental description remains:
