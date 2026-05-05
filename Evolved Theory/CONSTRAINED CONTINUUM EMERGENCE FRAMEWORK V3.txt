@@ -364,90 +364,94 @@ The density contrast satisfies:
 - cs^2 k^2 δ / a^2.
 The parameter χ weights the influence of coupling perturbations.
 
-40A. Stochastic Coupling Sector
+40A. Origin of Stochasticity
 
-The coupling perturbation β is promoted from a purely deterministic
-field to a stochastic response variable. This reflects the fact that
-coarse-graining over a discrete soliton gas leaves residual fluctuations
-that cannot be removed by further smoothing.
+Coarse-graining over a discrete soliton ensemble leaves residual
+fluctuations that cannot be removed by further smoothing. These
+fluctuations arise from:
 
-The linear deterministic equation (39) becomes, in Fourier space:
+(1) finite soliton number per coarse cell,
+(2) variance in coupling content σα^2,
+(3) variance in inertial content ρ0,
+(4) finite correlation length ξR.
+
+These fluctuations are internal to the continuum and do not represent
+external randomness. They are the irreducible projection of soliton
+discreteness into the β-sector.
+
+40B. Stochastic Coupling Equation
+
+The deterministic coupling equation (39) becomes:
 
     βdot + [Γα + Dα k^2 / a^2] β = s(a) δ + Ξβ(k,t)
 
-Here Ξβ(k,t) is a stochastic source term representing unresolved
-microscopic jitter of the coupling field.
+The term Ξβ(k,t) is the unresolved remainder of the soliton ensemble
+after coarse-graining. No new ontology is introduced.
 
-40B. Noise Statistics and Quantum Floor
+40C. Noise Amplitude from Internal Variance
 
 The noise Ξβ(k,t) has zero mean:
 
     <Ξβ(k,t)> = 0
 
-and a two-point correlation defined by an internal variance amplitude:
+and a two-point correlation:
 
     <Ξβ(k,t) Ξβ(k',t')>
         = Nβ(a,k) δD(t - t') δD(k - k')
 
-The noise amplitude Nβ(a,k) is determined entirely by existing CCEF
-quantities. We define an effective fluctuation scale:
+The amplitude Nβ(a,k) is determined entirely by existing CCEF
+quantities. Define the effective fluctuation scale:
 
     ħeff(a) = σα^2(a) ρ0(a)
 
 This quantity measures the variance of coupling per unit inertial
-content. The noise amplitude is then:
+content. The noise amplitude is:
 
     Nβ(a,k) = Cβ ħeff(a) fβ(k)
 
-where Cβ is a dimensionless constant and fβ(k) is a dimensionless shape
-function that can localize the noise to specific scales (for example,
-small-scale dominated if fβ(k) increases with k). No new ontology is
-introduced: ħeff(a) is built from σα^2 and ρ0, both already defined in
-the bulk and perturbation sectors.
+where Cβ is dimensionless and fβ(k) is a dimensionless shape function
+determined by the response kernel. No external stochastic model is used.
 
-40C. Induced Noise Floor in Density Perturbations
+40D. Propagation of Stochasticity into δ
 
-The density contrast δ obeys the modified growth equation (40):
-
-    δddot + 2 H δdot =
-        4π Geff(k,a) ρ0 [δ + χ β]
-        - cs^2 k^2 δ / a^2
-
-With β containing a stochastic component, δ inherits a stochastic
-contribution through the χ β term. In Fourier space, the solution for
-δ(k,a) can be decomposed into:
+The density contrast δ obeys the modified growth equation (40). With β
+containing a stochastic component, δ inherits a stochastic contribution
+through the χ β term:
 
     δ(k,a) = δcl(k,a) + δnoise(k,a)
 
-where δcl is the solution with Ξβ = 0 and δnoise is driven by Ξβ. The
-power spectrum becomes:
+The power spectrum becomes:
 
     Pδ(k,a) = <|δ(k,a)|^2>
             = Pδ,cl(k,a) + Pδ,noise(k,a)
 
-At large scales and in regimes where deterministic growth dominates,
-Pδ,cl(k,a) >> Pδ,noise(k,a). At small scales and late times, diffusion
-and damping suppress Pδ,cl(k,a), while Pδ,noise(k,a) approaches a finite
-limit set by Nβ(a,k) and the response kernel K(k,a). This produces an
-irreducible "noise floor" in Pδ(k,a):
+40E. Noise Floor
 
-    Pδ,noise(k,a) → const(k)  as  a → large, k → large
+At large scales and early times:
 
-This floor is not a quantum field-theoretic vacuum. It is the residual
-variance of the soliton gas after coarse-graining, encoded through
-σα^2(a), ρ0(a), and the response kernel. No external GR or QFT structure
-is used.
+    Pδ,cl >> Pδ,noise
 
-40D. Interpretation of ħeff(a)
+At small scales and late times, diffusion suppresses Pδ,cl while
+Pδ,noise approaches a finite limit set by Nβ(a,k) and the response
+kernel K(k,a):
+
+    Pδ,noise(k,a) → const(k)
+
+This constant is the irreducible noise floor of the continuum. It is not
+a quantum vacuum. It is the residual soliton discreteness after
+coarse-graining.
+
+40F. Interpretation of ħeff(a)
 
 The quantity:
 
     ħeff(a) = σα^2(a) ρ0(a)
 
-acts as an effective fluctuation scale of the continuum. As ρ0(a)
-dilutes and σα^2(a) evolves under the RG flow, ħeff(a) controls how
-strongly unresolved soliton discreteness imprints on β and, through χ,
-on δ. This defines a CCEF-native "quantum-like" floor: an irreducible
+acts as an internal fluctuation scale. As ρ0(a) dilutes and σα^2(a)
+evolves under RG flow, ħeff(a) determines how strongly unresolved
+soliton discreteness imprints on β and, through χ, on δ.
+
+This defines a CCEF-native "quantum-like" floor: an irreducible
 stochastic component of the response that persists even when classical
 growth is suppressed.
 
