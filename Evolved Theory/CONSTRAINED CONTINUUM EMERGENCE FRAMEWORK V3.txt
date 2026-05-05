@@ -1081,7 +1081,68 @@ curvature-like → kernel variation effects
 dark-matter-like → enhanced response and coupling variance
 dark-energy-like → negative response pressure
 
-Z15. Final Note
+Z15. Metric-Derived H^{μν} Propagation Projection
+
+This section defines a non-ontological, metric-like object H^{μν} as a
+projection of the response structure. It is a translation aid only and
+does not modify the core ontology.
+
+Z16. Response Distance and Kernel
+
+From the core:
+
+    D(x,x') = -log |R(x,x')|
+
+In coherent phases, D(x,x') becomes approximately quadratic in
+separation. In this regime, a metric-like tensor can be defined as a
+second derivative of D:
+
+    hij(x) ∝ ∂i ∂j D(x,x')
+
+This hij is not fundamental. It is a bookkeeping device summarizing the
+local curvature of the response distance.
+
+Z17. Embedding into H^{μν}
+
+Define a 4-index propagation projector H^{μν} by:
+
+    H^{00} = C0
+    H^{0i} = 0
+    H^{ij} = C1 hij(x)
+
+where C0 and C1 are constants chosen for convenience. H^{μν} is a
+compact way to encode how wave-like excitations of the continuum
+propagate in coherent phases.
+
+Z18. Propagation Projection
+
+A scalar excitation φ (e.g. a linear response mode) can be written in
+projected form as:
+
+    H^{μν} ∂μ ∂ν φ = 0
+
+In explicit components:
+
+    C0 ∂t^2 φ + C1 hij ∂i ∂j φ = 0
+
+This is not a fundamental wave equation. It is a projection of the
+underlying response dynamics into a metric-like form, valid only in
+coherent regimes where D(x,x') is approximately quadratic.
+
+Z19. Non-Ontological Status
+
+H^{μν}:
+
+(1) is derived from R and D, not postulated,
+(2) exists only in coherent phases,
+(3) does not define spacetime geometry,
+(4) is a translation tool for readers used to metric propagation.
+
+All physical content remains in n(x,t), the soliton sector, and the
+response kernel. H^{μν} is a convenience, not an element of the
+ontology.
+
+Z20. Final Note
 
 These mappings are interpretive only. They do not alter the ontology.
 The fundamental description remains:
@@ -1089,6 +1150,7 @@ a deterministic constrained continuum
 with solitonic matter
 and internal response dynamics
 from which all large-scale behavior emerges.
+
 
 
 
