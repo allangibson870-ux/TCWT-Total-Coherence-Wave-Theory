@@ -1,5 +1,4 @@
 CCEF-LITE v1.0 COSMOLOGY SPECIFICATION
-NOTEPAD-SAFE ASCII VERSION
 
 Purpose:
 This specification defines a minimal cosmology model derived entirely
