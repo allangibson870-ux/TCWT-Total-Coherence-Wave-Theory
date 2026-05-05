@@ -1249,8 +1249,103 @@ It is a translation layer enabling GR-based tools to analyze CCEF
 predictions. All real physics remains in n(x,t), the soliton sector, and
 the response kernel.
 
+Z27. Response-Equivalent Einstein Tensor (Projection Only)
 
-Z27. Final Note
+Purpose:
+Provide a GR-literate observer with a tensor G^{resp}_{μν} that encodes
+the CCEF response kernel, slip, and stochastic sector in Einstein-tensor
+form. This object is not curvature of a real spacetime. It is a
+translation lens only.
+
+Z27.1 Metric Projection Recap
+
+From the propagation projector H^{μν}:
+
+    g_{00} ≈ -[1 + 2Φ]
+    g_{ii} ≈ a^2 [1 - 2Ψ]
+
+Φ and Ψ are kernel projections:
+
+    Φ(k,a) = K(k,a) ρ(k,a)
+    Ψ(k,a) = K2(k,a) ρ(k,a)
+
+with kernel splitting:
+
+    K2(k,a) = K(k,a) [1 + ε(a) f(k,a)]
+
+The slip parameter is:
+
+    η(k,a) = Φ / Ψ = K / K2
+
+Z27.2 Definition of G^{resp}_{μν}
+
+Define the response-equivalent Einstein tensor as:
+
+    G^{resp}_{μν}[g] = G_{μν}[g] - G^{ref}_{μν}[g_ref]
+
+where:
+- G_{μν}[g] is the Einstein tensor built from the projected metric g_{μν},
+- G^{ref}_{μν}[g_ref] is the Einstein tensor of a reference FLRW metric
+  with Φ = Ψ and K2 = K (no slip, no scale dependence).
+
+Thus G^{resp}_{μν} isolates deviations caused by:
+- scale-dependent K(k,a),
+- kernel splitting K ≠ K2,
+- stochastic corrections to Φ and Ψ.
+
+Z27.3 Linear Response Form (Fourier Space)
+
+In the scalar linear regime:
+
+    G^{resp}_{00}(k,a) ∝ k^2 [Φ(k,a) - Φ_ref(k,a)]
+    G^{resp}_{ii}(k,a) ∝ k^2 [Ψ(k,a) - Ψ_ref(k,a)]
+
+Φ_ref and Ψ_ref are obtained by imposing:
+- K(k,a) → K_ref(a) (scale-independent),
+- K2(k,a) → K_ref(a) (no slip),
+- no stochastic floor.
+
+All anisotropic and scale-dependent pieces of Φ and Ψ are encoded in
+G^{resp}_{μν}.
+
+Z27.4 Effective Stress-Energy Projection
+
+The observer may define:
+
+    8π G T^{resp}_{μν} ≡ G^{resp}_{μν}
+
+T^{resp}_{μν} is not fundamental. It packages:
+- kernel scale dependence,
+- slip η ≠ 1,
+- stochastic variance (σα^2 ρ0),
+into a GR-like source term.
+
+Z27.5 Interpretation of Components
+
+1. G^{resp}_{00}:
+   Encodes deviations in effective clustering strength due to K(k,a).
+
+2. G^{resp}_{ii}:
+   Encodes anisotropic response from K2(k,a) and slip η ≠ 1.
+
+3. Off-diagonal components:
+   Encode stochastic fluctuations from the β-sector and ξR-driven
+   nonlocality.
+
+Z27.6 Ontological Status
+
+G^{resp}_{μν}:
+- is derived from Φ, Ψ, K, K2, ξR,
+- exists only as a projection for GR-based analysis,
+- does not represent curvature of a fundamental spacetime,
+- does not alter the |n| = 1 ontology.
+
+All real physics remains in the constrained continuum, the soliton
+sector, and the response kernel. G^{resp}_{μν} is a translation tool
+only.
+
+
+Z28. Final Note
 
 These mappings are interpretive only. They do not alter the ontology.
 The fundamental description remains:
