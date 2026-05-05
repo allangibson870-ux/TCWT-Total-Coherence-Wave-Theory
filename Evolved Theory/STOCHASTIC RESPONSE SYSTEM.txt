@@ -58,3 +58,37 @@ No External Quantum Theory:
     of the continuum. No Hilbert space or metric structure is required.
 
 End of block.
+
+CCEF-LITE: STOCHASTIC SECTOR v1.2 (TIGHTENED)
+NOTEPAD-SAFE ASCII
+
+1. Stochastic beta equation
+
+beta' + Gamma_beta(a,k) * beta = S_delta(a,k) * delta + Xi_beta(a,k)
+
+Gamma_beta(a,k) = Gamma_beta0(a) + D_beta(a) * k^2 / a^2
+
+2. Noise statistics
+
+<Xi_beta(a,k)> = 0
+
+<Xi_beta(a,k) Xi_beta(a',k')>
+    = N_beta(a,k) * delta_D(ln a - ln a') * delta_D(k - k')
+
+N_beta(a,k) = C_beta * hbar_eff(a) * f_beta(k)
+
+hbar_eff(a) = sigma_a2(a) * rho0(a)
+
+3. Induced delta power spectrum
+
+delta'' + A(a) * delta' + B(a,k) * delta
+    = C(a,k) * beta
+
+P_delta(k,a) = P_delta_cl(k,a) + P_delta_noise(k,a)
+
+At high k and late times:
+    P_delta_cl -> 0
+    P_delta_noise -> finite constant set by N_beta and the response kernel.
+
+End of block.
+
